@@ -81,9 +81,11 @@ sjt_json_path = utils_dir / "sjt_outputs" / "SJT_all_traits.json"
 # 生成 NEO 提示词
 print("生成 NEO 提示词...")
 neo_prompts_path = evaluators_dir / "filled_prompts_neo.json"
+neo_template_path = evaluators_dir / "prompts" / "scorer_forNEO_prompt.txt"
 try:
     neo_prompts = generate_filled_prompts_with_scores_only(
         csv_path=virtual_subjects_path,
+        template_path=neo_template_path,
         sjt_json_path=None,  # NEO 流程不使用 SJT
         neo_path=neo_json_path if neo_json_path.exists() else None,
         output_path=neo_prompts_path,
@@ -95,10 +97,12 @@ except Exception as e:
 # 生成 SJT 提示词
 print("\n生成 SJT 提示词...")
 sjt_prompts_path = evaluators_dir / "filled_prompts_sjt.json"
+sjt_template_path = evaluators_dir / "prompts" / "scorer_prompt.txt"
 try:
     if sjt_json_path.exists():
         sjt_prompts = generate_filled_prompts_with_scores_only(
             csv_path=virtual_subjects_path,
+            template_path=sjt_template_path,
             sjt_json_path=sjt_json_path,
             neo_path=neo_json_path if neo_json_path.exists() else None,
             output_path=sjt_prompts_path,

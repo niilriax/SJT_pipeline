@@ -64,7 +64,7 @@ def create_virtual_subjects(
 
 def run_virtual_subject_simulation(
     n_subjects: int = 500,
-    driving_facet: str = "N4",
+    driving_facet: str = "N",
     mean: float = 50.0,
     std: float = 10.0,
     noise_std: Optional[float] = None,

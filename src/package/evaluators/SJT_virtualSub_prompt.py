@@ -2,129 +2,50 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any
 import json
 import pandas as pd
-from ..utils import TRAIT_ORDER, get_project_root
+from package.utils import TRAIT_ORDER, get_project_root
 
 _BASE_DIR = Path(__file__).resolve().parent
 _PROJECT_ROOT = get_project_root() 
 
 
-def load_neo_items(neo_path: Optional[Path] = None) -> Dict[str, dict]:
-    """
-    读取 NEO-FFI 题目文件（docs/Neo-FFI.json）。
-    返回结构与原 JSON 一致：{ domain_code: { domain, items{ id: {item, scoring} } } }
-    支持格式：Neo-FFI.json (domain_code: N, E, O, A, C)
-    """
-    neo_path = neo_path or (_PROJECT_ROOT / "docs" / "Neo-FFI.json")
-    neo_path = Path(neo_path)
-    if not neo_path.exists():
-        raise FileNotFoundError(f"找不到 NEO-FFI 题目文件：{neo_path}")
-    return json.loads(neo_path.read_text(encoding="utf-8"))
-
+def load_json_file(file_path: Optional[Path], default_path: Path, error_message: str) -> Dict[str, Any]:
+    file_path = file_path or default_path
+    file_path = Path(file_path)
+    if not file_path.exists():
+        raise FileNotFoundError(f"{error_message}：{file_path}")
+    return json.loads(file_path.read_text(encoding="utf-8"))
 
 def build_neo_items_block(neo_items: Dict[str, dict]) -> str:
-
-    flat_items = []
+    """将 NEO 题目数据格式化为文本"""
+    lines = []
     for facet_code, facet in neo_items.items():
         items = facet.get("items", {})
         for item_id, item_info in items.items():
-            try:
-                order = int(item_id)
-            except ValueError:
-                # 非数字 ID 就放在最后，保持原字符串顺序
-                order = float("inf")
-            flat_items.append(
-                (
-                    order,
-                    item_id,
-                    str(item_info.get("item", "")).strip(),
-                )
-            )
-
-    # 按题号排序
-    flat_items.sort(key=lambda x: x[0])
-
-    lines = []
-    for _, item_id, text in flat_items:
-        if not text:
-            continue
-        lines.append(f"Q{item_id}. {text}")
-
-    return "\n".join(lines)
-
-
-def load_sjt_items(sjt_json_path: Optional[Path] = None) -> Dict[str, Any]:
-    if sjt_json_path is None:
-        sjt_json_path = _BASE_DIR.parent / "utils" / "sjt_outputs" / "SJT_all_traits.json"
-    sjt_json_path = Path(sjt_json_path)
-    if not sjt_json_path.exists():
-        raise FileNotFoundError(f"找不到 SJT 题目文件：{sjt_json_path}")
-    return json.loads(sjt_json_path.read_text(encoding="utf-8"))
+            text = str(item_info.get("item", "")).strip()
+            if text:
+                lines.append((int(item_id) if item_id.isdigit() else float("inf"), f"Q{item_id}. {text}"))
+    return "\n".join(text for _, text in sorted(lines, key=lambda x: x[0]))
 
 def build_sjt_items_block(sjt_data: Dict[str, Any]) -> str:
-    traits_data = sjt_data.get("traits", {})
+    """将 SJT 题目数据格式化为文本"""
     lines = []
-    
     trait_name_to_code = {name: code for code, name in TRAIT_ORDER}
-    trait_names = [name for _, name in TRAIT_ORDER]
-    for trait_name in trait_names:
-        if trait_name not in traits_data:
-            continue
-        trait_block = traits_data[trait_name]
-        items = trait_block.get("items", [])
-        items_sorted = sorted(items, key=lambda x: x.get("item_id", 0))
-        
-        for item in items_sorted:
-            item_id = item.get("item_id", 0)
+    for trait_name in [name for _, name in TRAIT_ORDER]:
+        items = sjt_data.get("traits", {}).get(trait_name, {}).get("items", [])
+        for item in sorted(items, key=lambda x: x.get("item_id", 0)):
             situation = item.get("situation", "")
             question = item.get("question", "")
-            options = item.get("options", {})
-            
-            if not situation or not question:
+            if not (situation and question):
                 continue
-
-            trait_code = trait_name_to_code.get(trait_name, trait_name[:1])
+            trait_code = trait_name_to_code.get(trait_name, trait_name[0])
+            item_id = item.get("item_id", 0)
             q_text = f"Q{trait_code}_{item_id}. {situation} {question}\n"
-
-            for opt_key in ["A", "B", "C", "D"]:
-                if opt_key in options:
-                    opt_content = options[opt_key].get("content", "")
-                    if opt_content:
-                        q_text += f"  {opt_key}. {opt_content}\n"
-            
+            options = item.get("options", {})
+            q_text += "\n".join(f"  {k}. {options[k].get('content', '')}" 
+                              for k in ["A", "B", "C", "D"] 
+                              if k in options and options[k].get("content"))
             lines.append(q_text.strip())
-    
     return "\n\n".join(lines)
-
-
-def fill_template_with_sjt_items(template: str, sjt_json_path: Optional[Path] = None) -> str:
-    if sjt_json_path is None or not Path(sjt_json_path).exists():
-        return template
-    
-    sjt_data = load_sjt_items(sjt_json_path)
-    items_block = build_sjt_items_block(sjt_data)
-    
-    # 支持两种占位符格式
-    if "【SJT_ITEMS】" in template:
-        return template.replace("【SJT_ITEMS】", items_block)
-    elif "【情境判断题目】" in template:
-        return template.replace("【情境判断题目】", items_block)
-    
-    return template
-
-
-def fill_template_with_neo_items(template: str, neo_path: Optional[Path] = None) -> str:
-    placeholder = "【NEO_FFI_R】"
-    if placeholder not in template:
-        return template
-
-    neo_items = load_neo_items(neo_path)
-    items_block = build_neo_items_block(neo_items)
-    return template.replace(placeholder, items_block)
-
-
-def load_template(template_path: Optional[Path] = None) -> str:
-    template_path = template_path or (_BASE_DIR / "prompts" / "scorer_prompt.txt")
-    return Path(template_path).read_text(encoding="utf-8")
 
 
 def load_subjects(csv_path: Optional[Path] = None) -> pd.DataFrame:
@@ -135,54 +56,110 @@ def load_subjects(csv_path: Optional[Path] = None) -> pd.DataFrame:
     return pd.read_csv(csv_path)
 
 
-def fill_template_with_scores_only(template: str, scores: Dict[str, float]) -> str:
-    filled = template
-    for idx, (code, trait_name) in enumerate(TRAIT_ORDER, start=1):
-        if code not in scores:
-            raise ValueError(f"缺少特质 {code} 的分数，当前可用键：{list(scores.keys())}")
+def generate_filled_prompts_with_scores_only(test_type: str):
+    if test_type == "NEO":
+        prompt_file = _BASE_DIR / "prompts" / "scorer_forNEO_prompt.txt"
+        neo_path = _PROJECT_ROOT / "docs" / "Neo-FFI.json"
+        neo_items = load_json_file(
+            neo_path,
+            _PROJECT_ROOT / "docs" / "Neo-FFI.json",
+            "找不到 NEO-FFI 题目文件"
+        )
+        neo_block = build_neo_items_block(neo_items)
+    elif test_type == "SJT":
+        prompt_file = _BASE_DIR / "prompts" / "scorer_prompt.txt"
+        sjt_path = _BASE_DIR.parent / "utils" / "sjt_outputs" / "SJT_all_traits.json"
+        sjt_data = load_json_file(
+            sjt_path,
+            _BASE_DIR.parent / "utils" / "sjt_outputs" / "SJT_all_traits.json",
+            "找不到 SJT 题目文件"
+        )
+        sjt_block = build_sjt_items_block(sjt_data)
+    else:
+        raise ValueError(f"不支持的测试类型: {test_type}，必须是 'NEO' 或 'SJT'")
+    if not prompt_file.exists():
+        raise FileNotFoundError(f"提示词文件不存在: {prompt_file}")
+    prompt_template = prompt_file.read_text(encoding="utf-8")
+    subjects = load_subjects()
+    # 创建特质名称列表（按顺序：神经质, 外向性, 开放性, 宜人性, 尽责性）
+    trait_codes = [code for code, _ in TRAIT_ORDER]  # N, E, O, A, C
+    filled_prompts = []
+    # 遍历每个被试
+    for idx, row in subjects.iterrows():
+        subject_id = row.get("被试ID", idx + 1)
+        filled_prompt = prompt_template
+        # 替换每个特质的T分数（按顺序替换【T分数】）
+        for trait_code in trait_codes:
+            score = row.get(trait_code, 0)
+            # 替换第一个出现的【T分数】
+            filled_prompt = filled_prompt.replace("【T分数】", str(round(score, 2)), 1)
+        # 根据test_type替换题目占位符
+        if test_type == "NEO":
+            filled_prompt = filled_prompt.replace("【NEO_FFI_R】", neo_block)
+        elif test_type == "SJT":
+            filled_prompt = filled_prompt.replace("【情境判断题目】", sjt_block)
+        filled_prompts.append({
+            "被试ID": str(subject_id),
+            "prompt": filled_prompt
+        })
+    return filled_prompts
 
-        value = float(scores[code])
 
-        # 仅替换分数相关占位符
-        filled = filled.replace(f"【T分数{idx}】", f"T{value:.2f}", 1)
-        filled = filled.replace("【T分数】", f"T{value:.2f}", 1)
+def main():
+    """主函数：测试生成填充后的提示词"""
+    print("=" * 60)
+    print("生成虚拟被试提示词")
+    print("=" * 60)
+    
+    # 测试NEO类型
+    print("\n--- 生成NEO提示词 ---")
+    try:
+        neo_prompts = generate_filled_prompts_with_scores_only("NEO")
+        print(f"✓ 成功生成 {len(neo_prompts)} 个NEO提示词")
+        
+        # 保存到文件
+        neo_output_path = _BASE_DIR / "filled_prompts_neo.json"
+        with open(neo_output_path, 'w', encoding='utf-8') as f:
+            json.dump(neo_prompts, f, ensure_ascii=False, indent=2)
+        print(f"✓ NEO提示词已保存至: {neo_output_path}")
+        
+        # 显示第一个提示词的预览
+        if neo_prompts:
+            print(f"\n第一个被试（ID: {neo_prompts[0]['被试ID']}）的提示词预览（前500字符）：")
+            print("-" * 60)
+            print(neo_prompts[0]['prompt'][:500] + "...")
+    except Exception as e:
+        print(f"✗ NEO提示词生成失败: {e}")
+        import traceback
+        traceback.print_exc()
+    
+    # 测试SJT类型
+    print("\n--- 生成SJT提示词 ---")
+    try:
+        sjt_prompts = generate_filled_prompts_with_scores_only("SJT")
+        print(f"✓ 成功生成 {len(sjt_prompts)} 个SJT提示词")
+        
+        # 保存到文件
+        sjt_output_path = _BASE_DIR / "filled_prompts_sjt.json"
+        with open(sjt_output_path, 'w', encoding='utf-8') as f:
+            json.dump(sjt_prompts, f, ensure_ascii=False, indent=2)
+        print(f"✓ SJT提示词已保存至: {sjt_output_path}")
+        
+        # 显示第一个提示词的预览
+        if sjt_prompts:
+            print(f"\n第一个被试（ID: {sjt_prompts[0]['被试ID']}）的提示词预览（前500字符）：")
+            print("-" * 60)
+            print(sjt_prompts[0]['prompt'][:500] + "...")
+    except Exception as e:
+        print(f"✗ SJT提示词生成失败: {e}")
+        import traceback
+        traceback.print_exc()
+    
+    print("\n" + "=" * 60)
+    print("完成！")
+    print("=" * 60)
 
-    return filled
 
-
-def generate_filled_prompts_with_scores_only(
-    csv_path: Optional[Path] = None,
-    template_path: Optional[Path] = None,
-    sjt_json_path: Optional[Path] = None,
-    neo_path: Optional[Path] = None,
-    output_path: Optional[Path] = None,
-) -> List[Dict[str, str]]:
-    # 根据是否有 SJT 题目来选择模板
-    if template_path is None:
-        if sjt_json_path is not None and Path(sjt_json_path).exists():
-            # 使用 SJT 模板
-            template_path = _BASE_DIR / "prompts" / "scorer_prompt.txt"
-        else:
-            # 使用 NEO 模板
-            template_path = _BASE_DIR / "prompts" / "scorer_forNEO_prompt.txt"
-
-    template = load_template(template_path)
-    template = fill_template_with_neo_items(template, neo_path)
-    template = fill_template_with_sjt_items(template, sjt_json_path)
-    subjects = load_subjects(csv_path)
-
-    if "被试ID" not in subjects.columns:
-        subjects = subjects.copy()
-        subjects["被试ID"] = subjects.index.astype(str)
-
-    results: List[Dict[str, str]] = []
-    for _, row in subjects.iterrows():
-        subject_id = str(row["被试ID"])
-        scores = {code: float(row[code]) for code, _ in TRAIT_ORDER}
-        prompt_text = fill_template_with_scores_only(template, scores)
-        results.append({"被试ID": subject_id, "prompt": prompt_text})
-
-    if output_path:
-        Path(output_path).write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    return results
+if __name__ == "__main__":
+    main()
+    
