@@ -155,13 +155,13 @@ def generate_citc_prompts_to_files(
     citc_df: pd.DataFrame,
     batch_size: int = 5,
     output_dir: Path | None = None,
-) -> list[Path]:
+) -> tuple[list[Path], list[list[str]]]:
     """
-    生成单个 CITC 修订提示词文件。
+    生成多个 CITC 修订提示词文件。
     - output_dir: 保存目录，默认 output/CITC_prompts
     """
     if citc_df is None or citc_df.empty:
-        return []
+        return [], []
     project_root = get_project_root()
     out_dir = output_dir or (project_root / "output" / "CITC_prompts")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -169,23 +169,38 @@ def generate_citc_prompts_to_files(
     items_map = _load_sjt_items()
     template = _load_citc_template()
     paths: list[Path] = []
+    prompt_item_ids: list[list[str]] = []
     if bad_df.empty:
-        return paths
-    blocks = []
+        return paths, prompt_item_ids
+    batch_size = max(1, batch_size)
+    batch_blocks: list[str] = []
+    batch_ids: list[str] = []
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    batch_index = 1
     for _, row in bad_df.iterrows():
         qid = str(row.get("item") or "")
         if qid not in items_map:
             continue
-        blocks.append(_format_citc_block(qid, items_map[qid], row.get("citc", np.nan)))
-    if not blocks:
-        return paths
-    body = "\n\n".join(blocks)
-    prompt = template.replace("【待优化题目及数据诊断意见】", body)
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    path = out_dir / f"CITC_prompt_{timestamp}.txt"
-    path.write_text(prompt, encoding="utf-8")
-    paths.append(path)
-    return paths
+        batch_blocks.append(_format_citc_block(qid, items_map[qid], row.get("citc", np.nan)))
+        batch_ids.append(qid)
+        if len(batch_blocks) >= batch_size:
+            body = "\n\n".join(batch_blocks)
+            prompt = template.replace("【待优化题目及数据诊断意见】", body)
+            path = out_dir / f"CITC_prompt_{timestamp}_{batch_index}.txt"
+            path.write_text(prompt, encoding="utf-8")
+            paths.append(path)
+            prompt_item_ids.append(batch_ids)
+            batch_blocks = []
+            batch_ids = []
+            batch_index += 1
+    if batch_blocks:
+        body = "\n\n".join(batch_blocks)
+        prompt = template.replace("【待优化题目及数据诊断意见】", body)
+        path = out_dir / f"CITC_prompt_{timestamp}_{batch_index}.txt"
+        path.write_text(prompt, encoding="utf-8")
+        paths.append(path)
+        prompt_item_ids.append(batch_ids)
+    return paths, prompt_item_ids
 
 
 def citc_by_trait(df: pd.DataFrame, items_per_trait: int = None, corrected: bool = True) -> pd.DataFrame:
@@ -213,7 +228,7 @@ if __name__ == "__main__":
     data = sjt_responses_to_matrix()
     citc_df = citc_by_trait(data, items_per_trait=None, corrected=True)
     print(citc_df)
-    paths = generate_citc_prompts_to_files(citc_df, batch_size=5)
+    paths, _ = generate_citc_prompts_to_files(citc_df, batch_size=5)
     if paths:
         print("\n生成的 CITC 提示文件:")
         for p in paths:
