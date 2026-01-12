@@ -244,6 +244,9 @@ def convert_to_CVI_node(state: WorkflowState) -> WorkflowState:
         low_cvi_items = [_normalize_item(item) for item in low_cvi_items]
         passed_items = [_normalize_item(item) for item in passed_items]
         state["low_cvi_items"] = low_cvi_items
+        if low_cvi_items:
+            iteration = state.get("iteration", 0)
+            state["iteration"] = iteration + 1
         final_storage = state.get("final_storage", [])
         if irt_repair_mode and irt_bad_items:
             # 修复模式：按 item_id 精确替换旧题目
@@ -289,10 +292,9 @@ def check_quality(state: WorkflowState) -> str:
     iteration = state.get("iteration", 0)
     max_iterations = state.get("max_iterations", 3)
     if low_cvi_items:
-        if iteration >= max_iterations:
+        if iteration > max_iterations:
             print(f"⚠️ 已达到最大CVI修订次数，强制归档")
             return "archive"
-        state["iteration"] = iteration + 1
         print(f"🔄 CVI不合格，进入第 {state['iteration']} 次内容修订")
         return "revise"
     print("✅ CVI评估通过，准备归档")
