@@ -269,7 +269,7 @@ def check_quality(state: WorkflowState) -> str:
     iteration = state.get("iteration", 0)
     max_iterations = state.get("max_iterations", 3)
     if low_cvi_items:
-        if iteration >= max_iterations:
+        if iteration > max_iterations:
             print(f"⚠️ 已达到最大CVI修订次数，强制归档")
             return "archive"
         print(f"🔄 CVI不合格，进入第 {state['iteration']} 次内容修订")
