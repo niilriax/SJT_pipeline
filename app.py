@@ -23,6 +23,7 @@ trait_names = [name for _, name in TRAIT_ORDER]
 result_custom = run_workflow(
     trait_names=trait_names,
     model=model,
+    irt_max_iterations=3,
 )
 with open("results_batch.json", "w", encoding="utf-8") as f:
     json.dump(result_custom, f, ensure_ascii=False, indent=2)
@@ -162,4 +163,3 @@ else:
 print("\n" + "=" * 60)
 print("全部流程完成！")
 print("=" * 60)
-
