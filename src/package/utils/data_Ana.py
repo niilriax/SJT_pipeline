@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -127,7 +128,7 @@ def _format_citc_block(qid: str, item: dict, citc: float) -> str:
     for opt_key in sorted(options.keys()):
         opt = options[opt_key]
         lines.append(f"    {opt_key}. {opt.get('content','')} (特质水平: {opt.get('trait_level','')})")
-    diag = "CITC 无法计算（零方差/数据缺失）" if pd.isna(citc) else f"CITC={citc:.3f} < 0.3"
+    diag = "CITC 无法计算（零方差/数据缺失）" if pd.isna(citc) else f"CITC={citc:.3f} < 0.5"
     lines.append(f"【数据诊断意见】\n{diag}")
     return "\n".join(lines)
 
@@ -156,8 +157,7 @@ def generate_citc_prompts_to_files(
     output_dir: Path | None = None,
 ) -> list[Path]:
     """
-    按批次生成多个 CITC 修订提示词文件。
-    - batch_size: 每个提示包含的坏题数量
+    生成单个 CITC 修订提示词文件。
     - output_dir: 保存目录，默认 output/CITC_prompts
     """
     if citc_df is None or citc_df.empty:
@@ -165,28 +165,26 @@ def generate_citc_prompts_to_files(
     project_root = get_project_root()
     out_dir = output_dir or (project_root / "output" / "CITC_prompts")
     out_dir.mkdir(parents=True, exist_ok=True)
-    bad_df = citc_df[(citc_df["citc"].isna()) | (citc_df["citc"] < 0.3)]
+    bad_df = citc_df[(citc_df["citc"].isna()) | (citc_df["citc"] < 0.5)]
     items_map = _load_sjt_items()
     template = _load_citc_template()
     paths: list[Path] = []
     if bad_df.empty:
         return paths
-    total = len(bad_df)
-    for idx in range(0, total, batch_size):
-        chunk = bad_df.iloc[idx : idx + batch_size]
-        blocks = []
-        for _, row in chunk.iterrows():
-            qid = str(row.get("item") or "")
-            if qid not in items_map:
-                continue
-            blocks.append(_format_citc_block(qid, items_map[qid], row.get("citc", np.nan)))
-        if not blocks:
+    blocks = []
+    for _, row in bad_df.iterrows():
+        qid = str(row.get("item") or "")
+        if qid not in items_map:
             continue
-        body = "\n\n".join(blocks)
-        prompt = template.replace("【待优化题目及数据诊断意见】", body)
-        path = out_dir / f"CITC_prompt_batch_{idx//batch_size + 1}.txt"
-        path.write_text(prompt, encoding="utf-8")
-        paths.append(path)
+        blocks.append(_format_citc_block(qid, items_map[qid], row.get("citc", np.nan)))
+    if not blocks:
+        return paths
+    body = "\n\n".join(blocks)
+    prompt = template.replace("【待优化题目及数据诊断意见】", body)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    path = out_dir / f"CITC_prompt_{timestamp}.txt"
+    path.write_text(prompt, encoding="utf-8")
+    paths.append(path)
     return paths
 
 

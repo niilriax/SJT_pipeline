@@ -43,7 +43,7 @@ class WorkflowState(TypedDict, total=False):
     evaluation_results: List[Dict] # 当前的专家评分结果
     evaluation_errors: List[Dict]  # 评估过程中的错误信息
     passed_items: List[Dict]       # 当前批次中，CVI 达标的题目
-    low_cvi_items: List[Dict]      # 当前批次中，CVI 不达标的题目 
+    low_cvi_items: List[Dict]      # 当前批次中，CVI 不达标的题目
     iteration: int                 # 当前批次修了第几次
     max_iterations: int            # 单批次最大修订次数
     # --- 4. 虚拟被试 ---
@@ -60,6 +60,7 @@ class WorkflowState(TypedDict, total=False):
     irt_prompt_queue: List[str]     # 多批修订提示队列
     irt_bad_items_queue: List[List[Dict[str, Any]]]  # 多批坏题队列（带trait，用于回填）
     irt_prompt_queue: List[str] # 存储多批修订提示，逐批消耗
+    irt_repair_trait_name: str     # trait for current repair batch
 
 
 def _normalize_item_id(raw_id: Any) -> str:
@@ -104,6 +105,26 @@ def _normalize_evaluation_results(evaluation_results: List[Dict[str, Any]]) -> L
     return normalized_results
 
 
+def _parse_revision_prompt_traits(prompt: str) -> Dict[str, str]:
+    """Parse Item_ID -> Trait from CITC revision prompt text."""
+    if not prompt:
+        return {}
+    id_to_trait: Dict[str, str] = {}
+    current_id = ""
+    current_trait = ""
+    for line in prompt.splitlines():
+        line = line.strip()
+        if line.startswith("Item_ID:"):
+            current_id = _normalize_item_id(line.split(":", 1)[1].strip())
+        elif line.startswith("Trait:"):
+            current_trait = line.split(":", 1)[1].strip()
+            if current_id and current_trait:
+                id_to_trait[current_id] = current_trait
+                current_id = ""
+                current_trait = ""
+    return id_to_trait
+
+
 def generate_items_node(state: WorkflowState) -> WorkflowState:
     model = state.get("model")
     low_cvi_items = state.get("low_cvi_items", [])
@@ -128,25 +149,34 @@ def generate_items_node(state: WorkflowState) -> WorkflowState:
         prompt = build_prompt_with_suggestions(modification_suggestions)
     elif irt_repair_mode:
         irt_iteration = state.get("irt_iteration", 0)
-        irt_max_iterations = state.get("irt_max_iterations", 3)
+        irt_max_iterations = state.get("irt_max_iterations", 1)
         print(f"🔧  进入修复模式：第 {irt_iteration}/{irt_max_iterations} 轮...")
         prompt = state.get("irt_revision_prompt", "")
         if not prompt:
             print("⚠️ 警告: 修复模式已启用，但未找到修订提示词！")
-            state["generated_items"] = [] 
+            state["generated_items"] = []
             return state
     else:
         if 0 <= batch_count < len(trait_names):
             trait_name = trait_names[batch_count]
             print(f"✨ [新批次] 正在为特质 [{trait_name}] 生成题目...")
-            prompt = format_prompt(trait_name) 
+            prompt = format_prompt(trait_name)
         else:
             print("⚠️ 批次计数超出范围或已完成。")
             state["generated_items"] = []
             return state
     try:
         items = LLM_call(prompt, model)
-        state["generated_items"] = [_normalize_item(item) for item in items]
+        normalized_items = [_normalize_item(item) for item in items]
+        if irt_repair_mode:
+            id_to_trait = _parse_revision_prompt_traits(state.get("irt_revision_prompt", ""))
+            for item in normalized_items:
+                item_id = item.get("item_id")
+                if item_id is not None and "trait" not in item:
+                    trait = id_to_trait.get(_normalize_item_id(item_id), "")
+                    if trait:
+                        item["trait"] = trait
+        state["generated_items"] = normalized_items
     except Exception as e:
         print(f"❌ 生成出错: {e}")
         state["generated_items"] = []
@@ -158,7 +188,22 @@ def evaluate_items_node(state: WorkflowState) -> WorkflowState:
     trait_names = state.get("trait_names", [])
     batch_count = state.get("batch_count", 0)
     trait_name = trait_names[batch_count] if 0 <= batch_count < len(trait_names) else ""
-    prompt = format_all_items_prompt({"特质": {trait_name: items}})
+    irt_repair_mode = state.get("irt_repair_mode", False)
+    if irt_repair_mode:
+        id_to_trait = _parse_revision_prompt_traits(state.get("irt_revision_prompt", ""))
+        items_by_trait = {}
+        for idx, item in enumerate(items):
+            item_trait = item.get("trait")
+            if not item_trait:
+                item_id = item.get("item_id")
+                if item_id is not None:
+                    item_trait = id_to_trait.get(_normalize_item_id(item_id), "")
+            if not item_trait:
+                item_trait = state.get("irt_repair_trait_name", trait_name)
+            items_by_trait.setdefault(item_trait, []).append(item)
+        prompt = format_all_items_prompt({"特质": items_by_trait})
+    else:
+        prompt = format_all_items_prompt({"特质": {trait_name: items}})
     if experts:
         expert = experts[0]
         evaluation_result = LLM_call(prompt, expert)
@@ -188,7 +233,7 @@ def convert_to_CVI_node(state: WorkflowState) -> WorkflowState:
     print(f"--- 正在计算特质 [{trait_name}] 的CVI ---")
     try:
         cvi_data, low_cvi_items, passed_items = calculate_cvi_from_evaluation_results_single_expert(
-            evaluation_results, 
+            evaluation_results,
             generated_items=generated_items
         )
         low_cvi_items = [_normalize_item(item) for item in low_cvi_items]
@@ -196,11 +241,27 @@ def convert_to_CVI_node(state: WorkflowState) -> WorkflowState:
         state["low_cvi_items"] = low_cvi_items
         final_storage = state.get("final_storage", [])
         if irt_repair_mode and irt_bad_items:
-            for new_item, old_item in zip(passed_items, irt_bad_items):
-                item_with_trait = new_item.copy()
-                item_with_trait["trait"] = old_item.get("trait", trait_name)
-                item_with_trait["item_id"] = old_item.get("item_id", new_item.get("item_id", ""))
-                final_storage.append(item_with_trait)
+            # 修复模式：用新题目替换旧题目，如果新题目不够，恢复原题目
+            if len(passed_items) >= len(irt_bad_items):
+                # 新题目足够，替换原题目
+                for new_item, old_item in zip(passed_items, irt_bad_items):
+                    item_with_trait = new_item.copy()
+                    item_with_trait["trait"] = old_item.get("trait", trait_name)
+                    item_with_trait["item_id"] = old_item.get("item_id", new_item.get("item_id", ""))
+                    final_storage.append(item_with_trait)
+                # 从 irt_bad_items 中移除已成功替换的题目
+                state["irt_bad_items"] = []
+                print(f"✅ 成功修复 {len(passed_items)} 道题目，已替换原题目")
+            else:
+                # 新题目不够，恢复原题目
+                final_storage.extend(irt_bad_items)
+                # 同时添加通过的新题目（如果有）
+                for item in passed_items:
+                    item_with_trait = item.copy()
+                    item_with_trait["trait"] = irt_bad_items[0].get("trait", trait_name) if irt_bad_items else trait_name
+                    final_storage.append(item_with_trait)
+                # 保留未修复的题目在 irt_bad_items 中
+                print(f"⚠️ 修复后通过题目不足，已恢复 {len(irt_bad_items)} 道原题目")
         else:
             for item in passed_items:
                 item_with_trait = item.copy()
@@ -233,7 +294,7 @@ def check_quality(state: WorkflowState) -> str:
 
 def check_quantity(state: WorkflowState) -> str:
     current_batch = state.get("batch_count", 0)
-    target_batches = state.get("target_batches", 5) 
+    target_batches = state.get("target_batches", 5)
     if current_batch < target_batches:
         return "next_batch"
     return "finish"
@@ -297,7 +358,7 @@ def virtual_subject_response_node(state: WorkflowState) -> WorkflowState:
         print("⚠️ 警告: 未找到虚拟被试提示词，跳过回答")
         return state
     project_root = get_project_root()
-    max_workers = 50  
+    max_workers = 50
     # 处理NEO回答
     neo_responses: List[Dict[str, Any]] = []
     if virtual_subject_prompts_neo:
@@ -380,10 +441,10 @@ def analysis_node(state: WorkflowState) -> WorkflowState:
         if prompt_paths:
             prompt_texts = [Path(p).read_text(encoding="utf-8") for p in prompt_paths]
             first_prompt = prompt_texts.pop(0)
-            state["irt_prompt_queue"] = prompt_texts  
+            state["irt_prompt_queue"] = prompt_texts
             state["irt_revision_prompt"] = first_prompt
             # 删除坏题并记录按批次的坏题队列
-            bad_df = citc_df[(citc_df["citc"].isna()) | (citc_df["citc"] < 0.3)]
+            bad_df = citc_df[(citc_df["citc"].isna()) | (citc_df["citc"] < 0.5)]
             bad_qids_all = bad_df["item"].astype(str).tolist()
             name_to_code = {name: code for code, name in TRAIT_ORDER}
             final_storage = state.get("final_storage", [])
@@ -405,10 +466,11 @@ def analysis_node(state: WorkflowState) -> WorkflowState:
             current_bad = bad_items_queue.pop(0) if bad_items_queue else []
             state["irt_bad_items_queue"] = bad_items_queue
             state["irt_bad_items"] = current_bad
+            state["irt_repair_trait_name"] = current_bad[0].get("trait", "") if current_bad else ""
             state["irt_repair_mode"] = True
             print(f"📄 已生成 {len(prompt_paths)} 个 CITC 修订提示，已从库存删除 {len(removed)} 道问题题目")
         else:
-            print("✅ 所有题目的CITC均在 0.3 以上")
+            print("✅ 所有题目的CITC均在 0.5 以上")
             state["irt_revision_prompt"] = ""
             state["irt_bad_items"] = []
             state["irt_repair_mode"] = False
@@ -423,6 +485,31 @@ def analysis_node(state: WorkflowState) -> WorkflowState:
         print(f"❌ CITC分析出错: {e}")
         state["irt_analysis_error"] = str(e)
     return state
+
+def _update_sjt_all_traits_file(state: WorkflowState) -> None:
+    """更新SJT_all_traits.json文件，使其与final_storage保持一致"""
+    project_root = get_project_root()
+    final_storage = state.get("final_storage", [])
+    sjt_output_dir = project_root / "src" / "package" / "utils" / "sjt_outputs"
+    sjt_output_dir.mkdir(parents=True, exist_ok=True)
+    sjt_json_path = sjt_output_dir / "SJT_all_traits.json"
+    traits_data: Dict[str, Dict[str, Any]] = {}
+    trait_names = state.get("trait_names", [])
+    for trait_name in trait_names:
+        traits_data[trait_name] = {
+            "trait": trait_name,
+            "items": []
+        }
+    for item in final_storage:
+        trait_name = item.get("trait", "")
+        if trait_name and trait_name in traits_data:
+            item_clean = {k: v for k, v in item.items() if k != "trait"}
+            traits_data[trait_name]["items"].append(item_clean)
+    sjt_data = {"traits": traits_data}
+    with open(sjt_json_path, 'w', encoding='utf-8') as f:
+        json.dump(sjt_data, f, ensure_ascii=False, indent=2)
+    print(f"📄 已更新SJT题目文件: {sjt_json_path}（共 {len(final_storage)} 道题目）")
+
 
 def check_irt_repair(state: WorkflowState) -> str:
     """检查是否需要修复"""
@@ -439,13 +526,66 @@ def check_irt_repair(state: WorkflowState) -> str:
             state["irt_prompt_queue"] = prompt_queue
             # 同步下一批坏题
             if bad_queue:
-                state["irt_bad_items"] = bad_queue.pop(0)
+                next_bad = bad_queue.pop(0)
+                state["irt_bad_items"] = next_bad
                 state["irt_bad_items_queue"] = bad_queue
+                state["irt_repair_trait_name"] = next_bad[0].get("trait", "") if next_bad else ""
         else:
+            # 没有更多提示词，检查是否还有未恢复的坏题
+            current_bad = state.get("irt_bad_items", [])
+            final_storage = state.get("final_storage", [])
+            if current_bad:
+                # 只恢复那些还没有被成功修复的题目
+                existing_item_ids = {
+                    (item.get("item_id"), item.get("trait")) 
+                    for item in final_storage
+                }
+                to_restore = [
+                    item for item in current_bad
+                    if (item.get("item_id"), item.get("trait")) not in existing_item_ids
+                ]
+                if to_restore:
+                    final_storage.extend(to_restore)
+                    state["final_storage"] = _sort_final_storage(final_storage)
+                    print(f"⚠️ 修复失败，已恢复 {len(to_restore)} 道未修复的原题目到库存")
+            # CITC修复完成后，重新保存SJT_all_traits.json以保持一致性
+            _update_sjt_all_traits_file(state)
             return "finish"
 
     if irt_iteration >= irt_max_iterations:
         print(f"已达到最大修复次数 ({irt_max_iterations} 次)，停止修复")
+        # 只恢复那些还没有被成功修复的题目
+        current_bad = state.get("irt_bad_items", [])
+        final_storage = state.get("final_storage", [])
+        restored_count = 0
+        
+        # 检查并恢复当前批次中未修复的题目
+        if current_bad:
+            # 检查哪些题目还没有被替换（通过 item_id 和 trait 匹配）
+            existing_item_ids = {
+                (item.get("item_id"), item.get("trait")) 
+                for item in final_storage
+            }
+            to_restore = [
+                item for item in current_bad
+                if (item.get("item_id"), item.get("trait")) not in existing_item_ids
+            ]
+            if to_restore:
+                final_storage.extend(to_restore)
+                restored_count += len(to_restore)
+        if bad_queue:
+            for bad_batch in bad_queue:
+                final_storage.extend(bad_batch)
+                restored_count += len(bad_batch)
+            state["irt_bad_items_queue"] = []
+        
+        if restored_count > 0:
+            state["final_storage"] = _sort_final_storage(final_storage)
+            print(f"⚠️ 修复失败，已恢复 {restored_count} 道未修复的原题目到库存，确保题目数量")
+        
+        # CITC修复完成后，重新保存SJT_all_traits.json以保持一致性
+        _update_sjt_all_traits_file(state)
+        
         return "finish"
     state["irt_repair_mode"] = True
     state["irt_iteration"] = irt_iteration + 1
@@ -467,17 +607,6 @@ def accumulator_node(state: WorkflowState) -> WorkflowState:
         print(f"\n [归档完成] 第 {new_batch_count} 个批次结束。")
         print(f"本批合格: {len(current_passed)} 题|总库存: {len(final_storage)} 题")
 
-    # 额外归档：保存含 trait 字段的最终题目列表，便于核对修订后内容
-    try:
-        project_root = get_project_root()
-        archive_dir = project_root / "output" / "final_archive"
-        archive_dir.mkdir(parents=True, exist_ok=True)
-        archive_path = archive_dir / "final_storage_with_trait.json"
-        with open(archive_path, "w", encoding="utf-8") as f:
-            json.dump(final_storage, f, ensure_ascii=False, indent=2)
-        print(f"📁 最终题目（含trait）已保存: {archive_path}")
-    except Exception as e:
-        print(f"⚠️ 归档最终题目失败: {e}")
     return {
         "final_storage": final_storage,
         "batch_count": new_batch_count,
@@ -508,7 +637,7 @@ def create_sjt_workflow(model: ChatOpenAI = None) -> StateGraph:
         "convert_to_CVI",
         check_quality,
         {
-            "revise": "generate_items",   
+            "revise": "generate_items",
             "archive": "accumulator",
         }
     )
@@ -516,8 +645,8 @@ def create_sjt_workflow(model: ChatOpenAI = None) -> StateGraph:
         "accumulator",
         check_quantity,
         {
-            "next_batch": "generate_items", 
-            "finish": "virtual_subject"                  
+            "next_batch": "generate_items",
+            "finish": "virtual_subject"
         }
     )
     workflow.add_edge("virtual_subject", "virtual_subject_response")
@@ -528,6 +657,35 @@ def create_sjt_workflow(model: ChatOpenAI = None) -> StateGraph:
         {
             "repair": "generate_items",
             "finish": END
+        }
+    )
+    return workflow.compile()
+
+
+def create_sjt_repair_workflow(model: ChatOpenAI = None) -> StateGraph:
+    """Repair-only workflow that skips virtual subjects and CITC analysis."""
+    workflow = StateGraph(WorkflowState)
+    workflow.add_node("generate_items", generate_items_node)
+    workflow.add_node("evaluate_items", evaluate_items_node)
+    workflow.add_node("convert_to_CVI", convert_to_CVI_node)
+    workflow.add_node("accumulator", accumulator_node)
+    workflow.set_entry_point("generate_items")
+    workflow.add_edge("generate_items", "evaluate_items")
+    workflow.add_edge("evaluate_items", "convert_to_CVI")
+    workflow.add_conditional_edges(
+        "convert_to_CVI",
+        check_quality,
+        {
+            "revise": "generate_items",
+            "archive": "accumulator",
+        }
+    )
+    workflow.add_conditional_edges(
+        "accumulator",
+        check_irt_repair,
+        {
+            "repair": "generate_items",
+            "finish": END,
         }
     )
     return workflow.compile()
@@ -543,22 +701,23 @@ def run_workflow(
         "trait_names": trait_names,
         "model": model,
         "experts": experts,
-        "target_batches": 5,     
-        "batch_count": 0,        
-        "final_storage": [],     
+        "target_batches": 5,
+        "batch_count": 0,
+        "final_storage": [],
         "generated_items": [],
         "low_cvi_items": [],
         "iteration": 0,
         # 修复相关字段初始化
         "irt_repair_mode": False,
         "irt_iteration": 0,
-        "irt_max_iterations": 3,
+        "irt_max_iterations": 1,
         "irt_bad_items": [],
         "irt_revision_prompt": "",
-        "irt_prompt_queue": []
+        "irt_prompt_queue": [],
+        "irt_repair_trait_name": ""
     }
     result = workflow.invoke(
-        initial_state, 
+        initial_state,
         config={"recursion_limit": 150}
     )
     final_items = result.get("final_storage", [])
@@ -569,10 +728,20 @@ def main():
     from package.utils import TRAIT_ORDER
     from package.evaluators.SJTcontent_validity import get_content_validity_experts
     load_dotenv()
-    model = ChatOpenAI(model="gpt-5.1", temperature=0.5, max_tokens=7000)
+    model = ChatOpenAI(model="gpt-5-mini", temperature=0.5, max_tokens=7000)
     trait_names = [name for _, name in TRAIT_ORDER]
     experts = get_content_validity_experts()
     result = run_workflow(trait_names=trait_names, model=model, experts=experts)
+    
+    # 保存结果到文件
+    project_root = get_project_root()
+    output_dir = project_root / "output" / "workflow_results"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    result_file = output_dir / f"workflow_result_{timestamp}.json"
+    with open(result_file, 'w', encoding='utf-8') as f:
+        json.dump(result, f, ensure_ascii=False, indent=2, default=str)
+    print(f"📄 工作流结果已保存至: {result_file}")
     print(f"\n工作流执行完成！")
 if __name__ == "__main__":
     main()

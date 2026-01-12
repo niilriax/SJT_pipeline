@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 from package.utils import TRAIT_ORDER, get_project_root
-from package.utils.reliability_validity import neo_responses_to_scored_matrix
-from package.utils.reliability_validity_SJT import sjt_responses_to_scored_matrix
+from package.utils.cronbach_alpha_NEO import neo_responses_to_scored_matrix
+from package.utils.cronbach_alpha_SJT import sjt_responses_to_scored_matrix
 
 
 def _sum_by_trait(df: pd.DataFrame) -> pd.DataFrame:
