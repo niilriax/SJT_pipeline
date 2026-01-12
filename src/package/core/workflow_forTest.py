@@ -228,7 +228,7 @@ def convert_to_CVI_node(state: WorkflowState) -> WorkflowState:
                 _normalize_item_id(item.get("item_id", "")): item for item in irt_bad_items
                 if item.get("item_id") is not None
             }
-            unmatched_new_items = 0
+            original_bad_count = len(irt_bad_items_by_id)
             for new_item in passed_items:
                 item_id = new_item.get("item_id")
                 normalized_id = _normalize_item_id(item_id) if item_id is not None else ""
@@ -238,18 +238,12 @@ def convert_to_CVI_node(state: WorkflowState) -> WorkflowState:
                     item_with_trait["trait"] = old_item.get("trait", trait_name)
                     item_with_trait["item_id"] = old_item.get("item_id", new_item.get("item_id", ""))
                     final_storage.append(item_with_trait)
-                else:
-                    unmatched_new_items += 1
-                    print(f"⚠️ 警告: 未找到匹配旧题 item_id={item_id}，将追加新题")
-                    item_with_trait = new_item.copy()
-                    item_with_trait["trait"] = new_item.get("trait", trait_name)
-                    final_storage.append(item_with_trait)
             remaining_bad_items = list(irt_bad_items_by_id.values())
             if remaining_bad_items:
                 final_storage.extend(remaining_bad_items)
                 print(f"⚠️ 警告: {len(remaining_bad_items)} 道旧题未被替换，已保留原题")
             state["irt_bad_items"] = remaining_bad_items
-            replaced_count = len(passed_items) - unmatched_new_items
+            replaced_count = original_bad_count - len(irt_bad_items_by_id)
             print(f"✅ 成功修复 {replaced_count} 道题目，已替换原题目")
         else:
             for item in passed_items:
