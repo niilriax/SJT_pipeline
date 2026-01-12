@@ -707,6 +707,7 @@ def run_workflow(
     trait_names: List[str],
     model: ChatOpenAI = None,
     experts: List[ChatOpenAI] = None,
+    irt_max_iterations: int = 1,
 ) -> Dict[str, Any]:
     workflow = create_sjt_workflow(model)
     initial_state: WorkflowState = {
@@ -723,7 +724,7 @@ def run_workflow(
         # 修复相关字段初始化
         "irt_repair_mode": False,
         "irt_iteration": 0,
-        "irt_max_iterations": 1,
+        "irt_max_iterations": irt_max_iterations,
         "irt_bad_items": [],
         "irt_revision_prompt": "",
         "irt_prompt_queue": [],
@@ -744,7 +745,12 @@ def main():
     model = ChatOpenAI(model="gpt-5-mini", temperature=0.5, max_tokens=7000)
     trait_names = [name for _, name in TRAIT_ORDER]
     experts = get_content_validity_experts()
-    result = run_workflow(trait_names=trait_names, model=model, experts=experts)
+    result = run_workflow(
+        trait_names=trait_names,
+        model=model,
+        experts=experts,
+        irt_max_iterations=3,
+    )
     
     # 保存结果到文件
     project_root = get_project_root()
