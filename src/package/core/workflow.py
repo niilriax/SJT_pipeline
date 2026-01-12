@@ -455,12 +455,14 @@ def analysis_node(state: WorkflowState) -> WorkflowState:
             name_to_code = {name: code for code, name in TRAIT_ORDER}
             final_storage = state.get("final_storage", [])
             kept, removed = [], []
+            matched_bad_ids = set()
             for item in final_storage:
                 trait = item.get("trait", "")
-                item_id_num = item.get("item_id", "")
+                item_id_num = _normalize_item_id(item.get("item_id", ""))
                 trait_code = name_to_code.get(trait, "")
-                item_id_str = f"Q{trait_code}_{item_id_num}" if trait_code and item_id_num is not None else str(item_id_num)
+                item_id_str = f"Q{trait_code}_{item_id_num}" if trait_code and item_id_num else str(item_id_num)
                 if item_id_str in bad_qids_all:
+                    matched_bad_ids.add(item_id_str)
                     removed.append(item)
                 else:
                     kept.append(item)
@@ -468,9 +470,9 @@ def analysis_node(state: WorkflowState) -> WorkflowState:
             removed_map: Dict[str, Dict[str, Any]] = {}
             for item in removed:
                 trait = item.get("trait", "")
-                item_id_num = item.get("item_id", "")
+                item_id_num = _normalize_item_id(item.get("item_id", ""))
                 trait_code = name_to_code.get(trait, "")
-                item_id_str = f"Q{trait_code}_{item_id_num}" if trait_code and item_id_num is not None else str(item_id_num)
+                item_id_str = f"Q{trait_code}_{item_id_num}" if trait_code and item_id_num else str(item_id_num)
                 removed_map[item_id_str] = item
             bad_items_queue: List[List[Dict[str, Any]]] = []
             for batch_ids in prompt_item_ids:
@@ -481,6 +483,7 @@ def analysis_node(state: WorkflowState) -> WorkflowState:
             state["irt_bad_items"] = current_bad
             state["irt_repair_trait_name"] = current_bad[0].get("trait", "") if current_bad else ""
             state["irt_repair_mode"] = True
+            print(f"🧹 坏题匹配命中 {len(matched_bad_ids)} / {len(bad_qids_all)}")
             print(f"📄 已生成 {len(prompt_paths)} 个 CITC 修订提示，已从库存删除 {len(removed)} 道问题题目")
         else:
             print("✅ 所有题目的CITC均在 0.5 以上")
