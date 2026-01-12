@@ -364,7 +364,7 @@ def analysis_node(state: WorkflowState) -> WorkflowState:
         })
         print(f"📄 已将题目 {bad_qid} 的CITC分数设置为 0.2（不合格）")
 
-        prompt_paths = citc_analysis.generate_citc_prompts_to_files(
+        prompt_paths, prompt_item_ids = citc_analysis.generate_citc_prompts_to_files(
             citc_df, batch_size=5, output_dir=output_dir
         )
         if prompt_paths:
@@ -387,10 +387,17 @@ def analysis_node(state: WorkflowState) -> WorkflowState:
                 else:
                     kept.append(item)
             state["final_storage"] = _sort_final_storage(kept)
-            batch_size = max(1, (len(bad_qids_all) + len(prompt_paths) - 1) // len(prompt_paths))
+            removed_map: Dict[str, Dict[str, Any]] = {}
+            for item in removed:
+                trait = item.get("trait", "")
+                item_id_num = item.get("item_id", "")
+                trait_code = name_to_code.get(trait, "")
+                item_id_str = f"Q{trait_code}_{item_id_num}" if trait_code and item_id_num is not None else str(item_id_num)
+                removed_map[item_id_str] = item
             bad_items_queue: List[List[Dict[str, Any]]] = []
-            for idx in range(0, len(removed), batch_size):
-                bad_items_queue.append(removed[idx : idx + batch_size])
+            for batch_ids in prompt_item_ids:
+                batch_items = [removed_map[qid] for qid in batch_ids if qid in removed_map]
+                bad_items_queue.append(batch_items)
             current_bad = bad_items_queue.pop(0) if bad_items_queue else []
             state["irt_bad_items_queue"] = bad_items_queue
             state["irt_bad_items"] = current_bad
