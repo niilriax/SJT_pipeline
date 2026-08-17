@@ -1,0 +1,352 @@
+{
+  "facet": "compliance",
+  "facet_id": "agreeableness_compliance",
+  "neo_code": "A4",
+  "definition": "面对人际冲突或不同意见时，倾向于让步、缓和或避免对抗。核心是 tendency to defer, accommodate, or inhibit aggressive responses in interpersonal conflict，不等同于利他性 (A3)、信任 (A1) 或谦逊 (A5)。",
+  "high_pole": "在冲突中倾向于让步、缓和矛盾并维持和谐，同时保留合理边界",
+  "low_pole": "更愿意坚持己见，不轻易在冲突中退让",
+  "hard_constraints": [
+    "高顺从应通过体面让步、缓和冲突或建设性妥协表达，同时保留合理边界",
+    "高顺从不能等同于完全服从、直接放弃合理意见、偏好或正当边界",
+    "低顺从不能写成自大、贬低他人或明显攻击性"
+  ],
+  "curation_notes": {
+    "curated_from": "LLM Stage 2 output (11 families)",
+    "curated_to": "5 families (3 stable + 2 provisional)",
+    "rejected_families": {
+      "EF04_挑衅性人际冲突缓和": "道路冲突和亲密关系冲突容易混入愤怒敌意 (N2) 和果断性 (E3)。非顺从核心。",
+      "EF07_团队讨论中避免反对": "容易测量能力判断或团队利益考量，不完全是顺从。",
+      "EF08_客户错误时避免直接指出": "容易混入坦率性 (A2)、责任边界和服务角色要求。",
+      "EF09_他人失误导致利益受损时让步": "容易变成利他 (A3)、公平感或自我牺牲，在低 stakes 情境（几毛钱零钱）下测量的是冲突回避而非特质。",
+      "EF10_群体压力下抑制个人偏好": "更像从众、社会自我意识 (N4) 或群体压力反应，不是纯粹的顺从。",
+      "EF11_上级不合理要求顺从": "直接违反系统硬约束——高顺从不能等同于完全服从。保留个人边界和取消私人约会之间的张力测量的是权力服从而非特质。",
+      "compliance_05_高速公路催促": "涉及驾驶安全，不属于普通人际冲突。"
+    }
+  },
+  "evidence_library": [
+    {
+      "family_id": "CEF01",
+      "family_name": "日常干扰或轻度摩擦中的容忍与沟通",
+      "definition": "面对他人行为造成的非个人责任、轻度的人际干扰或摩擦时，倾向于容忍和私下适应，而非主动对抗或投诉。",
+      "high_trait_evidence": "容忍干扰、优先维持表面和谐，必要时通过间接沟通而非公开对抗来解决问题。",
+      "low_trait_evidence": "认为有权利制止干扰，倾向于直接投诉或公开表达不满。",
+      "supporting_item_ids": [
+        "compliance_01",
+        "compliance_08"
+      ],
+      "support_count": 2,
+      "status": "stable",
+      "construct_purity": "high",
+      "competing_facets": [],
+      "boundary_condition": "仅适用于轻度、非个人化的日常摩擦（噪音、插队等）。不适用于：人身安全威胁、持续恶意骚扰、涉及法律权利的严重侵害。低顺从选项不得表现为攻击性或羞辱对方。",
+      "alternative_explanations": [
+        "对噪音的生理敏感度差异",
+        "疲劳程度"
+      ],
+      "typical_high_manifestations": [
+        "尽量不关注噪音来源，继续做手头的事",
+        "换到室内或更安静的地方",
+        "等待干扰自行消退"
+      ],
+      "typical_low_manifestations": [
+        "直接向管理方投诉",
+        "公开表达不满并要求停止"
+      ],
+      "common_trait_activating_cues": [
+        "他人行为引起的轻度持续干扰",
+        "干扰源非直接可沟通对象或沟通可能尴尬",
+        "存在回避/容忍的替代方案（如换位置）"
+      ]
+    },
+    {
+      "family_id": "CEF02",
+      "family_name": "非原则性分歧中的冲突缓和",
+      "definition": "面对涉及双方偏好或意见的非原则性分歧时，倾向于让步或提前同意以避免争论升级，而非坚持己见。",
+      "high_trait_evidence": "确信自己正确但分歧不影响核心利益时，主动让步以避免冲突。",
+      "low_trait_evidence": "坚持己见并愿意进行争论，不因关系和谐而放弃自己的立场。",
+      "supporting_item_ids": [
+        "compliance_03",
+        "compliance_16"
+      ],
+      "support_count": 2,
+      "status": "stable",
+      "construct_purity": "high",
+      "competing_facets": [
+        "E3: 果断性"
+      ],
+      "boundary_condition": "仅适用于非原则性、低 stakes 的意见分歧。不适用于：涉及道德原则、安全标准、重大财务或法律后果的分歧。高顺从不能写成'明明知道对方是错的但沉默'——必须是'接受分歧不值得破坏关系'。",
+      "alternative_explanations": [
+        "对争论本身的态度（有些人单纯厌恶争论）",
+        "对具体议题的关心程度"
+      ],
+      "typical_high_manifestations": [
+        "在争论升级前主动让步",
+        "提前同意对方的意见以避免分歧",
+        "主动道歉以缓和关系"
+      ],
+      "typical_low_manifestations": [
+        "尝试说服对方",
+        "坚持己见并接受争论"
+      ],
+      "common_trait_activating_cues": [
+        "非原则性的意见或偏好分歧",
+        "双方都有一定道理",
+        "坚持己见可能引发争论"
+      ]
+    },
+    {
+      "family_id": "CEF03",
+      "family_name": "关系和谐与个人利益冲突中的适度让步",
+      "definition": "面对与关系良好者的直接利益冲突时，优先考虑关系和谐，做出适度让步或寻求折中方案，而非坚持个人利益最大化。",
+      "high_trait_evidence": "在利益冲突中主动让步或寻求妥协，将关系维护纳入决策权重。",
+      "low_trait_evidence": "坚持个人利益或偏好，即使可能损害关系。",
+      "supporting_item_ids": [
+        "compliance_02",
+        "compliance_04",
+        "compliance_06",
+        "compliance_09",
+        "compliance_18"
+      ],
+      "support_count": 5,
+      "status": "stable",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "A3: 利他性",
+        "A5: 谦逊"
+      ],
+      "boundary_condition": "让步必须是适度的、有边界的。高顺从不能写成'每次都让步'或'完全放弃自己需要'。冲突对象必须是真实的人际关系（同事/伴侣/家人），不是一次性交易的陌生人。低顺从不能写成'完全不顾他人感受的自我中心'。",
+      "alternative_explanations": [
+        "对具体活动的偏好强度（如果一方明显更在乎，让步不反映顺从而是合理权衡）",
+        "权力动态（如上级-下级关系不完全反映特质）",
+        "公平感（去年已让步，今年期望对方让步是公平而非低顺从）"
+      ],
+      "typical_high_manifestations": [
+        "主动让对方先选/先用",
+        "提议折中方案",
+        "为了维持和谐而接受非最优方案"
+      ],
+      "typical_low_manifestations": [
+        "争取自己的首选方案",
+        "要求上级或规则裁决",
+        "在合理范围内坚持自己的权利"
+      ],
+      "common_trait_activating_cues": [
+        "与熟人/同事/家人的直接利益冲突",
+        "无外部权威强制裁决",
+        "双方利益都有合理性"
+      ]
+    },
+    {
+      "family_id": "CEF04",
+      "family_name": "不喜欢的社交请求中的关系维护",
+      "definition": "面对不喜欢的社交请求时，出于维护人际关系的考虑而部分迁就，同时保留合理的个人边界。",
+      "high_trait_evidence": "为了不伤害对方感受或维持工作关系，适度迁就不喜欢的社交请求。",
+      "low_trait_evidence": "以诚实或效率为由直接拒绝，不优先考虑对方感受。",
+      "supporting_item_ids": [
+        "compliance_11"
+      ],
+      "support_count": 1,
+      "status": "provisional",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "A3: 利他性",
+        "A2: 坦率性"
+      ],
+      "boundary_condition": "高顺从不能写成'委屈自己频繁应酬'或'无法拒绝不合理请求'。必须是偶尔的、有边界的迁就。低顺从不能写成'冷漠或伤害对方'。仅1题支持，需更多证据才能确认为稳定 evidence。",
+      "alternative_explanations": [
+        "利他性（帮助新同事融入）",
+        "对独处/社交的偏好"
+      ],
+      "typical_high_manifestations": [
+        "同意有限度的私下见面",
+        "邀请对方参加群体活动作为折中"
+      ],
+      "typical_low_manifestations": [
+        "以忙碌为由婉拒",
+        "礼貌但明确地拒绝"
+      ],
+      "common_trait_activating_cues": [
+        "不喜欢的社交对象发出请求",
+        "拒绝可能伤害关系或工作氛围",
+        "存在合理拒绝理由"
+      ]
+    },
+    {
+      "family_id": "CEF05",
+      "family_name": "服务或交易不利条件下的协商与适应",
+      "definition": "面对服务方或交易对手施加的不利条件时，倾向于协商或适应而非直接对抗或升级冲突，同时保留合理维权边界。",
+      "high_trait_evidence": "倾向于通过沟通、协商或接受部分不利条件来避免对抗，但保留正当不满和未来回避的权利。",
+      "low_trait_evidence": "倾向于坚持自身权益、直接要求补偿或升级投诉，不以维持表面和谐为首要目标。",
+      "supporting_item_ids": [
+        "compliance_07",
+        "compliance_14",
+        "compliance_17",
+        "compliance_21",
+        "compliance_22"
+      ],
+      "support_count": 5,
+      "status": "provisional",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "E3: 果断性",
+        "A1: 信任",
+        "C3: 尽责性"
+      ],
+      "boundary_condition": "关键约束：高顺从不能写成'接受明显不公或违规对待'。必须在'协商'和'接受'之间存在真实的行为连续体。如果情境涉及欺诈、违约或安全风险，则不适用。此 family 仅适用于灰色地带（服务质量争议、价格争议、合同条款协商），不适用于明确违规行为。",
+      "alternative_explanations": [
+        "经济理性（法律行动的成本效益）",
+        "对服务质量的真实评价",
+        "对交易公平性的敏感度"
+      ],
+      "typical_high_manifestations": [
+        "礼貌询问原因后接受",
+        "表达不满但不过度追究",
+        "接受当前条件但未来不再光顾",
+        "联系原始联系人寻求互惠方案"
+      ],
+      "typical_low_manifestations": [
+        "坚持要求合理补偿",
+        "要求与上级沟通",
+        "拒绝交易并表示不满"
+      ],
+      "common_trait_activating_cues": [
+        "服务方或交易对手施加的灰色地带不利条件",
+        "已付出一定成本（时间/金钱）",
+        "对抗存在人际成本但非零"
+      ]
+    }
+  ],
+  "item_evidence_mapping": {
+    "compliance_01": {
+      "primary_family": "CEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_02": {
+      "primary_family": "CEF03",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_03": {
+      "primary_family": "CEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_04": {
+      "primary_family": "CEF03",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_05": {
+      "primary_family": null,
+      "secondary_family": null,
+      "status": "rejected",
+      "reason": "涉及高速公路驾驶安全，不属于普通人际冲突，且低顺从选项（故意减速）涉及危险行为"
+    },
+    "compliance_06": {
+      "primary_family": "CEF03",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_07": {
+      "primary_family": "CEF05",
+      "secondary_family": null,
+      "status": "provisional"
+    },
+    "compliance_08": {
+      "primary_family": "CEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_09": {
+      "primary_family": "CEF03",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_10": {
+      "primary_family": null,
+      "secondary_family": null,
+      "status": "rejected",
+      "reason": "LLM EF04 — 亲密关系冲突升级场景，容易混入愤怒敌意 (N2) 和情绪调节能力"
+    },
+    "compliance_11": {
+      "primary_family": "CEF04",
+      "secondary_family": null,
+      "status": "provisional"
+    },
+    "compliance_12": {
+      "primary_family": null,
+      "secondary_family": null,
+      "status": "rejected",
+      "reason": "LLM EF07 — 测量的是在团队中提出反对意见的意愿，混入能力自信和任务卷入度"
+    },
+    "compliance_13": {
+      "primary_family": null,
+      "secondary_family": null,
+      "status": "rejected",
+      "reason": "LLM EF08 — 测量的是服务角色中的责任边界和坦率性 (A2)，非核心顺从"
+    },
+    "compliance_14": {
+      "primary_family": "CEF05",
+      "secondary_family": null,
+      "status": "provisional"
+    },
+    "compliance_15": {
+      "primary_family": null,
+      "secondary_family": null,
+      "status": "rejected",
+      "reason": "LLM EF09 — 几毛钱零钱的低 stakes 场景，测量的是冲突回避而非特质，且容易混入公平感"
+    },
+    "compliance_16": {
+      "primary_family": "CEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_17": {
+      "primary_family": "CEF05",
+      "secondary_family": null,
+      "status": "provisional"
+    },
+    "compliance_18": {
+      "primary_family": "CEF03",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "compliance_19": {
+      "primary_family": null,
+      "secondary_family": null,
+      "status": "rejected",
+      "reason": "LLM EF10 — 测量的是群体从众 (conformity) 而非顺从 (compliance)，核心心理机制不同"
+    },
+    "compliance_20": {
+      "primary_family": null,
+      "secondary_family": null,
+      "status": "rejected",
+      "reason": "LLM EF11 — 直接违反系统硬约束：高顺从不能等同于完全服从上级、放弃私人约会。测量的是权力服从"
+    },
+    "compliance_21": {
+      "primary_family": "CEF05",
+      "secondary_family": null,
+      "status": "provisional"
+    },
+    "compliance_22": {
+      "primary_family": "CEF05",
+      "secondary_family": null,
+      "status": "provisional"
+    }
+  },
+  "coverage_summary": {
+    "total_items": 22,
+    "core_items": 9,
+    "provisional_items": 6,
+    "rejected_items": 7,
+    "stable_families": 3,
+    "provisional_families": 2,
+    "maximum_evidence_slots": "3 stable families × 3-4 behaviors each ≈ ~10-12 meaningfully distinct item blueprints before redundancy begins",
+    "items_with_dual_assignment": 0
+  },
+  "mapping_convention": {
+    "supporting_item_ids": "?? evidence family ???????????????????",
+    "item_evidence_mapping": "??????????????????????????????????"
+  }
+}

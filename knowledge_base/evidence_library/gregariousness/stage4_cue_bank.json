@@ -1,0 +1,141 @@
+{
+  "facet": "gregariousness",
+  "cues": [
+    {
+      "cue_id": "C01",
+      "description": "存在非强制性的社交机会，个体有自由选择是否参与社交",
+      "linked_evidence_families": [
+        "EF01",
+        "EF02",
+        "EF03",
+        "EF04",
+        "EF05",
+        "EF06",
+        "EF07"
+      ],
+      "source_item_ids": [
+        "gregariousness_01",
+        "gregariousness_02",
+        "gregariousness_03",
+        "gregariousness_04",
+        "gregariousness_05",
+        "gregariousness_06",
+        "gregariousness_07",
+        "gregariousness_08",
+        "gregariousness_09",
+        "gregariousness_10",
+        "gregariousness_11",
+        "gregariousness_12",
+        "gregariousness_13",
+        "gregariousness_14",
+        "gregariousness_15",
+        "gregariousness_16",
+        "gregariousness_17",
+        "gregariousness_18",
+        "gregariousness_19",
+        "gregariousness_20",
+        "gregariousness_21",
+        "gregariousness_22"
+      ],
+      "cue_category": "存在非强制性社交机会"
+    },
+    {
+      "cue_id": "C02",
+      "description": "社交对象包含不熟悉的人或陌生人",
+      "linked_evidence_families": [
+        "EF01",
+        "EF04",
+        "EF07"
+      ],
+      "source_item_ids": [
+        "gregariousness_04",
+        "gregariousness_05",
+        "gregariousness_13",
+        "gregariousness_02"
+      ],
+      "cue_category": "存在未知信息"
+    },
+    {
+      "cue_id": "C03",
+      "description": "存在可自由选择社交规模的机会（大规模群体 vs 小范围/独处）",
+      "linked_evidence_families": [
+        "EF02",
+        "EF04"
+      ],
+      "source_item_ids": [
+        "gregariousness_03",
+        "gregariousness_14",
+        "gregariousness_16",
+        "gregariousness_20",
+        "gregariousness_22",
+        "gregariousness_05",
+        "gregariousness_13"
+      ],
+      "cue_category": "存在可自由选择社交规模的机会"
+    },
+    {
+      "cue_id": "C04",
+      "description": "存在可自由选择环境社交密度的机会（高密度 vs 低密度）",
+      "linked_evidence_families": [
+        "EF03",
+        "EF07"
+      ],
+      "source_item_ids": [
+        "gregariousness_07",
+        "gregariousness_08",
+        "gregariousness_12",
+        "gregariousness_15",
+        "gregariousness_17",
+        "gregariousness_02"
+      ],
+      "cue_category": "存在可自由选择环境社交密度的机会"
+    },
+    {
+      "cue_id": "C05",
+      "description": "已有社交计划或活动，朋友提议引入陌生人扩大社交范围",
+      "linked_evidence_families": [
+        "EF04"
+      ],
+      "source_item_ids": [
+        "gregariousness_05",
+        "gregariousness_13"
+      ],
+      "cue_category": "观点受到挑战"
+    },
+    {
+      "cue_id": "C06",
+      "description": "个体处于身体或精神疲惫状态，拥有自由支配的时间",
+      "linked_evidence_families": [
+        "EF05"
+      ],
+      "source_item_ids": [
+        "gregariousness_09",
+        "gregariousness_11"
+      ],
+      "cue_category": "已有投入与诱惑冲突"
+    },
+    {
+      "cue_id": "C07",
+      "description": "学习或工作内容在团体和独立方式下相同，存在可自由选择的方式",
+      "linked_evidence_families": [
+        "EF06"
+      ],
+      "source_item_ids": [
+        "gregariousness_01",
+        "gregariousness_06"
+      ],
+      "cue_category": "存在可自由选择的方式"
+    },
+    {
+      "cue_id": "C08",
+      "description": "休闲活动（如观看比赛、旅行）中存在多种社交密度选项",
+      "linked_evidence_families": [
+        "EF07"
+      ],
+      "source_item_ids": [
+        "gregariousness_02"
+      ],
+      "cue_category": "存在可自由选择环境社交密度的机会"
+    }
+  ]
+}

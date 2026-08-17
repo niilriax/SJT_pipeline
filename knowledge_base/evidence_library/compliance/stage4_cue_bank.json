@@ -1,0 +1,191 @@
+{
+  "facet": "compliance",
+  "cues": [
+    {
+      "cue_id": "C01",
+      "description": "存在一个由他人行为引起的、非个人责任的持续干扰，且干扰者并非直接可沟通的对象。",
+      "linked_evidence_families": [
+        "EF01"
+      ],
+      "source_item_ids": [
+        "compliance_01"
+      ],
+      "cue_category": "他人行为干扰"
+    },
+    {
+      "cue_id": "C02",
+      "description": "存在可投诉的夜间噪音干扰，且投诉可能引发人际冲突。",
+      "linked_evidence_families": [
+        "EF01"
+      ],
+      "source_item_ids": [
+        "compliance_08"
+      ],
+      "cue_category": "他人行为干扰"
+    },
+    {
+      "cue_id": "C03",
+      "description": "与关系良好者（同事、伴侣、家人、朋友）存在直接利益冲突，且无外部权威强制解决方案。",
+      "linked_evidence_families": [
+        "EF02"
+      ],
+      "source_item_ids": [
+        "compliance_02",
+        "compliance_04",
+        "compliance_06",
+        "compliance_09",
+        "compliance_18"
+      ],
+      "cue_category": "利益冲突"
+    },
+    {
+      "cue_id": "C04",
+      "description": "双方意见不一致且涉及个人便利或成本的人际冲突情境。",
+      "linked_evidence_families": [
+        "EF02"
+      ],
+      "source_item_ids": [
+        "compliance_04"
+      ],
+      "cue_category": "利益冲突"
+    },
+    {
+      "cue_id": "C05",
+      "description": "存在一个非原则性、低利害的人际分歧，且自己确信正确。",
+      "linked_evidence_families": [
+        "EF03"
+      ],
+      "source_item_ids": [
+        "compliance_03"
+      ],
+      "cue_category": "非原则性分歧"
+    },
+    {
+      "cue_id": "C06",
+      "description": "存在因自己言语不当引发的人际冲突。",
+      "linked_evidence_families": [
+        "EF03"
+      ],
+      "source_item_ids": [
+        "compliance_16"
+      ],
+      "cue_category": "非原则性分歧"
+    },
+    {
+      "cue_id": "C07",
+      "description": "来自他人的挑衅性行为（如催促、不公平论点）。",
+      "linked_evidence_families": [
+        "EF04"
+      ],
+      "source_item_ids": [
+        "compliance_05",
+        "compliance_10"
+      ],
+      "cue_category": "挑衅性冲突"
+    },
+    {
+      "cue_id": "C08",
+      "description": "亲密关系冲突中对方提出不公平、伤人的论点，且争斗即将升级。",
+      "linked_evidence_families": [
+        "EF04"
+      ],
+      "source_item_ids": [
+        "compliance_10"
+      ],
+      "cue_category": "挑衅性冲突"
+    },
+    {
+      "cue_id": "C09",
+      "description": "权威或服务方施加的不利条件（如拒绝退货、缩短就诊时间、过高账单、不满意报价、更差报价）。",
+      "linked_evidence_families": [
+        "EF05"
+      ],
+      "source_item_ids": [
+        "compliance_07",
+        "compliance_14",
+        "compliance_17",
+        "compliance_21",
+        "compliance_22"
+      ],
+      "cue_category": "权威/服务方不利条件"
+    },
+    {
+      "cue_id": "C10",
+      "description": "已付出高等待成本后，对方单方面提出更不利条件。",
+      "linked_evidence_families": [
+        "EF05"
+      ],
+      "source_item_ids": [
+        "compliance_14",
+        "compliance_22"
+      ],
+      "cue_category": "权威/服务方不利条件"
+    },
+    {
+      "cue_id": "C11",
+      "description": "面对一个自己不喜欢的人提出的社交请求，且存在拒绝或回避的合理理由。",
+      "linked_evidence_families": [
+        "EF06"
+      ],
+      "source_item_ids": [
+        "compliance_11"
+      ],
+      "cue_category": "不喜欢的社交请求"
+    },
+    {
+      "cue_id": "C12",
+      "description": "同事提出的解决方案存在明显缺陷，但同事本人已将其作为最终建议提出，且团队讨论中可能产生人际冲突。",
+      "linked_evidence_families": [
+        "EF07"
+      ],
+      "source_item_ids": [
+        "compliance_12"
+      ],
+      "cue_category": "团队讨论分歧"
+    },
+    {
+      "cue_id": "C13",
+      "description": "客户因自身错误投诉，员工面临是否直接指出客户错误或采取缓和方式的选择。",
+      "linked_evidence_families": [
+        "EF08"
+      ],
+      "source_item_ids": [
+        "compliance_13"
+      ],
+      "cue_category": "客户错误投诉"
+    },
+    {
+      "cue_id": "C14",
+      "description": "因对方失误导致自身利益受损，且追讨需要面对人际冲突。",
+      "linked_evidence_families": [
+        "EF09"
+      ],
+      "source_item_ids": [
+        "compliance_15"
+      ],
+      "cue_category": "他人失误利益受损"
+    },
+    {
+      "cue_id": "C15",
+      "description": "群体偏好与个人偏好冲突，且群体占多数。",
+      "linked_evidence_families": [
+        "EF10"
+      ],
+      "source_item_ids": [
+        "compliance_19"
+      ],
+      "cue_category": "群体压力"
+    },
+    {
+      "cue_id": "C16",
+      "description": "上级提出不合理要求，且员工有权拒绝。",
+      "linked_evidence_families": [
+        "EF11"
+      ],
+      "source_item_ids": [
+        "compliance_20"
+      ],
+      "cue_category": "上级不合理要求"
+    }
+  ]
+}

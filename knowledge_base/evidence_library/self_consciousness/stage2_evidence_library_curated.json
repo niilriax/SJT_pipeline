@@ -1,0 +1,364 @@
+{
+  "facet": "self_consciousness",
+  "facet_id": "neuroticism_self_consciousness",
+  "neo_code": "N4",
+  "definition": "在社交场合中容易感到尴尬、害羞或不自在，对他人评价敏感。核心是 sensitivity to social evaluation and tendency to feel embarrassed or inferior in social situations，不等同于社交焦虑障碍、内向 (E) 或低自尊。",
+  "high_pole": "在社交场合中容易感到不自在，担心他人评价，回避引人注目的情境",
+  "low_pole": "在社交场合中从容自在，不太在意他人看法，能坦然面对尴尬",
+  "curation_notes": {
+    "curated_from": "LLM Stage 2 V3 output (8 families) + human re-analysis",
+    "curated_to": "5 families (4 stable + 1 provisional)",
+    "key_issues_fixed": [
+      "V1/V2: EF01 (社交失误后回避) and EF08 (社交失误后主动化解) were split into two families. This is WRONG — EF08 is simply the LOW pole of EF01's mechanism. Merged.",
+      "V1/V2: EF01 (自己犯错) and EF06 (公开场合尴尬事件) were split by event type. Merged — they share the same mechanism of 'reactive avoidance after an embarrassing event.'",
+      "V3: EF05 (明确负面评价后的防御性反应) was identified but mixes anger (N2) with self-consciousness. Only the 'image concern' component is retained; anger is flagged as contamination."
+    ]
+  },
+  "evidence_library": [
+    {
+      "family_id": "NEF01",
+      "family_name": "尴尬/失误后的评价回避",
+      "definition": "发生可能引起他人注意和评价的公开尴尬事件后，因担心他人负面评价而选择回避、逃离或隐藏，而非留在情境中坦然面对或主动化解。",
+      "high_trait_evidence": "尴尬事件发生后优先减少曝光——回避、逃离、隐藏、沉默。",
+      "low_trait_evidence": "尴尬事件发生后留在情境中——坦然自嘲、主动化解、正常处理、不在意他人目光。",
+      "supporting_item_ids": [
+        "self_consciousness_01",
+        "self_consciousness_07",
+        "self_consciousness_09",
+        "self_consciousness_12",
+        "self_consciousness_14",
+        "self_consciousness_16",
+        "self_consciousness_17",
+        "self_consciousness_18",
+        "self_consciousness_19",
+        "self_consciousness_05"
+      ],
+      "support_count": 10,
+      "status": "stable",
+      "construct_purity": "high",
+      "competing_facets": [
+        "E2: 乐群 (回避社交场合)",
+        "A4: 顺从 (不敢投诉/表达)"
+      ],
+      "boundary_condition": "仅适用于轻度、非威胁性的社交尴尬事件。不适用于：人身安全威胁、职业惩戒风险、法律后果。高自我意识不能写成'社交恐惧症'——必须是'在普通人也会感到尴尬的情境中，反应更强烈且更持久'。低自我意识不能写成'厚脸皮或不顾他人感受'——必须是'能够坦然面对普通社交失误'。HIGH和LOW是同一证据的两端——主动化解尴尬属于LOW极，不是独立的证据族。",
+      "alternative_explanations": [
+        "内向 (E) 可能表现为回避社交但不一定出于评价恐惧",
+        "社交技能差异可能影响化解尴尬的能力",
+        "情境严重性差异（打翻酒 vs 被当众羞辱）"
+      ],
+      "typical_high_manifestations": [
+        "留在错误影厅不换厅以避免引人注目",
+        "逃离尴尬现场",
+        "假装没看到相关人物",
+        "立即关掉引起注意的手机",
+        "放弃购买私密物品"
+      ],
+      "typical_low_manifestations": [
+        "起身去正确影厅",
+        "礼貌道歉并澄清误解",
+        "主动问候并开玩笑化解",
+        "接电话并小声告知稍后联系",
+        "继续正常购物"
+      ],
+      "common_trait_activating_cues": [
+        "公开场合中的尴尬事件（自身失误、敏感物品暴露、他人指责等）",
+        "可能被在场他人注意和评价",
+        "事件刚发生，个体意识到尴尬"
+      ]
+    },
+    {
+      "family_id": "NEF02",
+      "family_name": "评价暴露的预期性回避",
+      "definition": "在面对即将可能成为他人注意和评价焦点的机会时（尚未发生尴尬），因预期性担忧而主动回避或拒绝进入该情境。",
+      "high_trait_evidence": "尚未成为焦点，仅仅因为预期自己将成为评价对象，就提前减少曝光或退出。",
+      "low_trait_evidence": "即使预期将成为注意焦点，也较自然地进入情境并执行。",
+      "supporting_item_ids": [
+        "self_consciousness_04",
+        "self_consciousness_08",
+        "self_consciousness_13",
+        "self_consciousness_22"
+      ],
+      "support_count": 4,
+      "status": "stable",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "E3: 果断性 (不敢在公开场合表达)",
+        "E2: 乐群 (不喜欢成为众人焦点)"
+      ],
+      "boundary_condition": "仅适用于非强制性的公开表演/演讲/提问机会。不适用于：工作必需的汇报、学业必需的答辩。区分 NEF01 与 NEF02：NEF01 是尴尬已经发生后的反应性回避，NEF02 是尴尬尚未发生前的预期性回避。两者是不同的心理机制——前者是 shame/embarrassment reactivity，后者是 anticipatory social-evaluative anxiety。",
+      "alternative_explanations": [
+        "公开演讲能力/经验不足",
+        "对表演内容不感兴趣",
+        "文化差异（某些文化中拒绝公开表演是正常的谦逊）"
+      ],
+      "typical_high_manifestations": [
+        "拒绝公开表演提议",
+        "被说服后才勉强参与",
+        "在公共讲座中有问题但不提问"
+      ],
+      "typical_low_manifestations": [
+        "接受公开表演并感到高兴",
+        "主动提问",
+        "自然地做简短演讲"
+      ],
+      "common_trait_activating_cues": [
+        "非强制性的公开表演/演讲/提问机会",
+        "预期自己将成为注意焦点",
+        "尚未发生负面评价"
+      ]
+    },
+    {
+      "family_id": "NEF03",
+      "family_name": "社会注意焦点敏感性",
+      "definition": "当自己已经成为他人注意的中心时（不论原因），对这种社会曝光本身感到不适并试图降低曝光程度。",
+      "high_trait_evidence": "一旦成为注意中心就感到不自在，主动减少曝光或退缩。",
+      "low_trait_evidence": "对成为注意中心较自在，能够继续正常互动甚至享受关注。",
+      "supporting_item_ids": [
+        "self_consciousness_06",
+        "self_consciousness_10"
+      ],
+      "support_count": 2,
+      "status": "stable",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "E2: 乐群",
+        "E3: 果断性"
+      ],
+      "boundary_condition": "仅适用于非自愿成为注意焦点的情境。不适用于：主动选择成为焦点的场合（如自愿表演）、专业角色要求（如教师、主持人）。区分 NEF02 与 NEF03：NEF02 是进入情境前的预期性回避，NEF03 是已经成为焦点后的实时不适。",
+      "alternative_explanations": [
+        "内向 (E) 可能在任何引人注目的情境中不适",
+        "对上级/权威的特殊敏感（权力动态）"
+      ],
+      "typical_high_manifestations": [
+        "因被模仿而感到震惊和受伤",
+        "尽快逃离聚光灯",
+        "退缩到角落"
+      ],
+      "typical_low_manifestations": [
+        "一起笑，不在乎",
+        "待在聚光灯中并享受关注"
+      ],
+      "common_trait_activating_cues": [
+        "意外成为社交注意焦点",
+        "被模仿、误认、公开赞扬或关注",
+        "在场他人正在注视自己"
+      ]
+    },
+    {
+      "family_id": "NEF04",
+      "family_name": "模糊社会评价线索的自我指向解释",
+      "definition": "面对含义不确定的他人反应（如笑、低语、表情变化）时，自动将其解释为与自己有关且可能负面的信号，并因此分心或自我怀疑。",
+      "high_trait_evidence": "将模糊的社交线索自动解释为针对自己的评价，产生自我监控和注意力分散。",
+      "low_trait_evidence": "不轻易将模糊信号解释为针对自己，保持任务导向。",
+      "supporting_item_ids": [
+        "self_consciousness_03"
+      ],
+      "support_count": 1,
+      "status": "provisional",
+      "construct_purity": "high",
+      "competing_facets": [
+        "N1: 焦虑 (一般性担忧)",
+        "C1: 胜任感 (怀疑自己的能力)"
+      ],
+      "boundary_condition": "仅适用于社交线索客观上含义模糊、有多种可能解释的情境。不适用于：明确被嘲笑或批评。仅1题支持，标记为 provisional——但保留因为这个机制对后续生成特别有价值：它不依赖特定事件类型，而是靠'模糊线索→自我指向解释'这个认知过程。",
+      "alternative_explanations": [
+        "一般性焦虑 (N1) 可能导致对任何模糊信号的灾难化解释",
+        "低胜任感 (C1) 可能导致对自身表现的习惯性怀疑"
+      ],
+      "typical_high_manifestations": [
+        "怀疑自己说了好笑的话并检查外表",
+        "被打扰后需要看笔记才能维持专注"
+      ],
+      "typical_low_manifestations": [
+        "继续演示不中断",
+        "主动询问同事是否有疑问"
+      ],
+      "common_trait_activating_cues": [
+        "公开演讲或表现的场合",
+        "他人发出含义不确定的社交信号（笑、低语、对视后移开目光等）",
+        "信号不一定指向自己"
+      ]
+    },
+    {
+      "family_id": "NEF05",
+      "family_name": "连带社会评价敏感性",
+      "definition": "当同行者做出引人注意或失礼的行为时，因可能被他人将自己与行为者归为一组而产生的尴尬和回避倾向。",
+      "high_trait_evidence": "对同行者的失礼行为感到尴尬，试图回避或制止以保护自己的社会形象。",
+      "low_trait_evidence": "不因同行者行为感到尴尬，能区分他人行为和自身形象。",
+      "supporting_item_ids": [
+        "self_consciousness_02",
+        "self_consciousness_11",
+        "self_consciousness_15"
+      ],
+      "support_count": 3,
+      "status": "stable",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "E2: 乐群 (回避社交场合)",
+        "E5: 刺激寻求 (对高风险行为的容忍度)",
+        "A4: 顺从 (不敢制止朋友)"
+      ],
+      "boundary_condition": "仅适用于同行者的轻度失礼行为（吹口哨、打嗝、讲尴尬故事）。不适用于：同行者违法或严重违规。高自我意识不能等同于'对朋友要求苛刻'。低自我意识不能等同于'缺乏社会规范意识'——有些人确实不认为朋友的轻度失礼会影响他人对自己的评价。",
+      "alternative_explanations": [
+        "幽默感差异 (对尴尬故事的接受度)",
+        "对朋友行为的实际认同度",
+        "文化差异（某些文化中对朋友公开失礼的容忍度不同）"
+      ],
+      "typical_high_manifestations": [
+        "尴尬地避免目光接触",
+        "快速告别离开",
+        "要求朋友安静"
+      ],
+      "typical_low_manifestations": [
+        "一起笑",
+        "假装什么都没发生继续交谈",
+        "赞美对方化解尴尬"
+      ],
+      "common_trait_activating_cues": [
+        "同行者在公共场合的轻度失礼行为",
+        "周围有他人在场",
+        "自己与行为者可能被归为一组"
+      ]
+    }
+  ],
+  "item_evidence_mapping": {
+    "self_consciousness_01": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_02": {
+      "primary_family": "NEF05",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_03": {
+      "primary_family": "NEF04",
+      "secondary_family": null,
+      "status": "provisional",
+      "note": "仅1题，provisional"
+    },
+    "self_consciousness_04": {
+      "primary_family": "NEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_05": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "主动化解尴尬 = NEF01 的 LOW 极表现，不是独立 evidence"
+    },
+    "self_consciousness_06": {
+      "primary_family": "NEF03",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_07": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_08": {
+      "primary_family": "NEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_09": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "手机响 = NEF01，event type 不独立成族"
+    },
+    "self_consciousness_10": {
+      "primary_family": "NEF03",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_11": {
+      "primary_family": "NEF05",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_12": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "买私密物品 = NEF01，event type 不独立成族"
+    },
+    "self_consciousness_13": {
+      "primary_family": "NEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_14": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_15": {
+      "primary_family": "NEF05",
+      "secondary_family": "NEF01",
+      "status": "core",
+      "note": "连带尴尬 + 自身也感到不适"
+    },
+    "self_consciousness_16": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "被醉汉指责 = NEF01，event type 不独立成族"
+    },
+    "self_consciousness_17": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "遇到亲密情侣 = NEF01，event type 不独立成族"
+    },
+    "self_consciousness_18": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_19": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "self_consciousness_20": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "防御性反应 (沉默烦恼/辩解/愤怒)。'愤怒'被标记为可能的 N2 污染。仅保留'形象关注'成分，不过度独立。"
+    },
+    "self_consciousness_21": {
+      "primary_family": "NEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "同上——'因医生让自己尴尬而愤怒'可能更反映 N2 敌意而非 N4。"
+    },
+    "self_consciousness_22": {
+      "primary_family": "NEF02",
+      "secondary_family": null,
+      "status": "core"
+    }
+  },
+  "coverage_summary": {
+    "total_items": 22,
+    "stable_families": 4,
+    "provisional_families": 1,
+    "overrepresented": "NEF01 ??????? ? ?? primary ? secondary ??13/22??Mussel ???????'????'??",
+    "underrepresented": "NEF04 模糊线索自我指向解释 — 仅1题，但这恰是构念中最具认知诊断价值的机制。NEF02 预期性回避虽有4题但相比NEF01仍偏少。",
+    "possible_construct_gaps": [
+      "Mussel 原题缺乏对'inferiority/自卑感'的直接操作化——题目多关注尴尬/回避行为，而非内在的自卑体验。这可能反映了人格 SJT 的方法限制：自卑感较难通过情境行为直接测量。",
+      "缺乏对'正性评价情境中的自我意识'的测量——如被公开表扬时的不自在。现有题目仅覆盖负性和中性情境。"
+    ],
+    "core_items": 21,
+    "provisional_items": 1,
+    "rejected_items": 0,
+    "items_with_dual_assignment": 1
+  },
+  "mapping_convention": {
+    "supporting_item_ids": "?? evidence family ???????????????????",
+    "item_evidence_mapping": "??????????????????????????????????"
+  }
+}

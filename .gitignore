@@ -1,0 +1,89 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Tests and test-only helpers
+tests/
+test_*.py
+*_test.py
+conftest.py
+tests_support.py
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.streamlit/*.local.toml
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs and runtime output
+*.log
+logs/
+output/
+outputs/
+results/
+out/
+run_checkpoints/
+checkpoints/
+tmp/
+temp/
+*.tmp
+*.bak
+*.jsonl
+
+# Local research exports and binary data
+docs/*.xlsx
+docs/*.xls
+experiments/**/*.xlsx
+experiments/**/*.xls
+*.sqlite
+*.sqlite3
+*.db
+*.parquet
+*.pickle
+*.pkl
+
+# Local IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+nul
+NUL
+
+# Local assistant/tooling state
+.claude/
+.codex/
+.agents/
+wiki/
+**/wiki/
+
+# Packaging/build artifacts
+build/
+dist/
+*.egg-info/

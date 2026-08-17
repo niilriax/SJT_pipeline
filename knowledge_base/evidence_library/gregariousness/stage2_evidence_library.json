@@ -1,0 +1,673 @@
+{
+  "facet": "gregariousness",
+  "evidence_library": [
+    {
+      "family_id": "EF01",
+      "family_name": "非强制性社交机会的主动寻求 vs 回避",
+      "definition": "在存在可自由选择的社交机会（非强制、无外部压力）时，个体是否主动寻求与他人（尤其是陌生人或较大群体）的社交接触，还是倾向于回避或维持最小社交接触。",
+      "high_trait_evidence": "主动接近并融入社交情境，扩大社交接触范围",
+      "low_trait_evidence": "回避社交情境，维持独处或最小社交接触",
+      "supporting_item_ids": [
+        "gregariousness_04",
+        "gregariousness_10",
+        "gregariousness_18",
+        "gregariousness_19",
+        "gregariousness_21"
+      ],
+      "support_count": 5,
+      "member_evidence_units_summary": [
+        "在存在大量不熟悉社交对象且社交接触非强制的情况下，是否主动寻求与陌生人交谈 (gregariousness_04)",
+        "在葬礼后存在非强制性社交聚会的情况下，是否主动寻求并加入该社交活动 (gregariousness_10)",
+        "在存在非强制性社交机会的情况下，是否主动寻求与他人接触和交谈 (gregariousness_18)",
+        "在存在非强制性社交活动选择的情况下，是否主动选择与他人共同活动（而非独自活动） (gregariousness_19)",
+        "在存在一个充满社交互动的可选座位的情况下，是否主动选择并留在该社交环境中 (gregariousness_21)"
+      ],
+      "typical_high_manifestations": [
+        "尝试与尽可能多的客人交谈",
+        "主动与不认识的人开始对话",
+        "加入聚会并享受成为社区一部分",
+        "参加丧葬咖啡并主动邀请其他人一起来",
+        "选择四人桌的空座，与同座陌生人交谈",
+        "主动去火车小卖部，寻找对话机会",
+        "加入旅游团并全程参与",
+        "选择坐在小学班级旁边并表现出积极态度（高兴）",
+        "选择坐在小学班级旁边并主动与孩子们交谈"
+      ],
+      "typical_low_manifestations": [
+        "因感到不舒服而很快离开聚会",
+        "主要与认识的几个人交谈",
+        "在墓地与一些哀悼者交谈但不去丧葬咖啡",
+        "直接回家",
+        "寻找安静的地方独处",
+        "寻找不受干扰的地方",
+        "与导游单独探索该地区",
+        "独自探索该地区",
+        "继续寻找其他座位以避开该社交环境",
+        "先坐下但计划一旦有其他空座就换座位"
+      ],
+      "common_trait_activating_cues": [
+        "存在非强制性的社交机会",
+        "社交对象包含不熟悉的人或陌生人",
+        "个体有自由选择是否参与社交",
+        "社交情境是自发的或非正式"
+      ],
+      "competing_facets": [
+        "N4 (社交焦虑)",
+        "E1 (热情性)",
+        "E3 (果断性)"
+      ],
+      "alternative_explanations": [
+        "低选项可能反映社交焦虑（N4）而非偏好独处",
+        "高选项可能受热情性（E1）或果断性（E3）影响",
+        "情境规范（如葬礼后是否适合社交）可能影响选择"
+      ],
+      "boundary_condition": "当情境中存在明确的社交规范或外部压力（如工作职责、文化习俗）时，不应据此推断乐群性。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF02",
+      "family_name": "社交规模偏好：大规模群体 vs 小范围/独处",
+      "definition": "在可自由选择社交规模的情境中，个体是否偏好大规模、高密度的社交接触（如大型聚会、热闹场所），还是偏好小范围（如家庭、密友）或独处。",
+      "high_trait_evidence": "主动寻求大规模、高密度的社交环境",
+      "low_trait_evidence": "偏好小范围社交或独处",
+      "supporting_item_ids": [
+        "gregariousness_03",
+        "gregariousness_14",
+        "gregariousness_16",
+        "gregariousness_20",
+        "gregariousness_22"
+      ],
+      "support_count": 5,
+      "member_evidence_units_summary": [
+        "在存在非强制性、可自由选择规模的社交庆祝活动的情况下，是否主动寻求与大量他人（而非家人或独自）一起庆祝 (gregariousness_03)",
+        "在可自由选择社交规模与参与度的个人庆祝活动（生日）中，是否主动寻求大规模、多人参与的社交聚会 (gregariousness_14)",
+        "在自由支配的空闲时间中，主动寻求大规模、多人的社交接触 vs 偏好小范围社交或独处 (gregariousness_16)",
+        "在假期旅行同伴选择具有开放性的情况下，是否主动寻求与较大规模、包含陌生人的社交群体同行 (gregariousness_20)",
+        "面对自由时间时，主动寻求社交接触 vs 偏好独处或小范围安静活动 (gregariousness_22)"
+      ],
+      "typical_high_manifestations": [
+        "尝试与尽可能多的朋友一起度过新年除夕",
+        "询问该地区最大的新年除夕聚会并去那里",
+        "邀请家人、朋友和老熟人，举办大型热闹聚会",
+        "举办大聚会，邀请很多客人",
+        "主动联系朋友见面，且希望见到尽可能多的朋友",
+        "参加有很多人参与的活动",
+        "加入一个团体旅行",
+        "邀请朋友并允许他们邀请自己不认识的其他人",
+        "外出并期待结识新朋友",
+        "邀请朋友到自己家中聚会"
+      ],
+      "typical_low_manifestations": [
+        "与家人一起庆祝新年除夕",
+        "独自安静地度过年终",
+        "在小圈子里庆祝生日",
+        "根本不庆祝生日",
+        "与家人度过时光，但强调不受干扰（小范围、亲密社交）",
+        "独自度过一天，享受独处时间",
+        "独自旅行",
+        "与伴侣或家人一起旅行",
+        "计划在家读书",
+        "计划独处一段时间"
+      ],
+      "common_trait_activating_cues": [
+        "存在可自由选择社交规模的机会",
+        "活动是庆祝性或休闲性的",
+        "没有外部社交压力或义务",
+        "个体拥有自由支配的时间"
+      ],
+      "competing_facets": [
+        "E1 (热情性)",
+        "E3 (果断性)",
+        "E6 (积极情感)"
+      ],
+      "alternative_explanations": [
+        "低选项可能反映家庭传统或文化规范，而非低乐群",
+        "高选项可能受积极情感（E6）驱动",
+        "对特定活动（如读书）的兴趣可能影响选择"
+      ],
+      "boundary_condition": "当情境涉及文化习俗、家庭义务或经济限制时，应谨慎推断。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF03",
+      "family_name": "社交密度环境偏好：高密度 vs 低密度",
+      "definition": "在可自由选择环境社交密度（如人多 vs 人少、热闹 vs 安静）的情境中，个体是否偏好高社交密度的环境，还是偏好低社交密度或独处环境。",
+      "high_trait_evidence": "主动选择高社交密度的环境",
+      "low_trait_evidence": "偏好低社交密度或独处环境",
+      "supporting_item_ids": [
+        "gregariousness_07",
+        "gregariousness_08",
+        "gregariousness_12",
+        "gregariousness_15",
+        "gregariousness_17"
+      ],
+      "support_count": 5,
+      "member_evidence_units_summary": [
+        "在存在居住环境社交密度可选偏好的情况下，是否主动选择高社交接触的居住方式（市中心或合租）而非低社交接触的居住方式（独居或安静社区） (gregariousness_07)",
+        "在可以自由选择社交密度的工作场所安排机会下，是否主动选择更高社交密度的环境 (gregariousness_08)",
+        "在有两个费用相近的度假优惠（一个社交密集、一个安静独处）的情况下，是否主动选择社交密集的目的地 (gregariousness_12)",
+        "在面临人多热闹与人少安静两种餐厅选择时，是否主动选择人多热闹的餐厅 (gregariousness_15)",
+        "在同等成本的住宿选择中，是否主动选择提供大量社交接触的住宿（俱乐部酒店、热闹的度假村）而非提供独处或小范围社交的住宿 (gregariousness_17)"
+      ],
+      "typical_high_manifestations": [
+        "选择住在市中心，因为喜欢周围有很多人",
+        "选择搬进合租公寓",
+        "选择开放式办公室",
+        "选择在有5-10个同事的大房间里工作",
+        "选择旅游天堂的优惠，期待遇到新人",
+        "选择更繁忙的目的地，因为感到舒适",
+        "选择去顾客盈门、繁忙的指南餐厅",
+        "期待在繁忙餐厅中遇到熟人并进行愉快的对话",
+        "选择俱乐部酒店",
+        "选择热闹的度假村"
+      ],
+      "typical_low_manifestations": [
+        "寻找只属于自己的公寓",
+        "选择安静社区的公寓",
+        "选择与一个同事共享办公室",
+        "选择自己的独立房间工作",
+        "选择孤独的度假目的地，以保持独立和自发",
+        "选择更安静的替代方案，因为太多人会破坏乐趣",
+        "选择去顾客稀少、安静的未知餐厅",
+        "在少数常客中感到舒适，避免吵闹",
+        "选择僻静的度假公寓",
+        "选择乡村的宁静酒店"
+      ],
+      "common_trait_activating_cues": [
+        "存在可自由选择环境社交密度的机会",
+        "各选项在核心功能（如居住、工作、度假、用餐）上等价",
+        "选择涉及长期或较长时间的居住/停留",
+        "环境社交密度是主要差异因素"
+      ],
+      "competing_facets": [
+        "E1 (热情性)",
+        "E3 (果断性)",
+        "N4 (社交焦虑)"
+      ],
+      "alternative_explanations": [
+        "经济因素（如市中心租金、合租成本）可能影响选择",
+        "对噪音/拥挤的敏感度（感觉加工敏感性）可能影响选择",
+        "对工作效率或隐私的需求可能影响工作场所选择"
+      ],
+      "boundary_condition": "当存在显著的经济、安全或实际便利性差异时，不应据此推断乐群性。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF04",
+      "family_name": "社交范围扩大：欢迎陌生人加入 vs 维持原有小范围",
+      "definition": "在已有社交计划或活动中，当有机会引入陌生人扩大社交范围时，个体是否主动欢迎并鼓励陌生人加入，还是倾向于维持原有小范围社交或拒绝扩大。",
+      "high_trait_evidence": "主动欢迎并鼓励陌生人加入，扩大社交范围",
+      "low_trait_evidence": "拒绝或回避陌生人加入，维持原有小范围",
+      "supporting_item_ids": [
+        "gregariousness_05",
+        "gregariousness_13"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在朋友提议引入陌生人扩大社交规模的情况下，是否主动接受并期待与陌生人共同活动 (gregariousness_05)",
+        "在朋友提出带不认识的其他人加入会面的情况下，是否主动欢迎并鼓励陌生人加入 (gregariousness_13)"
+      ],
+      "typical_high_manifestations": [
+        "接受朋友带陌生人的提议，并期待共同活动",
+        "接受提议，但先与朋友单独见面",
+        "明确表示欢迎朋友带其他人来",
+        "鼓励朋友带更多人来并表示高兴"
+      ],
+      "typical_low_manifestations": [
+        "建议改为只有两个人的替代方案",
+        "礼貌取消，选择独自运动",
+        "不热衷但出于礼貌不反对",
+        "明确表示只想见朋友本人"
+      ],
+      "common_trait_activating_cues": [
+        "已有社交计划或活动",
+        "朋友提议引入陌生人",
+        "社交范围扩大是可选而非强制",
+        "个体有自由表达偏好的空间"
+      ],
+      "competing_facets": [
+        "N4 (社交焦虑)",
+        "E3 (果断性)"
+      ],
+      "alternative_explanations": [
+        "低选项可能反映社交焦虑（N4）而非偏好小范围",
+        "高选项可能受果断性（E3）影响，高果断者更可能直接表达欢迎",
+        "对运动类型的偏好（个人 vs 团体）可能影响gregariousness_05的选择"
+      ],
+      "boundary_condition": "当情境涉及安全考虑或对活动质量的担忧时，应谨慎推断。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF05",
+      "family_name": "社交 vs 非社交活动选择：主动寻求社交接触",
+      "definition": "在可自由选择活动类型（社交活动 vs 非社交活动）的情境中，个体是否主动选择社交活动（如与朋友见面、外出社交），还是选择非社交活动（如独处、与家人相处、个人爱好）。",
+      "high_trait_evidence": "主动选择社交活动而非非社交活动",
+      "low_trait_evidence": "偏好非社交活动或仅与亲密家人相处",
+      "supporting_item_ids": [
+        "gregariousness_09",
+        "gregariousness_11"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在拥有自由支配的休息日且身心疲惫的情况下，是否主动寻求与朋友或外部人群的社交接触（而非选择独处或仅与家人相处） (gregariousness_09)",
+        "在身体不适但已无传染性、可自由选择社交或独处的居家情境下，是否主动寻求与他人（包括朋友、熟人）的社交接触 (gregariousness_11)"
+      ],
+      "typical_high_manifestations": [
+        "主动与朋友见面",
+        "外出做其他事情（可能涉及社交）",
+        "主动给朋友圈里很多亲爱的人打电话",
+        "主动邀请其他人到家里来"
+      ],
+      "typical_low_manifestations": [
+        "待在家里与伴侣或家人共度时光",
+        "选择独处",
+        "选择独处，自己做事情",
+        "只与家人待一段时间，其他时间独处"
+      ],
+      "common_trait_activating_cues": [
+        "个体处于身体或精神疲惫状态",
+        "拥有自由支配的时间",
+        "没有外部社交压力或义务",
+        "社交活动需要主动发起"
+      ],
+      "competing_facets": [
+        "E1 (热情性)",
+        "E6 (积极情感)",
+        "N4 (社交焦虑)"
+      ],
+      "alternative_explanations": [
+        "疲惫程度可能影响选择，即使高乐群者也可能选择休息",
+        "选项B（外出做其他事情）可能包含非社交活动",
+        "低选项可能反映对休息恢复的需求，而非稳定的低乐群"
+      ],
+      "boundary_condition": "当个体处于极度疲劳或疾病状态时，选择独处可能反映生理需求而非低乐群。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF06",
+      "family_name": "社交学习/工作方式偏好：团体 vs 独立",
+      "definition": "在可自由选择学习或工作方式（团体 vs 独立）且内容与结果等价的情境中，个体是否主动选择团体方式以获取社交接触，还是偏好独立方式。",
+      "high_trait_evidence": "主动选择团体学习或工作方式以获取社交接触",
+      "low_trait_evidence": "偏好独立学习或工作方式",
+      "supporting_item_ids": [
+        "gregariousness_01",
+        "gregariousness_06"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在可以选择团体培训或个人培训且内容与时长相同的情况下，是否主动选择团体培训（与他人一起学习）而非个人培训 (gregariousness_01)",
+        "在可自由选择线下多人社交环境还是线上独自环境参与专业活动的情况下，是否主动选择线下社交参与方式 (gregariousness_06)"
+      ],
+      "typical_high_manifestations": [
+        "选择团体培训，目的是认识新同事",
+        "选择团体培训，目的是与熟悉的同事同组",
+        "选择线下参加研讨会以认识新同事并交流想法",
+        "主动在线上论坛联系其他参与者并表达迫不及待参加"
+      ],
+      "typical_low_manifestations": [
+        "选择个人培训",
+        "选择独立获取培训内容",
+        "选择在线关注研讨会以省去路程",
+        "选择安静地待在工作场所关注研讨会内容"
+      ],
+      "common_trait_activating_cues": [
+        "学习或工作内容在团体和独立方式下相同",
+        "存在可自由选择的方式",
+        "社交接触是团体方式的附加特征",
+        "没有外部压力要求选择特定方式"
+      ],
+      "competing_facets": [
+        "E1 (热情性)",
+        "E3 (果断性)",
+        "O1 (对想法的开放性)",
+        "C3 (尽责性中的勤奋)"
+      ],
+      "alternative_explanations": [
+        "学习风格偏好（合作 vs 独立）可能影响选择",
+        "对研讨会内容的兴趣程度可能驱动选择",
+        "通勤便利性、时间成本等实际因素可能影响gregariousness_06的选择"
+      ],
+      "boundary_condition": "当存在显著的时间、成本或便利性差异时，不应据此推断乐群性。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF07",
+      "family_name": "社交环境中的陌生人接触偏好",
+      "definition": "在观看比赛、旅行等休闲活动中，个体是否偏好与大量陌生人或半陌生人共处的社交环境，还是偏好与熟人小群体或独自活动。",
+      "high_trait_evidence": "偏好与大量陌生人共处的社交环境",
+      "low_trait_evidence": "偏好与熟人小群体或独自活动",
+      "supporting_item_ids": [
+        "gregariousness_02"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在存在多种观看比赛方式（从大量陌生人到独自一人）的情况下，是否选择人数更多、陌生人更多的社交环境 (gregariousness_02)"
+      ],
+      "typical_high_manifestations": [
+        "去公共观看活动（与大量陌生人一起观看）",
+        "在酒吧看比赛（与陌生人/半陌生人一起观看）"
+      ],
+      "typical_low_manifestations": [
+        "和几个朋友或家人在家看比赛（与熟人小群体观看）",
+        "独自在电视前看比赛（独自观看）"
+      ],
+      "common_trait_activating_cues": [
+        "休闲活动（观看比赛）",
+        "存在多种社交密度选项",
+        "社交对象包括大量陌生人",
+        "活动本身不要求社交互动"
+      ],
+      "competing_facets": [
+        "E5 (感觉寻求)",
+        "E6 (积极情感)"
+      ],
+      "alternative_explanations": [
+        "对公共场合拥挤程度的耐受性（感觉寻求）可能影响选择",
+        "对比赛氛围的偏好（如公共观看更热闹）可能驱动选择",
+        "对特定社交情境的熟悉度可能影响选择"
+      ],
+      "boundary_condition": "当情境涉及对比赛氛围或观赛体验的特定偏好时，应谨慎推断。",
+      "construct_purity": "medium",
+      "status": "provisional"
+    }
+  ],
+  "merge_decisions": [
+    {
+      "unit_a": "gregariousness_04",
+      "unit_b": "gregariousness_10",
+      "decision": "merge",
+      "reasoning": "两者都涉及在非强制性社交机会中主动寻求与陌生人/群体的接触 vs 回避。gregariousness_04是聚会情境，gregariousness_10是葬礼后咖啡聚会情境，但核心机制相同：面对可选的社交机会，是否主动接近并融入。"
+    },
+    {
+      "unit_a": "gregariousness_04",
+      "unit_b": "gregariousness_18",
+      "decision": "merge",
+      "reasoning": "两者都涉及在非强制性社交机会中主动寻求与他人接触 vs 回避。gregariousness_04是聚会，gregariousness_18是火车，但核心机制相同：面对可选的社交情境，是否主动接近他人以获取社交互动。"
+    },
+    {
+      "unit_a": "gregariousness_04",
+      "unit_b": "gregariousness_19",
+      "decision": "merge",
+      "reasoning": "两者都涉及在非强制性社交机会中主动寻求群体接触 vs 偏好独处。gregariousness_04是聚会，gregariousness_19是旅行，但核心机制相同：面对社交机会时，是否主动选择与他人共同活动。"
+    },
+    {
+      "unit_a": "gregariousness_04",
+      "unit_b": "gregariousness_21",
+      "decision": "merge",
+      "reasoning": "两者都涉及在非强制性社交机会中主动接近高社交密度环境 vs 回避。gregariousness_04是聚会，gregariousness_21是火车车厢，但核心机制相同：面对充满社交互动的可选环境，是否主动选择并参与。"
+    },
+    {
+      "unit_a": "gregariousness_03",
+      "unit_b": "gregariousness_14",
+      "decision": "merge",
+      "reasoning": "两者都涉及在可自由选择规模的社交庆祝活动中，偏好大规模群体 vs 小范围/独处。gregariousness_03是新年除夕，gregariousness_14是生日，但核心机制相同：面对可自由选择的社交庆祝活动时，是否寻求大规模、高密度社交接触。"
+    },
+    {
+      "unit_a": "gregariousness_03",
+      "unit_b": "gregariousness_16",
+      "decision": "merge",
+      "reasoning": "两者都涉及在自由支配的时间中，偏好大规模社交 vs 小范围/独处。gregariousness_03是新年除夕，gregariousness_16是休息日，但核心机制相同：在自由支配的时间中，是否主动寻求大规模、多人的社交接触。"
+    },
+    {
+      "unit_a": "gregariousness_03",
+      "unit_b": "gregariousness_20",
+      "decision": "merge",
+      "reasoning": "两者都涉及在可自由选择社交规模的情境中，偏好大规模群体 vs 小范围/独处。gregariousness_03是新年除夕，gregariousness_20是假期旅行，但核心机制相同：面对社交机会时，是否寻求扩大社交圈和群体规模。"
+    },
+    {
+      "unit_a": "gregariousness_03",
+      "unit_b": "gregariousness_22",
+      "decision": "merge",
+      "reasoning": "两者都涉及在自由支配的时间中，偏好社交活动 vs 独处。gregariousness_03是新年除夕，gregariousness_22是周五晚，但核心机制相同：面对自由时间时，是否主动寻求社交接触。"
+    },
+    {
+      "unit_a": "gregariousness_07",
+      "unit_b": "gregariousness_08",
+      "decision": "merge",
+      "reasoning": "两者都涉及在可自由选择环境社交密度的情境中，偏好高密度 vs 低密度。gregariousness_07是居住环境，gregariousness_08是工作场所，但核心机制相同：面对可自由选择的社交密度时，是否主动寻求高密度环境。"
+    },
+    {
+      "unit_a": "gregariousness_07",
+      "unit_b": "gregariousness_12",
+      "decision": "merge",
+      "reasoning": "两者都涉及在可自由选择环境社交密度的情境中，偏好高密度 vs 低密度。gregariousness_07是居住环境，gregariousness_12是度假目的地，但核心机制相同：面对社交密度差异时，是否主动选择高社交密度的环境。"
+    },
+    {
+      "unit_a": "gregariousness_07",
+      "unit_b": "gregariousness_15",
+      "decision": "merge",
+      "reasoning": "两者都涉及在可自由选择环境社交密度的情境中，偏好高密度 vs 低密度。gregariousness_07是居住环境，gregariousness_15是餐厅，但核心机制相同：面对社交环境密度差异时，是否主动寻求高密度环境。"
+    },
+    {
+      "unit_a": "gregariousness_07",
+      "unit_b": "gregariousness_17",
+      "decision": "merge",
+      "reasoning": "两者都涉及在可自由选择环境社交密度的情境中，偏好高密度 vs 低密度。gregariousness_07是居住环境，gregariousness_17是度假住宿，但核心机制相同：面对同等成本的住宿选择时，是否主动寻求高社交接触的环境。"
+    },
+    {
+      "unit_a": "gregariousness_05",
+      "unit_b": "gregariousness_13",
+      "decision": "merge",
+      "reasoning": "两者都涉及在已有社交计划中，当有机会引入陌生人时，是否欢迎扩大社交范围。gregariousness_05是运动，gregariousness_13是会面，但核心机制相同：面对社交范围扩大的机会时，是否主动欢迎陌生人加入。"
+    },
+    {
+      "unit_a": "gregariousness_09",
+      "unit_b": "gregariousness_11",
+      "decision": "merge",
+      "reasoning": "两者都涉及在身体或精神疲惫状态下，是否主动寻求社交接触 vs 偏好独处或家人相处。gregariousness_09是休息日，gregariousness_11是生病在家，但核心机制相同：在疲惫且有自由选择时，是否主动寻求外部社交接触。"
+    },
+    {
+      "unit_a": "gregariousness_01",
+      "unit_b": "gregariousness_06",
+      "decision": "merge",
+      "reasoning": "两者都涉及在可自由选择学习/工作方式（团体 vs 独立）且内容等价的情境中，是否选择团体方式以获取社交接触。gregariousness_01是培训，gregariousness_06是研讨会，但核心机制相同：面对可自由选择的社交学习/工作机会时，是否主动选择团体方式。"
+    },
+    {
+      "unit_a": "gregariousness_02",
+      "unit_b": "gregariousness_07",
+      "decision": "separate",
+      "reasoning": "gregariousness_02的核心机制是在休闲活动中偏好与陌生人共处的社交环境，而gregariousness_07的核心机制是偏好长期居住环境的社交密度。虽然都涉及社交密度，但gregariousness_02更强调陌生人接触，而gregariousness_07更强调环境社交密度。两者情境性质不同（短期休闲 vs 长期居住），且gregariousness_02的陌生人接触维度在EF07中更突出。"
+    },
+    {
+      "unit_a": "gregariousness_02",
+      "unit_b": "gregariousness_04",
+      "decision": "separate",
+      "reasoning": "gregariousness_02的核心机制是在休闲活动中偏好与陌生人共处的社交环境，而gregariousness_04的核心机制是在非强制性社交机会中主动寻求与陌生人交谈。虽然都涉及陌生人，但gregariousness_02更强调环境选择（公共观看 vs 在家），而gregariousness_04更强调主动社交行为（交谈 vs 回避）。两者情境性质不同（观看比赛 vs 参加聚会），且gregariousness_02的陌生人接触维度在EF07中更突出。"
+    }
+  ],
+  "item_evidence_mapping": [
+    {
+      "item_id": "gregariousness_01",
+      "primary_family": "EF06",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_02",
+      "primary_family": "EF07",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_03",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_04",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_05",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_06",
+      "primary_family": "EF06",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_07",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_08",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_09",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_10",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_11",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_12",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_13",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_14",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_15",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_16",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_17",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_18",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_19",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_20",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_21",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "gregariousness_22",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    }
+  ],
+  "coverage_analysis": {
+    "overrepresented_families": [
+      "EF01 (非强制性社交机会的主动寻求 vs 回避) - 5题",
+      "EF02 (社交规模偏好) - 5题",
+      "EF03 (社交密度环境偏好) - 5题"
+    ],
+    "underrepresented_families": [
+      "EF04 (社交范围扩大) - 2题",
+      "EF05 (社交 vs 非社交活动选择) - 2题",
+      "EF06 (社交学习/工作方式偏好) - 2题",
+      "EF07 (社交环境中的陌生人接触偏好) - 1题 (provisional)"
+    ],
+    "high_redundancy_item_clusters": [
+      [
+        "gregariousness_04",
+        "gregariousness_10",
+        "gregariousness_18",
+        "gregariousness_19",
+        "gregariousness_21"
+      ],
+      [
+        "gregariousness_03",
+        "gregariousness_14",
+        "gregariousness_16",
+        "gregariousness_20",
+        "gregariousness_22"
+      ],
+      [
+        "gregariousness_07",
+        "gregariousness_08",
+        "gregariousness_12",
+        "gregariousness_15",
+        "gregariousness_17"
+      ]
+    ],
+    "high_contamination_items": [
+      "gregariousness_19 (选项B可能反映低尽责性而非乐群性)",
+      "gregariousness_09 (选项B可能包含非社交活动)",
+      "gregariousness_06 (可能受通勤便利性等实际因素影响)"
+    ],
+    "possible_construct_gaps": [
+      "可能存在覆盖不足：构念定义强调'主动寻求社交接触和群体活动'，但现有题目主要测量'在可选情境中是否选择社交'，较少测量'主动发起和创造社交机会'的行为（如主动组织聚会、主动邀请陌生人）。",
+      "可能存在覆盖不足：构念定义包含'喜欢与他人相处'的情感成分，但现有题目主要测量行为选择，较少直接测量对社交接触的情感反应（如享受、愉悦）。",
+      "可能存在覆盖不足：构念定义中的'群体活动'维度，现有题目主要测量社交规模和环境密度，较少测量对特定群体活动类型（如团队运动、集体游戏）的偏好。"
+    ]
+  },
+  "summary": {
+    "number_of_items": 22,
+    "number_of_evidence_families": 7,
+    "stable_families": 6,
+    "provisional_families": 1,
+    "families_with_high_purity": 0,
+    "families_with_medium_purity": 7,
+    "families_with_low_purity": 0
+  }
+}

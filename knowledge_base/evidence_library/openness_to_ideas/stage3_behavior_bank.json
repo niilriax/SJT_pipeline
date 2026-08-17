@@ -1,0 +1,509 @@
+{
+  "facet": "openness_to_ideas",
+  "manifestations": [
+    {
+      "manifestation_id": "BM01",
+      "description": "进行简短的头脑风暴并考虑是否参加创新比赛",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM02",
+      "description": "主动接受智力挑战并尝试解决脑筋急转弯",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_02"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM03",
+      "description": "主动开始解决数独谜题并尽力完成",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_03"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM04",
+      "description": "选择未知且需要高度心理要求的游戏",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM05",
+      "description": "回复邮件感谢但表示通常缺乏动力",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM06",
+      "description": "以有更重要事情为由拒绝解决任务",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_02"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM07",
+      "description": "因认为谜题太复杂而放弃",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_03"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM08",
+      "description": "选择已知且易于理解的游戏",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM09",
+      "description": "稍后在外语词典中查找该词",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_05"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM10",
+      "description": "当场询问谈话伙伴该词的含义",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_05"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM11",
+      "description": "不再为这个外来词烦恼",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_05"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM12",
+      "description": "尝试用已有知识推测该词的含义",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_05"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM13",
+      "description": "观看节目并权衡支持和反对扩大可再生能源的所有论据",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_06"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM14",
+      "description": "尝试确切了解演讲内容并听完整场演讲",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_11"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM15",
+      "description": "主动选择观看整个哲学脱口秀节目",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_12"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM16",
+      "description": "接受辩论俱乐部的邀请",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_17"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM17",
+      "description": "因已有明确意见而对节目不太感兴趣",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_06"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM18",
+      "description": "因觉得讨论太抽象和理论化而不听",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_11"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM19",
+      "description": "只有在没有更好的事情可做时才观看",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_12"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM20",
+      "description": "认为讨论内容很少让自己感兴趣",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_17"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM21",
+      "description": "阅读科学理论部分并主动接受智力挑战",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_04"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM22",
+      "description": "全面了解新发现，尝试理解每一个细节",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_08"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM23",
+      "description": "观看月食并尝试理解天文背景",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_10"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM24",
+      "description": "阅读科学理论部分但不试图理解",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_04"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM25",
+      "description": "更感兴趣的是实际事物，几乎不处理新发现",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_08"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM26",
+      "description": "观看月食但仅此而已",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_10"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM27",
+      "description": "主动选择观看纪录片，认为教育永远不嫌多",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_07"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM28",
+      "description": "按计划阅读或收听所有带来的内容",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_21"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM29",
+      "description": "选择娱乐电影以放松",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_07"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM30",
+      "description": "放弃阅读/听书，选择其他活动消磨时间",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_21"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM31",
+      "description": "主动查看各种资源来了解新功能",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_09"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM32",
+      "description": "通过试用软件来自学新功能",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_09"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM33",
+      "description": "使用软件时几乎不使用新功能",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_09"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM34",
+      "description": "对软件更新感到烦恼，并尝试继续使用旧软件",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_09"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM35",
+      "description": "高兴地接受博物馆邀请，期待了解新事物",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_13"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM36",
+      "description": "接受免费券并计划参观博物馆",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_16"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM37",
+      "description": "参加整个讲座系列",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_20"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM38",
+      "description": "同意但限制自己只接触已有知识的主题",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_13"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM39",
+      "description": "以没有时间为由放弃使用免费券",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_16"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM40",
+      "description": "因偏好做实际事情而不参加讲座系列",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_20"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM41",
+      "description": "尽一切努力说服朋友这是一个很棒的游戏",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_19"
+      ],
+      "linked_evidence_family": "EF08"
+    },
+    {
+      "manifestation_id": "BM42",
+      "description": "因朋友不喜欢该游戏而感到难过，但接受其决定",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_19"
+      ],
+      "linked_evidence_family": "EF08"
+    },
+    {
+      "manifestation_id": "BM43",
+      "description": "因朋友也不喜欢该游戏而感到欣慰，认为游戏太累人",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_19"
+      ],
+      "linked_evidence_family": "EF08"
+    },
+    {
+      "manifestation_id": "BM44",
+      "description": "与朋友讨论都更喜欢其他活动，并认为有人觉得该游戏有趣是不可思议的",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_19"
+      ],
+      "linked_evidence_family": "EF08"
+    },
+    {
+      "manifestation_id": "BM45",
+      "description": "选择科学/文化杂志",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_22"
+      ],
+      "linked_evidence_family": "EF09"
+    },
+    {
+      "manifestation_id": "BM46",
+      "description": "选择新闻/商业杂志",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_22"
+      ],
+      "linked_evidence_family": "EF09"
+    },
+    {
+      "manifestation_id": "BM47",
+      "description": "选择时尚/娱乐杂志",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_22"
+      ],
+      "linked_evidence_family": "EF09"
+    },
+    {
+      "manifestation_id": "BM48",
+      "description": "选择体育/自然/计算机杂志",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_22"
+      ],
+      "linked_evidence_family": "EF09"
+    },
+    {
+      "manifestation_id": "BM49",
+      "description": "要求一天时间详细处理该主题以便后续讨论",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_14"
+      ],
+      "linked_evidence_family": "EF10"
+    },
+    {
+      "manifestation_id": "BM50",
+      "description": "请朋友更详细解释该主题并表示高兴得知新发现",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_14"
+      ],
+      "linked_evidence_family": "EF10"
+    },
+    {
+      "manifestation_id": "BM51",
+      "description": "以了解不多为由表示不感兴趣",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_14"
+      ],
+      "linked_evidence_family": "EF10"
+    },
+    {
+      "manifestation_id": "BM52",
+      "description": "因朋友总谈论高智力主题而感到烦恼",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_14"
+      ],
+      "linked_evidence_family": "EF10"
+    },
+    {
+      "manifestation_id": "BM53",
+      "description": "主动了解夏令时规定的背景信息",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_15"
+      ],
+      "linked_evidence_family": "EF11"
+    },
+    {
+      "manifestation_id": "BM54",
+      "description": "饶有兴趣地关注关于夏令时优缺点的当前讨论",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "openness_to_ideas_15"
+      ],
+      "linked_evidence_family": "EF11"
+    },
+    {
+      "manifestation_id": "BM55",
+      "description": "表达对时钟改变的厌烦并希望废除它",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_15"
+      ],
+      "linked_evidence_family": "EF11"
+    },
+    {
+      "manifestation_id": "BM56",
+      "description": "仅调整时钟，不做进一步思考",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "openness_to_ideas_15"
+      ],
+      "linked_evidence_family": "EF11"
+    }
+  ]
+}

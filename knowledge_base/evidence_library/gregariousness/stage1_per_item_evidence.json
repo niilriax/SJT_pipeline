@@ -1,0 +1,662 @@
+[
+  {
+    "item_id": "gregariousness_01",
+    "facet": "gregariousness",
+    "situation_surface": "公司让员工在个人培训与团体培训之间选择，内容与时长相同。",
+    "trait_relevant_cue": "存在一个可选的机会，可以选择与他人一起学习（团体培训）还是独自学习（个人培训），且两种方式在内容与时长上无差异。",
+    "evidence_proposition": "在可以选择团体培训或个人培训且内容与时长相同的情况下，是否主动选择团体培训（与他人一起学习）而非个人培训。",
+    "high_behaviors": [
+      "选择团体培训，目的是认识新同事",
+      "选择团体培训，目的是与熟悉的同事同组"
+    ],
+    "low_behaviors": [
+      "选择个人培训",
+      "选择独立获取培训内容"
+    ],
+    "behavioral_mechanism": "面对可选的社交学习环境时，主动寻求与他人共处 vs 偏好独自完成学习任务。",
+    "alternative_explanation": "可能受学习风格偏好（如喜欢独立学习 vs 合作学习）或对培训内容熟悉程度的影响，而非纯粹的乐群倾向。",
+    "competing_facets": [
+      "E1",
+      "E3"
+    ],
+    "situation_cost": "选择团体培训可能需协调他人时间、适应小组节奏，但题目中未明确提及额外成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_02",
+    "facet": "gregariousness",
+    "situation_surface": "世界杯比赛门票售罄，有几种观看比赛的方式可选。",
+    "trait_relevant_cue": "存在多种观看比赛的方式，其中一些方式涉及大量陌生人（公共观看、酒吧），另一些涉及熟人（朋友/家人）或独自一人。",
+    "evidence_proposition": "在存在多种观看比赛方式（从大量陌生人到独自一人）的情况下，是否选择人数更多、陌生人更多的社交环境。",
+    "high_behaviors": [
+      "去公共观看活动（与大量陌生人一起观看）",
+      "在酒吧看比赛（与陌生人/半陌生人一起观看）"
+    ],
+    "low_behaviors": [
+      "和几个朋友或家人在家看比赛（与熟人小群体观看）",
+      "独自在电视前看比赛（独自观看）"
+    ],
+    "behavioral_mechanism": "在观看比赛时，主动寻求与大量陌生人/半陌生人共处的社交环境 vs 偏好与熟人小群体或独自观看。",
+    "alternative_explanation": "可能受对公共场合拥挤程度的耐受性（感觉寻求）、对比赛氛围的偏好（如公共观看更热闹）、或对特定社交情境的熟悉度影响。",
+    "competing_facets": [
+      "E5",
+      "E6"
+    ],
+    "situation_cost": "选择高乐群行为（公共观看、酒吧）可能涉及更多噪音、拥挤、排队等不便，但可能获得更热烈的集体氛围。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_03",
+    "facet": "gregariousness",
+    "situation_surface": "年终新年除夕庆祝活动的规划场景。",
+    "trait_relevant_cue": "存在一个非强制性的、可自由选择的社交庆祝活动（新年除夕），且活动规模（大群体 vs 家庭 vs 独自）可由个人偏好决定。",
+    "evidence_proposition": "在存在非强制性、可自由选择规模的社交庆祝活动的情况下，是否主动寻求与大量他人（而非家人或独自）一起庆祝。",
+    "high_behaviors": [
+      "尝试与尽可能多的朋友一起度过新年除夕",
+      "询问该地区最大的新年除夕聚会并去那里"
+    ],
+    "low_behaviors": [
+      "与家人一起庆祝新年除夕",
+      "独自安静地度过年终"
+    ],
+    "behavioral_mechanism": "面对可自由选择的社交庆祝活动时，主动寻求大规模群体接触 vs 偏好小范围（家庭）或独处。",
+    "alternative_explanation": "选项C（与家人庆祝）可能反映家庭传统或文化规范，而非低乐群；选项D（独自安静度过）可能反映疲劳或对新年庆祝的消极态度，而非稳定的低乐群。",
+    "competing_facets": [
+      "E1",
+      "E6"
+    ],
+    "situation_cost": "选择高乐群行为（大群体庆祝）可能需要花费时间、精力，并可能面临社交疲劳或拥挤的不适。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_04",
+    "facet": "gregariousness",
+    "situation_surface": "被邀请参加一个只认识几个客人的私人聚会。",
+    "trait_relevant_cue": "聚会中存在大量不熟悉的社交对象，且社交接触是非强制性的。",
+    "evidence_proposition": "在存在大量不熟悉社交对象且社交接触非强制的情况下，是否主动寻求与陌生人交谈。",
+    "high_behaviors": [
+      "尝试与尽可能多的客人交谈",
+      "主动与不认识的人开始对话"
+    ],
+    "low_behaviors": [
+      "因感到不舒服而很快离开聚会",
+      "主要与认识的几个人交谈"
+    ],
+    "behavioral_mechanism": "面对非强制性的陌生人社交机会时，主动接近 vs 回避或局限于熟人圈。",
+    "alternative_explanation": "社交焦虑（N4）可能导致低选项行为；内向-外向总体水平也可能影响。",
+    "competing_facets": [
+      "N4"
+    ],
+    "situation_cost": "主动与陌生人交谈可能消耗社交精力，并承担被拒绝或尴尬的风险。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_05",
+    "facet": "gregariousness",
+    "situation_surface": "计划运动时，朋友建议带陌生人一起，询问被试如何回应。",
+    "trait_relevant_cue": "朋友提议在运动活动中引入不认识的他人，使社交规模从一对一变为多人（含陌生人）。",
+    "evidence_proposition": "在朋友提议引入陌生人扩大社交规模的情况下，是否主动接受并期待与陌生人共同活动。",
+    "high_behaviors": [
+      "接受朋友带陌生人的提议，并期待共同活动",
+      "接受提议，但先与朋友单独见面"
+    ],
+    "low_behaviors": [
+      "建议改为只有两个人的替代方案",
+      "礼貌取消，选择独自运动"
+    ],
+    "behavioral_mechanism": "面对社交规模扩大（引入陌生人）时，主动寻求和期待群体接触 vs 回避或缩减社交规模以维持小范围或独处。",
+    "alternative_explanation": "可能受对运动类型的偏好影响（如团体运动 vs 个人运动），或对陌生人社交的焦虑（N4社交焦虑），而非纯粹的乐群倾向。",
+    "competing_facets": [
+      "N4"
+    ],
+    "situation_cost": "接受高乐群选项（A/B）可能需与陌生人互动，消耗社交精力或面临不适；但无明确时间或机会成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_06",
+    "facet": "gregariousness",
+    "situation_surface": "被邀请参加一个可自由选择线下或线上参与的高级培训研讨会，参与者来自全国各地同领域人员。",
+    "trait_relevant_cue": "存在一个可自由选择线下（多人社交环境）或线上（独自工作环境）参与的专业活动，且两种方式都能获取相同内容。",
+    "evidence_proposition": "在可自由选择线下多人社交环境还是线上独自环境参与专业活动的情况下，是否主动选择线下社交参与方式。",
+    "high_behaviors": [
+      "选择线下参加研讨会以认识新同事并交流想法",
+      "主动在线上论坛联系其他参与者并表达迫不及待参加"
+    ],
+    "low_behaviors": [
+      "选择在线关注研讨会以省去路程",
+      "选择安静地待在工作场所关注研讨会内容"
+    ],
+    "behavioral_mechanism": "面对可自由选择的社交机会时，主动寻求与陌生人的社交接触和群体互动 vs 偏好独处或最小化社交接触。",
+    "alternative_explanation": "可能由对研讨会内容的兴趣程度（而非社交偏好）驱动：高兴趣者可能更愿意线下参与以获得更丰富体验，低兴趣者可能选择线上以节省时间。也可能受通勤便利性、时间成本等实际因素影响。",
+    "competing_facets": [
+      "O1（对想法的开放性）",
+      "C3（尽责性中的勤奋）"
+    ],
+    "situation_cost": "选择线下参与需要花费通勤时间和精力，可能牺牲个人工作时间安排的灵活性。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_07",
+    "facet": "gregariousness",
+    "situation_surface": "因职业原因搬到新城市，正在寻找新公寓。",
+    "trait_relevant_cue": "在寻找新住所时，存在一个关于居住环境社交密度（市中心/合租 vs 独居/安静社区）的可选偏好。",
+    "evidence_proposition": "在存在居住环境社交密度可选偏好的情况下，是否主动选择高社交接触的居住方式（市中心或合租）而非低社交接触的居住方式（独居或安静社区）。",
+    "high_behaviors": [
+      "选择住在市中心，因为喜欢周围有很多人",
+      "选择搬进合租公寓"
+    ],
+    "low_behaviors": [
+      "寻找只属于自己的公寓",
+      "选择安静社区的公寓"
+    ],
+    "behavioral_mechanism": "面对居住环境选择时，主动寻求高密度社交接触 vs 偏好低社交接触或独处环境。",
+    "alternative_explanation": "可能受经济因素（市中心/合租可能更便宜或更贵）、安全考虑、通勤便利性、个人生活习惯（如对噪音的敏感度）影响，而非纯粹的乐群性。",
+    "competing_facets": [
+      "E1",
+      "E3",
+      "N4"
+    ],
+    "situation_cost": "选择高社交接触的居住方式（市中心/合租）可能带来更高的租金、噪音、隐私减少等成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_08",
+    "facet": "gregariousness",
+    "situation_surface": "新工作开始时，老板给予选择工作场所的自由，需要决定办公环境类型。",
+    "trait_relevant_cue": "存在一个可以自由选择社交密度（从开放式到独立办公室）的工作场所安排机会",
+    "evidence_proposition": "在可以自由选择社交密度的工作场所安排机会下，是否主动选择更高社交密度的环境",
+    "high_behaviors": [
+      "选择开放式办公室",
+      "选择在有5-10个同事的大房间里工作"
+    ],
+    "low_behaviors": [
+      "选择与一个同事共享办公室",
+      "选择自己的独立房间工作"
+    ],
+    "behavioral_mechanism": "面对可自由选择的社交密度时，主动寻求高密度社交环境 vs 偏好低密度或独处环境",
+    "alternative_explanation": "对工作效率的考虑（如开放式办公室可能更嘈杂、干扰多）或对隐私的需求可能影响选择，而非纯粹的乐群倾向。",
+    "competing_facets": [
+      "E1",
+      "E3",
+      "N4"
+    ],
+    "situation_cost": "选择高社交密度（开放式/大房间）可能带来更多干扰、噪音和隐私缺失，影响专注度。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_09",
+    "facet": "gregariousness",
+    "situation_surface": "经过漫长疲惫的工作日后，你终于有了一天休息，需要决定如何度过这一天。",
+    "trait_relevant_cue": "在拥有自由支配的休息日且身心疲惫的情况下，存在一个选择：是主动寻求外部社交接触还是选择独处或小范围家庭相处。",
+    "evidence_proposition": "在拥有自由支配的休息日且身心疲惫的情况下，是否主动寻求与朋友或外部人群的社交接触（而非选择独处或仅与家人相处）。",
+    "high_behaviors": [
+      "主动与朋友见面",
+      "外出做其他事情（可能涉及社交）"
+    ],
+    "low_behaviors": [
+      "待在家里与伴侣或家人共度时光",
+      "选择独处"
+    ],
+    "behavioral_mechanism": "在疲惫且有自由选择时，主动寻求外部社交接触 vs 偏好独处或仅与亲密家人相处。",
+    "alternative_explanation": "疲惫程度可能影响选择：极度疲惫时即使高乐群者也可能选择休息；选项B（外出做其他事情）可能包含非社交活动（如独自看电影），不一定反映乐群性。",
+    "competing_facets": [
+      "E1",
+      "E6"
+    ],
+    "situation_cost": "选择高乐群行为（外出社交）需要消耗额外的精力和时间，可能无法充分休息。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_10",
+    "facet": "gregariousness",
+    "situation_surface": "参加一个几乎不认识任何人的葬礼后，面临是否加入自发丧葬咖啡聚会的选择。",
+    "trait_relevant_cue": "葬礼后存在一个非强制性的、自发的社交聚会（丧葬咖啡），参与者可以选择加入或直接离开。",
+    "evidence_proposition": "在葬礼后存在非强制性社交聚会的情况下，是否主动寻求并加入该社交活动。",
+    "high_behaviors": [
+      "加入聚会并享受成为社区一部分",
+      "参加丧葬咖啡并主动邀请其他人一起来"
+    ],
+    "low_behaviors": [
+      "在墓地与一些哀悼者交谈但不去丧葬咖啡",
+      "直接回家"
+    ],
+    "behavioral_mechanism": "面对非强制性的社交机会时，主动寻求并融入群体 vs 回避或仅维持最小社交接触",
+    "alternative_explanation": "可能受情境规范（葬礼后是否适合社交）、对逝者的情感距离、疲劳或时间安排影响，而非纯粹的乐群性差异。",
+    "competing_facets": [
+      "E1",
+      "E3",
+      "N4"
+    ],
+    "situation_cost": "选择高乐群行为（加入聚会）可能占用个人时间、精力，或在葬礼情境下被认为不够庄重。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_11",
+    "facet": "gregariousness",
+    "situation_surface": "生病在家，不再传染，但感觉不太好，面临如何度过时间的决策。",
+    "trait_relevant_cue": "在身体不适但已无传染性、可自由选择社交或独处的居家情境下",
+    "evidence_proposition": "在身体不适但已无传染性、可自由选择社交或独处的居家情境下，是否主动寻求与他人（包括朋友、熟人）的社交接触",
+    "high_behaviors": [
+      "主动给朋友圈里很多亲爱的人打电话",
+      "主动邀请其他人到家里来"
+    ],
+    "low_behaviors": [
+      "选择独处，自己做事情",
+      "只与家人待一段时间，其他时间独处"
+    ],
+    "behavioral_mechanism": "在身体不适但可自由选择时，主动寻求社交接触（扩大社交圈）vs 偏好独处或仅限于家人小范围接触",
+    "alternative_explanation": "可能受当前身体状况（疲劳程度）影响，也可能受社交焦虑（N4）影响——低乐群者可能因担心社交压力而选择独处，而非单纯偏好独处。",
+    "competing_facets": [
+      "N4"
+    ],
+    "situation_cost": "选择高乐群行为（打电话、邀请人来家）可能消耗精力，不利于休息恢复；低乐群行为则更节省体力。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_12",
+    "facet": "gregariousness",
+    "situation_surface": "存钱后选择度假目的地，有两个费用相近的优惠可选。",
+    "trait_relevant_cue": "两个度假目的地中，一个社交机会多、人多热闹，另一个安静、人少、适合独处。",
+    "evidence_proposition": "在有两个费用相近的度假优惠（一个社交密集、一个安静独处）的情况下，是否主动选择社交密集的目的地。",
+    "high_behaviors": [
+      "选择旅游天堂的优惠，期待遇到新人",
+      "选择更繁忙的目的地，因为感到舒适"
+    ],
+    "low_behaviors": [
+      "选择孤独的度假目的地，以保持独立和自发",
+      "选择更安静的替代方案，因为太多人会破坏乐趣"
+    ],
+    "behavioral_mechanism": "面对度假目的地选择时，主动寻求社交接触和群体环境 vs 偏好独处或小范围社交。",
+    "alternative_explanation": "可能受个人对度假类型的兴趣（如探险 vs 休闲）、对拥挤的耐受度（非社交原因）或对独立性的偏好影响。",
+    "competing_facets": [
+      "E1",
+      "E3",
+      "E6"
+    ],
+    "situation_cost": "选择高乐群行为（热闹目的地）可能牺牲安静、独立和自发的度假体验。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_13",
+    "facet": "gregariousness",
+    "situation_surface": "约见朋友时，朋友提出可能带不认识的其他人，人数不确定。",
+    "trait_relevant_cue": "在社交计划中，朋友提出引入不确定数量的陌生人加入原本的二人会面。",
+    "evidence_proposition": "在朋友提出带不认识的其他人加入会面的情况下，是否主动欢迎并鼓励陌生人加入。",
+    "high_behaviors": [
+      "明确表示欢迎朋友带其他人来",
+      "鼓励朋友带更多人来并表示高兴"
+    ],
+    "low_behaviors": [
+      "不热衷但出于礼貌不反对",
+      "明确表示只想见朋友本人"
+    ],
+    "behavioral_mechanism": "面对社交范围扩大的机会时，主动寻求和欢迎更多社交接触 vs 偏好维持原有小范围社交或独处。",
+    "alternative_explanation": "可能受社交焦虑（N4）影响：低乐群者可能因害怕陌生人而拒绝，而非单纯偏好独处。也可能受果断性（E3）影响：高果断者更可能直接表达偏好。",
+    "competing_facets": [
+      "N4",
+      "E3"
+    ],
+    "situation_cost": "选择高乐群行为（欢迎陌生人）可能面临社交精力消耗、与陌生人互动的潜在不适，以及失去原本私密交流的机会。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_14",
+    "facet": "gregariousness",
+    "situation_surface": "下一个生日即将到来，询问庆祝方式。",
+    "trait_relevant_cue": "存在一个可自由选择社交规模与参与度的个人庆祝活动（生日）",
+    "evidence_proposition": "在可自由选择社交规模与参与度的个人庆祝活动（生日）中，是否主动寻求大规模、多人参与的社交聚会",
+    "high_behaviors": [
+      "邀请家人、朋友和老熟人，举办大型热闹聚会",
+      "举办大聚会，邀请很多客人"
+    ],
+    "low_behaviors": [
+      "在小圈子里庆祝生日",
+      "根本不庆祝生日"
+    ],
+    "behavioral_mechanism": "面对可自由选择的社交庆祝活动时，主动寻求大规模、高密度社交接触 vs 偏好小范围或零社交",
+    "alternative_explanation": "可能受个人对生日这一特定活动的重视程度、文化习俗、经济条件或时间安排影响，而非纯粹的乐群倾向",
+    "competing_facets": [
+      "E1",
+      "E3",
+      "E6"
+    ],
+    "situation_cost": "举办大型聚会需要投入较多时间、精力和金钱，且可能带来社交疲劳",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_15",
+    "facet": "gregariousness",
+    "situation_surface": "选择一家繁忙、顾客盈门的餐厅还是一家安静、顾客稀少的餐厅用餐。",
+    "trait_relevant_cue": "存在一个选择：去人多热闹的餐厅还是人少安静的餐厅。",
+    "evidence_proposition": "在面临人多热闹与人少安静两种餐厅选择时，是否主动选择人多热闹的餐厅。",
+    "high_behaviors": [
+      "选择去顾客盈门、繁忙的指南餐厅",
+      "期待在繁忙餐厅中遇到熟人并进行愉快的对话"
+    ],
+    "low_behaviors": [
+      "选择去顾客稀少、安静的未知餐厅",
+      "在少数常客中感到舒适，避免吵闹"
+    ],
+    "behavioral_mechanism": "面对社交环境密度差异时，主动寻求高密度社交环境 vs 偏好低密度、安静环境。",
+    "alternative_explanation": "对噪音/拥挤的敏感度（N4 或感觉加工敏感性）可能影响选择；对食物品质的信任（指南 vs 内部推荐）也可能干扰。",
+    "competing_facets": [
+      "N4"
+    ],
+    "situation_cost": "选择高乐群行为（繁忙餐厅）可能面临噪音、排队、拥挤等不适，但获得更多社交机会。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_16",
+    "facet": "gregariousness",
+    "situation_surface": "休息日完成所有任务后，有空闲时间，选择如何度过。",
+    "trait_relevant_cue": "在完成所有任务后，拥有完全自由支配的空闲时间，且没有外部社交压力或义务。",
+    "evidence_proposition": "在拥有完全自由支配的空闲时间且无外部社交压力的情况下，是否主动寻求与多人（朋友或群体）的社交接触。",
+    "high_behaviors": [
+      "主动联系朋友见面，且希望见到尽可能多的朋友",
+      "参加有很多人参与的活动"
+    ],
+    "low_behaviors": [
+      "与家人度过时光，但强调不受干扰（小范围、亲密社交）",
+      "独自度过一天，享受独处时间"
+    ],
+    "behavioral_mechanism": "在自由支配的空闲时间中，主动寻求大规模、多人的社交接触 vs 偏好小范围社交或独处。",
+    "alternative_explanation": "选项C（与家人度过）可能被低乐群者选择，但也可能被高乐群者选择（如果家人是主要社交圈）；选项D（独处）可能反映内向总体水平或对独处的偏好，而非单纯低乐群。此外，选项A和B可能受社交焦虑（N4）影响：低社交焦虑者更可能选择A/B。",
+    "competing_facets": [
+      "E1",
+      "E3",
+      "N4"
+    ],
+    "situation_cost": "选择高乐群行为（A/B）需要花费时间外出社交，可能牺牲独处或家庭时间，但无显著负面成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_17",
+    "facet": "gregariousness",
+    "situation_surface": "计划假期时，在四种费用相同的住宿类型中做出选择。",
+    "trait_relevant_cue": "存在一个非强制性的、同等成本的住宿选择情境，其中一些选项提供大量社交机会，另一些提供独处或小范围社交环境。",
+    "evidence_proposition": "在同等成本的住宿选择中，是否主动选择提供大量社交接触的住宿（俱乐部酒店、热闹的度假村）而非提供独处或小范围社交的住宿（僻静的度假公寓、乡村的宁静酒店）。",
+    "high_behaviors": [
+      "选择俱乐部酒店",
+      "选择热闹的度假村"
+    ],
+    "low_behaviors": [
+      "选择僻静的度假公寓",
+      "选择乡村的宁静酒店"
+    ],
+    "behavioral_mechanism": "面对同等成本的休闲住宿选择时，主动寻求社交接触和群体活动 vs 偏好独处或小范围社交环境。",
+    "alternative_explanation": "无明显替代解释。所有选项费用相同，排除了经济因素；情境是假期休闲，排除了工作或学业压力。偏好安静环境（如对噪音敏感）可能部分解释低乐群选择，但核心仍是社交接触的偏好。",
+    "competing_facets": [],
+    "situation_cost": "选择高乐群选项（俱乐部酒店、热闹的度假村）可能意味着牺牲安静、私密和独处的机会，但无其他明显成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_18",
+    "facet": "gregariousness",
+    "situation_surface": "在满员的长途火车上，只有少数座位可用，需要决定如何选择座位或活动。",
+    "trait_relevant_cue": "存在一个非强制性的社交机会（与他人同坐或主动去小卖部交谈），且个体有选择独处或社交的自由。",
+    "evidence_proposition": "在存在非强制性社交机会的情况下，是否主动寻求与他人接触和交谈。",
+    "high_behaviors": [
+      "选择四人桌的空座，与同座陌生人交谈",
+      "主动去火车小卖部，寻找对话机会"
+    ],
+    "low_behaviors": [
+      "寻找安静的地方独处",
+      "寻找不受干扰的地方"
+    ],
+    "behavioral_mechanism": "面对可选的社交情境时，主动接近他人以获取社交互动 vs 主动回避社交接触以维持独处状态。",
+    "alternative_explanation": "可能受社交焦虑（N4）影响：低选项可能反映对社交互动的恐惧而非偏好独处。也可能受疲劳或情绪状态影响。",
+    "competing_facets": [
+      "N4"
+    ],
+    "situation_cost": "选择高乐群行为（交谈、去小卖部）可能消耗精力、减少个人安静时间，但无显著人际成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_19",
+    "facet": "gregariousness",
+    "situation_surface": "度假时面临旅行方式选择，涉及是否与他人结伴。",
+    "trait_relevant_cue": "存在一个非强制性的社交活动选择（旅游团 vs 独自探索），且该选择不涉及任务完成压力或能力要求。",
+    "evidence_proposition": "在存在非强制性社交活动选择的情况下，是否主动选择与他人共同活动（而非独自活动）。",
+    "high_behaviors": [
+      "加入旅游团并全程参与",
+      "先加入旅游团，后脱离团体"
+    ],
+    "low_behaviors": [
+      "与导游单独探索该地区",
+      "独自探索该地区"
+    ],
+    "behavioral_mechanism": "面对社交机会时，主动寻求群体接触 vs 偏好独处或小范围社交。",
+    "alternative_explanation": "选项B（先加入后脱离）可能反映低尽责性（C3）或低坚持性（C4），而非乐群性；选项C（与导游单独探索）可能反映对个性化体验的偏好（开放性），而非低乐群。",
+    "competing_facets": [
+      "C3",
+      "C4",
+      "O1"
+    ],
+    "situation_cost": "选择高乐群行为（加入旅游团）可能牺牲个人自由度和灵活性，需适应团体节奏。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_20",
+    "facet": "gregariousness",
+    "situation_surface": "计划假期时，选择与谁一起旅行。",
+    "trait_relevant_cue": "假期旅行同伴的选择具有开放性，没有强制要求必须与特定人群同行。",
+    "evidence_proposition": "在假期旅行同伴选择具有开放性的情况下，是否主动寻求与较大规模、包含陌生人的社交群体同行。",
+    "high_behaviors": [
+      "加入一个团体旅行",
+      "邀请朋友并允许他们邀请自己不认识的其他人"
+    ],
+    "low_behaviors": [
+      "独自旅行",
+      "与伴侣或家人一起旅行"
+    ],
+    "behavioral_mechanism": "面对社交机会时，主动寻求扩大社交圈和群体规模 vs 偏好小范围或独处。",
+    "alternative_explanation": "选择与伴侣/家人旅行可能反映关系优先或实际安排，而非低乐群；选择独自旅行可能反映对自主性的偏好或对旅行质量的追求。",
+    "competing_facets": [
+      "E1",
+      "E3",
+      "E6"
+    ],
+    "situation_cost": "选择高乐群行为（加入团体或允许陌生人加入）可能牺牲隐私、行程灵活性，并增加社交协调成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_21",
+    "facet": "gregariousness",
+    "situation_surface": "在火车上找不到座位，但在一节有活泼小学班级的车厢中发现一个空座。",
+    "trait_relevant_cue": "存在一个充满社交互动（活泼小学班级）的座位，且没有强制要求必须坐在这里。",
+    "evidence_proposition": "在存在一个充满社交互动的可选座位的情况下，是否主动选择并留在该社交环境中。",
+    "high_behaviors": [
+      "选择坐在小学班级旁边并表现出积极态度（高兴）",
+      "选择坐在小学班级旁边并主动与孩子们交谈"
+    ],
+    "low_behaviors": [
+      "继续寻找其他座位以避开该社交环境",
+      "先坐下但计划一旦有其他空座就换座位"
+    ],
+    "behavioral_mechanism": "面对高社交密度环境时，主动接近并参与 vs 回避或仅暂时容忍",
+    "alternative_explanation": "可能由对儿童吵闹的耐受度（而非一般社交偏好）或对安静环境的偏好（如需要工作/休息）解释。",
+    "competing_facets": [
+      "E1",
+      "N4"
+    ],
+    "situation_cost": "选择高乐群行为（坐下并互动）可能面临吵闹、注意力分散、无法安静休息或工作的成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "gregariousness_22",
+    "facet": "gregariousness",
+    "situation_surface": "周五下午下班前，考虑如何度过当晚。",
+    "trait_relevant_cue": "存在一个自由支配的晚间时段，没有强制性社交或独处要求。",
+    "evidence_proposition": "在自由支配的晚间时段，是否主动选择社交活动（结识新人或与朋友相聚）而非独处活动。",
+    "high_behaviors": [
+      "外出并期待结识新朋友",
+      "邀请朋友到自己家中聚会"
+    ],
+    "low_behaviors": [
+      "计划在家读书",
+      "计划独处一段时间"
+    ],
+    "behavioral_mechanism": "面对自由时间时，主动寻求社交接触 vs 偏好独处或小范围安静活动。",
+    "alternative_explanation": "可能受当日精力水平、已有社交计划、或对特定活动（如读书）的兴趣影响，而非稳定的乐群倾向。",
+    "competing_facets": [
+      "E1",
+      "E6"
+    ],
+    "situation_cost": "选择高乐群行为（外出见新人或邀请朋友）需要投入社交精力，可能牺牲个人休息或安静时间。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  }
+]

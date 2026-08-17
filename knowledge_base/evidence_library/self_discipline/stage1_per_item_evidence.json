@@ -1,0 +1,660 @@
+[
+  {
+    "item_id": "self_discipline_01",
+    "facet": "self_discipline",
+    "situation_surface": "晚上看电视时感到疲倦，但最喜欢的节目刚开始，明天需要早起工作。",
+    "trait_relevant_cue": "存在一个即时、有吸引力的诱惑（喜欢的节目）与一个已承诺的必要任务（明天早起工作）之间的冲突，且个体已感到疲倦。",
+    "evidence_proposition": "在存在即时诱惑且已感到疲倦的情况下，是否坚持完成已承诺的必要任务（睡觉）而非屈服于诱惑（看节目）。",
+    "high_behaviors": [
+      "立即关掉电视去睡觉",
+      "短暂考虑后忍痛不看节目，选择睡觉"
+    ],
+    "low_behaviors": [
+      "先看节目几分钟再决定是否关掉",
+      "看完整个节目，即使明天可能疲倦"
+    ],
+    "behavioral_mechanism": "面对即时诱惑与疲劳时，坚持已承诺的必要任务（睡觉）vs 屈服于诱惑（看节目）。",
+    "alternative_explanation": "可能由任务重要性判断（认为明天工作是否真的重要）或成就追求（C4，追求工作表现）解释，而非纯粹的自律。",
+    "competing_facets": [
+      "C4"
+    ],
+    "situation_cost": "选择高自律行为（立即睡觉）会错过喜欢的节目，带来即时娱乐损失。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_02",
+    "facet": "self_discipline",
+    "situation_surface": "在项目截止日期前，天气很好，朋友邀请见面，项目所需时间不确定。",
+    "trait_relevant_cue": "存在一个即时、有吸引力的社交诱惑（朋友邀请），且项目完成时间不确定，需要自我控制来优先完成任务。",
+    "evidence_proposition": "在存在即时社交诱惑且任务时间不确定的情况下，是否坚持优先完成项目而非立即满足社交需求。",
+    "high_behaviors": [
+      "取消与朋友的会面，全身心专注于完成项目",
+      "先完成项目，如果有剩余时间再联系朋友"
+    ],
+    "low_behaviors": [
+      "把项目完成推迟到第二天，优先与朋友见面",
+      "与朋友见面，计划晚上完成项目"
+    ],
+    "behavioral_mechanism": "面对即时社交诱惑时，坚持任务优先（延迟满足）vs 优先满足社交需求（即时满足）。",
+    "alternative_explanation": "任务重要性判断：如果被试认为项目不重要或可轻松完成，可能选择社交；反之亦然。时间管理能力：低自律者可能高估晚上完成项目的能力。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "选择高自律行为（取消见面或推迟见面）可能损失社交机会或朋友关系，且项目时间不确定增加了坚持的焦虑成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_03",
+    "facet": "self_discipline",
+    "situation_surface": "度假回来后面对一堆私人邮件，不知从何开始。",
+    "trait_relevant_cue": "存在一堆需要处理但无外部强制截止日期的私人邮件，且刚度假回来有疲劳或分心倾向。",
+    "evidence_proposition": "在存在一堆无外部强制截止日期的私人邮件且刚度假回来有疲劳或分心倾向的情况下，是否立即开始并持续处理邮件，而非推迟或中断。",
+    "high_behaviors": [
+      "立即开始处理邮件",
+      "浏览所有邮件但中间休息"
+    ],
+    "low_behaviors": [
+      "只打开几封信，大部分稍后阅读",
+      "把整堆邮件放在那里，在接下来几天里处理"
+    ],
+    "behavioral_mechanism": "面对无外部压力的任务时，立即启动并坚持完成 vs 推迟或分散处理",
+    "alternative_explanation": "任务重要性判断：如果邮件不重要，推迟可能是合理策略；时间管理偏好：有人喜欢分批处理；疲劳程度：刚度假回来可能精力不足。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "立即处理邮件可能占用休息时间，但无显著人际或机会成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_04",
+    "facet": "self_discipline",
+    "situation_surface": "在天气诱人的好天气里，决定进行春季大扫除，但更想出去骑自行车。",
+    "trait_relevant_cue": "存在一个即时、有吸引力的替代活动（享受好天气）与一个已承诺但令人不快的任务（春季大扫除）之间的冲突。",
+    "evidence_proposition": "在存在即时、有吸引力的替代活动与已承诺但令人不快的任务冲突的情况下，是否坚持完成原定任务而非转向替代活动。",
+    "high_behaviors": [
+      "坚持按原计划完成春季大扫除，遵循先工作后娱乐的原则",
+      "尝试尽快完成春季大扫除，以便之后还能享受部分阳光"
+    ],
+    "low_behaviors": [
+      "寻找理由将春季大扫除推迟到另一天，以便现在享受阳光",
+      "毫无愧疚地做此刻想做的事（享受阳光），将春季大扫除推迟"
+    ],
+    "behavioral_mechanism": "面对即时诱惑与已承诺任务冲突时，坚持完成任务 vs 屈服于诱惑并推迟任务。",
+    "alternative_explanation": "对春季大扫除重要性的主观判断（是否认为必须今天完成）可能影响选择；对户外活动的兴趣强度也可能起主导作用。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "选择高自律行为（坚持大扫除）会牺牲享受好天气的机会，可能带来情绪上的失落或时间上的紧迫感。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_05",
+    "facet": "self_discipline",
+    "situation_surface": "家庭中有一些不愉快的任务，安排了2-3小时来完成。",
+    "trait_relevant_cue": "存在一系列不愉快但必须完成的任务，且已安排了固定时间块。",
+    "evidence_proposition": "在已安排固定时间块完成不愉快任务的情况下，是否坚持完成所有任务（包括是否允许自己休息） vs 部分完成或无限期推迟。",
+    "high_behaviors": [
+      "一次完成所有职责，不休息",
+      "完成所有任务，但中间休息一下"
+    ],
+    "low_behaviors": [
+      "完成一些任务，其余的无限期推迟",
+      "从第一个任务开始，看能做到什么程度"
+    ],
+    "behavioral_mechanism": "面对不愉快但必要的任务时，坚持完成全部任务（无论是否休息） vs 降低标准或推迟完成。",
+    "alternative_explanation": "选项C和D可能反映任务重要性判断（C4成就追求）或时间管理能力（C2条理性），而非纯粹的自律。",
+    "competing_facets": [
+      "C4",
+      "C2"
+    ],
+    "situation_cost": "选择高自律行为（A或B）需要投入全部2-3小时，可能牺牲休息或娱乐时间。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_06",
+    "facet": "self_discipline",
+    "situation_surface": "与老朋友有约，但下班前收到一个最好今天处理的重要订单。",
+    "trait_relevant_cue": "存在一个非强制性但重要的任务，与已承诺的社交活动冲突。",
+    "evidence_proposition": "在存在非强制性但重要的任务与已承诺的社交活动冲突的情况下，是否优先完成工作任务而非立即参与社交活动。",
+    "high_behaviors": [
+      "取消社交聚会以完成工作任务",
+      "在办公室加班处理工作后再参加聚会"
+    ],
+    "low_behaviors": [
+      "将工作推迟到明天，按时下班赴约",
+      "将工作交给同事，自己去参加聚会"
+    ],
+    "behavioral_mechanism": "面对即时诱惑（社交活动）与必要任务（工作订单）的冲突时，坚持完成必要任务 vs 优先满足即时诱惑。",
+    "alternative_explanation": "任务重要性判断：若认为订单不重要，低自律行为合理；对社交活动的承诺强度（友谊价值）也可能影响选择。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "选择高自律行为（取消或推迟聚会）可能损害朋友关系或错过社交机会。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_07",
+    "facet": "self_discipline",
+    "situation_surface": "晚上饱餐后感到舒适和疲倦，但必须手洗所有碗碟。",
+    "trait_relevant_cue": "在饱腹、疲倦且有更愉快替代选择（如休息）的情况下，存在一项必须完成但令人不快的家务任务。",
+    "evidence_proposition": "在饱腹、疲倦且有更愉快替代选择的情况下，是否坚持立即完成不愉快的必要任务（手洗碗碟）。",
+    "high_behaviors": [
+      "立即手洗所有碗碟",
+      "短暂休息后手洗所有碗碟"
+    ],
+    "low_behaviors": [
+      "将脏碗碟留到第二天再洗",
+      "浸泡部分碗碟，其余留到第二天洗"
+    ],
+    "behavioral_mechanism": "面对即时诱惑（休息、舒适感）和疲劳时，坚持完成不愉快任务 vs 推迟或放弃任务。",
+    "alternative_explanation": "任务重要性判断：如果认为碗碟必须当晚洗（如卫生、习惯），则高自律；如果认为可以推迟且无严重后果，则低自律。此外，时间压力（如第二天早上是否有空）也可能影响选择。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "高自律行为（立即或短暂休息后洗碗）需要克服当下的舒适感和疲倦，付出即时精力成本；低自律行为则可能带来后续不便（如第二天更脏、时间紧张）。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_08",
+    "facet": "self_discipline",
+    "situation_surface": "傍晚需要为明天的重要会议准备演示文稿，面临是否立即开始工作的选择。",
+    "trait_relevant_cue": "存在一个非强制性但重要的任务，同时有更愉快的替代活动（如休息、看电视）可供选择。",
+    "evidence_proposition": "在存在更愉快的替代活动且任务非紧急（但重要）的情况下，是否立即开始并坚持完成该任务。",
+    "high_behaviors": [
+      "在办公室加班完成演示文稿",
+      "短暂休息后立即开始制作演示文稿以快速完成"
+    ],
+    "low_behaviors": [
+      "在电视前放松，推迟准备",
+      "享受晚上，在会议中即兴发挥"
+    ],
+    "behavioral_mechanism": "面对即时诱惑（休息/娱乐）时，坚持完成必要任务 vs 放弃或推迟任务。",
+    "alternative_explanation": "选项C和D可能反映对任务重要性的低估（而非自律低），或对即兴能力的自信（能力因素）。选项A和B也可能受成就追求（C4）驱动。",
+    "competing_facets": [
+      "C4"
+    ],
+    "situation_cost": "选择高自律行为（A/B）需要牺牲傍晚的休息/娱乐时间，可能带来疲劳。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_09",
+    "facet": "self_discipline",
+    "situation_surface": "在四旬斋期间，朋友在咖啡馆为你点了蛋糕，你面临是否坚持戒甜食的决定。",
+    "trait_relevant_cue": "存在一个已承诺的自我约束目标（戒甜食），同时面临来自社交场合的即时诱惑（朋友已点的蛋糕）。",
+    "evidence_proposition": "在已承诺自我约束目标且面临即时社交诱惑的情况下，是否坚持执行该目标而非放弃或合理化放弃。",
+    "high_behaviors": [
+      "向朋友解释自己在斋戒，并点别的东西",
+      "让朋友吃自己的那块蛋糕"
+    ],
+    "low_behaviors": [
+      "打破自己的好意图，计划明年再做",
+      "吃了蛋糕，并认为一次不算"
+    ],
+    "behavioral_mechanism": "面对已承诺的自我约束目标与即时诱惑的冲突时，坚持执行目标（通过主动沟通或转移诱惑）vs 放弃或合理化放弃目标。",
+    "alternative_explanation": "可能受社交焦虑（害怕拒绝朋友的好意）或对斋戒承诺的认真程度（宗教/个人信念强度）影响，而非纯粹的自律差异。",
+    "competing_facets": [
+      "E1",
+      "C4"
+    ],
+    "situation_cost": "选择高自律行为（解释并拒绝）可能带来短暂社交尴尬或让朋友感到被拒绝；选择让朋友吃自己的蛋糕则可能让朋友多吃一份。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_10",
+    "facet": "self_discipline",
+    "situation_surface": "因体育成绩获得财政支持的机会，需要坚持训练以表现最佳。",
+    "trait_relevant_cue": "存在一个需要长期坚持训练才能获得财政支持的机会，且训练会占用休闲时间。",
+    "evidence_proposition": "在需要牺牲休闲时间以坚持训练来获得财政支持的情况下，是否坚持训练并优先于休闲活动。",
+    "high_behaviors": [
+      "坚持训练并尽力准备",
+      "利用每一分钟空闲时间训练，将休闲活动放在次要位置"
+    ],
+    "low_behaviors": [
+      "因休闲时间更重要而放弃提议",
+      "宁愿贷款或不通过体育成绩来资助培训"
+    ],
+    "behavioral_mechanism": "面对需要牺牲即时愉悦（休闲）以换取长期目标（财政支持）时，坚持训练 vs 放弃或回避训练。",
+    "alternative_explanation": "选项D可能反映对贷款或体育资助的偏好，而非自律不足；选项C可能反映对休闲价值的理性权衡，而非低自律。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "选择高自律行为（坚持训练）需要牺牲休闲时间，可能带来身体疲劳和社交机会损失。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_11",
+    "facet": "self_discipline",
+    "situation_surface": "在考试前手机故障，原定下午学习的计划受到干扰。",
+    "trait_relevant_cue": "存在一个非必须立即解决的手机故障（即时诱惑/分心），且考试材料已部分掌握（任务紧迫性降低）。",
+    "evidence_proposition": "在存在非必须立即解决的手机故障且任务紧迫性降低的情况下，是否仍坚持原定学习计划。",
+    "high_behaviors": [
+      "坚持按原计划学习，认为学习时不需要手机",
+      "坚持按原计划学习，并决定在考试前不再使用手机"
+    ],
+    "low_behaviors": [
+      "因坏运气而放弃学习，下午不学习",
+      "优先解决手机问题，如果还有时间再学习"
+    ],
+    "behavioral_mechanism": "面对即时分心（手机故障）和任务紧迫性降低时，坚持原定学习计划 vs 被分心吸引而推迟或放弃学习。",
+    "alternative_explanation": "选项D可能反映审慎性（C6，先解决工具性问题再学习）或成就追求（C4，认为手机问题影响学习效率），而非低自律。选项C可能反映情绪稳定性（N3，对挫折的反应）而非低自律。",
+    "competing_facets": [
+      "C4",
+      "C6",
+      "N3"
+    ],
+    "situation_cost": "选择高自律行为（坚持学习）可能意味着暂时不处理手机故障，导致后续不便或学习效率降低。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_12",
+    "facet": "self_discipline",
+    "situation_surface": "一个人决定开始节食，但冰箱里有前一天剩下的提拉米苏，需要决定如何行动。",
+    "trait_relevant_cue": "存在一个与节食计划冲突的即时诱惑（提拉米苏），且没有外部监督或强制约束。",
+    "evidence_proposition": "在存在与计划冲突的即时诱惑且无外部约束的情况下，是否坚持执行已承诺的计划（节食）而非屈服于诱惑。",
+    "high_behaviors": [
+      "扔掉提拉米苏以彻底消除诱惑",
+      "只吃一勺并计入饮食计划，以有限度地满足诱惑"
+    ],
+    "low_behaviors": [
+      "直接吃掉整个提拉米苏，然后才开始节食",
+      "以不浪费食物为由推迟节食计划到第二天"
+    ],
+    "behavioral_mechanism": "面对与计划冲突的即时诱惑时，采取行动坚持计划（消除或严格限制诱惑）vs 屈服于诱惑并放弃或推迟计划。",
+    "alternative_explanation": "选项B（只吃一勺）可能被高自律者或低自律者选择，取决于对“计入饮食”的认知；选项A（扔掉）可能被厌恶浪费的人视为不道德，从而选择C或D。此外，对节食重要性的判断（C4成就追求）或对食物浪费的价值观可能影响选择。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "高自律行为（扔掉提拉米苏）有食物浪费的成本；选项B（只吃一勺）有自我控制失败的风险；低自律行为（吃掉或推迟）有破坏节食计划的长期成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_13",
+    "facet": "self_discipline",
+    "situation_surface": "在制作演示文稿时，朋友邀请外出吃饭，但文稿尚未完全完成。",
+    "trait_relevant_cue": "存在一个即时、愉快的社交诱惑（朋友邀请外出吃饭），与一个尚未完成但已接近满意的必要任务（演示文稿最后修饰）相冲突。",
+    "evidence_proposition": "在存在即时社交诱惑且任务尚未完全完成的情况下，是否优先坚持完成任务而非立即参与社交活动。",
+    "high_behaviors": [
+      "取消社交计划，坚持完成演示文稿的全部修饰工作",
+      "先完成演示文稿，再尝试稍后赶上社交活动"
+    ],
+    "low_behaviors": [
+      "立即放下任务，完全参与社交活动，将剩余工作推迟到今晚或明天早上",
+      "立即参与社交活动，接受以当前不完美的状态进行演示"
+    ],
+    "behavioral_mechanism": "面对即时诱惑与未完成任务的冲突时，坚持完成任务（延迟满足）vs 优先满足即时诱惑（放弃或推迟任务）。",
+    "alternative_explanation": "对演示文稿重要性的主观判断（若认为不重要则更易放弃）、对社交活动的渴望程度、时间压力感知（若认为明早可轻松完成则放弃更合理）。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "选择高自律行为（坚持完成任务）会失去与朋友共进晚餐的社交机会，或需要额外努力稍后赶上，可能造成社交关系上的轻微成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_14",
+    "facet": "self_discipline",
+    "situation_surface": "被要求写一份复杂的书面作品，可以自由分配工作时间，但必须在四周内完成。",
+    "trait_relevant_cue": "存在一个长期、可自由安排时间但必须完成的任务，且没有外部监督或固定时间表。",
+    "evidence_proposition": "在存在长期、可自由安排时间但必须完成的任务且没有外部监督的情况下，是否主动建立并坚持固定的工作安排以确保按时完成。",
+    "high_behaviors": [
+      "每天保留特定时间段专门处理该工作",
+      "专门保留一整周时间只处理该工作"
+    ],
+    "low_behaviors": [
+      "不定期地做一些工作，保持灵活性，没有固定工作时间",
+      "只在有创意和好想法时专心工作"
+    ],
+    "behavioral_mechanism": "面对无外部监督的长期任务时，主动建立固定工作结构并坚持执行 vs 依赖内在动机和灵活性，容易因分心或拖延而影响进度。",
+    "alternative_explanation": "选项A和B可能反映条理性（C2）或计划偏好，而非纯粹的自律；选项C和D可能反映对创造性的重视或对僵化安排的反感。",
+    "competing_facets": [
+      "C2",
+      "C4"
+    ],
+    "situation_cost": "选择高自律行为（A或B）需要牺牲时间安排的灵活性，可能减少处理其他事务或应对突发情况的能力。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_15",
+    "facet": "self_discipline",
+    "situation_surface": "收到税务局复杂信件，需要填写多页文件，但外面天气好想出去享受。",
+    "trait_relevant_cue": "存在一个必要但令人不快的任务（填写复杂税务文件），同时有一个即时、愉快的替代活动（享受好天气）。",
+    "evidence_proposition": "在存在即时愉快替代活动的情况下，是否立即开始并坚持完成必要但不愉快的任务。",
+    "high_behaviors": [
+      "立即完全填写文件",
+      "把文件带到外面，在阳光下填写"
+    ],
+    "low_behaviors": [
+      "把文件放在一边，稍后专心写",
+      "开始填写文件，但如果花费太长时间就停止"
+    ],
+    "behavioral_mechanism": "面对必要但不愉快的任务与即时诱惑的冲突时，优先完成任务（坚持）vs 优先满足即时愉悦（回避/延迟/放弃）。",
+    "alternative_explanation": "选项B（在阳光下填写）可能被高自律者选择，但也可能被偏好户外环境的人选择，不一定反映自律。选项C（稍后写）可能反映审慎性（C6）或条理性（C2）而非低自律。选项D（开始但可能停止）可能反映低自律，但也可能反映对任务重要性的判断不足。",
+    "competing_facets": [
+      "C2",
+      "C6"
+    ],
+    "situation_cost": "高自律行为（立即填写或带出去填写）需要牺牲即时享受好天气的机会，但避免了后续拖延的焦虑或罚款风险。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_16",
+    "facet": "self_discipline",
+    "situation_surface": "计划阅读一本厚书，但读了一部分后发现书很无聊且难读。",
+    "trait_relevant_cue": "已投入部分时间但发现任务本身令人不愉快且缺乏内在吸引力，且没有外部强制要求必须完成。",
+    "evidence_proposition": "在发现已承诺的任务（阅读一本书）变得无聊且困难时，是否仍坚持完成该任务。",
+    "high_behaviors": [
+      "坚持读完整本书",
+      "至少读一半书再决定是否完成"
+    ],
+    "low_behaviors": [
+      "不读完书，直接卖掉",
+      "把书放在一边，不完成"
+    ],
+    "behavioral_mechanism": "面对已承诺但变得不愉快的任务时，坚持完成 vs 放弃或回避。",
+    "alternative_explanation": "对书籍主题的兴趣程度（兴趣低则更可能放弃）、对阅读时间的价值判断（认为时间可花在更有价值的事情上）、阅读能力（觉得难读可能因能力不足而非缺乏自律）。",
+    "competing_facets": [
+      "C4",
+      "O1"
+    ],
+    "situation_cost": "坚持读完需要投入大量额外时间，且过程不愉快；放弃则节省时间但可能违背初始承诺。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_17",
+    "facet": "self_discipline",
+    "situation_surface": "已经上床后想起忘记给植物浇水，面临是否起床完成该任务的决策。",
+    "trait_relevant_cue": "已经处于休息状态（床上），任务非紧急且可推迟，存在即时舒适（待在床上）与完成必要任务（浇水）之间的冲突。",
+    "evidence_proposition": "在已经休息且任务可推迟的情况下，是否立即中断休息去完成该任务。",
+    "high_behaviors": [
+      "立即起床给植物浇水",
+      "立即起床给植物浇水并顺便做其他小事"
+    ],
+    "low_behaviors": [
+      "只有在长时间睡不着时才起床浇水",
+      "待在床上，将浇水推迟到明天"
+    ],
+    "behavioral_mechanism": "面对即时舒适与必要任务之间的冲突时，立即执行任务 vs 寻找理由推迟或回避任务。",
+    "alternative_explanation": "对植物重要性的判断（如植物是否耐旱）、对睡眠中断的敏感度（易入睡程度）、对额外小事的兴趣（C4成就追求）可能影响选择。",
+    "competing_facets": [
+      "C4"
+    ],
+    "situation_cost": "立即起床浇水会中断休息，可能影响入睡；但成本较低，因为任务简单且耗时短。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_18",
+    "facet": "self_discipline",
+    "situation_surface": "休息日躺在沙发上听音乐，但必须在下午2点前完成大件垃圾清理任务。",
+    "trait_relevant_cue": "存在一个有时间限制但非紧急的日常任务，同时有更愉快的替代活动（听音乐、休息）可供选择。",
+    "evidence_proposition": "在存在即时诱惑（听音乐、休息）且任务有时间限制但非紧急的情况下，是否立即中断当前愉悦活动去执行任务。",
+    "high_behaviors": [
+      "立即中断听音乐，起身执行垃圾清理任务",
+      "听完一首歌后中断听音乐，执行垃圾清理任务"
+    ],
+    "low_behaviors": [
+      "希望他人代为执行任务，自己不行动",
+      "将任务推迟到当天不确定的时间，不立即行动"
+    ],
+    "behavioral_mechanism": "面对即时诱惑与必要任务冲突时，主动抑制诱惑并立即执行任务 vs 回避或无限期推迟任务。",
+    "alternative_explanation": "选项C（希望他人清理）可能反映低责任感或依赖他人，而非单纯缺乏自律；选项D（推迟到某时）可能反映时间管理风格或对任务重要性的低估。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "立即执行任务需要中断当前愉悦活动（听音乐、休息），但无其他明显成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_19",
+    "facet": "self_discipline",
+    "situation_surface": "健康保险公司要求尽快发送个人文件，同时朋友即将来访邀请外出。",
+    "trait_relevant_cue": "存在一个必须完成的行政任务（发送文件）和一个即时、愉快的社交诱惑（朋友邀约外出）同时出现，且任务有时间压力。",
+    "evidence_proposition": "在必须完成的行政任务与即时社交诱惑冲突的情况下，是否优先完成任务（即使需要延迟或牺牲社交时间）而非推迟或忽略任务。",
+    "high_behaviors": [
+      "立即收集文件并准备好，让朋友等待几分钟",
+      "在朋友到来前完成所有必要步骤，其余部分稍后处理"
+    ],
+    "low_behaviors": [
+      "完全不回复信件，等待保险公司再次联系",
+      "把信放在一边，稍后处理"
+    ],
+    "behavioral_mechanism": "面对即时诱惑（社交活动）与必要任务（行政文件）的冲突时，坚持完成任务 vs 推迟或放弃任务。",
+    "alternative_explanation": "对任务重要性的主观判断：若认为保险公司会再次联系，则低行为可能源于对任务紧迫性的低估而非自律不足。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "选择高自律行为（立即处理文件）需要让朋友等待或牺牲部分社交时间，可能带来人际成本或错过社交机会。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_20",
+    "facet": "self_discipline",
+    "situation_surface": "报名体育赛事后，朋友在训练时间邀请吃早餐，需要决定是否坚持训练计划。",
+    "trait_relevant_cue": "存在一个与已承诺训练计划冲突的、即时且愉快的社交诱惑（朋友邀请吃早餐）。",
+    "evidence_proposition": "在存在即时社交诱惑与已承诺训练计划冲突的情况下，是否坚持完成原定训练任务而非转向诱惑。",
+    "high_behaviors": [
+      "拒绝邀请，坚持按计划训练",
+      "接受邀请但承诺晚上补训"
+    ],
+    "low_behaviors": [
+      "立即同意邀请，对从训练中休息感到欣慰",
+      "感到内疚但容易被说服，放弃训练去赴约"
+    ],
+    "behavioral_mechanism": "面对与已承诺任务冲突的即时诱惑时，坚持原定计划 vs 优先满足即时诱惑。",
+    "alternative_explanation": "选项B（接受邀请但补训）可能反映的是灵活性或时间管理能力，而非低自律；选项C和D也可能受社交需求（E1：友善）或对赛事重视程度（C4：成就追求）影响。",
+    "competing_facets": [
+      "E1",
+      "C4"
+    ],
+    "situation_cost": "选择高自律行为（拒绝邀请）可能损害朋友关系或错过社交机会；选择补训（选项B）可能牺牲休息或训练效果。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_21",
+    "facet": "self_discipline",
+    "situation_surface": "修理电器20分钟未果，电视开始播放想看的节目，面临继续修理还是看电视的选择。",
+    "trait_relevant_cue": "存在一个已投入时间但尚未成功的必要任务，同时出现一个即时、有吸引力的替代活动（电视节目）。",
+    "evidence_proposition": "在存在即时诱惑且任务进展不顺的情况下，是否坚持完成必要任务而非转向替代活动。",
+    "high_behaviors": [
+      "继续修理设备直到恢复正常，完全放弃看电视",
+      "将设备放在能看电视的位置，但主要注意力仍放在修理上"
+    ],
+    "low_behaviors": [
+      "先看电视节目，推迟修理到稍后",
+      "看电视节目，并将修理任务委托给他人"
+    ],
+    "behavioral_mechanism": "面对即时诱惑和任务挫折时，坚持完成必要任务 vs 转向更愉快的替代活动或推迟/放弃任务。",
+    "alternative_explanation": "选项B（边看电视边修）可能反映时间管理策略或任务优先级判断，而非自律差异；选项D（委托他人）可能反映资源利用或能力评估，而非低自律。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "选择高自律行为（A或B）需要放弃或减少观看电视节目的即时愉悦，且可能继续承受修理的挫败感。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "self_discipline_22",
+    "facet": "self_discipline",
+    "situation_surface": "在餐厅用餐已饱，但甜点免费，需要决定是否吃甜点。",
+    "trait_relevant_cue": "已经吃饱但面临免费甜点的即时诱惑，且没有外部强制要求必须拒绝。",
+    "evidence_proposition": "在已经吃饱但面临免费甜点诱惑的情况下，是否坚持不进食或仅极少量进食，而非顺应诱惑。",
+    "high_behaviors": [
+      "完全跳过甜点",
+      "只尝一点甜点，把其余的给朋友"
+    ],
+    "low_behaviors": [
+      "点一个稍微小一点的甜点",
+      "直接要甜点"
+    ],
+    "behavioral_mechanism": "面对即时诱惑时，抑制冲动、坚持原有饱腹状态 vs 顺应诱惑、放弃自我控制。",
+    "alternative_explanation": "可能受健康意识、节食习惯、对甜点的个人喜好或社交情境（如不想扫朋友兴）影响。",
+    "competing_facets": [
+      "C4",
+      "C6"
+    ],
+    "situation_cost": "选择高自律行为（跳过或只尝一点）可能失去免费甜点的享受，但无其他明显成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  }
+]

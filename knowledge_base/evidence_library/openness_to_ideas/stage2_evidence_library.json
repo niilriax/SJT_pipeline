@@ -1,0 +1,785 @@
+{
+  "facet": "观念开放",
+  "evidence_library": [
+    {
+      "family_id": "EF01",
+      "family_name": "非强制性智力挑战的主动接近与认知投入",
+      "definition": "面对非强制性的、无外在报酬的智力挑战任务时，个体是否出于内在兴趣主动接近并投入认知资源去解决或探索，而非回避或拒绝。",
+      "high_trait_evidence": "主动接受智力挑战，投入认知资源（如思考、尝试解决、使用辅助工具）",
+      "low_trait_evidence": "回避或拒绝智力挑战，以缺乏兴趣、时间不足、任务太复杂等理由放弃",
+      "supporting_item_ids": [
+        "openness_to_ideas_01",
+        "openness_to_ideas_02",
+        "openness_to_ideas_03",
+        "openness_to_ideas_18"
+      ],
+      "support_count": 4,
+      "member_evidence_units_summary": [
+        "在存在非强制性创新比赛邀请的情况下，是否主动投入认知资源并表现出对智力探索的兴趣",
+        "在存在非强制性、无外在报酬的智力挑战任务且匿名作答的情况下，是否主动投入认知资源去解决",
+        "在存在非必须解决、无外部奖励的数字谜题的情况下，是否主动投入认知资源去解决它",
+        "在存在未知且需要认知投入的游戏选项且选择匿名的情况下，是否主动选择未知的、高认知要求的游戏"
+      ],
+      "typical_high_manifestations": [
+        "进行简短的头脑风暴并考虑是否参加创新比赛",
+        "主动接受智力挑战并尝试解决脑筋急转弯",
+        "主动开始解决数独谜题并尽力完成",
+        "选择未知且需要高度心理要求的游戏"
+      ],
+      "typical_low_manifestations": [
+        "回复邮件感谢但表示通常缺乏动力",
+        "以有更重要事情为由拒绝解决任务",
+        "因认为谜题太复杂而放弃",
+        "选择已知且易于理解的游戏"
+      ],
+      "common_trait_activating_cues": [
+        "任务是非强制性的",
+        "任务无外在报酬或奖励",
+        "任务具有认知挑战性",
+        "存在自由选择是否参与的空间"
+      ],
+      "competing_facets": [
+        "C4: 成就追求",
+        "N3: 焦虑（数学焦虑）"
+      ],
+      "alternative_explanations": [
+        "时间管理或尽责性（C4）可能驱动低行为选择",
+        "低自我效能感或特定领域焦虑（如数学焦虑）可能导致回避",
+        "对特定主题的兴趣缺乏可能影响选择"
+      ],
+      "boundary_condition": "当任务涉及特定领域（如数学、创新）时，领域兴趣可能混淆测量；当时间压力或疲劳显著时，低行为可能反映情境因素而非低开放性",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF02",
+      "family_name": "非必需认知缺口的主动填补",
+      "definition": "在理解已基本满足当前需求的情况下，个体是否主动寻求填补不熟悉的认知缺口（如词汇、概念），而非满足于已有理解或仅做最小努力推测。",
+      "high_trait_evidence": "主动寻求确切含义，投入额外认知资源填补知识缺口",
+      "low_trait_evidence": "满足于已有理解，回避主动求知，仅做最小努力推测或忽略缺口",
+      "supporting_item_ids": [
+        "openness_to_ideas_05"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在遇到不熟悉但非必需的词汇时，是否主动寻求其确切含义"
+      ],
+      "typical_high_manifestations": [
+        "稍后在外语词典中查找该词",
+        "当场询问谈话伙伴该词的含义"
+      ],
+      "typical_low_manifestations": [
+        "不再为这个外来词烦恼",
+        "尝试用已有知识推测该词的含义"
+      ],
+      "common_trait_activating_cues": [
+        "存在一个不熟悉但非必需的认知缺口",
+        "当前理解已足够满足基本需求",
+        "填补缺口需要额外认知投入"
+      ],
+      "competing_facets": [
+        "C4: 成就追求",
+        "N1: 社交焦虑（当场询问）"
+      ],
+      "alternative_explanations": [
+        "高成就追求者可能选择事后查词",
+        "社交焦虑可能抑制当场询问行为",
+        "用已有知识推测可能反映高认知能力而非低开放性"
+      ],
+      "boundary_condition": "当词汇对理解至关重要时，所有个体都可能主动查词，此时不具区分度；当场询问行为受社交情境影响",
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF03",
+      "family_name": "非传统/挑战性观点的主动接触与开放处理",
+      "definition": "面对包含新异的、非传统的或挑战现有信念的论据或观点时，个体是否主动接近并开放地处理这些信息，而非基于已有意见或兴趣缺乏而回避。",
+      "high_trait_evidence": "主动观看、倾听并开放地权衡新论据，愿意形成或调整意见",
+      "low_trait_evidence": "基于已有意见或兴趣缺乏而回避，关闭或切换信息源",
+      "supporting_item_ids": [
+        "openness_to_ideas_06",
+        "openness_to_ideas_11",
+        "openness_to_ideas_12",
+        "openness_to_ideas_17"
+      ],
+      "support_count": 4,
+      "member_evidence_units_summary": [
+        "在存在包含新/非传统论据的辩论节目且观看是个人选择的情况下，是否主动投入认知资源去观看、权衡或保持开放心态",
+        "在存在非强制性抽象哲学演讲且无时间压力的情况下，是否主动投入认知资源去了解演讲内容",
+        "在存在一个非必须观看、涉及抽象哲学观念的电视节目时，是否主动选择观看并投入注意力",
+        "在存在非强制性智力讨论活动邀请的情况下，是否主动接受并参与其中"
+      ],
+      "typical_high_manifestations": [
+        "观看节目并权衡支持和反对扩大可再生能源的所有论据",
+        "尝试确切了解演讲内容并听完整场演讲",
+        "主动选择观看整个哲学脱口秀节目",
+        "接受辩论俱乐部的邀请"
+      ],
+      "typical_low_manifestations": [
+        "因已有明确意见而对节目不太感兴趣",
+        "因觉得讨论太抽象和理论化而不听",
+        "只有在没有更好的事情可做时才观看",
+        "认为讨论内容很少让自己感兴趣"
+      ],
+      "common_trait_activating_cues": [
+        "内容涉及新异的、非传统的或挑战性的观点",
+        "内容具有抽象性或理论性",
+        "接触是个人选择，非强制性的",
+        "存在观点交锋或辩论形式"
+      ],
+      "competing_facets": [
+        "O2: 审美/价值观开放性",
+        "C4: 成就追求",
+        "E1/E2: 社交性"
+      ],
+      "alternative_explanations": [
+        "对特定主题（如哲学、政治）的兴趣可能驱动选择",
+        "已有强烈信念（如环保立场）可能导致回避相反观点",
+        "社交偏好（如喜欢辩论）可能混淆测量"
+      ],
+      "boundary_condition": "当观点涉及核心价值观或强烈情感时，回避可能反映价值观稳定性而非低开放性；辩论形式可能吸引高社交性个体",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF04",
+      "family_name": "非强制性抽象/理论知识的主动深度探索",
+      "definition": "面对非强制性的、抽象或理论化的知识内容时，个体是否主动投入认知资源进行深度理解和探索，而非满足于表面理解或回避。",
+      "high_trait_evidence": "主动深入理解抽象/理论知识，尝试整合到已有知识体系中",
+      "low_trait_evidence": "回避深度理解，满足于表面或已有知识，偏好实用事物",
+      "supporting_item_ids": [
+        "openness_to_ideas_04",
+        "openness_to_ideas_08",
+        "openness_to_ideas_10"
+      ],
+      "support_count": 3,
+      "member_evidence_units_summary": [
+        "在遇到非必需的认知挑战内容时，是否主动投入认知资源去理解和探索",
+        "在存在与自己精通领域相关但非常理论化、抽象的新科学发现且接触是偶然、非强制性的情况下，是否主动投入认知资源去全面理解和整合",
+        "在存在非必须参与但具有认知理解深度的自然现象的情况下，是否主动寻求并投入于理解其背后的科学原理"
+      ],
+      "typical_high_manifestations": [
+        "阅读科学理论部分并主动接受智力挑战",
+        "全面了解新发现，尝试理解每一个细节",
+        "观看月食并尝试理解天文背景"
+      ],
+      "typical_low_manifestations": [
+        "阅读科学理论部分但不试图理解",
+        "更感兴趣的是实际事物，几乎不处理新发现",
+        "观看月食但仅此而已"
+      ],
+      "common_trait_activating_cues": [
+        "内容具有抽象性或理论性",
+        "接触是非强制性的",
+        "深度理解需要额外认知投入",
+        "内容与已有知识相关但超越表面"
+      ],
+      "competing_facets": [
+        "O2: 审美/价值观开放性",
+        "C4: 成就追求"
+      ],
+      "alternative_explanations": [
+        "认知能力（理解抽象理论的能力）可能限制深度探索",
+        "对特定领域（如科学、天文）的兴趣可能驱动行为",
+        "时间精力成本可能影响投入程度"
+      ],
+      "boundary_condition": "当内容超出个体认知能力范围时，回避可能反映能力限制而非兴趣缺乏；当内容与个体专业领域高度相关时，行为可能受职业动机驱动",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF05",
+      "family_name": "疲劳/竞争情境下对智力活动的优先选择",
+      "definition": "在疲劳状态或存在其他休闲活动竞争的情况下，个体是否主动优先选择智力性/教育性内容而非纯娱乐或放松活动。",
+      "high_trait_evidence": "优先选择智力性内容，即使在疲劳时也坚持智力探索",
+      "low_trait_evidence": "优先选择放松或娱乐，仅在已有兴趣范围内接触智力内容",
+      "supporting_item_ids": [
+        "openness_to_ideas_07",
+        "openness_to_ideas_21"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在经历消耗性的一天后，是否主动选择观看教育性/智力性节目而非纯娱乐节目",
+        "在存在非强制性的、与原有智力计划相竞争的其他休闲活动的情况下，是否坚持投入预先计划的智力活动"
+      ],
+      "typical_high_manifestations": [
+        "主动选择观看纪录片，认为教育永远不嫌多",
+        "按计划阅读或收听所有带来的内容"
+      ],
+      "typical_low_manifestations": [
+        "选择娱乐电影以放松",
+        "放弃阅读/听书，选择其他活动消磨时间"
+      ],
+      "common_trait_activating_cues": [
+        "存在疲劳或消耗状态",
+        "存在智力活动与娱乐活动的竞争",
+        "选择是个人自由，无外部压力"
+      ],
+      "competing_facets": [
+        "C4: 成就追求/尽责性",
+        "O2: 审美/价值观开放性"
+      ],
+      "alternative_explanations": [
+        "疲劳程度可能影响选择，高疲劳者更可能选娱乐",
+        "对特定书籍/纪录片主题的兴趣可能驱动选择",
+        "坚持计划可能反映尽责性而非好奇心"
+      ],
+      "boundary_condition": "当疲劳程度极高时，所有个体都可能选择放松，此时不具区分度；对特定主题的兴趣可能混淆测量",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF06",
+      "family_name": "非强制性新颖功能的主动探索",
+      "definition": "面对熟悉事物中的新颖元素（如软件新功能）时，个体是否主动探索和学习这些新功能，而非回避或维持现状。",
+      "high_trait_evidence": "主动探索新功能，通过多种方式学习",
+      "low_trait_evidence": "回避新功能，维持旧有使用方式，对变化感到烦恼",
+      "supporting_item_ids": [
+        "openness_to_ideas_09"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在软件包含非必需新功能且无外部强制要求的情况下，是否主动探索和学习这些新功能"
+      ],
+      "typical_high_manifestations": [
+        "主动查看各种资源来了解新功能",
+        "通过试用软件来自学新功能"
+      ],
+      "typical_low_manifestations": [
+        "使用软件时几乎不使用新功能",
+        "对软件更新感到烦恼，并尝试继续使用旧软件"
+      ],
+      "common_trait_activating_cues": [
+        "存在熟悉事物中的新颖元素",
+        "新功能是非必需的",
+        "无外部强制要求学习"
+      ],
+      "competing_facets": [
+        "O2: 审美/价值观开放性",
+        "N4: 对变化的焦虑"
+      ],
+      "alternative_explanations": [
+        "对软件更新的普遍厌恶（如对变化的不适）可能驱动回避",
+        "对特定软件功能的实际需求不足可能影响探索",
+        "时间压力可能限制探索行为"
+      ],
+      "boundary_condition": "当新功能对工作效率有显著影响时，行为可能受实用动机驱动；对变化的普遍反感可能反映保守性而非低开放性",
+      "construct_purity": "low",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF07",
+      "family_name": "非强制性知识探索机会的主动接受与扩展",
+      "definition": "面对非强制性的、以知识探索和观念接触为主要内容的社会活动或机会时，个体是否主动接受并寻求扩展认知体验，而非回避或限制参与。",
+      "high_trait_evidence": "主动接受并扩展知识探索机会，期待了解新事物",
+      "low_trait_evidence": "回避或限制参与，因缺乏兴趣或偏好实用",
+      "supporting_item_ids": [
+        "openness_to_ideas_13",
+        "openness_to_ideas_16",
+        "openness_to_ideas_20"
+      ],
+      "support_count": 3,
+      "member_evidence_units_summary": [
+        "在存在非强制性、以知识探索和观念接触为主要内容的社会活动且取消无社交代价的情况下，是否主动接受并投入该活动",
+        "在存在非强制性智力文化体验机会的情况下，是否主动投入认知资源去探索和利用该机会",
+        "在存在一个非强制性的、主题熟悉的智力活动机会时，是否主动选择参与"
+      ],
+      "typical_high_manifestations": [
+        "高兴地接受博物馆邀请，期待了解新事物",
+        "接受免费券并计划参观博物馆",
+        "参加整个讲座系列"
+      ],
+      "typical_low_manifestations": [
+        "同意但限制自己只接触已有知识的主题",
+        "以没有时间为由放弃使用免费券",
+        "因偏好做实际事情而不参加讲座系列"
+      ],
+      "common_trait_activating_cues": [
+        "活动以知识探索为主要内容",
+        "参与是非强制性的",
+        "无社交代价或外部压力",
+        "活动具有扩展认知体验的潜力"
+      ],
+      "competing_facets": [
+        "E1: 热情/社交性",
+        "C4: 成就追求",
+        "O2: 审美/价值观开放性"
+      ],
+      "alternative_explanations": [
+        "社交性（喜欢与人同行）可能驱动扩展参与",
+        "成就追求（追求知识成就）可能驱动参与",
+        "时间压力或精力有限可能导致回避"
+      ],
+      "boundary_condition": "当活动涉及社交成分时，社交性可能混淆测量；当主题与个体专业领域相关时，职业动机可能驱动行为",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF08",
+      "family_name": "他人拒绝情境下对智力活动的价值维护",
+      "definition": "当他人对抽象智力活动表现出拒绝或负面态度时，个体是否主动维护和推广该活动的价值，而非认同并强化负面评价。",
+      "high_trait_evidence": "主动维护智力活动的价值，说服他人参与或表达积极兴趣",
+      "low_trait_evidence": "认同他人负面评价，强化对智力活动的消极态度",
+      "supporting_item_ids": [
+        "openness_to_ideas_19"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在他人拒绝参与一个需要高度集中注意力的抽象智力游戏的情况下，是否主动说服他人参与并表达对该游戏的积极兴趣"
+      ],
+      "typical_high_manifestations": [
+        "尽一切努力说服朋友这是一个很棒的游戏",
+        "因朋友不喜欢该游戏而感到难过，但接受其决定"
+      ],
+      "typical_low_manifestations": [
+        "因朋友也不喜欢该游戏而感到欣慰，认为游戏太累人",
+        "与朋友讨论都更喜欢其他活动，并认为有人觉得该游戏有趣是不可思议的"
+      ],
+      "common_trait_activating_cues": [
+        "他人对智力活动表现出拒绝或负面态度",
+        "存在社交情境下的态度表达",
+        "活动具有抽象性和认知要求"
+      ],
+      "competing_facets": [
+        "A2: 坦率/宜人性",
+        "E3: 热情/社交性"
+      ],
+      "alternative_explanations": [
+        "高宜人性（不想强迫他人）可能导致接受决定",
+        "社交性（喜欢讨论其他活动）可能驱动低行为",
+        "对特定游戏类型的兴趣可能影响态度"
+      ],
+      "boundary_condition": "当社交压力较大时，行为可能受社交规范而非好奇心驱动；说服行为可能反映果断性而非开放性",
+      "construct_purity": "low",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF09",
+      "family_name": "非强制性智力内容偏好的主动选择",
+      "definition": "在无外部强制、纯个人兴趣驱动的内容选择情境中，个体是否偏好认知深度更高、更可能涉及新观念或抽象内容的选项，而非娱乐化或实用导向的选项。",
+      "high_trait_evidence": "主动选择认知挑战和观念探索类内容",
+      "low_trait_evidence": "偏好娱乐放松或实用信息类内容",
+      "supporting_item_ids": [
+        "openness_to_ideas_22"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在无外部强制、纯个人兴趣驱动的杂志类别选择机会下，是否选择认知深度更高、更可能涉及新观念或抽象内容的杂志类别"
+      ],
+      "typical_high_manifestations": [
+        "选择科学/文化杂志",
+        "选择新闻/商业杂志"
+      ],
+      "typical_low_manifestations": [
+        "选择时尚/娱乐杂志",
+        "选择体育/自然/计算机杂志"
+      ],
+      "common_trait_activating_cues": [
+        "选择是纯个人兴趣驱动的",
+        "选项在认知深度和观念新颖性上存在差异",
+        "无外部强制或社会压力"
+      ],
+      "competing_facets": [
+        "O2: 审美/价值观开放性",
+        "C4: 成就追求"
+      ],
+      "alternative_explanations": [
+        "个人已有兴趣领域（如对体育的既有热情）可能驱动选择",
+        "社会赞许性可能使被试选择看起来更'有文化'的选项",
+        "实用需求（如新闻/商业）可能反映成就追求"
+      ],
+      "boundary_condition": "当选项与个体已有强烈兴趣领域重合时，领域兴趣可能混淆测量；社会赞许性可能影响选择",
+      "construct_purity": "low",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF10",
+      "family_name": "非强制性新知识探索机会的主动寻求与参与",
+      "definition": "当朋友或他人提出一个自己尚未完全了解的新知识话题时，个体是否主动寻求更多信息并愿意参与讨论，而非回避或拒绝智力性交流。",
+      "high_trait_evidence": "主动寻求信息，愿意投入时间准备或倾听讨论",
+      "low_trait_evidence": "回避讨论，以了解不多或不感兴趣为由拒绝",
+      "supporting_item_ids": [
+        "openness_to_ideas_14"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在存在一个自己尚未完全了解、但朋友主动提出的新科学发现且讨论非强制的情况下，是否主动寻求更多信息并愿意参与讨论"
+      ],
+      "typical_high_manifestations": [
+        "要求一天时间详细处理该主题以便后续讨论",
+        "请朋友更详细解释该主题并表示高兴得知新发现"
+      ],
+      "typical_low_manifestations": [
+        "以了解不多为由表示不感兴趣",
+        "因朋友总谈论高智力主题而感到烦恼"
+      ],
+      "common_trait_activating_cues": [
+        "话题是新的、自己尚未完全了解的",
+        "讨论是非强制性的",
+        "由他人主动提出",
+        "涉及智力性交流"
+      ],
+      "competing_facets": [
+        "E3: 热情/社交性",
+        "A2: 坦率/宜人性"
+      ],
+      "alternative_explanations": [
+        "人际偏好（不喜欢朋友的话题选择）可能驱动回避",
+        "时间压力或当前兴趣焦点可能影响选择",
+        "社交性（喜欢与朋友交流）可能驱动参与"
+      ],
+      "boundary_condition": "当话题与个体价值观冲突时，回避可能反映价值观差异而非低开放性；人际因素（如与朋友的关系质量）可能混淆测量",
+      "construct_purity": "low",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF11",
+      "family_name": "日常话题中智力探索机会的主动关注",
+      "definition": "面对一个日常但可深入探讨的智力话题（如夏令时规定）时，个体是否主动投入认知资源去了解背景或关注讨论，而非仅做必要操作或表达厌烦。",
+      "high_trait_evidence": "主动了解背景信息，关注相关讨论",
+      "low_trait_evidence": "仅做必要操作，表达厌烦或不做进一步思考",
+      "supporting_item_ids": [
+        "openness_to_ideas_15"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在存在关于夏令时规定的非强制性智力探索机会的情况下，是否主动投入认知资源去了解背景或关注讨论"
+      ],
+      "typical_high_manifestations": [
+        "主动了解夏令时规定的背景信息",
+        "饶有兴趣地关注关于夏令时优缺点的当前讨论"
+      ],
+      "typical_low_manifestations": [
+        "表达对时钟改变的厌烦并希望废除它",
+        "仅调整时钟，不做进一步思考"
+      ],
+      "common_trait_activating_cues": [
+        "话题是日常的但可深入探讨",
+        "探索是非强制性的",
+        "存在背景信息或讨论可供关注"
+      ],
+      "competing_facets": [
+        "O2: 审美/价值观开放性",
+        "C4: 成就追求"
+      ],
+      "alternative_explanations": [
+        "对时间变化的个人偏好（如早起困难）可能驱动厌烦",
+        "对规则改变的普遍反感（保守性）可能影响态度",
+        "时间压力可能限制关注行为"
+      ],
+      "boundary_condition": "当话题涉及个人生活习惯时，行为可能受实用偏好而非好奇心驱动；对变化的普遍反感可能反映保守性",
+      "construct_purity": "low",
+      "status": "provisional"
+    }
+  ],
+  "merge_decisions": [
+    {
+      "unit_a": "openness_to_ideas_01",
+      "unit_b": "openness_to_ideas_02",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性、无外在报酬的智力挑战任务时，是否主动投入认知资源。01是创新比赛，02是智力题，但心理机制相同：主动接近 vs 回避智力挑战。"
+    },
+    {
+      "unit_a": "openness_to_ideas_01",
+      "unit_b": "openness_to_ideas_03",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性、无外部奖励的智力挑战时，是否主动投入认知资源。01是创新比赛，03是数独谜题，心理机制相同。"
+    },
+    {
+      "unit_a": "openness_to_ideas_01",
+      "unit_b": "openness_to_ideas_18",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性的智力挑战选择时，是否主动选择高认知要求的选项。01是创新比赛，18是游戏选择，心理机制相同：主动接近 vs 回避智力挑战。"
+    },
+    {
+      "unit_a": "openness_to_ideas_04",
+      "unit_b": "openness_to_ideas_08",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性的抽象/理论知识时，是否主动投入认知资源进行深度理解和探索。04是科学理论，08是理论新发现，心理机制相同：深度探索 vs 表面理解或回避。"
+    },
+    {
+      "unit_a": "openness_to_ideas_04",
+      "unit_b": "openness_to_ideas_10",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性的、具有认知理解深度的内容时，是否主动寻求理解背后的原理。04是科学理论，10是月食原理，心理机制相同：主动深度理解 vs 表面体验或回避。"
+    },
+    {
+      "unit_a": "openness_to_ideas_06",
+      "unit_b": "openness_to_ideas_11",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对包含新异的、非传统的或抽象观点的内容时，是否主动接近并开放地处理。06是辩论节目，11是哲学演讲，心理机制相同：主动接触新观点 vs 回避。"
+    },
+    {
+      "unit_a": "openness_to_ideas_06",
+      "unit_b": "openness_to_ideas_12",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性的、涉及抽象观念的内容时，是否主动选择观看并投入注意力。06是辩论节目，12是哲学脱口秀，心理机制相同。"
+    },
+    {
+      "unit_a": "openness_to_ideas_06",
+      "unit_b": "openness_to_ideas_17",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性的智力讨论/观点交锋机会时，是否主动接受并参与。06是辩论节目，17是辩论俱乐部，心理机制相同：主动参与智力讨论 vs 回避。"
+    },
+    {
+      "unit_a": "openness_to_ideas_07",
+      "unit_b": "openness_to_ideas_21",
+      "decision": "merge",
+      "reasoning": "两者都涉及在疲劳或存在其他休闲活动竞争的情况下，是否优先选择智力性内容。07是疲劳后选纪录片，21是度假时坚持阅读，心理机制相同：优先智力探索 vs 放松娱乐。"
+    },
+    {
+      "unit_a": "openness_to_ideas_13",
+      "unit_b": "openness_to_ideas_16",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性的知识探索机会（博物馆）时，是否主动接受并扩展参与。13是博物馆邀请，16是免费博物馆券，心理机制相同：主动接受 vs 回避。"
+    },
+    {
+      "unit_a": "openness_to_ideas_13",
+      "unit_b": "openness_to_ideas_20",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对非强制性的智力活动机会时，是否主动选择参与。13是博物馆，20是讲座系列，心理机制相同：主动接近 vs 回避。"
+    },
+    {
+      "unit_a": "openness_to_ideas_05",
+      "unit_b": "openness_to_ideas_02",
+      "decision": "separate",
+      "reasoning": "05涉及填补非必需的认知缺口（查词），02涉及面对完整的智力挑战任务（脑筋急转弯）。05的心理机制是'主动填补知识缺口'，02是'主动接受智力挑战'，两者不同。05的认知对象是'缺口'，02是'任务'。"
+    },
+    {
+      "unit_a": "openness_to_ideas_05",
+      "unit_b": "openness_to_ideas_04",
+      "decision": "separate",
+      "reasoning": "05涉及填补非必需的认知缺口（查词），04涉及深度理解抽象内容（科学理论）。05是'缺口填补'，04是'深度探索'，心理机制不同。05的认知对象是'未知词汇'，04是'已知但复杂的理论'。"
+    },
+    {
+      "unit_a": "openness_to_ideas_09",
+      "unit_b": "openness_to_ideas_18",
+      "decision": "separate",
+      "reasoning": "09涉及探索熟悉事物中的新颖元素（软件新功能），18涉及选择未知的智力挑战（新游戏）。09的心理机制是'对新颖性的探索'，18是'对智力挑战的偏好'，两者不同。09的认知对象是'熟悉中的新'，18是'完全未知的挑战'。"
+    },
+    {
+      "unit_a": "openness_to_ideas_19",
+      "unit_b": "openness_to_ideas_17",
+      "decision": "separate",
+      "reasoning": "19涉及在他人拒绝情境下维护智力活动的价值，17涉及主动参与智力讨论。19的心理机制是'价值维护'，17是'主动参与'，两者不同。19的关键情境是'他人拒绝'，17是'个人选择'。"
+    },
+    {
+      "unit_a": "openness_to_ideas_14",
+      "unit_b": "openness_to_ideas_08",
+      "decision": "separate",
+      "reasoning": "14涉及朋友提出新话题时主动寻求信息，08涉及自己偶然发现新理论时深度探索。14的心理机制是'社交情境下的知识寻求'，08是'独立的知识深度探索'，两者不同。14的关键是'他人发起'，08是'自我发现'。"
+    },
+    {
+      "unit_a": "openness_to_ideas_15",
+      "unit_b": "openness_to_ideas_07",
+      "decision": "separate",
+      "reasoning": "15涉及对日常话题（夏令时）的智力探索，07涉及疲劳时选择智力内容。15的心理机制是'日常话题的智力关注'，07是'疲劳下的智力优先'，两者不同。15的关键是'话题的日常性'，07是'疲劳状态'。"
+    },
+    {
+      "unit_a": "openness_to_ideas_22",
+      "unit_b": "openness_to_ideas_07",
+      "decision": "separate",
+      "reasoning": "22涉及在内容选择中偏好认知深度（杂志类别），07涉及疲劳时选择智力内容。22的心理机制是'内容偏好'，07是'疲劳下的优先选择'，两者不同。22的关键是'偏好结构'，07是'状态竞争'。"
+    }
+  ],
+  "item_evidence_mapping": [
+    {
+      "item_id": "openness_to_ideas_01",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_02",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_03",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_04",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_05",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_06",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_07",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_08",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_09",
+      "primary_family": "EF06",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_10",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_11",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_12",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_13",
+      "primary_family": "EF07",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_14",
+      "primary_family": "EF10",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_15",
+      "primary_family": "EF11",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_16",
+      "primary_family": "EF07",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_17",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_18",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_19",
+      "primary_family": "EF08",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_20",
+      "primary_family": "EF07",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_21",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "openness_to_ideas_22",
+      "primary_family": "EF09",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    }
+  ],
+  "coverage_analysis": {
+    "overrepresented_families": [
+      "EF01: 非强制性智力挑战的主动接近与认知投入（4题）",
+      "EF03: 非传统/挑战性观点的主动接触与开放处理（4题）",
+      "EF07: 非强制性知识探索机会的主动接受与扩展（3题）",
+      "EF04: 非强制性抽象/理论知识的主动深度探索（3题）"
+    ],
+    "underrepresented_families": [
+      "EF02: 非必需认知缺口的主动填补（1题）",
+      "EF06: 非强制性新颖功能的主动探索（1题）",
+      "EF08: 他人拒绝情境下对智力活动的价值维护（1题）",
+      "EF09: 非强制性智力内容偏好的主动选择（1题）",
+      "EF10: 非强制性新知识探索机会的主动寻求与参与（1题）",
+      "EF11: 日常话题中智力探索机会的主动关注（1题）"
+    ],
+    "high_redundancy_item_clusters": [
+      [
+        "openness_to_ideas_01",
+        "openness_to_ideas_02",
+        "openness_to_ideas_03",
+        "openness_to_ideas_18"
+      ],
+      [
+        "openness_to_ideas_06",
+        "openness_to_ideas_11",
+        "openness_to_ideas_12",
+        "openness_to_ideas_17"
+      ],
+      [
+        "openness_to_ideas_04",
+        "openness_to_ideas_08",
+        "openness_to_ideas_10"
+      ],
+      [
+        "openness_to_ideas_13",
+        "openness_to_ideas_16",
+        "openness_to_ideas_20"
+      ],
+      [
+        "openness_to_ideas_07",
+        "openness_to_ideas_21"
+      ]
+    ],
+    "high_contamination_items": [
+      "openness_to_ideas_19: 高宜人性或低果断性可能混淆",
+      "openness_to_ideas_14: 人际偏好可能混淆",
+      "openness_to_ideas_09: 对变化的普遍反感可能混淆",
+      "openness_to_ideas_22: 社会赞许性可能影响选择",
+      "openness_to_ideas_15: 对规则改变的保守态度可能混淆"
+    ],
+    "possible_construct_gaps": [
+      "可能存在覆盖不足：构念定义中'receptivity to new/unconventional ideas'（对新/非常规观念的接受性）在现有题目中主要通过'主动接触'来测量，但缺乏对'即使不主动寻求，当遇到时是否开放接受'的测量。现有题目多测量主动接近行为，较少测量被动接受情境下的开放性。",
+      "可能存在覆盖不足：构念定义中'active pursuit of intellectual interests'（主动追求智力兴趣）在现有题目中主要通过'接受外部提供的智力机会'来测量，但缺乏对'自发创造智力探索机会'（如主动寻找新知识来源、自己发起智力讨论）的测量。",
+      "可能存在覆盖不足：构念定义中'intellectual curiosity'（智力好奇心）在现有题目中主要通过'对智力挑战的接近'来测量，但缺乏对'对未知事物的普遍好奇'（如对不熟悉的文化、习俗、生活方式的好奇）的测量，现有题目多聚焦于抽象/理论内容。"
+    ]
+  },
+  "summary": {
+    "number_of_items": 22,
+    "number_of_evidence_families": 11,
+    "stable_families": 5,
+    "provisional_families": 6,
+    "overrepresented_families_count": 4,
+    "underrepresented_families_count": 6,
+    "high_contamination_items_count": 5,
+    "possible_construct_gaps_count": 3
+  }
+}

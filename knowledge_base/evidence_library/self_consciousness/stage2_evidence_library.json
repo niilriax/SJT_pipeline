@@ -1,0 +1,705 @@
+{
+  "facet": "self_consciousness",
+  "evidence_library": [
+    {
+      "family_id": "EF01",
+      "family_name": "公开社交失误后的情境回避 vs 主动化解",
+      "definition": "在公开社交场合中发生由自身或他人引发的失误（如认错人、打翻东西、滑倒、按错楼层、手机响）后，个体因对他人评价敏感而选择回避该社交情境（离开、隐藏、逃离），还是选择留在情境中并主动化解尴尬（道歉、幽默、坦然面对）。",
+      "high_trait_evidence": "在公开社交失误后，优先采取回避行为（离开现场、隐藏自己、逃离情境）以最小化社交暴露和他人评价。",
+      "low_trait_evidence": "在公开社交失误后，优先采取主动化解行为（道歉、幽默、坦然面对、纠正错误）以维持社交在场。",
+      "supporting_item_ids": [
+        "self_consciousness_01",
+        "self_consciousness_07",
+        "self_consciousness_09",
+        "self_consciousness_14",
+        "self_consciousness_18",
+        "self_consciousness_19"
+      ],
+      "support_count": 6,
+      "member_evidence_units_summary": [
+        "在拥挤影厅中因需要让半排人起身而可能被注意时，选择忍受不便留在错误影厅以避免尴尬 (item_01)",
+        "在聚会上误认陌生人后，选择逃离现场或整晚回避对方 (item_07)",
+        "在安静影院中手机意外响起时，优先关掉手机以消除尴尬 (item_09)",
+        "在电梯中按错楼层后，选择走出电梯回避尴尬 (item_14)",
+        "在商务晚宴上打翻红酒被当众斥责后，选择离开或换座位回避情境 (item_18)",
+        "在咖啡馆门口滑倒被嘲笑后，选择离开或隐藏自己 (item_19)"
+      ],
+      "typical_high_manifestations": [
+        "留在错误影厅不换厅",
+        "简短嘟囔后快速逃离现场",
+        "因尴尬整晚避开那个人",
+        "尽快关掉手机以消除尴尬",
+        "快速走出电梯回避尴尬",
+        "道歉后立即离开晚宴",
+        "道歉后立即换座位",
+        "离开咖啡馆去别的地方",
+        "待在咖啡馆但在二楼找座位"
+      ],
+      "typical_low_manifestations": [
+        "起身去另一个影厅",
+        "礼貌道歉并澄清误解",
+        "微笑并邀请对方喝一杯作为道歉",
+        "接电话并小声告知对方稍后联系",
+        "向其他乘客道歉，待在电梯里按正确楼层",
+        "道歉后用笑话来缓和气氛",
+        "道歉后理性地指出每个人都会犯错",
+        "嘲笑自己，在咖啡馆坐下",
+        "一言不发地在咖啡馆坐下"
+      ],
+      "common_trait_activating_cues": [
+        "公开社交场合中发生由自身或他人引发的失误",
+        "失误可能引起他人注意和评价",
+        "存在物理回避的可能性（离开、换座位、隐藏）"
+      ],
+      "competing_facets": [
+        "E1 (内向性)",
+        "C3 (尽责性-秩序)",
+        "A2 (宜人性-坦率)"
+      ],
+      "alternative_explanations": [
+        "离开情境也可能出于效率考虑（如走楼梯更快）或避免打扰他人",
+        "留在情境中也可能因社交压力（不想显得失礼）而非低自我意识",
+        "部分情境（如手机响）中接电话可能反映责任心而非低自我意识"
+      ],
+      "boundary_condition": "当失误涉及实际安全风险（如醉酒者暴力）或重大利益损失时，回避行为可能由其他因素驱动而非自我意识。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF02",
+      "family_name": "因他人行为成为社交注意焦点时的回避 vs 应对",
+      "definition": "在因他人行为（如朋友吹口哨、朋友大声打嗝、朋友讲尴尬故事、情侣公开亲密）而意外成为社交注意焦点时，个体是否感到尴尬并试图回避（逃离、制止、避免目光接触），还是坦然接受或主动化解。",
+      "high_trait_evidence": "因他人行为成为社交注意焦点时，对社交评价敏感并采取回避或控制行为（逃离、制止、避免目光接触）。",
+      "low_trait_evidence": "因他人行为成为社交注意焦点时，对社交评价不敏感并采取接受或主动化解行为（继续参与、幽默化解、不在意）。",
+      "supporting_item_ids": [
+        "self_consciousness_02",
+        "self_consciousness_11",
+        "self_consciousness_15",
+        "self_consciousness_17"
+      ],
+      "support_count": 4,
+      "member_evidence_units_summary": [
+        "在电车上因朋友吹口哨而成为注意焦点时，选择回避目光接触 (item_02)",
+        "在排队时因朋友大声打嗝而成为注意焦点时，选择快速离开或羞愧回避 (item_11)",
+        "在咖啡馆因朋友讲尴尬故事引起他人注视时，选择回避目光或要求安静 (item_15)",
+        "在电梯中遇到公开亲密情侣时，选择提前下车或避免目光接触 (item_17)"
+      ],
+      "typical_high_manifestations": [
+        "尴尬地看向一边，避免目光接触",
+        "快速告别离开现场",
+        "羞愧地看向别处，想离开但没有行动",
+        "感到羞愧并尝试避免其他客人的目光",
+        "要求朋友们安静，因为被注视让自己非常不舒服",
+        "在下一层下车以逃避尴尬的情况",
+        "对情况感到不舒服，避免目光接触"
+      ],
+      "typical_low_manifestations": [
+        "赞美她",
+        "笑并用手指指我的朋友",
+        "假装什么都没发生，继续交谈",
+        "说一句调皮的话让所有人都能听到",
+        "一起笑，认为故事有趣",
+        "不在乎他人是否在看，继续听故事",
+        "为恋人们感到高兴",
+        "被有趣的情况逗乐"
+      ],
+      "common_trait_activating_cues": [
+        "因他人行为而意外成为社交注意焦点",
+        "该行为可能被他人负面评价或引起周围人注意",
+        "自己并非行为的发起者但被连带评价"
+      ],
+      "competing_facets": [
+        "E1 (内向性)",
+        "E3 (外向性-乐群性)",
+        "A2 (宜人性-坦率)",
+        "O5 (开放性-价值观/幽默感)"
+      ],
+      "alternative_explanations": [
+        "赞美或幽默回应可能反映外向性或社交技能而非低自我意识",
+        "要求安静可能部分反映尽责性或宜人性中的规则维护",
+        "对公开亲密行为的态度可能受文化/道德观念影响"
+      ],
+      "boundary_condition": "当他人行为涉及严重道德或法律问题时，回避或制止行为可能由价值观驱动而非自我意识。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF03",
+      "family_name": "预期性社交暴露回避 vs 主动接近",
+      "definition": "在预期可能成为社交注意焦点或面临社交评价的情境（如公开表演、当众提问、即兴演讲、被误认为贵宾）中，个体是否主动回避该情境以减少社交暴露，还是主动接近或接受该情境。",
+      "high_trait_evidence": "在预期可能成为社交注意焦点时，主动回避或拒绝该情境以减少社交暴露和评价风险。",
+      "low_trait_evidence": "在预期可能成为社交注意焦点时，主动接近或接受该情境，不回避社交暴露。",
+      "supporting_item_ids": [
+        "self_consciousness_04",
+        "self_consciousness_08",
+        "self_consciousness_10",
+        "self_consciousness_13",
+        "self_consciousness_22"
+      ],
+      "support_count": 5,
+      "member_evidence_units_summary": [
+        "在生日聚餐中被提议公开表演时，拒绝提议以避免进一步被关注 (item_04)",
+        "在婚礼上被选中参加哑剧游戏时，被说服后才参与或勉强参与 (item_08)",
+        "在聚会上被误认为贵宾成为全场焦点时，尝试逃离聚光灯 (item_10)",
+        "在生日聚会上被建议做即兴演讲时，主动回避演讲 (item_13)",
+        "在公共讲座中有问题想问但需当众提问时，回避当众提问 (item_22)"
+      ],
+      "typical_high_manifestations": [
+        "拒绝公开表演的提议",
+        "要求朋友们将来避免让自己成为公开焦点",
+        "被说服后参与哑剧表演",
+        "起身走向舞台参与哑剧表演",
+        "尝试尽快逃离聚光灯，退缩到角落",
+        "简短解释贵宾搞混了，快速走出聚光灯",
+        "向生日男孩/女孩解释自己讨厌演讲",
+        "直接拒绝提议",
+        "不问问题，因为不喜欢在陌生人面前讲话",
+        "最多在讲座后单独提问"
+      ],
+      "typical_low_manifestations": [
+        "接受公开表演的提议并感到高兴",
+        "接受提议并要求加演",
+        "公开承认宁愿观看，把表演留给别人",
+        "克服自己参加第一个哑剧，但只是为了伴侣而做",
+        "用小演讲欢迎客人",
+        "待在聚光灯中，享受得到的关注",
+        "再次与主人确认后做简短的生日演讲",
+        "下次有机会时热情地做生日演讲",
+        "一旦注意到其他人也想提问，就提问",
+        "一旦演讲者短暂停顿，就提问"
+      ],
+      "common_trait_activating_cues": [
+        "存在一个非强制性的、可能成为社交注意焦点的情境",
+        "该情境涉及公开表演、演讲或当众发言",
+        "个体有选择是否参与的自由"
+      ],
+      "competing_facets": [
+        "E1 (内向性)",
+        "E3 (外向性-乐群性)",
+        "O1 (开放性-想象力/表演欲)"
+      ],
+      "alternative_explanations": [
+        "回避演讲可能由演讲能力或经验不足驱动而非自我意识",
+        "接受表演可能由外向性或寻求刺激驱动而非低自我意识",
+        "对生日庆祝的文化规范可能影响行为选择"
+      ],
+      "boundary_condition": "当情境涉及实际能力限制（如不擅长演讲）或文化规范时，回避行为可能不反映自我意识。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF04",
+      "family_name": "模糊社交评价信号的自我指向解释 vs 任务导向",
+      "definition": "在出现模糊的社交评价信号（如他人笑和低语、未理解玩笑而他人大笑）时，个体是否将信号解释为指向自己的负面评价并产生尴尬/自我怀疑，还是保持任务导向或积极解读。",
+      "high_trait_evidence": "面对模糊社交评价信号时，倾向于将信号解释为指向自己的负面评价，产生尴尬、自我怀疑或愤怒。",
+      "low_trait_evidence": "面对模糊社交评价信号时，倾向于保持任务导向、积极解读或不在意。",
+      "supporting_item_ids": [
+        "self_consciousness_03",
+        "self_consciousness_21"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在部门演示中注意到同事笑和低语时，怀疑自己说了好笑的话并检查外表 (item_03)",
+        "在候诊室未理解医生讽刺玩笑而他人大笑时，感到尴尬或愤怒 (item_21)"
+      ],
+      "typical_high_manifestations": [
+        "怀疑自己说了好笑的话并检查自身外表",
+        "被打扰后必须看笔记以维持专注",
+        "因没听懂笑话而感到尴尬",
+        "因医生在众人面前让自己尴尬而感到愤怒"
+      ],
+      "typical_low_manifestations": [
+        "继续演示，不中断",
+        "短暂停顿并主动询问同事是否有疑问",
+        "因医生有幽默感而感到高兴",
+        "认为那是愚人节笑话，不太在意"
+      ],
+      "common_trait_activating_cues": [
+        "出现模糊的社交信号（笑、低语、讽刺玩笑）",
+        "信号可能指向自己但不确定",
+        "存在公开社交场合"
+      ],
+      "competing_facets": [
+        "N3 (神经质-抑郁/自我怀疑)",
+        "N2 (神经质-敌意)",
+        "E6 (外向性-积极情绪)"
+      ],
+      "alternative_explanations": [
+        "愤怒反应可能部分反映敌意而非纯粹的自我意识",
+        "积极解读可能反映外向性或积极情绪而非低自我意识",
+        "注意力控制困难可能影响对干扰的反应"
+      ],
+      "boundary_condition": "当模糊信号有明确指向性（如明显针对自己）时，反应可能由其他因素（如自尊、敌意）驱动。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF05",
+      "family_name": "当众负面评价后的防御性反应 vs 轻松应对",
+      "definition": "在当众被提出负面评价或批评（如被问是否总是迟到、被醉酒者指责）时，个体是否采取防御性反应（沉默烦恼、辩解、物理回避）还是轻松幽默或不在意地应对。",
+      "high_trait_evidence": "面对当众负面评价时，倾向于感到尴尬并采取防御性反应（沉默烦恼、辩解、物理回避）。",
+      "low_trait_evidence": "面对当众负面评价时，倾向于轻松幽默地化解或不在意。",
+      "supporting_item_ids": [
+        "self_consciousness_16",
+        "self_consciousness_20"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在公共汽车上被醉酒者当众指责时，选择下车或换座以回避 (item_16)",
+        "在婚礼上被当众问是否总是迟到时，沉默烦恼或急于辩解 (item_20)"
+      ],
+      "typical_high_manifestations": [
+        "在下一站下车",
+        "起身找另一个座位",
+        "沉默不语，内心感到烦恼",
+        "向其他人解释这不是真的"
+      ],
+      "typical_low_manifestations": [
+        "对指控完全不反应，继续乘车",
+        "对评论发笑并做尖锐评论，继续乘车",
+        "开始笑，并对提问的客人做出有趣的评论",
+        "把评论当作小玩笑，不在乎"
+      ],
+      "common_trait_activating_cues": [
+        "当众被提出负面评价或批评",
+        "评价来自陌生人或不太熟悉的人",
+        "周围有其他人在场"
+      ],
+      "competing_facets": [
+        "E1 (内向性)",
+        "E3 (外向性-乐群性)",
+        "A2 (宜人性-坦率)"
+      ],
+      "alternative_explanations": [
+        "下车或换座可能出于安全担忧（醉酒者可能暴力）而非自我意识",
+        "幽默回应可能反映外向性或社交技能而非低自我意识",
+        "辩解可能反映对公正的追求（尽责性）而非自我意识"
+      ],
+      "boundary_condition": "当负面评价涉及实际威胁（如暴力风险）或重大利益时，回避行为可能由其他因素驱动。",
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF06",
+      "family_name": "购买私密物品时的社交评价回避 vs 坦然面对",
+      "definition": "在购买可能引发社交尴尬的私密物品（如安全套）时遇到社会评价者（如上级），个体是否采取回避或掩饰行为来避免被评价，还是坦然面对不回避。",
+      "high_trait_evidence": "在购买私密物品时遇到社会评价者，采取回避或掩饰行为（转身、放下物品）以避免被评价。",
+      "low_trait_evidence": "在购买私密物品时遇到社会评价者，坦然面对不回避（继续排队、主动展示）。",
+      "supporting_item_ids": [
+        "self_consciousness_12"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在药房购买安全套时遇到上级，选择转身背对或放下物品以掩饰 (item_12)"
+      ],
+      "typical_high_manifestations": [
+        "转身背对上级，假装没看见",
+        "放下安全套盒，然后问候上级"
+      ],
+      "typical_low_manifestations": [
+        "继续排队，让上级看到自己拿着安全套盒",
+        "问候上级，并主动展示安全套盒"
+      ],
+      "common_trait_activating_cues": [
+        "购买可能引发社交尴尬的私密物品",
+        "遇到社会评价者（上级、权威人物）",
+        "处于可能被对方注意到的位置"
+      ],
+      "competing_facets": [
+        "E1 (内向性)",
+        "O2 (开放性-审美/价值观)"
+      ],
+      "alternative_explanations": [
+        "回避行为可能由对上级的敬畏或职场权力关系驱动",
+        "坦然面对可能由对性话题的开放态度驱动",
+        "文化规范可能影响对私密物品购买的舒适度"
+      ],
+      "boundary_condition": "当涉及明确的职场权力关系或文化禁忌时，行为可能由权力动态或价值观驱动而非自我意识。",
+      "construct_purity": "low",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF07",
+      "family_name": "因先前失误引发的预期性社交回避 vs 主动面对",
+      "definition": "在因先前失误（如误发私人邮件）而预期可能面临尴尬社交互动时，个体是否主动回避该社交情境（假装没看见、转身离开），还是主动面对并解释失误。",
+      "high_trait_evidence": "因先前失误预期可能面临尴尬时，主动回避社交情境以避免尴尬。",
+      "low_trait_evidence": "因先前失误预期可能面临尴尬时，主动面对并解释失误以化解尴尬。",
+      "supporting_item_ids": [
+        "self_consciousness_05"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "误发私人照片给银行顾问后偶遇时，选择转身离开或假装没看见 (item_05)"
+      ],
+      "typical_high_manifestations": [
+        "转身以避免被认出",
+        "继续走，假装没看到银行顾问"
+      ],
+      "typical_low_manifestations": [
+        "主动问候并开玩笑提及照片，随后说明情况",
+        "主动与银行顾问交谈并解释情况"
+      ],
+      "common_trait_activating_cues": [
+        "存在因先前失误而可能引发的尴尬社交情境",
+        "失误内容可能被对方知晓",
+        "偶遇情境中可以选择回避或面对"
+      ],
+      "competing_facets": [
+        "E1 (内向性)",
+        "E3 (外向性-乐群性)"
+      ],
+      "alternative_explanations": [
+        "回避可能由内向或社交焦虑驱动而非纯粹的自我意识",
+        "主动面对可能由外向性或社交技能驱动"
+      ],
+      "boundary_condition": "当失误内容涉及严重隐私或职业风险时，回避行为可能由实际考量驱动。",
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF08",
+      "family_name": "被公开模仿/嘲笑时的尴尬回避 vs 坦然接受",
+      "definition": "在公开社交场合中被他人模仿或嘲笑（如上级模仿、被当众嘲笑）时，个体是否感到尴尬、受伤并采取回避行为，还是坦然接受甚至参与其中。",
+      "high_trait_evidence": "被公开模仿或嘲笑时，感到尴尬、受伤并采取回避行为（远离未来场合、震惊）。",
+      "low_trait_evidence": "被公开模仿或嘲笑时，坦然接受、不在意甚至主动参与互动。",
+      "supporting_item_ids": [
+        "self_consciousness_06"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在公司圣诞聚会上被上级模仿引发笑声时，感到震惊受伤并决定远离未来聚会 (item_06)"
+      ],
+      "typical_high_manifestations": [
+        "对上级的模仿和同事的笑声感到震惊和受伤",
+        "决定远离下次圣诞聚会以避免再次被这样对待"
+      ],
+      "typical_low_manifestations": [
+        "一起笑，不在乎",
+        "模仿上级，将整件事视为有趣的游戏"
+      ],
+      "common_trait_activating_cues": [
+        "公开社交场合中被他人模仿或嘲笑",
+        "模仿者具有权威地位（上级）",
+        "周围有他人观看和反应"
+      ],
+      "competing_facets": [
+        "E1 (内向性)",
+        "O5 (开放性-价值观/幽默感)"
+      ],
+      "alternative_explanations": [
+        "受伤反应可能反映对权力不平等的反抗而非纯粹的自我意识",
+        "参与互动可能反映外向性或幽默感而非低自我意识",
+        "文化规范可能影响对上级模仿行为的接受度"
+      ],
+      "boundary_condition": "当模仿涉及恶意或权力滥用时，受伤反应可能由公正感或愤怒驱动而非自我意识。",
+      "construct_purity": "low",
+      "status": "provisional"
+    }
+  ],
+  "merge_decisions": [
+    {
+      "unit_a": "self_consciousness_01",
+      "unit_b": "self_consciousness_07",
+      "decision": "merge",
+      "reasoning": "两者都涉及公开社交失误后的回避行为：item_01（进错影厅需让半排人起身）和item_07（误认陌生人）。核心机制相同：在公开社交失误后，因担心他人评价而选择回避情境（留在错误影厅/逃离现场）。差异仅在于失误类型（进错影厅 vs 认错人），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_01",
+      "unit_b": "self_consciousness_09",
+      "decision": "merge",
+      "reasoning": "两者都涉及公开场合中因自身行为（进错影厅/手机响）可能引起他人注意时的回避行为。核心机制相同：优先采取行动消除尴尬（留在错误影厅/尽快关掉手机）。差异仅在于触发事件类型（进错影厅 vs 手机响），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_01",
+      "unit_b": "self_consciousness_14",
+      "decision": "merge",
+      "reasoning": "两者都涉及公开场合中因自身操作失误（进错影厅/按错楼层）可能引起他人注意时的回避行为。核心机制相同：选择离开情境以回避尴尬（留在错误影厅/走出电梯）。差异仅在于具体场景（影厅 vs 电梯），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_01",
+      "unit_b": "self_consciousness_18",
+      "decision": "merge",
+      "reasoning": "两者都涉及公开社交失误后的情境回避。item_01（进错影厅）和item_18（打翻红酒被斥责）的核心机制相同：在公开失误后，因对他人评价敏感而选择离开或回避情境。差异在于失误严重程度和是否受到批评，但心理机制一致，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_01",
+      "unit_b": "self_consciousness_19",
+      "decision": "merge",
+      "reasoning": "两者都涉及公开社交失误后的情境回避。item_01（进错影厅）和item_19（滑倒被嘲笑）的核心机制相同：在公开失误后，因对他人评价敏感而选择回避情境（留在错误影厅/离开咖啡馆）。差异在于失误类型（进错影厅 vs 滑倒），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_02",
+      "unit_b": "self_consciousness_11",
+      "decision": "merge",
+      "reasoning": "两者都涉及因他人行为（朋友吹口哨/朋友打嗝）而成为社交注意焦点时的回避行为。核心机制相同：因他人行为引发社交尴尬时，选择回避（避免目光接触/快速离开）。差异在于他人行为类型（吹口哨 vs 打嗝），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_02",
+      "unit_b": "self_consciousness_15",
+      "decision": "merge",
+      "reasoning": "两者都涉及因他人行为（朋友吹口哨/朋友讲尴尬故事）而成为社交注意焦点时的回避行为。核心机制相同：因他人行为引发社交注意时，感到尴尬并试图回避（避免目光接触/要求安静）。差异在于他人行为类型（吹口哨 vs 讲尴尬故事），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_02",
+      "unit_b": "self_consciousness_17",
+      "decision": "merge",
+      "reasoning": "两者都涉及因他人行为（朋友吹口哨/情侣公开亲密）而成为社交注意焦点时的回避行为。核心机制相同：因他人行为引发社交尴尬时，选择回避（避免目光接触/提前下车）。差异在于他人行为类型（吹口哨 vs 公开亲密），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_04",
+      "unit_b": "self_consciousness_08",
+      "decision": "merge",
+      "reasoning": "两者都涉及预期可能成为社交注意焦点时的回避行为。item_04（被提议公开表演）和item_08（被选中参加哑剧游戏）的核心机制相同：在预期可能成为社交焦点时，主动回避或勉强参与。差异在于具体表演形式（唱歌 vs 哑剧），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_04",
+      "unit_b": "self_consciousness_10",
+      "decision": "merge",
+      "reasoning": "两者都涉及预期可能成为社交注意焦点时的回避行为。item_04（被提议公开表演）和item_10（被误认为贵宾）的核心机制相同：在预期可能成为社交焦点时，主动回避（拒绝表演/逃离聚光灯）。差异在于成为焦点的原因（被提议 vs 被误认），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_04",
+      "unit_b": "self_consciousness_13",
+      "decision": "merge",
+      "reasoning": "两者都涉及预期可能成为社交注意焦点时的回避行为。item_04（被提议公开表演）和item_13（被建议做即兴演讲）的核心机制相同：在预期可能成为社交焦点时，主动回避（拒绝表演/拒绝演讲）。差异在于表演形式（唱歌 vs 演讲），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_04",
+      "unit_b": "self_consciousness_22",
+      "decision": "merge",
+      "reasoning": "两者都涉及预期可能成为社交注意焦点时的回避行为。item_04（被提议公开表演）和item_22（当众提问）的核心机制相同：在预期可能成为社交焦点时，主动回避（拒绝表演/不问问题）。差异在于社交暴露形式（表演 vs 提问），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_03",
+      "unit_b": "self_consciousness_21",
+      "decision": "merge",
+      "reasoning": "两者都涉及模糊社交评价信号的自我指向解释。item_03（同事笑和低语）和item_21（未理解玩笑而他人大笑）的核心机制相同：面对模糊社交信号时，倾向于将信号解释为指向自己的负面评价并产生尴尬/自我怀疑。差异在于信号类型（笑和低语 vs 未理解玩笑），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_16",
+      "unit_b": "self_consciousness_20",
+      "decision": "merge",
+      "reasoning": "两者都涉及当众被提出负面评价时的防御性反应。item_16（被醉酒者指责）和item_20（被问是否总是迟到）的核心机制相同：面对当众负面评价时，采取防御性反应（下车/沉默烦恼）。差异在于评价内容（指责 vs 质疑），属于表面域差异，应合并。"
+    },
+    {
+      "unit_a": "self_consciousness_05",
+      "unit_b": "self_consciousness_07",
+      "decision": "separate",
+      "reasoning": "item_05（误发邮件后偶遇）涉及因先前失误预期可能面临尴尬时的回避，属于预期性回避。item_07（误认陌生人）涉及失误当场发生后的即时回避，属于反应性回避。虽然都涉及回避行为，但心理机制不同：一个是预期性（before exposure），一个是反应性（after exposure）。应分开。"
+    },
+    {
+      "unit_a": "self_consciousness_06",
+      "unit_b": "self_consciousness_19",
+      "decision": "separate",
+      "reasoning": "item_06（被上级模仿）涉及被他人主动模仿/嘲笑时的反应，核心是权力关系和幽默接受度。item_19（滑倒被嘲笑）涉及自身失误引发的尴尬，核心是失误后的情境回避。虽然都涉及被嘲笑，但触发机制不同：一个是他人主动行为，一个是自身失误。应分开。"
+    },
+    {
+      "unit_a": "self_consciousness_12",
+      "unit_b": "self_consciousness_14",
+      "decision": "separate",
+      "reasoning": "item_12（购买安全套遇上级）涉及购买私密物品时的社交评价回避，核心是物品的私密性。item_14（按错楼层）涉及一般性操作失误后的回避，核心是失误本身。虽然都涉及回避行为，但触发机制不同：一个是物品的社交禁忌属性，一个是操作失误。应分开。"
+    }
+  ],
+  "item_evidence_mapping": [
+    {
+      "item_id": "self_consciousness_01",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": "EF01_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_02",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": "EF02_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_03",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": "EF04_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_04",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": "EF03_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_05",
+      "primary_family": "EF07",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_consciousness_06",
+      "primary_family": "EF08",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_consciousness_07",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": "EF01_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_08",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": "EF03_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_09",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": "EF01_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_10",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": "EF03_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_11",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": "EF02_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_12",
+      "primary_family": "EF06",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_consciousness_13",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": "EF03_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_14",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": "EF01_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_15",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": "EF02_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_16",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": "EF05_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_17",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": "EF02_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_18",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": "EF01_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_19",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": "EF01_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_20",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": "EF05_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_21",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": "EF04_cluster_1"
+    },
+    {
+      "item_id": "self_consciousness_22",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": "EF03_cluster_1"
+    }
+  ],
+  "coverage_analysis": {
+    "overrepresented_families": [
+      "EF01 (公开社交失误后的情境回避 vs 主动化解) - 6题",
+      "EF03 (预期性社交暴露回避 vs 主动接近) - 5题",
+      "EF02 (因他人行为成为社交注意焦点时的回避 vs 应对) - 4题"
+    ],
+    "underrepresented_families": [
+      "EF06 (购买私密物品时的社交评价回避 vs 坦然面对) - 仅1题",
+      "EF07 (因先前失误引发的预期性社交回避 vs 主动面对) - 仅1题",
+      "EF08 (被公开模仿/嘲笑时的尴尬回避 vs 坦然接受) - 仅1题"
+    ],
+    "high_redundancy_item_clusters": [
+      [
+        "self_consciousness_01",
+        "self_consciousness_07",
+        "self_consciousness_09",
+        "self_consciousness_14",
+        "self_consciousness_18",
+        "self_consciousness_19"
+      ],
+      [
+        "self_consciousness_02",
+        "self_consciousness_11",
+        "self_consciousness_15",
+        "self_consciousness_17"
+      ],
+      [
+        "self_consciousness_04",
+        "self_consciousness_08",
+        "self_consciousness_10",
+        "self_consciousness_13",
+        "self_consciousness_22"
+      ],
+      [
+        "self_consciousness_03",
+        "self_consciousness_21"
+      ],
+      [
+        "self_consciousness_16",
+        "self_consciousness_20"
+      ]
+    ],
+    "high_contamination_items": [
+      "self_consciousness_06 (被上级模仿) - 可能反映对权力不平等的反抗而非纯粹的自我意识",
+      "self_consciousness_12 (购买安全套遇上级) - 可能由职场权力关系或文化价值观驱动",
+      "self_consciousness_16 (被醉酒者指责) - 可能由安全担忧驱动",
+      "self_consciousness_17 (遇到公开亲密情侣) - 可能由文化/道德观念驱动"
+    ],
+    "possible_construct_gaps": [
+      "可能存在覆盖不足：构念定义中提及'sensitivity to social evaluation'和'feeling embarrassed or inferior'，但现有题目主要测量行为回避，较少直接测量对评价的认知敏感性和情绪反应强度。",
+      "可能存在覆盖不足：构念定义提及'feeling inferior'（自卑感），但现有题目未充分操作化在社交比较情境中感到不如他人的倾向。",
+      "可能存在覆盖不足：构念定义提及不等同于'社交焦虑障碍'，但现有题目中部分情境（如当众演讲、被注视）与社交焦虑障碍的诊断标准高度重叠，缺乏区分度。"
+    ]
+  },
+  "summary": {
+    "number_of_items": 22,
+    "number_of_evidence_families": 8,
+    "stable_families": 5,
+    "provisional_families": 3,
+    "total_merge_decisions": 17,
+    "merge_decisions_merge": 14,
+    "merge_decisions_separate": 3,
+    "overrepresented_families_count": 3,
+    "underrepresented_families_count": 3,
+    "high_redundancy_clusters_count": 5,
+    "high_contamination_items_count": 4,
+    "possible_construct_gaps_count": 3
+  }
+}

@@ -1,0 +1,805 @@
+{
+  "facet": "顺从",
+  "evidence_library": [
+    {
+      "family_id": "EF01",
+      "family_name": "他人干扰容忍",
+      "definition": "面对他人行为造成的非个人责任干扰时，选择容忍/回避以维持和谐，而非主动对抗/投诉以消除干扰。",
+      "high_trait_evidence": "倾向于容忍干扰、回避冲突，优先维持和谐。",
+      "low_trait_evidence": "倾向于主动对抗、投诉或制止干扰源，优先维护自身权益。",
+      "supporting_item_ids": [
+        "compliance_01",
+        "compliance_08"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在存在非个人责任的持续噪音干扰时，选择被动适应或回避 vs 主动对抗/投诉/制止。",
+        "在存在可投诉的夜间噪音干扰且投诉可能引发人际冲突的情况下，选择容忍/回避冲突 vs 直接投诉/对抗。"
+      ],
+      "typical_high_manifestations": [
+        "尽量不把注意力集中在噪音上，继续坐在阳台上",
+        "回到酒店房间，关上阳台门",
+        "尝试睡觉，不采取行动",
+        "等待安静时再上床，不主动投诉"
+      ],
+      "typical_low_manifestations": [
+        "向前台投诉噪音",
+        "从阳台大喊应该停止割草",
+        "向邻居投诉并威胁报警",
+        "向邻居投诉并要求安静"
+      ],
+      "common_trait_activating_cues": [
+        "他人行为引起的持续干扰",
+        "干扰源非直接可沟通对象",
+        "投诉可能引发人际冲突"
+      ],
+      "competing_facets": [
+        "N3: 脆弱性",
+        "E3: 果断性"
+      ],
+      "alternative_explanations": [
+        "个人对噪音的敏感度（感觉加工敏感性）",
+        "疲劳程度",
+        "对安静环境的偏好程度"
+      ],
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF02",
+      "family_name": "利益冲突让步",
+      "definition": "面对与关系良好者的直接利益冲突时，主动放弃个人利益以维持和谐，而非坚持个人利益即使可能损害关系。",
+      "high_trait_evidence": "倾向于主动让步、放弃个人利益以维持和谐。",
+      "low_trait_evidence": "倾向于坚持个人利益，即使可能损害关系。",
+      "supporting_item_ids": [
+        "compliance_02",
+        "compliance_04",
+        "compliance_06",
+        "compliance_09",
+        "compliance_18"
+      ],
+      "support_count": 5,
+      "member_evidence_units_summary": [
+        "在存在与关系良好的同事的直接休假日期冲突且雇主只允许一人休假的情况下，主动让步、放弃自己的首选日期以维持和谐。",
+        "在双方意见不一致且涉及个人便利/成本的人际冲突情境下，倾向于让步、缓和矛盾以维持和谐。",
+        "在存在与伴侣意见不一致的度假目的地选择时，倾向于让步、妥协或避免对抗。",
+        "在去年已让步且今年家人与自己想法不同的情况下，选择再次让步或妥协。",
+        "在双方同时占据停车位的冲突情境下，选择让步并放弃该停车位。"
+      ],
+      "typical_high_manifestations": [
+        "主动让同事先休假",
+        "说服自己下次可以休假，从而让同事休假",
+        "为了避免争论，同意对方并主动去拜访对方",
+        "让步去对方那里，但提出下次对方来访的条件",
+        "尝试制定两个目的地的优缺点并找到妥协",
+        "同意伴侣的建议，希望能在下次假期选择目的地",
+        "把自己的愿望放在最后，完全按照家人的想法度过圣诞节",
+        "提议妥协",
+        "直接开走寻找另一个停车位",
+        "先简短讨论，若对方顽固则开走寻找另一个停车位"
+      ],
+      "typical_low_manifestations": [
+        "争取自己的首选日期，无法达成协议时要求上级决定",
+        "推进自己想要的日期，即使可能惹恼同事",
+        "尝试说服对方，强调对方来访更便宜",
+        "坚持对方来访，并接受因此产生的争论",
+        "支持自己的提议并尝试说服伴侣",
+        "接受争论以实现自己的目标",
+        "告诉家人自己不再做任何让步",
+        "坚持自己的意见，即使可能引发争论",
+        "保持在停车位一半并坚持自己的权利",
+        "保持不动直到另一个司机离开并寻找新停车位"
+      ],
+      "common_trait_activating_cues": [
+        "与关系良好者（同事、伴侣、家人、朋友）的直接利益冲突",
+        "双方意见不一致且涉及个人便利/成本",
+        "无外部权威强制解决方案"
+      ],
+      "competing_facets": [
+        "A3: 利他性",
+        "A5: 谦逊",
+        "E3: 果断性"
+      ],
+      "alternative_explanations": [
+        "对关系和谐的重视程度",
+        "关系权力动态",
+        "对具体活动/目的地的偏好强度",
+        "公平感（如去年已让步）"
+      ],
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF03",
+      "family_name": "非原则性分歧让步",
+      "definition": "面对确信自己正确但非原则性的人际分歧时，为避免冲突而让步或提前同意，而非坚持己见并愿意争论。",
+      "high_trait_evidence": "倾向于为避免冲突而让步或提前同意。",
+      "low_trait_evidence": "倾向于坚持己见并愿意争论。",
+      "supporting_item_ids": [
+        "compliance_03",
+        "compliance_16"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在确信自己正确但分歧非原则性的人际冲突中，让步或提前同意以避免冲突。",
+        "在因自己言语不当引发的人际冲突中，主动道歉或让步以缓和关系。"
+      ],
+      "typical_high_manifestations": [
+        "相对快速地让步",
+        "在争论前就同意伴侣",
+        "主动向朋友道歉",
+        "主动让事情过去并放下愤怒"
+      ],
+      "typical_low_manifestations": [
+        "尝试说服伴侣自己是对的",
+        "坚持己见并接受争论",
+        "在另一次谈话中再次表达观点且不道歉",
+        "等待朋友先迈出第一步"
+      ],
+      "common_trait_activating_cues": [
+        "确信自己正确但分歧非原则性",
+        "因自己言语不当引发的人际冲突"
+      ],
+      "competing_facets": [
+        "A3: 利他性",
+        "E3: 果断性"
+      ],
+      "alternative_explanations": [
+        "对关系和谐的重视程度",
+        "对争论本身的态度（如厌恶争论）",
+        "被动性"
+      ],
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF04",
+      "family_name": "挑衅性人际冲突缓和",
+      "definition": "面对他人挑衅性行为时，主动让步以缓和冲突，而非坚持己见或采取对抗行为。",
+      "high_trait_evidence": "倾向于主动让步以缓和冲突。",
+      "low_trait_evidence": "倾向于坚持己见或采取对抗行为。",
+      "supporting_item_ids": [
+        "compliance_05",
+        "compliance_10"
+      ],
+      "support_count": 2,
+      "member_evidence_units_summary": [
+        "在面对其他司机的挑衅性催促行为时，选择主动让步（变道让行）以缓和冲突。",
+        "在亲密关系冲突中，对方提出不公平、伤人的论点且争斗即将升级时，选择让步/缓和冲突。"
+      ],
+      "typical_high_manifestations": [
+        "立即变道让后车通过",
+        "一旦有安全间隙就变道让后车通过",
+        "道歉并接近伴侣",
+        "提起另一个话题以避免争论"
+      ],
+      "typical_low_manifestations": [
+        "故意减速以激怒后车",
+        "保持原有驾驶方式不变，不予理会",
+        "提出反论，坚持不让争论结束",
+        "大声离开房间，表现愤怒"
+      ],
+      "common_trait_activating_cues": [
+        "来自他人的挑衅性行为",
+        "亲密关系冲突中对方提出不公平论点"
+      ],
+      "competing_facets": [
+        "E3: 果断性",
+        "N1: 焦虑/愤怒",
+        "A3: 利他性"
+      ],
+      "alternative_explanations": [
+        "驾驶经验或安全意识",
+        "情绪调节能力",
+        "对关系价值的评估"
+      ],
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF05",
+      "family_name": "权威/服务方不利条件接受",
+      "definition": "面对权威或服务方施加的不利条件时，接受并适应而非坚持自身需求或挑战权威。",
+      "high_trait_evidence": "倾向于接受不利条件，避免对抗。",
+      "low_trait_evidence": "倾向于坚持自身需求，挑战权威或升级冲突。",
+      "supporting_item_ids": [
+        "compliance_07",
+        "compliance_14",
+        "compliance_17",
+        "compliance_21",
+        "compliance_22"
+      ],
+      "support_count": 5,
+      "member_evidence_units_summary": [
+        "在销售员拒绝退货且声称裤子不在退换之列的情况下，选择接受决定（让步）而非坚持补偿或采取法律行动。",
+        "在医生单方面缩短就诊时间且被试已付出高等待成本的情况下，顺从医生的时间限制而不表达不满或坚持要求更多时间。",
+        "在服务满意但账单过高且无明确错误的情况下，倾向于让步接受账单。",
+        "在收到一个令自己完全不满意的报价时，选择接受（即使表达不满）而非坚持升级冲突或威胁更换银行。",
+        "在对方单方面提出更不利条件且原联系人不在场的情况下，倾向于接受不利条件或主动寻求妥协方案。"
+      ],
+      "typical_high_manifestations": [
+        "不情愿地接受销售员的决定",
+        "接受销售员的决定，但未来不再光顾该店",
+        "尝试尽快描述关切并理解短暂的治疗时间",
+        "为了不浪费宝贵时间而同意医生的时间限制",
+        "直接支付账单，即使认为过高",
+        "礼貌询问账单原因后仍支付",
+        "接受报价并认可顾问以往的好建议",
+        "接受报价但表达不满",
+        "接受更差的报价",
+        "联系前销售员，尝试找到互相可接受的解决方案"
+      ],
+      "typical_low_manifestations": [
+        "坚持适当的补偿，例如代金券形式",
+        "对销售员和商店采取法律行动",
+        "向医生解释等待的辛苦并期望医生花费足够时间",
+        "抱怨并期望医生道歉，坚持待在诊室直到完全满意",
+        "投诉后支付但不再合作",
+        "拒绝支付全额并可能采取法律行动",
+        "坚持与顾问的上级谈话并投诉报价不公平",
+        "拒绝报价并威胁更换银行",
+        "拒绝报价，但愿意在出现明显更好的报价时再谈",
+        "不再在这家汽车经销商买车"
+      ],
+      "common_trait_activating_cues": [
+        "权威/服务方施加的不利条件",
+        "已付出高等待成本",
+        "对方单方面提出更不利条件"
+      ],
+      "competing_facets": [
+        "A1: 信任",
+        "E3: 果断性",
+        "C2: 条理性"
+      ],
+      "alternative_explanations": [
+        "对法律行动的成本效益评估",
+        "对医疗系统的信任程度",
+        "经济状况",
+        "对服务质量的真实评价",
+        "对交易公平性的敏感度"
+      ],
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF06",
+      "family_name": "不喜欢的社交请求接受",
+      "definition": "面对不喜欢的社交请求时，为了维持人际和谐而让步同意，而非坚持个人偏好并拒绝。",
+      "high_trait_evidence": "倾向于为了维持和谐而同意不喜欢的社交请求。",
+      "low_trait_evidence": "倾向于坚持个人偏好并拒绝。",
+      "supporting_item_ids": [
+        "compliance_11"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在不喜欢对方且对方提出社交请求的情况下，为了维持和谐而让步并同意见面。"
+      ],
+      "typical_high_manifestations": [
+        "同意与不喜欢的同事单独见面",
+        "邀请该同事参加自己的社交圈活动"
+      ],
+      "typical_low_manifestations": [
+        "以忙碌为由推脱私人会面",
+        "直接拒绝私下见面"
+      ],
+      "common_trait_activating_cues": [
+        "不喜欢的社交请求",
+        "存在拒绝或回避的合理理由"
+      ],
+      "competing_facets": [
+        "A3: 利他性",
+        "A5: 谦逊"
+      ],
+      "alternative_explanations": [
+        "利他性（帮助新同事融入）",
+        "诚实沟通",
+        "自我保护"
+      ],
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF07",
+      "family_name": "团队讨论中避免反对",
+      "definition": "面对同事有缺陷的提议时，优先维护人际和谐、避免冲突，而非坚持正确性、直接表达反对意见。",
+      "high_trait_evidence": "倾向于同意有缺点的提议以避免影响团队情绪。",
+      "low_trait_evidence": "倾向于直接表达反对意见，坚持正确性。",
+      "supporting_item_ids": [
+        "compliance_12"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在同事提出的方案有缺陷但已作为最终建议的情况下，选择让步、缓和冲突（高顺从）还是坚持己见、直接对抗（低顺从）。"
+      ],
+      "typical_high_manifestations": [
+        "同意有缺点的提议以避免影响团队情绪",
+        "善意指出缺点但仍然接受该提议"
+      ],
+      "typical_low_manifestations": [
+        "提出自己的反提议并明确论证其更合适",
+        "明确指出同事想法的缺点并将其描述为无用"
+      ],
+      "common_trait_activating_cues": [
+        "同事提出的方案有缺陷但已作为最终建议",
+        "团队讨论中可能产生人际冲突"
+      ],
+      "competing_facets": [
+        "A3: 利他性",
+        "E3: 果断性"
+      ],
+      "alternative_explanations": [
+        "能力自信或任务卷入度",
+        "为了团队利益而选择让步"
+      ],
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF08",
+      "family_name": "客户错误时避免直接指出",
+      "definition": "面对客户因自身错误投诉时，避免直接指出客户错误、优先维护和谐关系，而非坚持事实或划清责任界限。",
+      "high_trait_evidence": "倾向于避免直接指出客户错误，优先维护和谐。",
+      "low_trait_evidence": "倾向于坚持事实或划清责任界限。",
+      "supporting_item_ids": [
+        "compliance_13"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在客户因自身错误投诉的情境下，选择避免直接指出客户错误、优先维护和谐关系。"
+      ],
+      "typical_high_manifestations": [
+        "主动帮助客户并进一步提供协助",
+        "礼貌地向客户解释如何解决问题"
+      ],
+      "typical_low_manifestations": [
+        "直接告知客户其行为不当",
+        "告知客户此事不在自己的责任范围内"
+      ],
+      "common_trait_activating_cues": [
+        "客户因自身错误投诉",
+        "员工面临是否直接指出客户错误的选择"
+      ],
+      "competing_facets": [
+        "A3: 利他性",
+        "C3: 尽责"
+      ],
+      "alternative_explanations": [
+        "社会赞许性（乐于助人）",
+        "责任心",
+        "自我保护倾向"
+      ],
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF09",
+      "family_name": "他人失误导致利益受损时让步",
+      "definition": "面对因他人失误导致的自身利益受损时，为避免人际冲突而选择让步、不坚持追讨，而非坚持追讨甚至升级冲突。",
+      "high_trait_evidence": "倾向于让步、不坚持追讨。",
+      "low_trait_evidence": "倾向于坚持追讨甚至升级冲突。",
+      "supporting_item_ids": [
+        "compliance_15"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在因对方失误导致自身利益受损且追讨需要面对人际冲突的情况下，选择让步、不坚持追讨。"
+      ],
+      "typical_high_manifestations": [
+        "不采取进一步措施，接受损失",
+        "礼貌询问收银员，并接受其回答，不进一步坚持"
+      ],
+      "typical_low_manifestations": [
+        "回到收银员处要求缺少的零钱，若讨论后仍不给则让步离开",
+        "回到收银员处要求缺少的零钱，若讨论后仍不给则向其上级要求"
+      ],
+      "common_trait_activating_cues": [
+        "因对方失误导致自身利益受损",
+        "追讨需要面对人际冲突"
+      ],
+      "competing_facets": [
+        "E3: 果断性"
+      ],
+      "alternative_explanations": [
+        "避免麻烦或时间成本",
+        "对公平的坚持"
+      ],
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF10",
+      "family_name": "群体压力下抑制个人偏好",
+      "definition": "面对群体偏好与个人偏好冲突且群体占多数时，抑制个人偏好以维持群体和谐，而非坚持个人偏好或退出情境。",
+      "high_trait_evidence": "倾向于服从多数，抑制个人偏好。",
+      "low_trait_evidence": "倾向于坚持个人偏好或退出情境。",
+      "supporting_item_ids": [
+        "compliance_19"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在群体偏好与个人偏好冲突且群体占多数的情况下，选择抑制个人偏好以维持群体和谐。"
+      ],
+      "typical_high_manifestations": [
+        "服从多数，毫无怨言地观看不喜欢的节目",
+        "观看节目但表达不满"
+      ],
+      "typical_low_manifestations": [
+        "等待几分钟后再次努力说服朋友们换节目",
+        "不看节目，做别的事情"
+      ],
+      "common_trait_activating_cues": [
+        "群体偏好与个人偏好冲突",
+        "群体占多数"
+      ],
+      "competing_facets": [
+        "E3: 果断性",
+        "A3: 利他性"
+      ],
+      "alternative_explanations": [
+        "低社交兴趣",
+        "高独立性"
+      ],
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF11",
+      "family_name": "上级不合理要求顺从",
+      "definition": "面对上级提出的不合理要求时，牺牲个人利益以维持和谐，而非坚持个人计划并表达不满或拒绝。",
+      "high_trait_evidence": "倾向于牺牲个人利益以顺从上级要求。",
+      "low_trait_evidence": "倾向于坚持个人计划并表达不满或拒绝。",
+      "supporting_item_ids": [
+        "compliance_20"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在上级提出不合理要求且员工有权拒绝的情况下，放弃个人计划以顺从上级要求。"
+      ],
+      "typical_high_manifestations": [
+        "取消私人约会，完全顺从上级要求加班两小时",
+        "尝试推迟私人约会，部分顺从上级要求加班一小时"
+      ],
+      "typical_low_manifestations": [
+        "拒绝加班，并提前离开以表达不赞成",
+        "拒绝加班，按时赴约"
+      ],
+      "common_trait_activating_cues": [
+        "上级提出不合理要求",
+        "员工有权拒绝"
+      ],
+      "competing_facets": [
+        "A3: 利他性",
+        "C3: 尽责",
+        "E3: 果断性"
+      ],
+      "alternative_explanations": [
+        "利他性",
+        "责任心",
+        "果断性"
+      ],
+      "construct_purity": "medium",
+      "status": "provisional"
+    }
+  ],
+  "merge_decisions": [
+    {
+      "unit_a": "compliance_01",
+      "unit_b": "compliance_08",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对他人行为造成的持续干扰（噪音）时，选择容忍/回避 vs 主动对抗/投诉。心理机制相同：优先维持和谐 vs 优先维护自身权益。诊断逻辑相同：高顺从者容忍，低顺从者投诉。转移性：改变干扰源（割草机 vs 聚会噪音）不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_02",
+      "unit_b": "compliance_04",
+      "decision": "merge",
+      "reasoning": "两者都涉及与关系良好者（同事、朋友）的直接利益冲突（休假日期、拜访谁），且无外部权威强制解决方案。心理机制相同：主动放弃个人利益以维持和谐 vs 坚持个人利益。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_02",
+      "unit_b": "compliance_06",
+      "decision": "merge",
+      "reasoning": "两者都涉及与关系良好者（同事、伴侣）的利益冲突（休假、度假目的地），心理机制相同：优先维持和谐而让步/妥协 vs 优先坚持己见。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_02",
+      "unit_b": "compliance_09",
+      "decision": "merge",
+      "reasoning": "两者都涉及与关系良好者（同事、家人）的利益冲突，心理机制相同：主动让步以维持和谐 vs 坚持个人意愿。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_02",
+      "unit_b": "compliance_18",
+      "decision": "merge",
+      "reasoning": "两者都涉及与陌生人/关系一般者的直接资源冲突（休假日期、停车位），心理机制相同：主动让步以维持和谐 vs 坚持自身权益。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和资源类型不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_04",
+      "unit_b": "compliance_06",
+      "decision": "merge",
+      "reasoning": "两者都涉及与关系良好者（朋友、伴侣）的利益冲突（拜访谁、度假目的地），心理机制相同：优先维持和谐而让步/妥协 vs 优先坚持己见。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_04",
+      "unit_b": "compliance_09",
+      "decision": "merge",
+      "reasoning": "两者都涉及与关系良好者（朋友、家人）的利益冲突，心理机制相同：主动让步以维持和谐 vs 坚持个人意愿。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_04",
+      "unit_b": "compliance_18",
+      "decision": "merge",
+      "reasoning": "两者都涉及与陌生人/关系一般者的直接资源冲突（拜访谁、停车位），心理机制相同：主动让步以维持和谐 vs 坚持自身权益。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和资源类型不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_06",
+      "unit_b": "compliance_09",
+      "decision": "merge",
+      "reasoning": "两者都涉及与关系良好者（伴侣、家人）的利益冲突，心理机制相同：主动让步以维持和谐 vs 坚持个人意愿。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_06",
+      "unit_b": "compliance_18",
+      "decision": "merge",
+      "reasoning": "两者都涉及与陌生人/关系一般者的直接资源冲突（度假目的地、停车位），心理机制相同：主动让步以维持和谐 vs 坚持自身权益。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和资源类型不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_09",
+      "unit_b": "compliance_18",
+      "decision": "merge",
+      "reasoning": "两者都涉及与关系良好者/陌生人的利益冲突，心理机制相同：主动让步以维持和谐 vs 坚持个人意愿/权益。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变冲突对象和内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_03",
+      "unit_b": "compliance_16",
+      "decision": "merge",
+      "reasoning": "两者都涉及确信自己正确但非原则性的人际分歧（电影细节、小争执），心理机制相同：为避免冲突而让步/道歉 vs 坚持己见。诊断逻辑相同：高顺从者让步，低顺从者坚持。转移性：改变分歧内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_05",
+      "unit_b": "compliance_10",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对挑衅性行为（后车催促、伴侣不公平论点）时，主动让步以缓和冲突 vs 坚持己见或对抗。心理机制相同：优先维护和谐 vs 优先维护自我立场。诊断逻辑相同：高顺从者让步，低顺从者对抗。转移性：改变挑衅来源和情境不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_07",
+      "unit_b": "compliance_14",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对权威/服务方施加的不利条件（拒绝退货、缩短就诊时间）时，接受并适应 vs 坚持自身需求或挑战权威。心理机制相同：优先维持和谐 vs 优先维护自身权益。诊断逻辑相同：高顺从者接受，低顺从者坚持/挑战。转移性：改变权威类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_07",
+      "unit_b": "compliance_17",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对服务方的不利条件（拒绝退货、过高账单）时，接受并适应 vs 坚持自身权益。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持/投诉。转移性：改变服务类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_07",
+      "unit_b": "compliance_21",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对服务方的不利条件（拒绝退货、不满意报价）时，接受并适应 vs 坚持自身权益或升级冲突。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持/投诉。转移性：改变服务类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_07",
+      "unit_b": "compliance_22",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对服务方的不利条件（拒绝退货、更差报价）时，接受并适应 vs 坚持自身权益或退出交易。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持/退出。转移性：改变服务类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_14",
+      "unit_b": "compliance_17",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对权威/服务方施加的不利条件（缩短就诊时间、过高账单）时，接受并适应 vs 坚持自身需求。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持。转移性：改变权威类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_14",
+      "unit_b": "compliance_21",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对权威/服务方施加的不利条件（缩短就诊时间、不满意报价）时，接受并适应 vs 坚持自身需求或升级冲突。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持/投诉。转移性：改变权威类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_14",
+      "unit_b": "compliance_22",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对权威/服务方施加的不利条件（缩短就诊时间、更差报价）时，接受并适应 vs 坚持自身需求或退出交易。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持/退出。转移性：改变权威类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_17",
+      "unit_b": "compliance_21",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对服务方的不利条件（过高账单、不满意报价）时，接受并适应 vs 坚持自身权益或升级冲突。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持/投诉。转移性：改变服务类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_17",
+      "unit_b": "compliance_22",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对服务方的不利条件（过高账单、更差报价）时，接受并适应 vs 坚持自身权益或退出交易。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持/退出。转移性：改变服务类型和不利条件内容不影响抽象规则。"
+    },
+    {
+      "unit_a": "compliance_21",
+      "unit_b": "compliance_22",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对服务方的不利条件（不满意报价、更差报价）时，接受并适应 vs 坚持自身权益或升级冲突/退出。心理机制相同：优先维持和谐 vs 优先维护自身利益。诊断逻辑相同：高顺从者接受，低顺从者坚持/投诉/退出。转移性：改变服务类型和不利条件内容不影响抽象规则。"
+    }
+  ],
+  "item_evidence_mapping": [
+    {
+      "item_id": "compliance_01",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_02",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_03",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_04",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_05",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_06",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_07",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_08",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_09",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_10",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_11",
+      "primary_family": "EF06",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_12",
+      "primary_family": "EF07",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_13",
+      "primary_family": "EF08",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_14",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_15",
+      "primary_family": "EF09",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_16",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_17",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_18",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_19",
+      "primary_family": "EF10",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_20",
+      "primary_family": "EF11",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_21",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "compliance_22",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    }
+  ],
+  "coverage_analysis": {
+    "overrepresented_families": [
+      "EF02: 利益冲突让步（5题）",
+      "EF05: 权威/服务方不利条件接受（5题）"
+    ],
+    "underrepresented_families": [
+      "EF06: 不喜欢的社交请求接受",
+      "EF07: 团队讨论中避免反对",
+      "EF08: 客户错误时避免直接指出",
+      "EF09: 他人失误导致利益受损时让步",
+      "EF10: 群体压力下抑制个人偏好",
+      "EF11: 上级不合理要求顺从"
+    ],
+    "high_redundancy_item_clusters": [
+      [
+        "compliance_02",
+        "compliance_04",
+        "compliance_06",
+        "compliance_09",
+        "compliance_18"
+      ],
+      [
+        "compliance_07",
+        "compliance_14",
+        "compliance_17",
+        "compliance_21",
+        "compliance_22"
+      ]
+    ],
+    "high_contamination_items": [
+      "compliance_05",
+      "compliance_10",
+      "compliance_11",
+      "compliance_12",
+      "compliance_13",
+      "compliance_20"
+    ],
+    "possible_construct_gaps": [
+      "可能存在覆盖不足：构念定义中'面对人际冲突或不同意见时，倾向于让步、缓和或避免对抗'，但原题未充分操作化'不同意见'情境（如观点分歧而非利益冲突），也未充分覆盖'避免对抗'的被动回避行为（如沉默、不表达意见）。"
+    ]
+  },
+  "summary": {
+    "number_of_items": 22,
+    "number_of_evidence_families": 11,
+    "stable_families": 5,
+    "provisional_families": 6
+  }
+}

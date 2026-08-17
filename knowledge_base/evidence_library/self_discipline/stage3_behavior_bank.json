@@ -1,0 +1,797 @@
+{
+  "facet": "self_discipline",
+  "manifestations": [
+    {
+      "manifestation_id": "BM01",
+      "description": "立即关掉电视去睡觉",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM02",
+      "description": "短暂考虑后忍痛不看节目，选择睡觉",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM03",
+      "description": "先看节目几分钟再决定是否关掉",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM04",
+      "description": "看完整个节目，即使明天可能疲倦",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM05",
+      "description": "取消与朋友的会面，全身心专注于完成项目",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_02"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM06",
+      "description": "先完成项目，如果有剩余时间再联系朋友",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_02"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM07",
+      "description": "把项目完成推迟到第二天，优先与朋友见面",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_02"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM08",
+      "description": "与朋友见面，计划晚上完成项目",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_02"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM09",
+      "description": "坚持按原计划完成春季大扫除，遵循先工作后娱乐的原则",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_04"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM10",
+      "description": "尝试尽快完成春季大扫除，以便之后还能享受部分阳光",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_04"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM11",
+      "description": "寻找理由将春季大扫除推迟到另一天，以便现在享受阳光",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_04"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM12",
+      "description": "毫无愧疚地做此刻想做的事（享受阳光），将春季大扫除推迟",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_04"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM13",
+      "description": "取消社交聚会以完成工作任务",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_06"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM14",
+      "description": "在办公室加班处理工作后再参加聚会",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_06"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM15",
+      "description": "将工作推迟到明天，按时下班赴约",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_06"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM16",
+      "description": "将工作交给同事，自己去参加聚会",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_06"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM17",
+      "description": "立即手洗所有碗碟",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_07"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM18",
+      "description": "短暂休息后手洗所有碗碟",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_07"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM19",
+      "description": "将脏碗碟留到第二天再洗",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_07"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM20",
+      "description": "浸泡部分碗碟，其余留到第二天洗",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_07"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM21",
+      "description": "在办公室加班完成演示文稿",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_08"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM22",
+      "description": "短暂休息后立即开始制作演示文稿以快速完成",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_08"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM23",
+      "description": "在电视前放松，推迟准备",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_08"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM24",
+      "description": "享受晚上，在会议中即兴发挥",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_08"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM25",
+      "description": "取消社交计划，坚持完成演示文稿的全部修饰工作",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_13"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM26",
+      "description": "先完成演示文稿，再尝试稍后赶上社交活动",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_13"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM27",
+      "description": "立即放下任务，完全参与社交活动，将剩余工作推迟到今晚或明天早上",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_13"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM28",
+      "description": "立即参与社交活动，接受以当前不完美的状态进行演示",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_13"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM29",
+      "description": "立即完全填写文件",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_15"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM30",
+      "description": "把文件带到外面，在阳光下填写",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_15"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM31",
+      "description": "把文件放在一边，稍后专心写",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_15"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM32",
+      "description": "开始填写文件，但如果花费太长时间就停止",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_15"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM33",
+      "description": "立即中断听音乐，起身执行垃圾清理任务",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM34",
+      "description": "听完一首歌后中断听音乐，执行垃圾清理任务",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM35",
+      "description": "希望他人代为执行任务，自己不行动",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM36",
+      "description": "将任务推迟到当天不确定的时间，不立即行动",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM37",
+      "description": "立即收集文件并准备好，让朋友等待几分钟",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM38",
+      "description": "在朋友到来前完成所有必要步骤，其余部分稍后处理",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM39",
+      "description": "完全不回复信件，等待保险公司再次联系",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM40",
+      "description": "把信放在一边，稍后处理",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM41",
+      "description": "拒绝邀请，坚持按计划训练",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_20"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM42",
+      "description": "接受邀请但承诺晚上补训",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_20"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM43",
+      "description": "立即同意邀请，对从训练中休息感到欣慰",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_20"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM44",
+      "description": "感到内疚但容易被说服，放弃训练去赴约",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_20"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM45",
+      "description": "继续修理设备直到恢复正常，完全放弃看电视",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_21"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM46",
+      "description": "将设备放在能看电视的位置，但主要注意力仍放在修理上",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_21"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM47",
+      "description": "先看电视节目，推迟修理到稍后",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_21"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM48",
+      "description": "看电视节目，并将修理任务委托给他人",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_21"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM49",
+      "description": "立即开始处理邮件",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_03"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM50",
+      "description": "浏览所有邮件但中间休息",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_03"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM51",
+      "description": "只打开几封信，大部分稍后阅读",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_03"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM52",
+      "description": "把整堆邮件放在那里，在接下来几天里处理",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_03"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM53",
+      "description": "每天保留特定时间段专门处理该工作",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_14"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM54",
+      "description": "专门保留一整周时间只处理该工作",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_14"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM55",
+      "description": "不定期地做一些工作，保持灵活性，没有固定工作时间",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_14"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM56",
+      "description": "只在有创意和好想法时专心工作",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_14"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM57",
+      "description": "坚持读完整本书",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_16"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM58",
+      "description": "至少读一半书再决定是否完成",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_16"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM59",
+      "description": "不读完书，直接卖掉",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_16"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM60",
+      "description": "把书放在一边，不完成",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_16"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM61",
+      "description": "向朋友解释自己在斋戒，并点别的东西",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_09"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM62",
+      "description": "让朋友吃自己的那块蛋糕",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_09"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM63",
+      "description": "打破自己的好意图，计划明年再做",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_09"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM64",
+      "description": "吃了蛋糕，并认为一次不算",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_09"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM65",
+      "description": "扔掉提拉米苏以彻底消除诱惑",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_12"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM66",
+      "description": "只吃一勺并计入饮食计划，以有限度地满足诱惑",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_12"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM67",
+      "description": "直接吃掉整个提拉米苏，然后才开始节食",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_12"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM68",
+      "description": "以不浪费食物为由推迟节食计划到第二天",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_12"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM69",
+      "description": "完全跳过甜点",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_22"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM70",
+      "description": "只尝一点甜点，把其余的给朋友",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_22"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM71",
+      "description": "点一个稍微小一点的甜点",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_22"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM72",
+      "description": "直接要甜点",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_22"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM73",
+      "description": "坚持训练并尽力准备",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_10"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM74",
+      "description": "利用每一分钟空闲时间训练，将休闲活动放在次要位置",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_10"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM75",
+      "description": "因休闲时间更重要而放弃提议",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_10"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM76",
+      "description": "宁愿贷款或不通过体育成绩来资助培训",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_10"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM77",
+      "description": "坚持按原计划学习，认为学习时不需要手机",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_11"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM78",
+      "description": "坚持按原计划学习，并决定在考试前不再使用手机",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_11"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM79",
+      "description": "因坏运气而放弃学习，下午不学习",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_11"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM80",
+      "description": "优先解决手机问题，如果还有时间再学习",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_11"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM81",
+      "description": "一次完成所有职责，不休息",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_05"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM82",
+      "description": "完成所有任务，但中间休息一下",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_05"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM83",
+      "description": "完成一些任务，其余的无限期推迟",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_05"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM84",
+      "description": "从第一个任务开始，看能做到什么程度",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_05"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM85",
+      "description": "立即起床给植物浇水",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_17"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM86",
+      "description": "立即起床给植物浇水并顺便做其他小事",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_discipline_17"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM87",
+      "description": "只有在长时间睡不着时才起床浇水",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_17"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM88",
+      "description": "待在床上，将浇水推迟到明天",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_discipline_17"
+      ],
+      "linked_evidence_family": "EF07"
+    }
+  ]
+}

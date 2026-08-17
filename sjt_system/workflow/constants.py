@@ -1,0 +1,34 @@
+"""Shared workflow action sets and phase mapping."""
+
+ITEM_DEVELOPMENT_ACTIONS = {
+    "generate_item",
+    "review_item",
+    "revise_item",
+    "regenerate_item",
+}
+DETERMINISTIC_AUTO_APPROVAL_ACTIONS = {
+    "simulate_responses",
+    "analyze_psychometrics",
+    "select_items",
+    "confirm_psychometric_repair",
+    "assemble_test",
+    "review_test",
+    "rescore_test",
+    "generate_reports",
+}
+PHASE_BY_ACTION = {
+    "clarify_requirements": "requirements",
+    "build_blueprint": "construct_blueprint",
+    "generate_item": "item_development",
+    "review_item": "item_development",
+    "revise_item": "item_development",
+    "regenerate_item": "item_development",
+    "simulate_responses": "virtual_simulation",
+    "analyze_psychometrics": "psychometric_analysis",
+    "select_items": "item_selection",
+    "confirm_psychometric_repair": "item_selection",
+    "assemble_test": "test_assembly",
+    "review_test": "test_assembly",
+    "rescore_test": "test_assembly",
+    "generate_reports": "reporting",
+}
