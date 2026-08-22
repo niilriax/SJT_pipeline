@@ -1,0 +1,2649 @@
+{
+  "schema_version": "ipip-neo-items-v1",
+  "source_file": "docs/ipip.md",
+  "source_sha256": "cf4c672598fa3e2395fdd4dfe8d9ece10cf2123f3a89973887978b9f42e29b7c",
+  "corpus_hash": "61d30c7259b3f8ec2f701e3adf012a993fa89b9fa1652ee2015358a77b85755c",
+  "usage_status": "user_supplied_source_requires_publication_rights_check",
+  "scales": [
+    {
+      "facet_code": "N1",
+      "facet_id": "neuroticism_anxiety",
+      "source_label": "ANXIETY",
+      "alpha": 0.83,
+      "items": [
+        {
+          "item_id": "N1_POS_01",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "positive",
+          "text": "Worry about things.",
+          "source_line": 5
+        },
+        {
+          "item_id": "N1_POS_02",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "positive",
+          "text": "Fear for the worst.",
+          "source_line": 6
+        },
+        {
+          "item_id": "N1_POS_03",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "positive",
+          "text": "Am afraid of many things.",
+          "source_line": 7
+        },
+        {
+          "item_id": "N1_POS_04",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "positive",
+          "text": "Get stressed out easily.",
+          "source_line": 8
+        },
+        {
+          "item_id": "N1_POS_05",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "positive",
+          "text": "Get caught up in my problems.",
+          "source_line": 9
+        },
+        {
+          "item_id": "N1_NEG_01",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "negative",
+          "text": "Am not easily bothered by things.",
+          "source_line": 11
+        },
+        {
+          "item_id": "N1_NEG_02",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "negative",
+          "text": "Am relaxed most of the time.",
+          "source_line": 12
+        },
+        {
+          "item_id": "N1_NEG_03",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "negative",
+          "text": "Am not easily disturbed by events.",
+          "source_line": 13
+        },
+        {
+          "item_id": "N1_NEG_04",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "negative",
+          "text": "Don't worry about things that have already happened.",
+          "source_line": 14
+        },
+        {
+          "item_id": "N1_NEG_05",
+          "facet_code": "N1",
+          "facet_id": "neuroticism_anxiety",
+          "polarity": "negative",
+          "text": "Adapt easily to new situations.",
+          "source_line": 15
+        }
+      ]
+    },
+    {
+      "facet_code": "N2",
+      "facet_id": "neuroticism_angry_hostility",
+      "source_label": "ANGER",
+      "alpha": 0.88,
+      "items": [
+        {
+          "item_id": "N2_POS_01",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "positive",
+          "text": "Get angry easily.",
+          "source_line": 18
+        },
+        {
+          "item_id": "N2_POS_02",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "positive",
+          "text": "Get irritated easily.",
+          "source_line": 19
+        },
+        {
+          "item_id": "N2_POS_03",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "positive",
+          "text": "Get upset easily.",
+          "source_line": 20
+        },
+        {
+          "item_id": "N2_POS_04",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "positive",
+          "text": "Am often in a bad mood.",
+          "source_line": 21
+        },
+        {
+          "item_id": "N2_POS_05",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "positive",
+          "text": "Lose my temper.",
+          "source_line": 22
+        },
+        {
+          "item_id": "N2_NEG_01",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "negative",
+          "text": "Rarely get irritated.",
+          "source_line": 24
+        },
+        {
+          "item_id": "N2_NEG_02",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "negative",
+          "text": "Seldom get mad.",
+          "source_line": 25
+        },
+        {
+          "item_id": "N2_NEG_03",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "negative",
+          "text": "Am not easily annoyed.",
+          "source_line": 26
+        },
+        {
+          "item_id": "N2_NEG_04",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "negative",
+          "text": "Keep my cool.",
+          "source_line": 27
+        },
+        {
+          "item_id": "N2_NEG_05",
+          "facet_code": "N2",
+          "facet_id": "neuroticism_angry_hostility",
+          "polarity": "negative",
+          "text": "Rarely complain.",
+          "source_line": 28
+        }
+      ]
+    },
+    {
+      "facet_code": "N3",
+      "facet_id": "neuroticism_depression",
+      "source_label": "DEPRESSION",
+      "alpha": 0.88,
+      "items": [
+        {
+          "item_id": "N3_POS_01",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "positive",
+          "text": "Often feel blue.",
+          "source_line": 31
+        },
+        {
+          "item_id": "N3_POS_02",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "positive",
+          "text": "Dislike myself.",
+          "source_line": 32
+        },
+        {
+          "item_id": "N3_POS_03",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "positive",
+          "text": "Am often down in the dumps.",
+          "source_line": 33
+        },
+        {
+          "item_id": "N3_POS_04",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "positive",
+          "text": "Have a low opinion of myself.",
+          "source_line": 34
+        },
+        {
+          "item_id": "N3_POS_05",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "positive",
+          "text": "Have frequent mood swings.",
+          "source_line": 35
+        },
+        {
+          "item_id": "N3_POS_06",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "positive",
+          "text": "Feel desperate.",
+          "source_line": 36
+        },
+        {
+          "item_id": "N3_POS_07",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "positive",
+          "text": "Feel that my life lacks direction.",
+          "source_line": 37
+        },
+        {
+          "item_id": "N3_NEG_01",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "negative",
+          "text": "Seldom feel blue.",
+          "source_line": 39
+        },
+        {
+          "item_id": "N3_NEG_02",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "negative",
+          "text": "Feel comfortable with myself.",
+          "source_line": 40
+        },
+        {
+          "item_id": "N3_NEG_03",
+          "facet_code": "N3",
+          "facet_id": "neuroticism_depression",
+          "polarity": "negative",
+          "text": "Am very pleased with myself.",
+          "source_line": 41
+        }
+      ]
+    },
+    {
+      "facet_code": "N4",
+      "facet_id": "neuroticism_self_consciousness",
+      "source_label": "SELF-CONSCIOUSNESS",
+      "alpha": 0.8,
+      "items": [
+        {
+          "item_id": "N4_POS_01",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "positive",
+          "text": "Am easily intimidated.",
+          "source_line": 44
+        },
+        {
+          "item_id": "N4_POS_02",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "positive",
+          "text": "Am afraid that I will do the wrong thing.",
+          "source_line": 45
+        },
+        {
+          "item_id": "N4_POS_03",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "positive",
+          "text": "Find it difficult to approach others.",
+          "source_line": 46
+        },
+        {
+          "item_id": "N4_POS_04",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "positive",
+          "text": "Am afraid to draw attention to myself.",
+          "source_line": 47
+        },
+        {
+          "item_id": "N4_POS_05",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "positive",
+          "text": "Only feel comfortable with friends.",
+          "source_line": 48
+        },
+        {
+          "item_id": "N4_POS_06",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "positive",
+          "text": "Stumble over my words.",
+          "source_line": 49
+        },
+        {
+          "item_id": "N4_NEG_01",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "negative",
+          "text": "Am not embarrassed easily.",
+          "source_line": 51
+        },
+        {
+          "item_id": "N4_NEG_02",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "negative",
+          "text": "Am comfortable in unfamiliar situations.",
+          "source_line": 52
+        },
+        {
+          "item_id": "N4_NEG_03",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "negative",
+          "text": "Am not bothered by difficult social situations.",
+          "source_line": 53
+        },
+        {
+          "item_id": "N4_NEG_04",
+          "facet_code": "N4",
+          "facet_id": "neuroticism_self_consciousness",
+          "polarity": "negative",
+          "text": "Am able to stand up for myself.",
+          "source_line": 54
+        }
+      ]
+    },
+    {
+      "facet_code": "N5",
+      "facet_id": "neuroticism_impulsiveness",
+      "source_label": "IMMODERATION",
+      "alpha": 0.77,
+      "items": [
+        {
+          "item_id": "N5_POS_01",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "positive",
+          "text": "Often eat too much.",
+          "source_line": 57
+        },
+        {
+          "item_id": "N5_POS_02",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "positive",
+          "text": "Don't know why I do some of the things I do.",
+          "source_line": 58
+        },
+        {
+          "item_id": "N5_POS_03",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "positive",
+          "text": "Do things I later regret.",
+          "source_line": 59
+        },
+        {
+          "item_id": "N5_POS_04",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "positive",
+          "text": "Go on binges.",
+          "source_line": 60
+        },
+        {
+          "item_id": "N5_POS_05",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "positive",
+          "text": "Love to eat.",
+          "source_line": 61
+        },
+        {
+          "item_id": "N5_NEG_01",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "negative",
+          "text": "Rarely overindulge.",
+          "source_line": 63
+        },
+        {
+          "item_id": "N5_NEG_02",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "negative",
+          "text": "Easily resist temptations.",
+          "source_line": 64
+        },
+        {
+          "item_id": "N5_NEG_03",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "negative",
+          "text": "Am able to control my cravings.",
+          "source_line": 65
+        },
+        {
+          "item_id": "N5_NEG_04",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "negative",
+          "text": "Never spend more than I can afford.",
+          "source_line": 66
+        },
+        {
+          "item_id": "N5_NEG_05",
+          "facet_code": "N5",
+          "facet_id": "neuroticism_impulsiveness",
+          "polarity": "negative",
+          "text": "Never splurge.",
+          "source_line": 67
+        }
+      ]
+    },
+    {
+      "facet_code": "N6",
+      "facet_id": "neuroticism_vulnerability",
+      "source_label": "VULNERABILITY",
+      "alpha": 0.82,
+      "items": [
+        {
+          "item_id": "N6_POS_01",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "positive",
+          "text": "Panic easily.",
+          "source_line": 70
+        },
+        {
+          "item_id": "N6_POS_02",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "positive",
+          "text": "Become overwhelmed by events.",
+          "source_line": 71
+        },
+        {
+          "item_id": "N6_POS_03",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "positive",
+          "text": "Feel that I'm unable to deal with things.",
+          "source_line": 72
+        },
+        {
+          "item_id": "N6_POS_04",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "positive",
+          "text": "Can't make up my mind.",
+          "source_line": 73
+        },
+        {
+          "item_id": "N6_POS_05",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "positive",
+          "text": "Get overwhelmed by emotions.",
+          "source_line": 74
+        },
+        {
+          "item_id": "N6_NEG_01",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "negative",
+          "text": "Remain calm under pressure.",
+          "source_line": 76
+        },
+        {
+          "item_id": "N6_NEG_02",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "negative",
+          "text": "Can handle complex problems.",
+          "source_line": 77
+        },
+        {
+          "item_id": "N6_NEG_03",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "negative",
+          "text": "Know how to cope.",
+          "source_line": 78
+        },
+        {
+          "item_id": "N6_NEG_04",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "negative",
+          "text": "Readily overcome setbacks.",
+          "source_line": 79
+        },
+        {
+          "item_id": "N6_NEG_05",
+          "facet_code": "N6",
+          "facet_id": "neuroticism_vulnerability",
+          "polarity": "negative",
+          "text": "Am calm even in tense situations.",
+          "source_line": 80
+        }
+      ]
+    },
+    {
+      "facet_code": "E1",
+      "facet_id": "extraversion_warmth",
+      "source_label": "FRIENDLINESS",
+      "alpha": 0.87,
+      "items": [
+        {
+          "item_id": "E1_POS_01",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "positive",
+          "text": "Make friends easily.",
+          "source_line": 83
+        },
+        {
+          "item_id": "E1_POS_02",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "positive",
+          "text": "Warm up quickly to others.",
+          "source_line": 84
+        },
+        {
+          "item_id": "E1_POS_03",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "positive",
+          "text": "Feel comfortable around people.",
+          "source_line": 85
+        },
+        {
+          "item_id": "E1_POS_04",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "positive",
+          "text": "Act comfortably with others.",
+          "source_line": 86
+        },
+        {
+          "item_id": "E1_POS_05",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "positive",
+          "text": "Cheer people up.",
+          "source_line": 87
+        },
+        {
+          "item_id": "E1_NEG_01",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "negative",
+          "text": "Am hard to get to know.",
+          "source_line": 89
+        },
+        {
+          "item_id": "E1_NEG_02",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "negative",
+          "text": "Often feel uncomfortable around others.",
+          "source_line": 90
+        },
+        {
+          "item_id": "E1_NEG_03",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "negative",
+          "text": "Avoid contacts with others.",
+          "source_line": 91
+        },
+        {
+          "item_id": "E1_NEG_04",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "negative",
+          "text": "Am not really interested in others.",
+          "source_line": 92
+        },
+        {
+          "item_id": "E1_NEG_05",
+          "facet_code": "E1",
+          "facet_id": "extraversion_warmth",
+          "polarity": "negative",
+          "text": "Keep others at a distance.",
+          "source_line": 93
+        }
+      ]
+    },
+    {
+      "facet_code": "E2",
+      "facet_id": "extraversion_gregariousness",
+      "source_label": "GREGARIOUSNESS",
+      "alpha": 0.79,
+      "items": [
+        {
+          "item_id": "E2_POS_01",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "positive",
+          "text": "Love large parties.",
+          "source_line": 96
+        },
+        {
+          "item_id": "E2_POS_02",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "positive",
+          "text": "Talk to a lot of different people at parties.",
+          "source_line": 97
+        },
+        {
+          "item_id": "E2_POS_03",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "positive",
+          "text": "Enjoy being part of a group.",
+          "source_line": 98
+        },
+        {
+          "item_id": "E2_POS_04",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "positive",
+          "text": "Involve others in what I am doing.",
+          "source_line": 99
+        },
+        {
+          "item_id": "E2_POS_05",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "positive",
+          "text": "Love surprise parties.",
+          "source_line": 100
+        },
+        {
+          "item_id": "E2_NEG_01",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "negative",
+          "text": "Prefer to be alone.",
+          "source_line": 102
+        },
+        {
+          "item_id": "E2_NEG_02",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "negative",
+          "text": "Want to be left alone.",
+          "source_line": 103
+        },
+        {
+          "item_id": "E2_NEG_03",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "negative",
+          "text": "Don't like crowded events.",
+          "source_line": 104
+        },
+        {
+          "item_id": "E2_NEG_04",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "negative",
+          "text": "Avoid crowds.",
+          "source_line": 105
+        },
+        {
+          "item_id": "E2_NEG_05",
+          "facet_code": "E2",
+          "facet_id": "extraversion_gregariousness",
+          "polarity": "negative",
+          "text": "Seek quiet.",
+          "source_line": 106
+        }
+      ]
+    },
+    {
+      "facet_code": "E3",
+      "facet_id": "extraversion_assertiveness",
+      "source_label": "ASSERTIVENESS",
+      "alpha": 0.84,
+      "items": [
+        {
+          "item_id": "E3_POS_01",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "positive",
+          "text": "Take charge.",
+          "source_line": 109
+        },
+        {
+          "item_id": "E3_POS_02",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "positive",
+          "text": "Try to lead others.",
+          "source_line": 110
+        },
+        {
+          "item_id": "E3_POS_03",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "positive",
+          "text": "Can talk others into doing things.",
+          "source_line": 111
+        },
+        {
+          "item_id": "E3_POS_04",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "positive",
+          "text": "Seek to influence others.",
+          "source_line": 112
+        },
+        {
+          "item_id": "E3_POS_05",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "positive",
+          "text": "Take control of things.",
+          "source_line": 113
+        },
+        {
+          "item_id": "E3_NEG_01",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "negative",
+          "text": "Wait for others to lead the way.",
+          "source_line": 115
+        },
+        {
+          "item_id": "E3_NEG_02",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "negative",
+          "text": "Keep in the background.",
+          "source_line": 116
+        },
+        {
+          "item_id": "E3_NEG_03",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "negative",
+          "text": "Have little to say.",
+          "source_line": 117
+        },
+        {
+          "item_id": "E3_NEG_04",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "negative",
+          "text": "Don't like to draw attention to myself.",
+          "source_line": 118
+        },
+        {
+          "item_id": "E3_NEG_05",
+          "facet_code": "E3",
+          "facet_id": "extraversion_assertiveness",
+          "polarity": "negative",
+          "text": "Hold back my opinions.",
+          "source_line": 119
+        }
+      ]
+    },
+    {
+      "facet_code": "E4",
+      "facet_id": "extraversion_activity",
+      "source_label": "ACTIVITY LEVEL",
+      "alpha": 0.71,
+      "items": [
+        {
+          "item_id": "E4_POS_01",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "positive",
+          "text": "Am always busy.",
+          "source_line": 122
+        },
+        {
+          "item_id": "E4_POS_02",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "positive",
+          "text": "Am always on the go.",
+          "source_line": 123
+        },
+        {
+          "item_id": "E4_POS_03",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "positive",
+          "text": "Do a lot in my spare time.",
+          "source_line": 124
+        },
+        {
+          "item_id": "E4_POS_04",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "positive",
+          "text": "Can manage many things at the same time.",
+          "source_line": 125
+        },
+        {
+          "item_id": "E4_POS_05",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "positive",
+          "text": "React quickly.",
+          "source_line": 126
+        },
+        {
+          "item_id": "E4_NEG_01",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "negative",
+          "text": "Like to take it easy.",
+          "source_line": 128
+        },
+        {
+          "item_id": "E4_NEG_02",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "negative",
+          "text": "Like to take my time.",
+          "source_line": 129
+        },
+        {
+          "item_id": "E4_NEG_03",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "negative",
+          "text": "Like a leisurely lifestyle.",
+          "source_line": 130
+        },
+        {
+          "item_id": "E4_NEG_04",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "negative",
+          "text": "Let things proceed at their own pace.",
+          "source_line": 131
+        },
+        {
+          "item_id": "E4_NEG_05",
+          "facet_code": "E4",
+          "facet_id": "extraversion_activity",
+          "polarity": "negative",
+          "text": "React slowly.",
+          "source_line": 132
+        }
+      ]
+    },
+    {
+      "facet_code": "E5",
+      "facet_id": "extraversion_excitement_seeking",
+      "source_label": "EXCITEMENT-SEEKING",
+      "alpha": 0.78,
+      "items": [
+        {
+          "item_id": "E5_POS_01",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "positive",
+          "text": "Love excitement.",
+          "source_line": 135
+        },
+        {
+          "item_id": "E5_POS_02",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "positive",
+          "text": "Seek adventure.",
+          "source_line": 136
+        },
+        {
+          "item_id": "E5_POS_03",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "positive",
+          "text": "Love action.",
+          "source_line": 137
+        },
+        {
+          "item_id": "E5_POS_04",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "positive",
+          "text": "Enjoy being part of a loud crowd.",
+          "source_line": 138
+        },
+        {
+          "item_id": "E5_POS_05",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "positive",
+          "text": "Enjoy being reckless.",
+          "source_line": 139
+        },
+        {
+          "item_id": "E5_POS_06",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "positive",
+          "text": "Act wild and crazy.",
+          "source_line": 140
+        },
+        {
+          "item_id": "E5_POS_07",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "positive",
+          "text": "Am willing to try anything once.",
+          "source_line": 141
+        },
+        {
+          "item_id": "E5_POS_08",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "positive",
+          "text": "Seek danger.",
+          "source_line": 142
+        },
+        {
+          "item_id": "E5_NEG_01",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "negative",
+          "text": "Would never go hang gliding or bungee jumping.",
+          "source_line": 144
+        },
+        {
+          "item_id": "E5_NEG_02",
+          "facet_code": "E5",
+          "facet_id": "extraversion_excitement_seeking",
+          "polarity": "negative",
+          "text": "Dislike loud music.",
+          "source_line": 145
+        }
+      ]
+    },
+    {
+      "facet_code": "E6",
+      "facet_id": "extraversion_positive_emotions",
+      "source_label": "CHEERFULNESS",
+      "alpha": 0.81,
+      "items": [
+        {
+          "item_id": "E6_POS_01",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "positive",
+          "text": "Radiate joy.",
+          "source_line": 148
+        },
+        {
+          "item_id": "E6_POS_02",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "positive",
+          "text": "Have a lot of fun.",
+          "source_line": 149
+        },
+        {
+          "item_id": "E6_POS_03",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "positive",
+          "text": "Express childlike joy.",
+          "source_line": 150
+        },
+        {
+          "item_id": "E6_POS_04",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "positive",
+          "text": "Laugh my way through life.",
+          "source_line": 151
+        },
+        {
+          "item_id": "E6_POS_05",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "positive",
+          "text": "Love life.",
+          "source_line": 152
+        },
+        {
+          "item_id": "E6_POS_06",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "positive",
+          "text": "Look at the bright side of life.",
+          "source_line": 153
+        },
+        {
+          "item_id": "E6_POS_07",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "positive",
+          "text": "Laugh aloud.",
+          "source_line": 154
+        },
+        {
+          "item_id": "E6_POS_08",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "positive",
+          "text": "Amuse my friends.",
+          "source_line": 155
+        },
+        {
+          "item_id": "E6_NEG_01",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "negative",
+          "text": "Am not easily amused.",
+          "source_line": 157
+        },
+        {
+          "item_id": "E6_NEG_02",
+          "facet_code": "E6",
+          "facet_id": "extraversion_positive_emotions",
+          "polarity": "negative",
+          "text": "Seldom joke around.",
+          "source_line": 158
+        }
+      ]
+    },
+    {
+      "facet_code": "O1",
+      "facet_id": "openness_fantasy",
+      "source_label": "IMAGINATION",
+      "alpha": 0.83,
+      "items": [
+        {
+          "item_id": "O1_POS_01",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "positive",
+          "text": "Have a vivid imagination.",
+          "source_line": 161
+        },
+        {
+          "item_id": "O1_POS_02",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "positive",
+          "text": "Enjoy wild flights of fantasy.",
+          "source_line": 162
+        },
+        {
+          "item_id": "O1_POS_03",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "positive",
+          "text": "Love to daydream.",
+          "source_line": 163
+        },
+        {
+          "item_id": "O1_POS_04",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "positive",
+          "text": "Like to get lost in thought.",
+          "source_line": 164
+        },
+        {
+          "item_id": "O1_POS_05",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "positive",
+          "text": "Indulge in my fantasies.",
+          "source_line": 165
+        },
+        {
+          "item_id": "O1_POS_06",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "positive",
+          "text": "Spend time reflecting on things.",
+          "source_line": 166
+        },
+        {
+          "item_id": "O1_NEG_01",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "negative",
+          "text": "Seldom daydream.",
+          "source_line": 168
+        },
+        {
+          "item_id": "O1_NEG_02",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "negative",
+          "text": "Do not have a good imagination.",
+          "source_line": 169
+        },
+        {
+          "item_id": "O1_NEG_03",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "negative",
+          "text": "Seldom get lost in thought.",
+          "source_line": 170
+        },
+        {
+          "item_id": "O1_NEG_04",
+          "facet_code": "O1",
+          "facet_id": "openness_fantasy",
+          "polarity": "negative",
+          "text": "Have difficulty imagining things.",
+          "source_line": 171
+        }
+      ]
+    },
+    {
+      "facet_code": "O2",
+      "facet_id": "openness_aesthetics",
+      "source_label": "ARTISTIC INTERESTS",
+      "alpha": 0.84,
+      "items": [
+        {
+          "item_id": "O2_POS_01",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "positive",
+          "text": "Believe in the importance of art.",
+          "source_line": 174
+        },
+        {
+          "item_id": "O2_POS_02",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "positive",
+          "text": "Like music.",
+          "source_line": 175
+        },
+        {
+          "item_id": "O2_POS_03",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "positive",
+          "text": "See beauty in things that others might not notice.",
+          "source_line": 176
+        },
+        {
+          "item_id": "O2_POS_04",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "positive",
+          "text": "Love flowers.",
+          "source_line": 177
+        },
+        {
+          "item_id": "O2_POS_05",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "positive",
+          "text": "Enjoy the beauty of nature.",
+          "source_line": 178
+        },
+        {
+          "item_id": "O2_NEG_01",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "negative",
+          "text": "Do not like art.",
+          "source_line": 180
+        },
+        {
+          "item_id": "O2_NEG_02",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "negative",
+          "text": "Do not like poetry.",
+          "source_line": 181
+        },
+        {
+          "item_id": "O2_NEG_03",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "negative",
+          "text": "Do not enjoy going to art museums.",
+          "source_line": 182
+        },
+        {
+          "item_id": "O2_NEG_04",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "negative",
+          "text": "Do not like concerts.",
+          "source_line": 183
+        },
+        {
+          "item_id": "O2_NEG_05",
+          "facet_code": "O2",
+          "facet_id": "openness_aesthetics",
+          "polarity": "negative",
+          "text": "Do not enjoy watching dance performances.",
+          "source_line": 184
+        }
+      ]
+    },
+    {
+      "facet_code": "O3",
+      "facet_id": "openness_feelings",
+      "source_label": "EMOTIONALITY",
+      "alpha": 0.81,
+      "items": [
+        {
+          "item_id": "O3_POS_01",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "positive",
+          "text": "Experience my emotions intensely.",
+          "source_line": 187
+        },
+        {
+          "item_id": "O3_POS_02",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "positive",
+          "text": "Feel others' emotions.",
+          "source_line": 188
+        },
+        {
+          "item_id": "O3_POS_03",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "positive",
+          "text": "Am passionate about causes.",
+          "source_line": 189
+        },
+        {
+          "item_id": "O3_POS_04",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "positive",
+          "text": "Enjoy examining myself and my life.",
+          "source_line": 190
+        },
+        {
+          "item_id": "O3_POS_05",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "positive",
+          "text": "Try to understand myself.",
+          "source_line": 191
+        },
+        {
+          "item_id": "O3_NEG_01",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "negative",
+          "text": "Seldom get emotional.",
+          "source_line": 193
+        },
+        {
+          "item_id": "O3_NEG_02",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "negative",
+          "text": "Am not easily affected by my emotions.",
+          "source_line": 194
+        },
+        {
+          "item_id": "O3_NEG_03",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "negative",
+          "text": "Rarely notice my emotional reactions.",
+          "source_line": 195
+        },
+        {
+          "item_id": "O3_NEG_04",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "negative",
+          "text": "Experience very few emotional highs and lows.",
+          "source_line": 196
+        },
+        {
+          "item_id": "O3_NEG_05",
+          "facet_code": "O3",
+          "facet_id": "openness_feelings",
+          "polarity": "negative",
+          "text": "Don't understand people who get emotional.",
+          "source_line": 197
+        }
+      ]
+    },
+    {
+      "facet_code": "O4",
+      "facet_id": "openness_actions",
+      "source_label": "ADVENTUROUSNESS",
+      "alpha": 0.77,
+      "items": [
+        {
+          "item_id": "O4_POS_01",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "positive",
+          "text": "Prefer variety to routine.",
+          "source_line": 200
+        },
+        {
+          "item_id": "O4_POS_02",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "positive",
+          "text": "Like to visit new places.",
+          "source_line": 201
+        },
+        {
+          "item_id": "O4_POS_03",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "positive",
+          "text": "Am interested in many things.",
+          "source_line": 202
+        },
+        {
+          "item_id": "O4_POS_04",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "positive",
+          "text": "Like to begin new things.",
+          "source_line": 203
+        },
+        {
+          "item_id": "O4_NEG_01",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "negative",
+          "text": "Prefer to stick with things that I know.",
+          "source_line": 205
+        },
+        {
+          "item_id": "O4_NEG_02",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "negative",
+          "text": "Dislike changes.",
+          "source_line": 206
+        },
+        {
+          "item_id": "O4_NEG_03",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "negative",
+          "text": "Don't like the idea of change.",
+          "source_line": 207
+        },
+        {
+          "item_id": "O4_NEG_04",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "negative",
+          "text": "Am a creature of habit.",
+          "source_line": 208
+        },
+        {
+          "item_id": "O4_NEG_05",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "negative",
+          "text": "Dislike new foods.",
+          "source_line": 209
+        },
+        {
+          "item_id": "O4_NEG_06",
+          "facet_code": "O4",
+          "facet_id": "openness_actions",
+          "polarity": "negative",
+          "text": "Am attached to conventional ways.",
+          "source_line": 210
+        }
+      ]
+    },
+    {
+      "facet_code": "O5",
+      "facet_id": "openness_ideas",
+      "source_label": "INTELLECT",
+      "alpha": 0.86,
+      "items": [
+        {
+          "item_id": "O5_POS_01",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "positive",
+          "text": "Like to solve complex problems.",
+          "source_line": 213
+        },
+        {
+          "item_id": "O5_POS_02",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "positive",
+          "text": "Love to read challenging material.",
+          "source_line": 214
+        },
+        {
+          "item_id": "O5_POS_03",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "positive",
+          "text": "Have a rich vocabulary.",
+          "source_line": 215
+        },
+        {
+          "item_id": "O5_POS_04",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "positive",
+          "text": "Can handle a lot of information.",
+          "source_line": 216
+        },
+        {
+          "item_id": "O5_POS_05",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "positive",
+          "text": "Enjoy thinking about things.",
+          "source_line": 217
+        },
+        {
+          "item_id": "O5_NEG_01",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "negative",
+          "text": "Am not interested in abstract ideas.",
+          "source_line": 219
+        },
+        {
+          "item_id": "O5_NEG_02",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "negative",
+          "text": "Avoid philosophical discussions.",
+          "source_line": 220
+        },
+        {
+          "item_id": "O5_NEG_03",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "negative",
+          "text": "Have difficulty understanding abstract ideas.",
+          "source_line": 221
+        },
+        {
+          "item_id": "O5_NEG_04",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "negative",
+          "text": "Am not interested in theoretical discussions.",
+          "source_line": 222
+        },
+        {
+          "item_id": "O5_NEG_05",
+          "facet_code": "O5",
+          "facet_id": "openness_ideas",
+          "polarity": "negative",
+          "text": "Avoid difficult reading material.",
+          "source_line": 223
+        }
+      ]
+    },
+    {
+      "facet_code": "O6",
+      "facet_id": "openness_values",
+      "source_label": "LIBERALISM",
+      "alpha": 0.86,
+      "items": [
+        {
+          "item_id": "O6_POS_01",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "positive",
+          "text": "Tend to vote for liberal political candidates.",
+          "source_line": 226
+        },
+        {
+          "item_id": "O6_POS_02",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "positive",
+          "text": "Believe that there is no absolute right and wrong.",
+          "source_line": 227
+        },
+        {
+          "item_id": "O6_POS_03",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "positive",
+          "text": "Believe that criminals should receive help rather than punishment.",
+          "source_line": 228
+        },
+        {
+          "item_id": "O6_NEG_01",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "negative",
+          "text": "Believe in one true religion.",
+          "source_line": 230
+        },
+        {
+          "item_id": "O6_NEG_02",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "negative",
+          "text": "Tend to vote for conservative political candidates.",
+          "source_line": 231
+        },
+        {
+          "item_id": "O6_NEG_03",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "negative",
+          "text": "Believe that too much tax money goes to support artists.",
+          "source_line": 232
+        },
+        {
+          "item_id": "O6_NEG_04",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "negative",
+          "text": "Believe laws should be strictly enforced.",
+          "source_line": 233
+        },
+        {
+          "item_id": "O6_NEG_05",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "negative",
+          "text": "Believe that we coddle criminals too much.",
+          "source_line": 234
+        },
+        {
+          "item_id": "O6_NEG_06",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "negative",
+          "text": "Believe that we should be tough on crime.",
+          "source_line": 235
+        },
+        {
+          "item_id": "O6_NEG_07",
+          "facet_code": "O6",
+          "facet_id": "openness_values",
+          "polarity": "negative",
+          "text": "Like to stand during the national anthem.",
+          "source_line": 236
+        }
+      ]
+    },
+    {
+      "facet_code": "A1",
+      "facet_id": "agreeableness_trust",
+      "source_label": "TRUST",
+      "alpha": 0.82,
+      "items": [
+        {
+          "item_id": "A1_POS_01",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "positive",
+          "text": "Trust others.",
+          "source_line": 239
+        },
+        {
+          "item_id": "A1_POS_02",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "positive",
+          "text": "Believe that others have good intentions.",
+          "source_line": 240
+        },
+        {
+          "item_id": "A1_POS_03",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "positive",
+          "text": "Trust what people say.",
+          "source_line": 241
+        },
+        {
+          "item_id": "A1_POS_04",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "positive",
+          "text": "Believe that people are basically moral.",
+          "source_line": 242
+        },
+        {
+          "item_id": "A1_POS_05",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "positive",
+          "text": "Believe in human goodness.",
+          "source_line": 243
+        },
+        {
+          "item_id": "A1_POS_06",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "positive",
+          "text": "Think that all will be well.",
+          "source_line": 244
+        },
+        {
+          "item_id": "A1_NEG_01",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "negative",
+          "text": "Distrust people.",
+          "source_line": 246
+        },
+        {
+          "item_id": "A1_NEG_02",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "negative",
+          "text": "Suspect hidden motives in others.",
+          "source_line": 247
+        },
+        {
+          "item_id": "A1_NEG_03",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "negative",
+          "text": "Am wary of others.",
+          "source_line": 248
+        },
+        {
+          "item_id": "A1_NEG_04",
+          "facet_code": "A1",
+          "facet_id": "agreeableness_trust",
+          "polarity": "negative",
+          "text": "Believe that people are essentially evil.",
+          "source_line": 249
+        }
+      ]
+    },
+    {
+      "facet_code": "A2",
+      "facet_id": "agreeableness_straightforwardness",
+      "source_label": "MORALITY",
+      "alpha": 0.75,
+      "items": [
+        {
+          "item_id": "A2_POS_01",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "positive",
+          "text": "Would never cheat on my taxes.",
+          "source_line": 252
+        },
+        {
+          "item_id": "A2_POS_02",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "positive",
+          "text": "Stick to the rules.",
+          "source_line": 253
+        },
+        {
+          "item_id": "A2_NEG_01",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "negative",
+          "text": "Use flattery to get ahead.",
+          "source_line": 255
+        },
+        {
+          "item_id": "A2_NEG_02",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "negative",
+          "text": "Use others for my own ends.",
+          "source_line": 256
+        },
+        {
+          "item_id": "A2_NEG_03",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "negative",
+          "text": "Know how to get around the rules.",
+          "source_line": 257
+        },
+        {
+          "item_id": "A2_NEG_04",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "negative",
+          "text": "Cheat to get ahead.",
+          "source_line": 258
+        },
+        {
+          "item_id": "A2_NEG_05",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "negative",
+          "text": "Put people under pressure.",
+          "source_line": 259
+        },
+        {
+          "item_id": "A2_NEG_06",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "negative",
+          "text": "Pretend to be concerned for others.",
+          "source_line": 260
+        },
+        {
+          "item_id": "A2_NEG_07",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "negative",
+          "text": "Take advantage of others.",
+          "source_line": 261
+        },
+        {
+          "item_id": "A2_NEG_08",
+          "facet_code": "A2",
+          "facet_id": "agreeableness_straightforwardness",
+          "polarity": "negative",
+          "text": "Obstruct others' plans.",
+          "source_line": 262
+        }
+      ]
+    },
+    {
+      "facet_code": "A3",
+      "facet_id": "agreeableness_altruism",
+      "source_label": "ALTRUISM",
+      "alpha": 0.77,
+      "items": [
+        {
+          "item_id": "A3_POS_01",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "positive",
+          "text": "Make people feel welcome.",
+          "source_line": 265
+        },
+        {
+          "item_id": "A3_POS_02",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "positive",
+          "text": "Anticipate the needs of others.",
+          "source_line": 266
+        },
+        {
+          "item_id": "A3_POS_03",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "positive",
+          "text": "Love to help others.",
+          "source_line": 267
+        },
+        {
+          "item_id": "A3_POS_04",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "positive",
+          "text": "Am concerned about others.",
+          "source_line": 268
+        },
+        {
+          "item_id": "A3_POS_05",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "positive",
+          "text": "Have a good word for everyone.",
+          "source_line": 269
+        },
+        {
+          "item_id": "A3_NEG_01",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "negative",
+          "text": "Look down on others.",
+          "source_line": 271
+        },
+        {
+          "item_id": "A3_NEG_02",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "negative",
+          "text": "Am indifferent to the feelings of others.",
+          "source_line": 272
+        },
+        {
+          "item_id": "A3_NEG_03",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "negative",
+          "text": "Make people feel uncomfortable.",
+          "source_line": 273
+        },
+        {
+          "item_id": "A3_NEG_04",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "negative",
+          "text": "Turn my back on others.",
+          "source_line": 274
+        },
+        {
+          "item_id": "A3_NEG_05",
+          "facet_code": "A3",
+          "facet_id": "agreeableness_altruism",
+          "polarity": "negative",
+          "text": "Take no time for others.",
+          "source_line": 275
+        }
+      ]
+    },
+    {
+      "facet_code": "A4",
+      "facet_id": "agreeableness_compliance",
+      "source_label": "COOPERATION",
+      "alpha": 0.73,
+      "items": [
+        {
+          "item_id": "A4_POS_01",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "positive",
+          "text": "Am easy to satisfy.",
+          "source_line": 278
+        },
+        {
+          "item_id": "A4_POS_02",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "positive",
+          "text": "Can't stand confrontations.",
+          "source_line": 279
+        },
+        {
+          "item_id": "A4_POS_03",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "positive",
+          "text": "Hate to seem pushy.",
+          "source_line": 280
+        },
+        {
+          "item_id": "A4_NEG_01",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "negative",
+          "text": "Have a sharp tongue.",
+          "source_line": 282
+        },
+        {
+          "item_id": "A4_NEG_02",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "negative",
+          "text": "Contradict others.",
+          "source_line": 283
+        },
+        {
+          "item_id": "A4_NEG_03",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "negative",
+          "text": "Love a good fight.",
+          "source_line": 284
+        },
+        {
+          "item_id": "A4_NEG_04",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "negative",
+          "text": "Yell at people.",
+          "source_line": 285
+        },
+        {
+          "item_id": "A4_NEG_05",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "negative",
+          "text": "Insult people.",
+          "source_line": 286
+        },
+        {
+          "item_id": "A4_NEG_06",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "negative",
+          "text": "Get back at others.",
+          "source_line": 287
+        },
+        {
+          "item_id": "A4_NEG_07",
+          "facet_code": "A4",
+          "facet_id": "agreeableness_compliance",
+          "polarity": "negative",
+          "text": "Hold a grudge.",
+          "source_line": 288
+        }
+      ]
+    },
+    {
+      "facet_code": "A5",
+      "facet_id": "agreeableness_modesty",
+      "source_label": "MODESTY",
+      "alpha": 0.77,
+      "items": [
+        {
+          "item_id": "A5_POS_01",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "positive",
+          "text": "Dislike being the center of attention.",
+          "source_line": 291
+        },
+        {
+          "item_id": "A5_POS_02",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "positive",
+          "text": "Dislike talking about myself.",
+          "source_line": 292
+        },
+        {
+          "item_id": "A5_POS_03",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "positive",
+          "text": "Consider myself an average person.",
+          "source_line": 293
+        },
+        {
+          "item_id": "A5_POS_04",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "positive",
+          "text": "Seldom toot my own horn.",
+          "source_line": 294
+        },
+        {
+          "item_id": "A5_NEG_01",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "negative",
+          "text": "Believe that I am better than others.",
+          "source_line": 296
+        },
+        {
+          "item_id": "A5_NEG_02",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "negative",
+          "text": "Think highly of myself.",
+          "source_line": 297
+        },
+        {
+          "item_id": "A5_NEG_03",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "negative",
+          "text": "Have a high opinion of myself.",
+          "source_line": 298
+        },
+        {
+          "item_id": "A5_NEG_04",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "negative",
+          "text": "Know the answers to many questions.",
+          "source_line": 299
+        },
+        {
+          "item_id": "A5_NEG_05",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "negative",
+          "text": "Boast about my virtues.",
+          "source_line": 300
+        },
+        {
+          "item_id": "A5_NEG_06",
+          "facet_code": "A5",
+          "facet_id": "agreeableness_modesty",
+          "polarity": "negative",
+          "text": "Make myself the center of attention.",
+          "source_line": 301
+        }
+      ]
+    },
+    {
+      "facet_code": "A6",
+      "facet_id": "agreeableness_tender_mindedness",
+      "source_label": "SYMPATHY",
+      "alpha": 0.75,
+      "items": [
+        {
+          "item_id": "A6_POS_01",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "positive",
+          "text": "Sympathize with the homeless.",
+          "source_line": 304
+        },
+        {
+          "item_id": "A6_POS_02",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "positive",
+          "text": "Feel sympathy for those who are worse off than myself.",
+          "source_line": 305
+        },
+        {
+          "item_id": "A6_POS_03",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "positive",
+          "text": "Value cooperation over competition.",
+          "source_line": 306
+        },
+        {
+          "item_id": "A6_POS_04",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "positive",
+          "text": "Suffer from others' sorrows.",
+          "source_line": 307
+        },
+        {
+          "item_id": "A6_NEG_01",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "negative",
+          "text": "Am not interested in other people's problems.",
+          "source_line": 309
+        },
+        {
+          "item_id": "A6_NEG_02",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "negative",
+          "text": "Tend to dislike soft-hearted people.",
+          "source_line": 310
+        },
+        {
+          "item_id": "A6_NEG_03",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "negative",
+          "text": "Believe in an eye for an eye.",
+          "source_line": 311
+        },
+        {
+          "item_id": "A6_NEG_04",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "negative",
+          "text": "Try not to think about the needy.",
+          "source_line": 312
+        },
+        {
+          "item_id": "A6_NEG_05",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "negative",
+          "text": "Believe people should fend for themselves.",
+          "source_line": 313
+        },
+        {
+          "item_id": "A6_NEG_06",
+          "facet_code": "A6",
+          "facet_id": "agreeableness_tender_mindedness",
+          "polarity": "negative",
+          "text": "Can't stand weak people.",
+          "source_line": 314
+        }
+      ]
+    },
+    {
+      "facet_code": "C1",
+      "facet_id": "conscientiousness_competence",
+      "source_label": "SELF-EFFICACY",
+      "alpha": 0.78,
+      "items": [
+        {
+          "item_id": "C1_POS_01",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "positive",
+          "text": "Complete tasks successfully.",
+          "source_line": 317
+        },
+        {
+          "item_id": "C1_POS_02",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "positive",
+          "text": "Excel in what I do.",
+          "source_line": 318
+        },
+        {
+          "item_id": "C1_POS_03",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "positive",
+          "text": "Handle tasks smoothly.",
+          "source_line": 319
+        },
+        {
+          "item_id": "C1_POS_04",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "positive",
+          "text": "Am sure of my ground.",
+          "source_line": 320
+        },
+        {
+          "item_id": "C1_POS_05",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "positive",
+          "text": "Come up with good solutions.",
+          "source_line": 321
+        },
+        {
+          "item_id": "C1_POS_06",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "positive",
+          "text": "Know how to get things done.",
+          "source_line": 322
+        },
+        {
+          "item_id": "C1_NEG_01",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "negative",
+          "text": "Misjudge situations.",
+          "source_line": 324
+        },
+        {
+          "item_id": "C1_NEG_02",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "negative",
+          "text": "Don't understand things.",
+          "source_line": 325
+        },
+        {
+          "item_id": "C1_NEG_03",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "negative",
+          "text": "Have little to contribute.",
+          "source_line": 326
+        },
+        {
+          "item_id": "C1_NEG_04",
+          "facet_code": "C1",
+          "facet_id": "conscientiousness_competence",
+          "polarity": "negative",
+          "text": "Don't see the consequences of things.",
+          "source_line": 327
+        }
+      ]
+    },
+    {
+      "facet_code": "C2",
+      "facet_id": "conscientiousness_order",
+      "source_label": "ORDERLINESS",
+      "alpha": 0.82,
+      "items": [
+        {
+          "item_id": "C2_POS_01",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "positive",
+          "text": "Like order.",
+          "source_line": 330
+        },
+        {
+          "item_id": "C2_POS_02",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "positive",
+          "text": "Like to tidy up.",
+          "source_line": 331
+        },
+        {
+          "item_id": "C2_POS_03",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "positive",
+          "text": "Want everything to be \"just right.\"",
+          "source_line": 332
+        },
+        {
+          "item_id": "C2_POS_04",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "positive",
+          "text": "Love order and regularity.",
+          "source_line": 333
+        },
+        {
+          "item_id": "C2_POS_05",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "positive",
+          "text": "Do things according to a plan.",
+          "source_line": 334
+        },
+        {
+          "item_id": "C2_NEG_01",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "negative",
+          "text": "Often forget to put things back in their proper place.",
+          "source_line": 336
+        },
+        {
+          "item_id": "C2_NEG_02",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "negative",
+          "text": "Leave a mess in my room.",
+          "source_line": 337
+        },
+        {
+          "item_id": "C2_NEG_03",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "negative",
+          "text": "Leave my belongings around.",
+          "source_line": 338
+        },
+        {
+          "item_id": "C2_NEG_04",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "negative",
+          "text": "Am not bothered by messy people.",
+          "source_line": 339
+        },
+        {
+          "item_id": "C2_NEG_05",
+          "facet_code": "C2",
+          "facet_id": "conscientiousness_order",
+          "polarity": "negative",
+          "text": "Am not bothered by disorder.",
+          "source_line": 340
+        }
+      ]
+    },
+    {
+      "facet_code": "C3",
+      "facet_id": "conscientiousness_dutifulness",
+      "source_label": "DUTIFULNESS",
+      "alpha": 0.71,
+      "items": [
+        {
+          "item_id": "C3_POS_01",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "positive",
+          "text": "Try to follow the rules.",
+          "source_line": 343
+        },
+        {
+          "item_id": "C3_POS_02",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "positive",
+          "text": "Keep my promises.",
+          "source_line": 344
+        },
+        {
+          "item_id": "C3_POS_03",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "positive",
+          "text": "Pay my bills on time.",
+          "source_line": 345
+        },
+        {
+          "item_id": "C3_POS_04",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "positive",
+          "text": "Tell the truth.",
+          "source_line": 346
+        },
+        {
+          "item_id": "C3_POS_05",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "positive",
+          "text": "Listen to my conscience.",
+          "source_line": 347
+        },
+        {
+          "item_id": "C3_NEG_01",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "negative",
+          "text": "Break rules.",
+          "source_line": 349
+        },
+        {
+          "item_id": "C3_NEG_02",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "negative",
+          "text": "Break my promises.",
+          "source_line": 350
+        },
+        {
+          "item_id": "C3_NEG_03",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "negative",
+          "text": "Get others to do my duties.",
+          "source_line": 351
+        },
+        {
+          "item_id": "C3_NEG_04",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "negative",
+          "text": "Do the opposite of what is asked.",
+          "source_line": 352
+        },
+        {
+          "item_id": "C3_NEG_05",
+          "facet_code": "C3",
+          "facet_id": "conscientiousness_dutifulness",
+          "polarity": "negative",
+          "text": "Misrepresent the facts.",
+          "source_line": 353
+        }
+      ]
+    },
+    {
+      "facet_code": "C4",
+      "facet_id": "conscientiousness_achievement_striving",
+      "source_label": "ACHIEVEMENT-STRIVING",
+      "alpha": 0.78,
+      "items": [
+        {
+          "item_id": "C4_POS_01",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "positive",
+          "text": "Go straight for the goal.",
+          "source_line": 356
+        },
+        {
+          "item_id": "C4_POS_02",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "positive",
+          "text": "Work hard.",
+          "source_line": 357
+        },
+        {
+          "item_id": "C4_POS_03",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "positive",
+          "text": "Turn plans into actions.",
+          "source_line": 358
+        },
+        {
+          "item_id": "C4_POS_04",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "positive",
+          "text": "Plunge into tasks with all my heart.",
+          "source_line": 359
+        },
+        {
+          "item_id": "C4_POS_05",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "positive",
+          "text": "Do more than what's expected of me.",
+          "source_line": 360
+        },
+        {
+          "item_id": "C4_POS_06",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "positive",
+          "text": "Set high standards for myself and others.",
+          "source_line": 361
+        },
+        {
+          "item_id": "C4_POS_07",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "positive",
+          "text": "Demand quality.",
+          "source_line": 362
+        },
+        {
+          "item_id": "C4_NEG_01",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "negative",
+          "text": "Am not highly motivated to succeed.",
+          "source_line": 364
+        },
+        {
+          "item_id": "C4_NEG_02",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "negative",
+          "text": "Do just enough work to get by.",
+          "source_line": 365
+        },
+        {
+          "item_id": "C4_NEG_03",
+          "facet_code": "C4",
+          "facet_id": "conscientiousness_achievement_striving",
+          "polarity": "negative",
+          "text": "Put little time and effort into my work.",
+          "source_line": 366
+        }
+      ]
+    },
+    {
+      "facet_code": "C5",
+      "facet_id": "conscientiousness_self_discipline",
+      "source_label": "SELF-DISCIPLINE",
+      "alpha": 0.85,
+      "items": [
+        {
+          "item_id": "C5_POS_01",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "positive",
+          "text": "Get chores done right away.",
+          "source_line": 369
+        },
+        {
+          "item_id": "C5_POS_02",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "positive",
+          "text": "Am always prepared.",
+          "source_line": 370
+        },
+        {
+          "item_id": "C5_POS_03",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "positive",
+          "text": "Start tasks right away.",
+          "source_line": 371
+        },
+        {
+          "item_id": "C5_POS_04",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "positive",
+          "text": "Get to work at once.",
+          "source_line": 372
+        },
+        {
+          "item_id": "C5_POS_05",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "positive",
+          "text": "Carry out my plans.",
+          "source_line": 373
+        },
+        {
+          "item_id": "C5_NEG_01",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "negative",
+          "text": "Find it difficult to get down to work.",
+          "source_line": 375
+        },
+        {
+          "item_id": "C5_NEG_02",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "negative",
+          "text": "Waste my time.",
+          "source_line": 376
+        },
+        {
+          "item_id": "C5_NEG_03",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "negative",
+          "text": "Need a push to get started.",
+          "source_line": 377
+        },
+        {
+          "item_id": "C5_NEG_04",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "negative",
+          "text": "Have difficulty starting tasks.",
+          "source_line": 378
+        },
+        {
+          "item_id": "C5_NEG_05",
+          "facet_code": "C5",
+          "facet_id": "conscientiousness_self_discipline",
+          "polarity": "negative",
+          "text": "Postpone decisions.",
+          "source_line": 379
+        }
+      ]
+    },
+    {
+      "facet_code": "C6",
+      "facet_id": "conscientiousness_deliberation",
+      "source_label": "CAUTIOUSNESS",
+      "alpha": 0.76,
+      "items": [
+        {
+          "item_id": "C6_POS_01",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "positive",
+          "text": "Avoid mistakes.",
+          "source_line": 382
+        },
+        {
+          "item_id": "C6_POS_02",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "positive",
+          "text": "Choose my words with care.",
+          "source_line": 383
+        },
+        {
+          "item_id": "C6_POS_03",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "positive",
+          "text": "Stick to my chosen path.",
+          "source_line": 384
+        },
+        {
+          "item_id": "C6_NEG_01",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "negative",
+          "text": "Jump into things without thinking.",
+          "source_line": 386
+        },
+        {
+          "item_id": "C6_NEG_02",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "negative",
+          "text": "Make rash decisions.",
+          "source_line": 387
+        },
+        {
+          "item_id": "C6_NEG_03",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "negative",
+          "text": "Like to act on a whim.",
+          "source_line": 388
+        },
+        {
+          "item_id": "C6_NEG_04",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "negative",
+          "text": "Rush into things.",
+          "source_line": 389
+        },
+        {
+          "item_id": "C6_NEG_05",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "negative",
+          "text": "Do crazy things.",
+          "source_line": 390
+        },
+        {
+          "item_id": "C6_NEG_06",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "negative",
+          "text": "Act without thinking.",
+          "source_line": 391
+        },
+        {
+          "item_id": "C6_NEG_07",
+          "facet_code": "C6",
+          "facet_id": "conscientiousness_deliberation",
+          "polarity": "negative",
+          "text": "Often make last-minute plans.",
+          "source_line": 392
+        }
+      ]
+    }
+  ]
+}

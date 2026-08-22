@@ -1,0 +1,661 @@
+[
+  {
+    "item_id": "compliance_01",
+    "facet": "compliance",
+    "situation_surface": "在酒店阳台享受宁静夏夜时，被对面房产的割草噪音干扰。",
+    "trait_relevant_cue": "存在一个由他人行为（割草）引起的、非个人责任的持续噪音干扰，且干扰者并非直接可沟通的对象（对面房产）。",
+    "evidence_proposition": "在存在非个人责任的持续噪音干扰时，是否选择主动对抗/投诉/制止干扰源，还是选择被动适应或回避。",
+    "high_behaviors": [
+      "尽量不把注意力集中在噪音上，继续坐在阳台上",
+      "回到酒店房间，关上阳台门"
+    ],
+    "low_behaviors": [
+      "向前台投诉噪音",
+      "从阳台大喊应该停止割草"
+    ],
+    "behavioral_mechanism": "面对他人造成的干扰时，选择容忍/回避（高顺从）vs 选择主动对抗/投诉/制止（低顺从）。",
+    "alternative_explanation": "可能由个人对噪音的敏感度（感觉加工敏感性）或对安静环境的偏好程度解释，而非纯粹的人际顺从。",
+    "competing_facets": [
+      "N3: 脆弱性（对干扰的耐受度）",
+      "E3: 果断性（主动表达不满）"
+    ],
+    "situation_cost": "高顺从行为（继续坐着或回房间）可能牺牲个人舒适和享受；低顺从行为（投诉或大喊）可能引发人际冲突或尴尬。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_02",
+    "facet": "compliance",
+    "situation_surface": "公司假期规划中，两个相处融洽的同事与自己在同一日期休假，但雇主只允许一人休假。",
+    "trait_relevant_cue": "存在一个与关系良好的同事之间的直接休假日期冲突，且雇主明确只允许一人休假。",
+    "evidence_proposition": "在存在与关系良好的同事的直接休假日期冲突且雇主只允许一人休假的情况下，是否主动让步、放弃自己的首选日期以维持和谐。",
+    "high_behaviors": [
+      "主动让同事先休假",
+      "说服自己下次可以休假，从而让同事休假"
+    ],
+    "low_behaviors": [
+      "争取自己的首选日期，无法达成协议时要求上级决定",
+      "推进自己想要的日期，即使可能惹恼同事"
+    ],
+    "behavioral_mechanism": "面对与关系良好的同事的直接利益冲突时，主动放弃个人利益以维持和谐 vs 坚持个人利益，即使可能损害关系。",
+    "alternative_explanation": "选项C和D可能被低顺从者选择，但也可能被高果断性（E3）或高权力动机的人选择；选项A和B可能被高利他性（A3）或高谦逊（A5）的人选择，而不仅仅是高顺从。",
+    "competing_facets": [
+      "A3",
+      "A5",
+      "E3"
+    ],
+    "situation_cost": "选择高顺从行为（A或B）意味着放弃自己想要的休假日期，可能带来个人时间安排上的不便或失望。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_03",
+    "facet": "compliance",
+    "situation_surface": "与伴侣争论电影细节，自己确信正确而伴侣错误。",
+    "trait_relevant_cue": "存在一个非原则性、低利害的人际分歧，且自己确信正确。",
+    "evidence_proposition": "在确信自己正确但分歧非原则性的人际冲突中，是否坚持己见并愿意争论 vs 让步或提前同意以避免冲突。",
+    "high_behaviors": [
+      "尝试说服伴侣自己是对的",
+      "坚持己见并接受争论"
+    ],
+    "low_behaviors": [
+      "相对快速地让步",
+      "在争论前就同意伴侣"
+    ],
+    "behavioral_mechanism": "面对确信自己正确的人际分歧时，坚持己见并愿意争论 vs 为避免冲突而让步或提前同意。",
+    "alternative_explanation": "可能由对关系和谐的重视程度（利他性 A3）或对争论本身的态度（如厌恶争论）解释，而非纯粹的顺从倾向。",
+    "competing_facets": [
+      "A3"
+    ],
+    "situation_cost": "坚持己见可能导致伴侣关系紧张或争吵；让步则可能牺牲个人正确感或自尊。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_04",
+    "facet": "compliance",
+    "situation_surface": "约好拜访住得很远的朋友，双方对谁去找谁意见不一致。",
+    "trait_relevant_cue": "存在一个双方意见不一致且涉及个人便利/成本的人际冲突情境，且没有外部权威强制解决方案。",
+    "evidence_proposition": "在双方意见不一致且涉及个人便利/成本的人际冲突情境下，是否倾向于让步、缓和矛盾以维持和谐，还是坚持己见、接受争论。",
+    "high_behaviors": [
+      "为了避免争论，同意对方并主动去拜访对方",
+      "让步去对方那里，但提出下次对方来访的条件"
+    ],
+    "low_behaviors": [
+      "尝试说服对方，强调对方来访更便宜",
+      "坚持对方来访，并接受因此产生的争论"
+    ],
+    "behavioral_mechanism": "面对人际冲突时，优先选择让步、缓和矛盾以维持和谐 vs 优先坚持己见、试图说服或对抗。",
+    "alternative_explanation": "选项B包含条件性让步，可能部分反映策略性协商（C4：审慎）而非纯粹顺从；选项C的“更便宜”可能涉及经济考量（O1：幻想/务实）或能力（计算成本）。",
+    "competing_facets": [
+      "C4",
+      "O1"
+    ],
+    "situation_cost": "选择高顺从行为（A、B）需要付出实际时间、精力或金钱成本（长途拜访），且可能牺牲个人便利。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_05",
+    "facet": "compliance",
+    "situation_surface": "在高速公路上被后车紧逼并闪灯催促时，被试决定如何应对。",
+    "trait_relevant_cue": "存在一个来自其他司机的、带有挑衅意味的催促行为（紧贴跟车+闪远光灯），且被试没有义务必须让路。",
+    "evidence_proposition": "在面对其他司机的挑衅性催促行为时，是否选择主动让步（变道让行）以缓和冲突，而非坚持原有驾驶方式或采取对抗行为。",
+    "high_behaviors": [
+      "立即变道让后车通过",
+      "一旦有安全间隙就变道让后车通过"
+    ],
+    "low_behaviors": [
+      "故意减速以激怒后车",
+      "保持原有驾驶方式不变，不予理会"
+    ],
+    "behavioral_mechanism": "面对人际挑衅时，主动让步以缓和冲突 vs 坚持己见或采取对抗行为。",
+    "alternative_explanation": "驾驶经验或安全意识：新手可能更倾向于立即变道（选项A）以避免危险，而经验丰富的司机可能更自信地保持原速（选项D）。此外，对交通规则的了解（如左车道为超车道）也可能影响选择。",
+    "competing_facets": [
+      "C1: 胜任感",
+      "E3: 果断性"
+    ],
+    "situation_cost": "选择高顺从行为（立即或尽快变道）可能意味着放弃自己的行驶节奏、可能被迫减速或改变路线，且可能强化后车的挑衅行为。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_06",
+    "facet": "compliance",
+    "situation_surface": "与伴侣对度假目的地意见不一致时，决定如何行动。",
+    "trait_relevant_cue": "存在一个与伴侣意见不一致的度假目的地选择，且双方都有偏好，需要决定如何解决分歧。",
+    "evidence_proposition": "在存在与伴侣意见不一致的度假目的地选择时，是否倾向于让步、妥协或避免对抗，而非坚持己见或争论。",
+    "high_behaviors": [
+      "尝试制定两个目的地的优缺点并找到妥协",
+      "同意伴侣的建议，希望能在下次假期选择目的地"
+    ],
+    "low_behaviors": [
+      "支持自己的提议并尝试说服伴侣",
+      "接受争论以实现自己的目标"
+    ],
+    "behavioral_mechanism": "面对人际冲突时，优先维持和谐、让步或妥协 vs 优先坚持己见、说服对方或接受争论。",
+    "alternative_explanation": "可能受关系权力动态影响：若一方通常主导决策，低顺从者可能只是模仿日常模式；也可能受对目的地偏好的强烈程度影响，而非一般性顺从倾向。",
+    "competing_facets": [
+      "E3",
+      "A3"
+    ],
+    "situation_cost": "选择高顺从行为（妥协或让步）可能导致自己无法去最想去的目的地，牺牲个人偏好。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_07",
+    "facet": "compliance",
+    "situation_surface": "在时装店购买不合身的裤子后，销售员拒绝退货，被试面临是否接受该决定的选择。",
+    "trait_relevant_cue": "面对销售员明确拒绝退货且声称裤子不在退换之列的情境，被试需要决定是否接受这一决定还是采取对抗性行动。",
+    "evidence_proposition": "在销售员拒绝退货且声称裤子不在退换之列的情况下，是否选择接受决定（让步）而非坚持补偿或采取法律行动（对抗）。",
+    "high_behaviors": [
+      "不情愿地接受销售员的决定",
+      "接受销售员的决定，但未来不再光顾该店"
+    ],
+    "low_behaviors": [
+      "坚持适当的补偿，例如代金券形式",
+      "对销售员和商店采取法律行动"
+    ],
+    "behavioral_mechanism": "面对明确拒绝时，选择让步以维持和谐 vs 选择坚持己见并采取对抗性行动以争取权益",
+    "alternative_explanation": "选项可能受被试对法律行动的成本效益评估、对商店的忠诚度或对退货政策的认知影响，而非纯粹顺从倾向。",
+    "competing_facets": [
+      "A3",
+      "E3"
+    ],
+    "situation_cost": "选择高顺从行为（接受决定）可能承担经济损失（裤子不合身且无法退货）；选择低顺从行为（坚持补偿或法律行动）可能耗费时间和精力，并可能引发人际冲突。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_08",
+    "facet": "compliance",
+    "situation_surface": "在疲惫想睡觉时，邻居举办聚会很吵，需要决定如何应对。",
+    "trait_relevant_cue": "存在一个由他人引起的、可被投诉或容忍的夜间噪音干扰，且投诉可能引发人际冲突。",
+    "evidence_proposition": "在存在可投诉的夜间噪音干扰且投诉可能引发人际冲突的情况下，是否选择容忍/回避冲突 vs 直接投诉/对抗。",
+    "high_behaviors": [
+      "尝试睡觉，不采取行动",
+      "等待安静时再上床，不主动投诉"
+    ],
+    "low_behaviors": [
+      "向邻居投诉并威胁报警",
+      "向邻居投诉并要求安静"
+    ],
+    "behavioral_mechanism": "面对可投诉的他人干扰时，选择容忍/回避冲突以维持和谐 vs 选择直接对抗/投诉以维护自身权益。",
+    "alternative_explanation": "可能由疲劳程度（极度疲劳时更可能选择容忍）或对噪音的敏感度（生理因素）解释，而非顺从特质。",
+    "competing_facets": [
+      "A3",
+      "E3"
+    ],
+    "situation_cost": "选择高顺从行为（容忍）可能牺牲睡眠质量；选择低顺从行为（投诉）可能引发邻里冲突或关系紧张。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_09",
+    "facet": "compliance",
+    "situation_surface": "家庭圣诞节规划中，去年已让步，今年家人与自己的想法不同。",
+    "trait_relevant_cue": "在家庭规划中，去年已让步且今年家人与自己想法不同，存在重复性人际冲突情境。",
+    "evidence_proposition": "在去年已让步且今年家人与自己想法不同的情况下，是否选择再次让步或妥协，而非坚持己见。",
+    "high_behaviors": [
+      "把自己的愿望放在最后，完全按照家人的想法度过圣诞节",
+      "提议妥协"
+    ],
+    "low_behaviors": [
+      "告诉家人自己不再做任何让步",
+      "坚持自己的意见，即使可能引发争论"
+    ],
+    "behavioral_mechanism": "面对重复性家庭冲突时，优先维护和谐、主动让步或寻求折中 vs 优先维护个人意愿、坚持立场不退缩。",
+    "alternative_explanation": "可能受去年让步的公平感影响（觉得已让步够多），或对具体圣诞节活动内容的兴趣强度差异影响。",
+    "competing_facets": [
+      "A3",
+      "A5"
+    ],
+    "situation_cost": "选择高顺从行为（让步或妥协）可能牺牲个人对圣诞节安排的偏好，带来个人不满；选择低顺从行为可能引发家庭冲突或关系紧张。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_10",
+    "facet": "compliance",
+    "situation_surface": "在与伴侣的争论中，对方提出不公平、伤人的论点，争斗即将升级。",
+    "trait_relevant_cue": "在亲密关系冲突中，对方提出不公平、伤人的论点，且争斗即将升级时",
+    "evidence_proposition": "在亲密关系冲突中，对方提出不公平、伤人的论点且争斗即将升级时，是否选择让步/缓和冲突 vs 坚持己见/表达愤怒",
+    "high_behaviors": [
+      "道歉并接近伴侣",
+      "提起另一个话题以避免争论"
+    ],
+    "low_behaviors": [
+      "提出反论，坚持不让争论结束",
+      "大声离开房间，表现愤怒"
+    ],
+    "behavioral_mechanism": "面对不公平攻击性言论时，优先维护关系和谐而主动让步/回避冲突 vs 优先维护自我立场或表达愤怒而坚持对抗/升级冲突",
+    "alternative_explanation": "选项A（道歉）可能受利他性（A3）或对关系价值的评估影响；选项D（大声离开）可能受情绪调节能力或神经质（N）影响。",
+    "competing_facets": [
+      "A3",
+      "N1"
+    ],
+    "situation_cost": "选择高顺从行为（道歉或转移话题）可能牺牲自我正义感或问题解决机会，长期可能积累不满。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_11",
+    "facet": "compliance",
+    "situation_surface": "新同事邀请晚上见面，但被试不喜欢该同事的固执天性。",
+    "trait_relevant_cue": "面对一个自己不喜欢、且对方提出社交请求的人际情境，存在拒绝或回避的合理理由。",
+    "evidence_proposition": "在不喜欢对方且对方提出社交请求的情况下，是否愿意为了维持和谐而让步并同意见面。",
+    "high_behaviors": [
+      "同意与不喜欢的同事单独见面",
+      "邀请该同事参加自己的社交圈活动"
+    ],
+    "low_behaviors": [
+      "以忙碌为由推脱私人会面",
+      "直接拒绝私下见面"
+    ],
+    "behavioral_mechanism": "面对不喜欢的社交请求时，为了维持人际和谐而让步、妥协 vs 坚持个人偏好并拒绝。",
+    "alternative_explanation": "选项A和B可能反映利他性（A3）或友善（而非顺从），因为帮助新同事融入；选项C和D可能反映诚实沟通（A5谦逊的反面）或自我保护。",
+    "competing_facets": [
+      "A3",
+      "A5"
+    ],
+    "situation_cost": "选择高顺从行为（A/B）需要付出时间精力与不喜欢的人相处，可能带来不适或社交负担。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_12",
+    "facet": "compliance",
+    "situation_surface": "团队讨论中，同事提出了一个不周全的解决方案并建议作为最终方案，被试需要决定如何回应。",
+    "trait_relevant_cue": "同事提出的解决方案存在明显缺陷，但同事本人已将其作为最终建议提出，且团队讨论中可能产生人际冲突或不同意见。",
+    "evidence_proposition": "在同事提出的方案有缺陷但已作为最终建议的情况下，是否选择让步、缓和冲突（高顺从）还是坚持己见、直接对抗（低顺从）。",
+    "high_behaviors": [
+      "同意有缺点的提议以避免影响团队情绪",
+      "善意指出缺点但仍然接受该提议"
+    ],
+    "low_behaviors": [
+      "提出自己的反提议并明确论证其更合适",
+      "明确指出同事想法的缺点并将其描述为无用"
+    ],
+    "behavioral_mechanism": "面对同事有缺陷的提议时，优先维护人际和谐、避免冲突 vs 优先坚持正确性、直接表达反对意见。",
+    "alternative_explanation": "选项C和D可能部分反映能力自信或任务卷入度（高能力者更可能反驳），而非纯粹的人际顺从。选项A和B也可能受利他性（A3）影响，即为了团队利益而选择让步。",
+    "competing_facets": [
+      "A3",
+      "E3"
+    ],
+    "situation_cost": "选择高顺从行为（A/B）可能牺牲方案质量，导致团队采用不完善的方案；选择低顺从行为（C/D）可能损害同事关系或团队氛围。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_13",
+    "facet": "compliance",
+    "situation_surface": "客户因自身错误前来投诉，员工需要决定如何回应。",
+    "trait_relevant_cue": "客户因自身错误而投诉，但员工仍面临是否直接指出客户错误或采取缓和方式的人际冲突情境。",
+    "evidence_proposition": "在客户因自身错误投诉的情境下，是否选择避免直接指出客户错误、优先维护和谐关系，而非坚持事实或推卸责任。",
+    "high_behaviors": [
+      "主动帮助客户并进一步提供协助",
+      "礼貌地向客户解释如何解决问题"
+    ],
+    "low_behaviors": [
+      "直接告知客户其行为不当",
+      "告知客户此事不在自己的责任范围内"
+    ],
+    "behavioral_mechanism": "面对客户自身错误引发的冲突时，优先维护和谐、避免对抗（高顺从）vs 坚持事实或划清责任界限（低顺从）。",
+    "alternative_explanation": "选项A和B可能被社会赞许性（乐于助人）驱动，而非纯粹顺从；选项D可能反映责任心（C3）或自我保护倾向。",
+    "competing_facets": [
+      "A3",
+      "C3"
+    ],
+    "situation_cost": "选择高顺从行为（A/B）可能耗费额外时间精力，且未直接纠正客户错误，可能纵容客户未来类似行为。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_14",
+    "facet": "compliance",
+    "situation_surface": "在等待数周并候诊一小时后，医生告知只有十分钟就诊时间，被试需要决定如何应对。",
+    "trait_relevant_cue": "医生明确限制就诊时间，且被试已付出长时间等待成本，存在明显的人际权力不对等和潜在冲突情境。",
+    "evidence_proposition": "在医生单方面缩短就诊时间且被试已付出高等待成本的情况下，是否选择顺从医生的时间限制而不表达不满或坚持要求更多时间。",
+    "high_behaviors": [
+      "尝试尽快描述关切并理解短暂的治疗时间",
+      "为了不浪费宝贵时间而同意医生的时间限制"
+    ],
+    "low_behaviors": [
+      "向医生解释等待的辛苦并期望医生花费足够时间",
+      "抱怨并期望医生道歉，坚持待在诊室直到完全满意"
+    ],
+    "behavioral_mechanism": "面对权威人物施加的不利时间限制时，接受并适应限制 vs 坚持自身需求并挑战权威。",
+    "alternative_explanation": "可能由时间压力感知（被试是否真的时间紧迫）或对医疗系统的信任程度（A1）解释，而非纯粹的顺从倾向。",
+    "competing_facets": [
+      "A1"
+    ],
+    "situation_cost": "选择高顺从行为（接受时间限制）可能导致病情沟通不充分，影响医疗质量；选择低顺从行为（坚持要求更多时间）可能引发医患冲突或延误后续治疗。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_15",
+    "facet": "compliance",
+    "situation_surface": "购物后发现零钱找少了，需要决定是否以及如何追讨。",
+    "trait_relevant_cue": "存在一个因对方失误导致的自身利益受损，且追讨需要面对人际冲突或坚持己见的情境。",
+    "evidence_proposition": "在因对方失误导致自身利益受损且追讨需要面对人际冲突的情况下，是否选择让步、不坚持追讨，还是坚持追讨甚至升级冲突。",
+    "high_behaviors": [
+      "不采取进一步措施，接受损失",
+      "礼貌询问收银员，并接受其回答，不进一步坚持"
+    ],
+    "low_behaviors": [
+      "回到收银员处要求缺少的零钱，若讨论后仍不给则让步离开",
+      "回到收银员处要求缺少的零钱，若讨论后仍不给则向其上级要求"
+    ],
+    "behavioral_mechanism": "面对因他人失误导致的自身利益受损时，为避免人际冲突而选择让步、不坚持追讨 vs 为维护自身利益而坚持追讨，甚至升级冲突。",
+    "alternative_explanation": "选项A可能反映的是避免麻烦或时间成本，而非纯粹顺从；选项D可能反映的是对公平的坚持或果断性（E3），而非低顺从。",
+    "competing_facets": [
+      "E3"
+    ],
+    "situation_cost": "选择高顺从行为（A、B）意味着放弃追讨应得的零钱，有直接的经济损失；选择低顺从行为（C、D）则需花费时间和精力，并可能面临人际冲突。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_16",
+    "facet": "compliance",
+    "situation_surface": "与朋友发生小争执，自己认为正确但意识到自己的语调和用词可能不合适。",
+    "trait_relevant_cue": "存在一个因自己言语不当引发的人际冲突，且自己认为正确但对方可能不满。",
+    "evidence_proposition": "在因自己言语不当引发的人际冲突中，是否主动道歉或让步以缓和关系，而非坚持己见或等待对方先行动。",
+    "high_behaviors": [
+      "主动向朋友道歉",
+      "主动让事情过去并放下愤怒"
+    ],
+    "low_behaviors": [
+      "在另一次谈话中再次表达观点且不道歉",
+      "等待朋友先迈出第一步"
+    ],
+    "behavioral_mechanism": "面对自己引发的人际冲突时，主动缓和关系（道歉/放下）vs 坚持己见或被动等待对方行动。",
+    "alternative_explanation": "选项C可能反映果断性（E3）而非低顺从；选项D可能反映被动性（C2低）或回避冲突（A3）。",
+    "competing_facets": [
+      "E3",
+      "A3",
+      "C2"
+    ],
+    "situation_cost": "道歉或放下可能意味着放弃坚持自己认为正确的观点，有损自我认同或面子。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_17",
+    "facet": "compliance",
+    "situation_surface": "对已完成的手工修理业务感到满意但认为账单过高，决定如何应对。",
+    "trait_relevant_cue": "存在一个已完成的满意服务但账单超出预期，且没有明确错误或欺诈证据的情境。",
+    "evidence_proposition": "在服务满意但账单过高且无明确错误的情况下，是否倾向于让步接受账单（高顺从）vs 坚持质疑或拒绝支付（低顺从）。",
+    "high_behaviors": [
+      "直接支付账单，即使认为过高",
+      "礼貌询问账单原因后仍支付"
+    ],
+    "low_behaviors": [
+      "投诉后支付但不再合作",
+      "拒绝支付全额并可能采取法律行动"
+    ],
+    "behavioral_mechanism": "面对潜在不公平但非强制性的经济要求时，优先维持和谐与避免冲突 vs 优先维护自身利益并坚持立场。",
+    "alternative_explanation": "可能由经济状况（能否承担额外费用）、对服务质量的真实评价（是否认为账单合理）、或对法律后果的恐惧驱动，而非纯粹的顺从倾向。",
+    "competing_facets": [
+      "A3",
+      "E3"
+    ],
+    "situation_cost": "高顺从行为（支付过高账单）有直接的经济成本；低顺从行为（投诉或法律行动）有时间、精力和潜在人际冲突成本。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_18",
+    "facet": "compliance",
+    "situation_surface": "在停车位争夺中，两车同时进入同一空位，需要决定是否让步。",
+    "trait_relevant_cue": "存在一个双方都部分占据停车位的冲突情境，且对方可能坚持己见。",
+    "evidence_proposition": "在双方同时占据停车位的冲突情境下，是否选择让步并放弃该停车位。",
+    "high_behaviors": [
+      "直接开走寻找另一个停车位",
+      "先简短讨论，若对方顽固则开走寻找另一个停车位"
+    ],
+    "low_behaviors": [
+      "保持在停车位一半并坚持自己的权利",
+      "保持不动直到另一个司机离开并寻找新停车位"
+    ],
+    "behavioral_mechanism": "面对直接的人际冲突和资源争夺时，优先维护和谐而主动让步 vs 优先维护自身权益而坚持不退让。",
+    "alternative_explanation": "时间压力（急于停车）或对停车位稀缺性的感知可能影响选择；另外，果断性（E3）高的人可能更倾向于坚持。",
+    "competing_facets": [
+      "E3"
+    ],
+    "situation_cost": "选择高顺从行为（让步）需要花费额外时间寻找新停车位，且可能感到不公平。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_19",
+    "facet": "compliance",
+    "situation_surface": "与朋友一起看电视时，自己不喜欢当前节目但大多数朋友支持它。",
+    "trait_relevant_cue": "存在一个群体偏好与自己偏好冲突的社交情境，且群体多数支持该偏好。",
+    "evidence_proposition": "在群体偏好与个人偏好冲突且群体占多数的情况下，是否选择抑制个人偏好以维持群体和谐。",
+    "high_behaviors": [
+      "服从多数，毫无怨言地观看不喜欢的节目",
+      "观看节目但表达不满"
+    ],
+    "low_behaviors": [
+      "等待几分钟后再次努力说服朋友们换节目",
+      "不看节目，做别的事情"
+    ],
+    "behavioral_mechanism": "面对群体压力与个人偏好冲突时，优先维持群体和谐（顺从） vs 优先坚持个人偏好或退出情境（不顺从）",
+    "alternative_explanation": "选项B（表达不满）可能被部分被试视为高顺从（仍观看），但表达不满本身可能反映低顺从；选项D（做别的事情）可能反映低顺从或高独立性，但也可能反映低社交兴趣。",
+    "competing_facets": [
+      "E3",
+      "A3"
+    ],
+    "situation_cost": "选择高顺从行为（A）可能牺牲个人娱乐体验；选择低顺从行为（C或D）可能引发社交摩擦或显得不合群。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_20",
+    "facet": "compliance",
+    "situation_surface": "上级在知道员工有私人约会的情况下，要求员工加班，员工面临是否顺从上级要求的选择。",
+    "trait_relevant_cue": "上级提出一个不合理或与个人计划冲突的要求，且员工有权拒绝（加班时间已积累，上级知情）。",
+    "evidence_proposition": "在上级提出不合理要求且员工有权拒绝的情况下，是否放弃个人计划以顺从上级要求。",
+    "high_behaviors": [
+      "取消私人约会，完全顺从上级要求加班两小时",
+      "尝试推迟私人约会，部分顺从上级要求加班一小时"
+    ],
+    "low_behaviors": [
+      "拒绝加班，并提前离开以表达不赞成",
+      "拒绝加班，按时赴约"
+    ],
+    "behavioral_mechanism": "面对上级的不合理要求时，牺牲个人利益以维持和谐 vs 坚持个人计划并表达不满或拒绝。",
+    "alternative_explanation": "选项A和B可能反映利他性（A3）或责任心（C3：尽责），而非单纯的顺从；选项C可能反映果断性（E3）或对抗性。",
+    "competing_facets": [
+      "A3",
+      "C3",
+      "E3"
+    ],
+    "situation_cost": "选择高顺从行为（A、B）会牺牲个人时间、错过私人约会或造成不便；选择低顺从行为（C、D）可能损害与上级的关系或留下负面印象。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_21",
+    "facet": "compliance",
+    "situation_surface": "在银行约会中，银行顾问给出了一个让客户完全不满意的糟糕报价。",
+    "trait_relevant_cue": "存在一个来自权威/服务提供方的、令自己不满意的报价，且客户有权选择接受、表达不满或升级冲突。",
+    "evidence_proposition": "在收到一个令自己完全不满意的报价时，是否选择接受（即使表达不满）而非坚持升级冲突或威胁更换银行。",
+    "high_behaviors": [
+      "接受报价并认可顾问以往的好建议",
+      "接受报价但表达不满"
+    ],
+    "low_behaviors": [
+      "坚持与顾问的上级谈话并投诉报价不公平",
+      "拒绝报价并威胁更换银行"
+    ],
+    "behavioral_mechanism": "面对不满意的服务结果时，倾向于维持和谐、避免对抗（接受或温和表达不满）vs 倾向于坚持己见、升级冲突（投诉或威胁更换）。",
+    "alternative_explanation": "选项A中提及'顾问一直给好建议'可能引入信任(A1)或过往关系因素；选项D的威胁换银行可能涉及果断性(E3)或对服务质量的理性评估，而非纯粹顺从。",
+    "competing_facets": [
+      "A1",
+      "E3"
+    ],
+    "situation_cost": "选择高顺从行为（接受报价）可能承担经济损失或持续不满意的服务；选择低顺从行为（投诉或威胁）可能耗费时间精力并破坏与顾问的关系。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "item_id": "compliance_22",
+    "facet": "compliance",
+    "situation_surface": "购车时，原销售员临时离开，新销售员给出比原合同更差的报价。",
+    "trait_relevant_cue": "在已达成初步协议后，对方单方面提出更不利条件，且原联系人不在场。",
+    "evidence_proposition": "在对方单方面提出更不利条件且原联系人不在场的情况下，是否倾向于接受不利条件或主动寻求妥协方案，而非坚持原协议或直接退出交易。",
+    "high_behaviors": [
+      "接受更差的报价",
+      "联系前销售员，尝试找到互相可接受的解决方案"
+    ],
+    "low_behaviors": [
+      "拒绝报价，但愿意在出现明显更好的报价时再谈",
+      "不再在这家汽车经销商买车"
+    ],
+    "behavioral_mechanism": "面对对方单方面提出的不利条件时，优先维持关系与和谐（让步或寻求折中） vs 优先维护自身利益（坚持原条件或退出交易）。",
+    "alternative_explanation": "可能由对交易公平性的敏感度（公正性）或对时间/精力的考量（效率偏好）解释，而非单纯的顺从倾向。",
+    "competing_facets": [
+      "A3",
+      "C2"
+    ],
+    "situation_cost": "接受更差报价有直接经济损失；联系前销售员需花费额外时间精力。",
+    "high_option_ids": [
+      "A",
+      "B"
+    ],
+    "low_option_ids": [
+      "C",
+      "D"
+    ]
+  }
+]

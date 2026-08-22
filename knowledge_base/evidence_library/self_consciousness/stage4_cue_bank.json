@@ -1,0 +1,107 @@
+{
+  "facet": "self_consciousness",
+  "cues": [
+    {
+      "cue_id": "C01",
+      "description": "在公开社交场合中发生由自身或他人引发的失误，且失误可能引起他人注意和评价",
+      "linked_evidence_families": [
+        "EF01"
+      ],
+      "source_item_ids": [
+        "self_consciousness_01",
+        "self_consciousness_07",
+        "self_consciousness_09",
+        "self_consciousness_14",
+        "self_consciousness_18",
+        "self_consciousness_19"
+      ],
+      "cue_category": "公开社交失误"
+    },
+    {
+      "cue_id": "C02",
+      "description": "因他人行为而意外成为社交注意焦点，且该行为可能被他人负面评价",
+      "linked_evidence_families": [
+        "EF02"
+      ],
+      "source_item_ids": [
+        "self_consciousness_02",
+        "self_consciousness_11",
+        "self_consciousness_15",
+        "self_consciousness_17"
+      ],
+      "cue_category": "因他人行为成为焦点"
+    },
+    {
+      "cue_id": "C03",
+      "description": "存在一个非强制性的、可能成为社交注意焦点的情境，涉及公开表演、演讲或当众发言",
+      "linked_evidence_families": [
+        "EF03"
+      ],
+      "source_item_ids": [
+        "self_consciousness_04",
+        "self_consciousness_08",
+        "self_consciousness_10",
+        "self_consciousness_13",
+        "self_consciousness_22"
+      ],
+      "cue_category": "预期性社交暴露"
+    },
+    {
+      "cue_id": "C04",
+      "description": "出现模糊的社交信号（笑、低语、讽刺玩笑），信号可能指向自己但不确定",
+      "linked_evidence_families": [
+        "EF04"
+      ],
+      "source_item_ids": [
+        "self_consciousness_03",
+        "self_consciousness_21"
+      ],
+      "cue_category": "模糊社交评价信号"
+    },
+    {
+      "cue_id": "C05",
+      "description": "当众被提出负面评价或批评，且周围有其他人在场",
+      "linked_evidence_families": [
+        "EF05"
+      ],
+      "source_item_ids": [
+        "self_consciousness_16",
+        "self_consciousness_20"
+      ],
+      "cue_category": "当众负面评价"
+    },
+    {
+      "cue_id": "C06",
+      "description": "购买可能引发社交尴尬的私密物品时遇到社会评价者（上级、权威人物）",
+      "linked_evidence_families": [
+        "EF06"
+      ],
+      "source_item_ids": [
+        "self_consciousness_12"
+      ],
+      "cue_category": "购买私密物品遇评价者"
+    },
+    {
+      "cue_id": "C07",
+      "description": "因先前失误而预期可能面临尴尬社交互动，且偶遇情境中可以选择回避或面对",
+      "linked_evidence_families": [
+        "EF07"
+      ],
+      "source_item_ids": [
+        "self_consciousness_05"
+      ],
+      "cue_category": "先前失误引发的预期性尴尬"
+    },
+    {
+      "cue_id": "C08",
+      "description": "公开社交场合中被他人模仿或嘲笑，且周围有他人观看和反应",
+      "linked_evidence_families": [
+        "EF08"
+      ],
+      "source_item_ids": [
+        "self_consciousness_06"
+      ],
+      "cue_category": "被公开模仿或嘲笑"
+    }
+  ]
+}

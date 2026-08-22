@@ -1,0 +1,797 @@
+{
+  "facet": "self_consciousness",
+  "manifestations": [
+    {
+      "manifestation_id": "BM01",
+      "description": "留在错误影厅不换厅，因为让半排人站起来不舒服",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM02",
+      "description": "整部电影都坐着，因为担心别人看到自己离开会尴尬",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM03",
+      "description": "起身去另一个影厅",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM04",
+      "description": "先看开头再决定是否换厅",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_01"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM05",
+      "description": "尴尬地看向一边，避免目光接触",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_02"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM06",
+      "description": "尴尬地看向一边，稍后告诉朋友觉得他的行为相当愚蠢",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_02"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM07",
+      "description": "赞美她",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_02"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM08",
+      "description": "笑并用手指指我的朋友",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_02"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM09",
+      "description": "怀疑自己说了好笑的话并检查自身外表",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_03"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM10",
+      "description": "被打扰后必须看笔记以维持专注",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_03"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM11",
+      "description": "继续演示，不中断",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_03"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM12",
+      "description": "短暂停顿并主动询问同事是否有疑问",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_03"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM13",
+      "description": "拒绝公开表演的提议",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_04"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM14",
+      "description": "要求朋友们将来避免让自己成为公开焦点",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_04"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM15",
+      "description": "接受公开表演的提议并感到高兴",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_04"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM16",
+      "description": "接受提议并要求加演",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_04"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM17",
+      "description": "主动问候并开玩笑提及照片，随后说明情况",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_05"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM18",
+      "description": "主动与银行顾问交谈并解释情况",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_05"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM19",
+      "description": "转身以避免被认出",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_05"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM20",
+      "description": "继续走，假装没看到银行顾问",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_05"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM21",
+      "description": "对上级的模仿和同事的笑声感到震惊和受伤",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_06"
+      ],
+      "linked_evidence_family": "EF08"
+    },
+    {
+      "manifestation_id": "BM22",
+      "description": "决定远离下次圣诞聚会以避免再次被这样对待",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_06"
+      ],
+      "linked_evidence_family": "EF08"
+    },
+    {
+      "manifestation_id": "BM23",
+      "description": "一起笑，不在乎",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_06"
+      ],
+      "linked_evidence_family": "EF08"
+    },
+    {
+      "manifestation_id": "BM24",
+      "description": "模仿上级，将整件事视为有趣的游戏",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_06"
+      ],
+      "linked_evidence_family": "EF08"
+    },
+    {
+      "manifestation_id": "BM25",
+      "description": "简短嘟囔后快速逃离现场",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_07"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM26",
+      "description": "因尴尬整晚避开那个人",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_07"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM27",
+      "description": "礼貌道歉并澄清误解",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_07"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM28",
+      "description": "微笑并邀请对方喝一杯作为道歉",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_07"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM29",
+      "description": "被说服后参与哑剧表演",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_08"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM30",
+      "description": "起身走向舞台参与哑剧表演",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_08"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM31",
+      "description": "公开承认宁愿观看，把表演留给别人",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_08"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM32",
+      "description": "克服自己参加第一个哑剧，但只是为了伴侣而做",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_08"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM33",
+      "description": "尽快关掉手机以消除尴尬",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_09"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM34",
+      "description": "尝试不引人注意地关掉手机，即使让铃声多响一会儿",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_09"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM35",
+      "description": "接电话并小声告知对方稍后联系",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_09"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM36",
+      "description": "不再在乎手机响，继续观看电影",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_09"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM37",
+      "description": "尝试尽快逃离聚光灯，退缩到角落",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_10"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM38",
+      "description": "简短解释贵宾搞混了，快速走出聚光灯",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_10"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM39",
+      "description": "用小演讲欢迎客人",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_10"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM40",
+      "description": "待在聚光灯中，享受得到的关注",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_10"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM41",
+      "description": "快速告别离开现场",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_11"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM42",
+      "description": "羞愧地看向别处，想离开但没有行动",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_11"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM43",
+      "description": "假装什么都没发生，继续交谈",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_11"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM44",
+      "description": "说一句调皮的话让所有人都能听到，以缓解尴尬",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_11"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM45",
+      "description": "转身背对上级，假装没看见",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_12"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM46",
+      "description": "放下安全套盒，然后问候上级",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_12"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM47",
+      "description": "继续排队，让上级看到自己拿着安全套盒",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_12"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM48",
+      "description": "问候上级，并主动展示安全套盒",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_12"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM49",
+      "description": "再次与主人确认后做简短的生日演讲",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_13"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM50",
+      "description": "下次有机会时热情地做生日演讲",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_13"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM51",
+      "description": "向生日男孩/女孩解释自己讨厌演讲",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_13"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM52",
+      "description": "直接拒绝提议，因为不喜欢在这么多人面前讲话",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_13"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM53",
+      "description": "快速走出电梯，在电梯后面等一会儿，乘下一班电梯到6楼",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_14"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM54",
+      "description": "快速走出电梯，走楼梯到六楼",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_14"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM55",
+      "description": "向其他乘客道歉，待在电梯里，按6楼的按钮",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_14"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM56",
+      "description": "什么都不说，按6楼按钮，继续乘电梯",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_14"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM57",
+      "description": "感到羞愧并尝试避免其他客人的目光",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_15"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM58",
+      "description": "要求朋友们安静，因为被注视让自己非常不舒服",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_15"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM59",
+      "description": "一起笑，认为故事有趣",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_15"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM60",
+      "description": "不在乎他人是否在看，继续听故事",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_15"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM61",
+      "description": "在下一站下车",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_16"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM62",
+      "description": "起身找另一个座位",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_16"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM63",
+      "description": "对指控完全不反应，继续乘车",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_16"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM64",
+      "description": "对评论发笑并做尖锐评论，继续乘车",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_16"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM65",
+      "description": "在下一层下车以逃避尴尬的情况",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_17"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM66",
+      "description": "对情况感到不舒服，避免目光接触",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_17"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM67",
+      "description": "为恋人们感到高兴",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_17"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM68",
+      "description": "被有趣的情况逗乐",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_17"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM69",
+      "description": "道歉后立即离开晚宴以回避社交情境",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM70",
+      "description": "道歉后立即换座位以回避社交情境",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM71",
+      "description": "道歉后用笑话来缓和气氛",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM72",
+      "description": "道歉后理性地指出每个人都会犯错",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM73",
+      "description": "离开咖啡馆去别的地方",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM74",
+      "description": "待在咖啡馆但在二楼找座位，希望没人看到自己",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM75",
+      "description": "嘲笑自己，在咖啡馆坐下",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM76",
+      "description": "一言不发地在咖啡馆坐下",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM77",
+      "description": "沉默不语，内心感到烦恼",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_20"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM78",
+      "description": "向其他人解释这不是真的",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_20"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM79",
+      "description": "开始笑，并对提问的客人做出有趣的评论",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_20"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM80",
+      "description": "把评论当作小玩笑，不在乎",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_20"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM81",
+      "description": "因没听懂笑话而感到尴尬",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_21"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM82",
+      "description": "因医生在众人面前让自己尴尬而感到愤怒",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_21"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM83",
+      "description": "因医生有幽默感而感到高兴",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_21"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM84",
+      "description": "认为那是愚人节笑话，不太在意",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_21"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM85",
+      "description": "一旦注意到其他人也想提问，就提问",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_22"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM86",
+      "description": "一旦演讲者短暂停顿，就提问",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "self_consciousness_22"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM87",
+      "description": "不问问题，因为不喜欢在陌生人面前讲话",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_22"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM88",
+      "description": "最多在讲座后单独与演讲者在一起时提问",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "self_consciousness_22"
+      ],
+      "linked_evidence_family": "EF03"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "facet": "openness_to_ideas",
+  "cues": [
+    {
+      "cue_id": "C01",
+      "description": "存在一个非强制性的、需要主动投入认知资源的智力挑战任务或活动，且无外在报酬或奖励",
+      "linked_evidence_families": [
+        "EF01",
+        "EF02",
+        "EF04",
+        "EF05",
+        "EF06",
+        "EF07",
+        "EF08",
+        "EF09",
+        "EF10",
+        "EF11"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_01",
+        "openness_to_ideas_02",
+        "openness_to_ideas_03",
+        "openness_to_ideas_04",
+        "openness_to_ideas_05",
+        "openness_to_ideas_06",
+        "openness_to_ideas_07",
+        "openness_to_ideas_08",
+        "openness_to_ideas_09",
+        "openness_to_ideas_10",
+        "openness_to_ideas_11",
+        "openness_to_ideas_12",
+        "openness_to_ideas_13",
+        "openness_to_ideas_14",
+        "openness_to_ideas_15",
+        "openness_to_ideas_16",
+        "openness_to_ideas_17",
+        "openness_to_ideas_18",
+        "openness_to_ideas_19",
+        "openness_to_ideas_20",
+        "openness_to_ideas_21",
+        "openness_to_ideas_22"
+      ],
+      "cue_category": "存在非强制性智力挑战"
+    },
+    {
+      "cue_id": "C02",
+      "description": "存在自由选择是否参与或投入的空间，无外部强制或社会压力",
+      "linked_evidence_families": [
+        "EF01",
+        "EF02",
+        "EF03",
+        "EF04",
+        "EF05",
+        "EF06",
+        "EF07",
+        "EF08",
+        "EF09",
+        "EF10",
+        "EF11"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_01",
+        "openness_to_ideas_02",
+        "openness_to_ideas_03",
+        "openness_to_ideas_04",
+        "openness_to_ideas_05",
+        "openness_to_ideas_06",
+        "openness_to_ideas_07",
+        "openness_to_ideas_08",
+        "openness_to_ideas_09",
+        "openness_to_ideas_10",
+        "openness_to_ideas_11",
+        "openness_to_ideas_12",
+        "openness_to_ideas_13",
+        "openness_to_ideas_14",
+        "openness_to_ideas_15",
+        "openness_to_ideas_16",
+        "openness_to_ideas_17",
+        "openness_to_ideas_18",
+        "openness_to_ideas_19",
+        "openness_to_ideas_20",
+        "openness_to_ideas_21",
+        "openness_to_ideas_22"
+      ],
+      "cue_category": "存在自由选择空间"
+    },
+    {
+      "cue_id": "C03",
+      "description": "存在新异的、非传统的或挑战现有信念的论据、观点或信息",
+      "linked_evidence_families": [
+        "EF03"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_06",
+        "openness_to_ideas_11",
+        "openness_to_ideas_12",
+        "openness_to_ideas_17"
+      ],
+      "cue_category": "观点受到挑战"
+    },
+    {
+      "cue_id": "C04",
+      "description": "内容具有抽象性或理论性，需要深度理解",
+      "linked_evidence_families": [
+        "EF03",
+        "EF04",
+        "EF08",
+        "EF09"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_04",
+        "openness_to_ideas_08",
+        "openness_to_ideas_10",
+        "openness_to_ideas_11",
+        "openness_to_ideas_12",
+        "openness_to_ideas_19",
+        "openness_to_ideas_22"
+      ],
+      "cue_category": "存在抽象/理论知识"
+    },
+    {
+      "cue_id": "C05",
+      "description": "存在一个不熟悉但非必需的认知缺口（如词汇、概念），当前理解已足够满足基本需求",
+      "linked_evidence_families": [
+        "EF02"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_05"
+      ],
+      "cue_category": "存在未知信息"
+    },
+    {
+      "cue_id": "C06",
+      "description": "存在疲劳或消耗状态，同时存在智力活动与娱乐活动的竞争",
+      "linked_evidence_families": [
+        "EF05"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_07",
+        "openness_to_ideas_21"
+      ],
+      "cue_category": "已有投入与诱惑冲突"
+    },
+    {
+      "cue_id": "C07",
+      "description": "存在熟悉事物中的新颖元素（如软件新功能），且新功能是非必需的",
+      "linked_evidence_families": [
+        "EF06"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_09"
+      ],
+      "cue_category": "存在未知信息"
+    },
+    {
+      "cue_id": "C08",
+      "description": "存在以知识探索和观念接触为主要内容的社会活动或机会，且取消无社交代价",
+      "linked_evidence_families": [
+        "EF07"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_13",
+        "openness_to_ideas_16",
+        "openness_to_ideas_20"
+      ],
+      "cue_category": "存在社交接触机会"
+    },
+    {
+      "cue_id": "C09",
+      "description": "他人对智力活动表现出拒绝或负面态度，存在社交情境下的态度表达",
+      "linked_evidence_families": [
+        "EF08"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_19"
+      ],
+      "cue_category": "出现人际摩擦"
+    },
+    {
+      "cue_id": "C10",
+      "description": "存在一个自己尚未完全了解、但由他人主动提出的新知识话题，且讨论是非强制性的",
+      "linked_evidence_families": [
+        "EF10"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_14"
+      ],
+      "cue_category": "存在未知信息"
+    },
+    {
+      "cue_id": "C11",
+      "description": "存在一个日常但可深入探讨的智力话题，且探索是非强制性的",
+      "linked_evidence_families": [
+        "EF11"
+      ],
+      "source_item_ids": [
+        "openness_to_ideas_15"
+      ],
+      "cue_category": "存在未知信息"
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "facet": "自律",
+  "evidence_library": [
+    {
+      "family_id": "EF01",
+      "family_name": "即时诱惑抑制与任务坚持",
+      "definition": "当存在即时、有吸引力的替代活动（如娱乐、社交、休息）与已承诺或必要的任务冲突时，个体抑制对诱惑的冲动并坚持完成任务的程度。",
+      "high_trait_evidence": "优先完成必要任务，延迟或放弃即时满足。",
+      "low_trait_evidence": "优先满足即时诱惑，推迟或放弃任务。",
+      "supporting_item_ids": [
+        "self_discipline_01",
+        "self_discipline_02",
+        "self_discipline_04",
+        "self_discipline_06",
+        "self_discipline_07",
+        "self_discipline_08",
+        "self_discipline_13",
+        "self_discipline_15",
+        "self_discipline_18",
+        "self_discipline_19",
+        "self_discipline_20",
+        "self_discipline_21"
+      ],
+      "support_count": 12,
+      "member_evidence_units_summary": [
+        "在存在即时诱惑且已感到疲倦的情况下，是否坚持完成已承诺的必要任务（睡觉）而非屈服于诱惑（看节目）。",
+        "在存在即时社交诱惑且任务时间不确定的情况下，是否坚持优先完成项目而非立即满足社交需求。",
+        "在存在即时、有吸引力的替代活动与已承诺但令人不快的任务冲突的情况下，是否坚持完成原定任务而非转向替代活动。",
+        "在存在非强制性但重要的任务与已承诺的社交活动冲突的情况下，是否优先完成工作任务而非立即参与社交活动。",
+        "在饱腹、疲倦且有更愉快替代选择的情况下，是否坚持立即完成不愉快的必要任务（手洗碗碟）。",
+        "在存在更愉快的替代活动且任务非紧急（但重要）的情况下，是否立即开始并坚持完成该任务。",
+        "在存在即时诱惑与未完成任务的冲突时，坚持完成任务（延迟满足）vs 优先满足即时诱惑（放弃或推迟任务）。",
+        "在存在即时愉快替代活动的情况下，是否立即开始并坚持完成必要但不愉快的任务。",
+        "在存在即时诱惑（听音乐、休息）且任务有时间限制但非紧急的情况下，是否立即中断当前愉悦活动去执行任务。",
+        "在必须完成的行政任务与即时社交诱惑冲突的情况下，是否优先完成任务（即使需要延迟或牺牲社交时间）而非推迟或忽略任务。",
+        "在存在即时社交诱惑与已承诺训练计划冲突的情况下，是否坚持完成原定训练任务而非转向诱惑。",
+        "在存在即时诱惑且任务进展不顺的情况下，是否坚持完成必要任务而非转向替代活动。"
+      ],
+      "typical_high_manifestations": [
+        "立即关掉电视去睡觉",
+        "取消与朋友的会面，全身心专注于完成项目",
+        "坚持按原计划完成春季大扫除",
+        "取消社交聚会以完成工作任务",
+        "立即手洗所有碗碟",
+        "在办公室加班完成演示文稿",
+        "取消社交计划，坚持完成演示文稿的全部修饰工作",
+        "立即完全填写文件",
+        "立即中断听音乐，起身执行垃圾清理任务",
+        "立即收集文件并准备好，让朋友等待几分钟",
+        "拒绝邀请，坚持按计划训练",
+        "继续修理设备直到恢复正常，完全放弃看电视"
+      ],
+      "typical_low_manifestations": [
+        "先看节目几分钟再决定是否关掉",
+        "把项目完成推迟到第二天，优先与朋友见面",
+        "寻找理由将春季大扫除推迟到另一天",
+        "将工作推迟到明天，按时下班赴约",
+        "将脏碗碟留到第二天再洗",
+        "在电视前放松，推迟准备",
+        "立即放下任务，完全参与社交活动",
+        "把文件放在一边，稍后专心写",
+        "希望他人代为执行任务，自己不行动",
+        "完全不回复信件，等待保险公司再次联系",
+        "立即同意邀请，对从训练中休息感到欣慰",
+        "先看电视节目，推迟修理到稍后"
+      ],
+      "common_trait_activating_cues": [
+        "即时、有吸引力的替代活动（娱乐、社交、休息）",
+        "已承诺或必要的任务",
+        "疲劳或舒适状态",
+        "任务非紧急但重要"
+      ],
+      "competing_facets": [
+        "C4: 成就追求",
+        "C6: 审慎性"
+      ],
+      "alternative_explanations": [
+        "任务重要性判断：若认为任务不重要，低自律行为可能合理",
+        "时间管理能力：低自律者可能高估后续完成能力",
+        "社交需求强度：社交诱惑强度可能主导选择"
+      ],
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF02",
+      "family_name": "无外部监督下的任务启动与坚持",
+      "definition": "当任务没有外部强制截止日期或监督，且存在疲劳、分心或更愉快替代活动时，个体主动启动并坚持完成任务的程度。",
+      "high_trait_evidence": "主动启动任务并坚持完成，即使没有外部压力。",
+      "low_trait_evidence": "推迟、分散处理或放弃任务，依赖内在动机或灵活性。",
+      "supporting_item_ids": [
+        "self_discipline_03",
+        "self_discipline_14",
+        "self_discipline_16"
+      ],
+      "support_count": 3,
+      "member_evidence_units_summary": [
+        "在存在一堆无外部强制截止日期的私人邮件且刚度假回来有疲劳或分心倾向的情况下，是否立即开始并持续处理邮件，而非推迟或中断。",
+        "在存在长期、可自由安排时间但必须完成的任务且没有外部监督的情况下，是否主动建立并坚持固定的工作安排以确保按时完成。",
+        "在发现已承诺的任务（阅读一本书）变得无聊且困难时，是否仍坚持完成该任务。"
+      ],
+      "typical_high_manifestations": [
+        "立即开始处理邮件",
+        "每天保留特定时间段专门处理该工作",
+        "坚持读完整本书"
+      ],
+      "typical_low_manifestations": [
+        "只打开几封信，大部分稍后阅读",
+        "不定期地做一些工作，保持灵活性",
+        "不读完书，直接卖掉"
+      ],
+      "common_trait_activating_cues": [
+        "无外部强制截止日期或监督",
+        "任务本身不愉快或缺乏内在吸引力",
+        "疲劳或分心状态"
+      ],
+      "competing_facets": [
+        "C2: 条理性",
+        "C4: 成就追求"
+      ],
+      "alternative_explanations": [
+        "条理性偏好：高自律行为可能反映计划偏好而非纯粹自律",
+        "任务重要性判断：若认为任务不重要，推迟可能合理",
+        "兴趣驱动：低自律行为可能源于对任务缺乏兴趣"
+      ],
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF03",
+      "family_name": "自我约束目标坚持",
+      "definition": "当个体已承诺一个自我约束目标（如节食、戒甜食），且面临即时诱惑（尤其是社交情境中的诱惑）时，坚持执行该目标的程度。",
+      "high_trait_evidence": "坚持执行自我约束目标，通过主动沟通或转移诱惑来应对。",
+      "low_trait_evidence": "放弃或合理化放弃自我约束目标，屈服于即时诱惑。",
+      "supporting_item_ids": [
+        "self_discipline_09",
+        "self_discipline_12",
+        "self_discipline_22"
+      ],
+      "support_count": 3,
+      "member_evidence_units_summary": [
+        "在已承诺自我约束目标且面临即时社交诱惑的情况下，是否坚持执行该目标而非放弃或合理化放弃。",
+        "在存在与计划冲突的即时诱惑且无外部约束的情况下，是否坚持执行已承诺的计划（节食）而非屈服于诱惑。",
+        "在已经吃饱但面临免费甜点诱惑的情况下，是否坚持不进食或仅极少量进食，而非顺应诱惑。"
+      ],
+      "typical_high_manifestations": [
+        "向朋友解释自己在斋戒，并点别的东西",
+        "扔掉提拉米苏以彻底消除诱惑",
+        "完全跳过甜点"
+      ],
+      "typical_low_manifestations": [
+        "打破自己的好意图，计划明年再做",
+        "直接吃掉整个提拉米苏，然后才开始节食",
+        "点一个稍微小一点的甜点"
+      ],
+      "common_trait_activating_cues": [
+        "已承诺的自我约束目标",
+        "即时诱惑（尤其是食物）",
+        "社交情境中的诱惑"
+      ],
+      "competing_facets": [
+        "E1: 友善",
+        "C4: 成就追求"
+      ],
+      "alternative_explanations": [
+        "社交焦虑：害怕拒绝朋友好意可能影响选择",
+        "对承诺的认真程度：宗教/个人信念强度",
+        "健康意识或节食习惯"
+      ],
+      "construct_purity": "medium",
+      "status": "stable"
+    },
+    {
+      "family_id": "EF04",
+      "family_name": "长期目标导向的即时牺牲",
+      "definition": "当需要牺牲即时愉悦（如休闲、舒适）以换取长期目标（如财政支持、体育成绩）时，个体坚持投入努力的程度。",
+      "high_trait_evidence": "牺牲即时愉悦，坚持投入努力以换取长期目标。",
+      "low_trait_evidence": "优先即时愉悦，放弃或回避长期目标所需的努力。",
+      "supporting_item_ids": [
+        "self_discipline_10"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在需要牺牲休闲时间以坚持训练来获得财政支持的情况下，是否坚持训练并优先于休闲活动。"
+      ],
+      "typical_high_manifestations": [
+        "坚持训练并尽力准备",
+        "利用每一分钟空闲时间训练，将休闲活动放在次要位置"
+      ],
+      "typical_low_manifestations": [
+        "因休闲时间更重要而放弃提议",
+        "宁愿贷款或不通过体育成绩来资助培训"
+      ],
+      "common_trait_activating_cues": [
+        "长期目标（财政支持）",
+        "需要牺牲即时愉悦（休闲）"
+      ],
+      "competing_facets": [
+        "C4: 成就追求",
+        "C6: 审慎性"
+      ],
+      "alternative_explanations": [
+        "对贷款或资助方式的偏好",
+        "对休闲价值的理性权衡"
+      ],
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF05",
+      "family_name": "分心干扰下的任务坚持",
+      "definition": "当出现非必须立即解决的分心事件（如手机故障）且任务紧迫性降低时，个体坚持原定计划的程度。",
+      "high_trait_evidence": "坚持原定计划，不被分心事件干扰。",
+      "low_trait_evidence": "被分心事件吸引，推迟或放弃原定计划。",
+      "supporting_item_ids": [
+        "self_discipline_11"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在存在非必须立即解决的手机故障且任务紧迫性降低的情况下，是否仍坚持原定学习计划。"
+      ],
+      "typical_high_manifestations": [
+        "坚持按原计划学习，认为学习时不需要手机",
+        "坚持按原计划学习，并决定在考试前不再使用手机"
+      ],
+      "typical_low_manifestations": [
+        "因坏运气而放弃学习，下午不学习",
+        "优先解决手机问题，如果还有时间再学习"
+      ],
+      "common_trait_activating_cues": [
+        "非必须立即解决的分心事件",
+        "任务紧迫性降低"
+      ],
+      "competing_facets": [
+        "C4: 成就追求",
+        "C6: 审慎性",
+        "N3: 情绪稳定性"
+      ],
+      "alternative_explanations": [
+        "审慎性：先解决工具性问题再学习",
+        "成就追求：认为手机问题影响学习效率",
+        "情绪稳定性：对挫折的反应"
+      ],
+      "construct_purity": "low",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF06",
+      "family_name": "不愉快任务的全量完成",
+      "definition": "当面对一系列不愉快但必要的任务且已安排固定时间块时，个体坚持完成全部任务（包括是否允许自己休息）的程度。",
+      "high_trait_evidence": "坚持完成全部任务，无论是否休息。",
+      "low_trait_evidence": "部分完成或无限期推迟任务。",
+      "supporting_item_ids": [
+        "self_discipline_05"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在已安排固定时间块完成不愉快任务的情况下，是否坚持完成所有任务（包括是否允许自己休息） vs 部分完成或无限期推迟。"
+      ],
+      "typical_high_manifestations": [
+        "一次完成所有职责，不休息",
+        "完成所有任务，但中间休息一下"
+      ],
+      "typical_low_manifestations": [
+        "完成一些任务，其余的无限期推迟",
+        "从第一个任务开始，看能做到什么程度"
+      ],
+      "common_trait_activating_cues": [
+        "一系列不愉快但必要的任务",
+        "已安排固定时间块"
+      ],
+      "competing_facets": [
+        "C4: 成就追求",
+        "C2: 条理性"
+      ],
+      "alternative_explanations": [
+        "任务重要性判断",
+        "时间管理能力"
+      ],
+      "construct_purity": "medium",
+      "status": "provisional"
+    },
+    {
+      "family_id": "EF07",
+      "family_name": "休息状态下的任务执行",
+      "definition": "当个体已处于休息状态（如床上、沙发上）且任务非紧急可推迟时，是否立即中断休息去执行必要任务的程度。",
+      "high_trait_evidence": "立即中断休息去执行任务。",
+      "low_trait_evidence": "寻找理由推迟或回避任务。",
+      "supporting_item_ids": [
+        "self_discipline_17"
+      ],
+      "support_count": 1,
+      "member_evidence_units_summary": [
+        "在已经休息且任务可推迟的情况下，是否立即中断休息去完成该任务。"
+      ],
+      "typical_high_manifestations": [
+        "立即起床给植物浇水",
+        "立即起床给植物浇水并顺便做其他小事"
+      ],
+      "typical_low_manifestations": [
+        "只有在长时间睡不着时才起床浇水",
+        "待在床上，将浇水推迟到明天"
+      ],
+      "common_trait_activating_cues": [
+        "已处于休息状态",
+        "任务非紧急可推迟"
+      ],
+      "competing_facets": [
+        "C4: 成就追求"
+      ],
+      "alternative_explanations": [
+        "对任务重要性的判断（如植物耐旱程度）",
+        "对睡眠中断的敏感度"
+      ],
+      "construct_purity": "high",
+      "status": "provisional"
+    }
+  ],
+  "merge_decisions": [
+    {
+      "unit_a": "self_discipline_01",
+      "unit_b": "self_discipline_04",
+      "decision": "merge",
+      "reasoning": "两者都涉及面对即时诱惑（看电视/享受好天气）与已承诺任务（睡觉/大扫除）的冲突，且存在疲劳或舒适状态。心理机制相同：抑制即时满足以坚持任务。"
+    },
+    {
+      "unit_a": "self_discipline_02",
+      "unit_b": "self_discipline_06",
+      "decision": "merge",
+      "reasoning": "两者都涉及社交诱惑与工作/项目任务的冲突，且任务时间不确定或非强制性。心理机制相同：延迟社交满足以优先完成任务。"
+    },
+    {
+      "unit_a": "self_discipline_07",
+      "unit_b": "self_discipline_01",
+      "decision": "merge",
+      "reasoning": "两者都涉及疲劳/舒适状态下面对即时诱惑（休息/看电视）与不愉快任务（洗碗/睡觉）的冲突。心理机制相同：克服疲劳和诱惑以完成任务。"
+    },
+    {
+      "unit_a": "self_discipline_08",
+      "unit_b": "self_discipline_15",
+      "decision": "merge",
+      "reasoning": "两者都涉及更愉快的替代活动（休息/享受好天气）与必要任务（演示文稿/税务文件）的冲突，且任务非紧急但重要。心理机制相同：抑制即时愉悦以完成任务。"
+    },
+    {
+      "unit_a": "self_discipline_13",
+      "unit_b": "self_discipline_20",
+      "decision": "merge",
+      "reasoning": "两者都涉及社交诱惑与未完成/已承诺任务（演示文稿/训练）的冲突。心理机制相同：延迟社交满足以坚持完成任务。"
+    },
+    {
+      "unit_a": "self_discipline_18",
+      "unit_b": "self_discipline_19",
+      "decision": "merge",
+      "reasoning": "两者都涉及即时诱惑（听音乐/社交）与有时间限制的任务（垃圾清理/行政文件）的冲突。心理机制相同：主动抑制诱惑并立即执行任务。"
+    },
+    {
+      "unit_a": "self_discipline_21",
+      "unit_b": "self_discipline_01",
+      "decision": "merge",
+      "reasoning": "两者都涉及即时诱惑（电视节目）与任务（修理/睡觉）的冲突，且任务进展不顺或存在疲劳。心理机制相同：面对挫折或疲劳时坚持任务而非转向诱惑。"
+    },
+    {
+      "unit_a": "self_discipline_03",
+      "unit_b": "self_discipline_14",
+      "decision": "merge",
+      "reasoning": "两者都涉及无外部强制截止日期的任务（邮件/书面作品），且存在疲劳或分心倾向。心理机制相同：在没有外部压力时主动启动并坚持完成任务。"
+    },
+    {
+      "unit_a": "self_discipline_16",
+      "unit_b": "self_discipline_03",
+      "decision": "merge",
+      "reasoning": "两者都涉及任务本身变得不愉快或缺乏内在吸引力（无聊的书/邮件），且没有外部强制要求。心理机制相同：在没有外部压力时坚持完成不愉快的任务。"
+    },
+    {
+      "unit_a": "self_discipline_09",
+      "unit_b": "self_discipline_12",
+      "decision": "merge",
+      "reasoning": "两者都涉及已承诺的自我约束目标（戒甜食/节食）与即时食物诱惑的冲突，且无外部监督。心理机制相同：坚持自我约束目标，抵制食物诱惑。"
+    },
+    {
+      "unit_a": "self_discipline_22",
+      "unit_b": "self_discipline_09",
+      "decision": "merge",
+      "reasoning": "两者都涉及已承诺的自我约束（饱腹/戒甜食）与即时食物诱惑的冲突。心理机制相同：抑制进食冲动以坚持原有目标。"
+    },
+    {
+      "unit_a": "self_discipline_10",
+      "unit_b": "self_discipline_02",
+      "decision": "separate",
+      "reasoning": "self_discipline_10 涉及长期目标导向的即时牺牲（训练换取财政支持），而 self_discipline_02 涉及即时社交诱惑与项目任务的冲突。心理机制不同：前者是长期投资，后者是短期延迟满足。"
+    },
+    {
+      "unit_a": "self_discipline_11",
+      "unit_b": "self_discipline_03",
+      "decision": "separate",
+      "reasoning": "self_discipline_11 涉及分心事件（手机故障）干扰原定计划，而 self_discipline_03 涉及无外部压力的任务启动。心理机制不同：前者是应对意外分心，后者是主动启动。"
+    },
+    {
+      "unit_a": "self_discipline_05",
+      "unit_b": "self_discipline_07",
+      "decision": "separate",
+      "reasoning": "self_discipline_05 涉及已安排时间块内完成一系列不愉快任务，而 self_discipline_07 涉及疲劳状态下面对单一不愉快任务与诱惑。心理机制不同：前者是任务全量完成，后者是克服疲劳和诱惑。"
+    },
+    {
+      "unit_a": "self_discipline_17",
+      "unit_b": "self_discipline_18",
+      "decision": "separate",
+      "reasoning": "self_discipline_17 涉及已处于休息状态（床上）时中断休息去执行任务，而 self_discipline_18 涉及休息日中断当前愉悦活动去执行任务。虽然都涉及中断休息，但 self_discipline_17 的独特之处在于已经处于休息状态，任务非紧急，心理机制更接近“克服惰性”。"
+    }
+  ],
+  "item_evidence_mapping": [
+    {
+      "item_id": "self_discipline_01",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_02",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_03",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_04",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_05",
+      "primary_family": "EF06",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_06",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_07",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_08",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_09",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_10",
+      "primary_family": "EF04",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_11",
+      "primary_family": "EF05",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_12",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_13",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_14",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_15",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_16",
+      "primary_family": "EF02",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_17",
+      "primary_family": "EF07",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_18",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_19",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_20",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_21",
+      "primary_family": "EF01",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    },
+    {
+      "item_id": "self_discipline_22",
+      "primary_family": "EF03",
+      "secondary_family": null,
+      "redundancy_cluster": null
+    }
+  ],
+  "coverage_analysis": {
+    "overrepresented_families": [
+      "EF01: 即时诱惑抑制与任务坚持（12题）"
+    ],
+    "underrepresented_families": [
+      "EF04: 长期目标导向的即时牺牲（1题）",
+      "EF05: 分心干扰下的任务坚持（1题）",
+      "EF06: 不愉快任务的全量完成（1题）",
+      "EF07: 休息状态下的任务执行（1题）"
+    ],
+    "high_redundancy_item_clusters": [
+      [
+        "self_discipline_01",
+        "self_discipline_04",
+        "self_discipline_07"
+      ],
+      [
+        "self_discipline_02",
+        "self_discipline_06",
+        "self_discipline_13",
+        "self_discipline_20"
+      ],
+      [
+        "self_discipline_08",
+        "self_discipline_15"
+      ],
+      [
+        "self_discipline_18",
+        "self_discipline_19"
+      ],
+      [
+        "self_discipline_09",
+        "self_discipline_12",
+        "self_discipline_22"
+      ]
+    ],
+    "high_contamination_items": [
+      "self_discipline_11: 高构念污染风险，可能受C4、C6、N3影响",
+      "self_discipline_14: 可能受C2条理性影响",
+      "self_discipline_05: 可能受C4、C2影响",
+      "self_discipline_10: 可能受C4、C6影响"
+    ],
+    "possible_construct_gaps": [
+      "可能存在覆盖不足：构念定义中'面对疲劳时坚持任务'在EF01中已有覆盖，但'面对分心时坚持任务'仅1题（EF05），且该题构念污染风险高。",
+      "可能存在覆盖不足：构念定义中'坚持完成已承诺或必要的任务'中的'已承诺'方面，EF03（自我约束目标）覆盖了部分，但缺乏对'已承诺给他人'的任务（如承诺帮朋友忙）的测量。",
+      "可能存在覆盖不足：构念定义中'面对竞争性冲动'的多样性，现有题目主要覆盖娱乐、社交、食物诱惑，缺乏对'情绪冲动'（如愤怒时坚持任务）或'疼痛/不适'的覆盖。"
+    ]
+  },
+  "summary": {
+    "number_of_items": 22,
+    "number_of_evidence_families": 7,
+    "stable_families": 3,
+    "provisional_families": 4,
+    "overrepresented_family": "EF01 (12 items)",
+    "underrepresented_families": "EF04, EF05, EF06, EF07 (1 item each)"
+  }
+}

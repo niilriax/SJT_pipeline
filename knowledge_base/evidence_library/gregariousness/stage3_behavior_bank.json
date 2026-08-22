@@ -1,0 +1,620 @@
+{
+  "facet": "gregariousness",
+  "manifestations": [
+    {
+      "manifestation_id": "BM01",
+      "description": "主动与陌生人交谈",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_04",
+        "gregariousness_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM02",
+      "description": "主动加入非强制性社交聚会",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_10",
+        "gregariousness_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM03",
+      "description": "主动选择与他人共同活动而非独自活动",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM04",
+      "description": "主动选择并留在高社交互动的环境中",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_21"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM05",
+      "description": "回避社交情境，很快离开或仅与熟人交谈",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_04"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM06",
+      "description": "回避非强制性社交聚会，直接回家",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_10"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM07",
+      "description": "主动寻找安静或不受干扰的地方独处",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_18"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM08",
+      "description": "独自探索或与导游单独探索",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_19"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM09",
+      "description": "避开高社交密度环境，继续寻找其他座位",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_21"
+      ],
+      "linked_evidence_family": "EF01"
+    },
+    {
+      "manifestation_id": "BM10",
+      "description": "尝试与尽可能多的朋友一起庆祝新年除夕",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_03"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM11",
+      "description": "询问并前往当地最大的新年除夕聚会",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_03"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM12",
+      "description": "举办大型热闹聚会，邀请很多客人",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_14"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM13",
+      "description": "主动联系朋友见面，希望见到尽可能多的朋友",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_16"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM14",
+      "description": "参加有很多人参与的活动",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_16"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM15",
+      "description": "加入团体旅行",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_20"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM16",
+      "description": "邀请朋友并允许他们邀请自己不认识的其他人",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_20"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM17",
+      "description": "外出并期待结识新朋友",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_22"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM18",
+      "description": "邀请朋友到自己家中聚会",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_22"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM19",
+      "description": "与家人一起庆祝新年除夕",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_03"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM20",
+      "description": "独自安静地度过年终",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_03"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM21",
+      "description": "在小圈子里庆祝生日",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_14"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM22",
+      "description": "根本不庆祝生日",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_14"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM23",
+      "description": "与家人度过时光，强调不受干扰",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_16"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM24",
+      "description": "独自度过一天，享受独处时间",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_16"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM25",
+      "description": "独自旅行",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_20"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM26",
+      "description": "与伴侣或家人一起旅行",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_20"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM27",
+      "description": "计划在家读书",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_22"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM28",
+      "description": "计划独处一段时间",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_22"
+      ],
+      "linked_evidence_family": "EF02"
+    },
+    {
+      "manifestation_id": "BM29",
+      "description": "选择住在市中心，因为喜欢周围有很多人",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_07"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM30",
+      "description": "选择搬进合租公寓",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_07"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM31",
+      "description": "选择开放式办公室",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_08"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM32",
+      "description": "选择在有5-10个同事的大房间里工作",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_08"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM33",
+      "description": "选择社交密集的度假目的地",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_12"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM34",
+      "description": "选择顾客盈门、繁忙的餐厅",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_15"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM35",
+      "description": "选择俱乐部酒店",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_17"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM36",
+      "description": "选择热闹的度假村",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_17"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM37",
+      "description": "寻找只属于自己的公寓",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_07"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM38",
+      "description": "选择安静社区的公寓",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_07"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM39",
+      "description": "选择与一个同事共享办公室",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_08"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM40",
+      "description": "选择自己的独立房间工作",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_08"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM41",
+      "description": "选择孤独的度假目的地",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_12"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM42",
+      "description": "选择顾客稀少、安静的餐厅",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_15"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM43",
+      "description": "选择僻静的度假公寓",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_17"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM44",
+      "description": "选择乡村的宁静酒店",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_17"
+      ],
+      "linked_evidence_family": "EF03"
+    },
+    {
+      "manifestation_id": "BM45",
+      "description": "接受朋友带陌生人的提议，并期待共同活动",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_05"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM46",
+      "description": "明确表示欢迎朋友带其他人来",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_13"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM47",
+      "description": "鼓励朋友带更多人来并表示高兴",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_13"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM48",
+      "description": "建议改为只有两个人的替代方案",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_05"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM49",
+      "description": "礼貌取消，选择独自运动",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_05"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM50",
+      "description": "明确表示只想见朋友本人",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_13"
+      ],
+      "linked_evidence_family": "EF04"
+    },
+    {
+      "manifestation_id": "BM51",
+      "description": "主动与朋友见面",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_09"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM52",
+      "description": "外出做其他事情（可能涉及社交）",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_09"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM53",
+      "description": "主动给朋友圈里很多亲爱的人打电话",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_11"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM54",
+      "description": "主动邀请其他人到家里来",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_11"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM55",
+      "description": "待在家里与伴侣或家人共度时光",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_09"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM56",
+      "description": "选择独处",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_09",
+        "gregariousness_11"
+      ],
+      "linked_evidence_family": "EF05"
+    },
+    {
+      "manifestation_id": "BM57",
+      "description": "选择团体培训以认识新同事",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_01"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM58",
+      "description": "选择团体培训以与熟悉的同事同组",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_01"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM59",
+      "description": "选择线下参加研讨会以认识新同事并交流想法",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_06"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM60",
+      "description": "主动在线上论坛联系其他参与者并表达迫不及待参加",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_06"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM61",
+      "description": "选择个人培训",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_01"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM62",
+      "description": "选择独立获取培训内容",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_01"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM63",
+      "description": "选择在线关注研讨会以省去路程",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_06"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM64",
+      "description": "选择安静地待在工作场所关注研讨会内容",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_06"
+      ],
+      "linked_evidence_family": "EF06"
+    },
+    {
+      "manifestation_id": "BM65",
+      "description": "去公共观看活动（与大量陌生人一起观看）",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_02"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM66",
+      "description": "在酒吧看比赛（与陌生人/半陌生人一起观看）",
+      "trait_direction": "high",
+      "source_item_ids": [
+        "gregariousness_02"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM67",
+      "description": "和几个朋友或家人在家看比赛",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_02"
+      ],
+      "linked_evidence_family": "EF07"
+    },
+    {
+      "manifestation_id": "BM68",
+      "description": "独自在电视前看比赛",
+      "trait_direction": "low",
+      "source_item_ids": [
+        "gregariousness_02"
+      ],
+      "linked_evidence_family": "EF07"
+    }
+  ]
+}

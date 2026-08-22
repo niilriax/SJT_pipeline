@@ -1,0 +1,342 @@
+{
+  "facet": "self_discipline",
+  "facet_id": "conscientiousness_self_discipline",
+  "neo_code": "C5",
+  "definition": "面对即时诱惑、疲劳或分心时，仍能坚持完成已承诺或必要的任务。核心是 persist in task completion despite competing impulses，不等同于成就追求 (C4)、条理性 (C2) 或审慎性 (C6)。",
+  "high_pole": "即使有更愉快的替代选择，仍坚持完成不愉快的任务",
+  "low_pole": "容易被替代诱惑吸引，推迟或放弃计划中的任务",
+  "curation_notes": {
+    "curated_from": "LLM Stage 2 V1 output (7 families) + human re-analysis",
+    "curated_to": "4 families (3 stable + 1 provisional)",
+    "design_principle": "Self-discipline items differ primarily in the NATURE OF THE COMPETING IMPULSE (social/leisure/food/rest) and the NATURE OF THE TASK (one-time/multi-part/self-initiated/long-term). These surface differences do not necessarily indicate different evidence mechanisms. The core mechanism is always: 'faced with a competing impulse, persist with the committed task or yield.' The families below capture genuine psychological distinctions within this broader mechanism."
+  },
+  "evidence_library": [
+    {
+      "family_id": "SEF01",
+      "family_name": "即时诱惑下的任务坚持",
+      "definition": "当存在即时、有吸引力的替代活动（社交邀请、娱乐、休闲、美食）与已承诺或必要的任务发生冲突时，能否抑制诱惑冲动并坚持完成任务。",
+      "high_trait_evidence": "优先完成必要任务，延迟或放弃即时满足，即使任务本身不愉快或存在更愉快的替代选择。",
+      "low_trait_evidence": "优先满足即时诱惑，将任务推迟、缩减或放弃，事后可能合理化。",
+      "supporting_item_ids": [
+        "self_discipline_01",
+        "self_discipline_02",
+        "self_discipline_04",
+        "self_discipline_06",
+        "self_discipline_07",
+        "self_discipline_08",
+        "self_discipline_13",
+        "self_discipline_15",
+        "self_discipline_18",
+        "self_discipline_19",
+        "self_discipline_20",
+        "self_discipline_21"
+      ],
+      "support_count": 12,
+      "status": "stable",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "C4: 成就追求",
+        "C6: 审慎性"
+      ],
+      "boundary_condition": "仅适用于任务与诱惑的时间冲突——两者不能同时完成，必须做出选择。不适用于：可以并行处理的情况、任务明确不重要的情况、健康或安全风险。高自律不能写成'没有生活乐趣的工作狂'——必须是'在有吸引力的替代选择面前仍能坚持'。低自律不能写成'懒惰或不负责任'——必须是'更容易被当下更愉快的事吸引'。诱惑类型（社交、娱乐、食物、休息）是情境条件，不是不同的 evidence mechanism。",
+      "alternative_explanations": [
+        "对任务重要性的真实判断差异",
+        "对诱惑强度的感受性差异",
+        "时间管理能力而非自律",
+        "成就追求 (C4) 可能驱动坚持但不反映自我约束"
+      ],
+      "typical_high_manifestations": [
+        "立即关掉诱惑源去完成任务",
+        "取消社交活动以完成工作",
+        "坚持按原计划完成不愉快的任务"
+      ],
+      "typical_low_manifestations": [
+        "先满足诱惑再决定是否做任务",
+        "寻找理由推迟任务",
+        "完全放弃任务并合理化"
+      ],
+      "common_trait_activating_cues": [
+        "已承诺或必要的任务",
+        "即时可得的替代诱惑",
+        "冲突需要明确选择",
+        "无外部监督或强制"
+      ]
+    },
+    {
+      "family_id": "SEF02",
+      "family_name": "无外部强制时的自主任务启动与坚持",
+      "definition": "当任务没有外部强制截止日期、监督或明确后果，且存在疲劳、分心或缺乏内在吸引力时，能否主动启动并坚持完成任务。",
+      "high_trait_evidence": "没有外部压力时仍能主动启动任务，建立自己的完成节奏并坚持到底。",
+      "low_trait_evidence": "没有外部压力时容易推迟、分散处理或中途放弃，依赖内在动机的波动。",
+      "supporting_item_ids": [
+        "self_discipline_03",
+        "self_discipline_05",
+        "self_discipline_14",
+        "self_discipline_16",
+        "self_discipline_17"
+      ],
+      "support_count": 5,
+      "status": "stable",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "C2: 条理性 (制定计划)",
+        "C4: 成就追求 (追求高标准)",
+        "C6: 审慎性 (权衡后再行动)"
+      ],
+      "boundary_condition": "仅适用于任务有足够重要性但无外部强制的情境。不适用于：任务明确不重要、有更紧急的事务需要处理。区分 SEF01 与 SEF02：SEF01 的核心冲突是'任务 vs 诱惑'（同时出现的竞争选项），SEF02 的核心挑战是'启动与坚持'（没有竞争选项，但缺乏内在动力）。高自律不能等同于'强迫性安排'。低自律不能等同于'合理优先级管理'。",
+      "alternative_explanations": [
+        "条理性 (C2) 偏好可能驱动制定固定计划而非纯粹自律",
+        "成就追求 (C4) 可能驱动坚持但不反映抵制诱惑的能力",
+        "对任务内在兴趣的差异"
+      ],
+      "typical_high_manifestations": [
+        "立即开始处理积压的任务",
+        "建立固定时间块专门处理长期项目",
+        "坚持读完无聊但已承诺的书"
+      ],
+      "typical_low_manifestations": [
+        "推迟到想做的时候再处理",
+        "保持灵活性、不固定时间",
+        "中途放弃并处理掉不再需要的任务"
+      ],
+      "common_trait_activating_cues": [
+        "无外部强制截止日期或监督",
+        "任务本身缺乏内在吸引力",
+        "存在疲劳或分心的默认倾向"
+      ]
+    },
+    {
+      "family_id": "SEF03",
+      "family_name": "自我约束目标的冲动抑制",
+      "definition": "当个体已为自己设定了明确的自我约束目标（如节食、戒断、控制消费），且面临与目标直接冲突的即时诱惑时，能否抑制冲动并坚持原定目标。",
+      "high_trait_evidence": "面对直接挑战自我约束目标的诱惑时，通过主动消除诱惑、沟通边界或严格自我控制来坚持目标。",
+      "low_trait_evidence": "放弃或合理化放弃，屈服于即时冲动，将目标推迟到未来。",
+      "supporting_item_ids": [
+        "self_discipline_09",
+        "self_discipline_12",
+        "self_discipline_22"
+      ],
+      "support_count": 3,
+      "status": "stable",
+      "construct_purity": "high",
+      "competing_facets": [
+        "C4: 成就追求 (节食/训练可能是成就导向)",
+        "E1: 热情性 (社交情境中拒绝可能受社交动机影响)"
+      ],
+      "boundary_condition": "仅适用于个体自主设定的、有明确行为边界的自我约束目标。不适用于：医学必需的饮食限制、外部强制的戒断。区分 SEF03 与 SEF01：SEF01 处理的是'任务 vs 诱惑'的时间冲突（两者不能同时进行），SEF03 处理的是'自我约束 vs 冲动'的规则冲突（可以表面上继续遵守但内心已放弃）。高自律不能等同于'僵化的自虐'。低自律不能等同于'正常的享受生活'——目标是自己设定的，放弃也是自己的选择。",
+      "alternative_explanations": [
+        "对目标的真实承诺度（有些人仅仅是口头设定目标）",
+        "社交压力（拒绝食物可能冒犯主人）",
+        "身体需求强度（真正的饥饿 vs 心理 cravings）"
+      ],
+      "typical_high_manifestations": [
+        "向朋友解释并坚持不破戒",
+        "主动扔掉诱惑物以消除 temptation",
+        "只极少量品尝以维持社交礼仪但不过量"
+      ],
+      "typical_low_manifestations": [
+        "完全放弃目标并计划明年再做",
+        "先屈服再重新开始",
+        "缩小目标以适应冲动"
+      ],
+      "common_trait_activating_cues": [
+        "明确自我设定的约束目标",
+        "与目标直接冲突的即时诱惑",
+        "无外部监督或后果"
+      ]
+    },
+    {
+      "family_id": "SEF04",
+      "family_name": "长期目标导向的持续投入",
+      "definition": "当追求长期目标需要持续牺牲即时愉悦（如休闲、舒适、自由时间）时，能否坚持有计划的投入而非因短期成本放弃。",
+      "high_trait_evidence": "为了长期目标持续牺牲即时愉悦，即使过程本身缺乏即时回报。",
+      "low_trait_evidence": "在即时成本面前放弃或回避长期目标所需的持续投入。",
+      "supporting_item_ids": [
+        "self_discipline_10"
+      ],
+      "support_count": 1,
+      "status": "provisional",
+      "construct_purity": "low",
+      "competing_facets": [
+        "C4: 成就追求 (长期目标导向可能是成就动机)",
+        "C6: 审慎性 (权衡长期回报)"
+      ],
+      "boundary_condition": "仅1题支持。此 family 的 construct purity 标记为 low，因为'为长期目标牺牲当下'在 C5 (自律) 和 C4 (成就追求) 之间的边界模糊。自我约束 (SEF03) 是'不做不该做的事'，长期投入 (SEF04) 是'持续做该做的事'——两者心理机制不同但仅1题难以确认为独立 evidence。建议在后续生成中与 SEF01 或 SEF03 合并使用，不给独立配额。",
+      "alternative_explanations": [
+        "成就追求 (C4) 几乎完全能解释长期训练行为",
+        "对贷款资助的态度差异"
+      ],
+      "typical_high_manifestations": [
+        "坚持训练并牺牲休闲时间",
+        "利用每一分钟空闲训练"
+      ],
+      "typical_low_manifestations": [
+        "因休闲时间更重要而放弃",
+        "选择贷款替代训练"
+      ],
+      "common_trait_activating_cues": [
+        "明确的长期目标和奖励",
+        "需要持续牺牲即时愉悦",
+        "奖励在遥远的未来"
+      ]
+    }
+  ],
+  "item_evidence_mapping": {
+    "self_discipline_01": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "TV vs sleep — 疲劳条件 + 即时诱惑"
+    },
+    "self_discipline_02": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "friend vs project — 社交诱惑"
+    },
+    "self_discipline_03": {
+      "primary_family": "SEF02",
+      "secondary_family": null,
+      "status": "core",
+      "note": "mail pile — 无外部压力、度假后疲劳"
+    },
+    "self_discipline_04": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "cycling vs cleaning — 即时享乐诱惑"
+    },
+    "self_discipline_05": {
+      "primary_family": "SEF02",
+      "secondary_family": null,
+      "status": "core",
+      "note": "household tasks — 不愉快任务、固定时间块"
+    },
+    "self_discipline_06": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "party vs work — 社交诱惑"
+    },
+    "self_discipline_07": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "dishes vs rest — 疲劳+即时舒适诱惑"
+    },
+    "self_discipline_08": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "presentation vs relax — 即时享乐诱惑"
+    },
+    "self_discipline_09": {
+      "primary_family": "SEF03",
+      "secondary_family": null,
+      "status": "core",
+      "note": "sweets during lent — 自我约束目标+社交诱惑"
+    },
+    "self_discipline_10": {
+      "primary_family": "SEF04",
+      "secondary_family": "SEF01",
+      "status": "provisional",
+      "note": "training for financial support — 长期目标导向 (provisional) + 即时诱惑"
+    },
+    "self_discipline_11": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "phone broken vs study — 分心事件而非诱惑，但核心仍是坚持原计划。C6/C4/N3 污染风险"
+    },
+    "self_discipline_12": {
+      "primary_family": "SEF03",
+      "secondary_family": null,
+      "status": "core",
+      "note": "tiramisu vs diet — 自我约束目标"
+    },
+    "self_discipline_13": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "social vs presentation — 社交诱惑"
+    },
+    "self_discipline_14": {
+      "primary_family": "SEF02",
+      "secondary_family": null,
+      "status": "core",
+      "note": "writing project — 无外部监督、长期安排"
+    },
+    "self_discipline_15": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "tax vs weather — 即时享乐诱惑"
+    },
+    "self_discipline_16": {
+      "primary_family": "SEF02",
+      "secondary_family": null,
+      "status": "core",
+      "note": "boring book — 已开始但无外部压力、任务缺乏吸引力"
+    },
+    "self_discipline_17": {
+      "primary_family": "SEF02",
+      "secondary_family": "SEF01",
+      "status": "core",
+      "note": "watering plants from bed — 已休息状态 (SEF02 无压力启动) + 即时舒适诱惑 (SEF01)"
+    },
+    "self_discipline_18": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "garbage vs music — 即时享乐诱惑"
+    },
+    "self_discipline_19": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "documents vs friend — 社交诱惑"
+    },
+    "self_discipline_20": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "training vs friend — 社交诱惑"
+    },
+    "self_discipline_21": {
+      "primary_family": "SEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "TV vs repair — 即时享乐诱惑"
+    },
+    "self_discipline_22": {
+      "primary_family": "SEF03",
+      "secondary_family": null,
+      "status": "core",
+      "note": "dessert when full — 自我约束目标"
+    }
+  },
+  "coverage_summary": {
+    "total_items": 22,
+    "stable_families": 3,
+    "provisional_families": 1,
+    "items_with_dual_assignment": 2,
+    "overrepresented": "SEF01 即时诱惑下的任务坚持 — 12题。SEF01 和 SEF02 合计覆盖19/22题。这说明 Mussel 对 self-discipline 的操作化主要集中在'抵制诱惑以完成任务'这一核心机制上。",
+    "underrepresented": "SEF03 自我约束目标仅有3题（且均为饮食相关），SEF04 仅1题且 purity=low。'抵制冲动'方面仅覆盖了食物诱惑，缺乏对消费冲动、娱乐冲动、拖延冲动的测量。",
+    "high_contamination_items": [
+      "self_discipline_11 (手机故障 vs 学习) — C6/C4/N3 三重污染",
+      "self_discipline_10 (训练换资助) — C4 污染",
+      "self_discipline_14 (写作项目) — C2 条理性污染"
+    ],
+    "possible_construct_gaps": [
+      "缺乏对'面对情绪冲动时坚持任务'的测量——现有诱惑主要是享乐和社交，没有愤怒/焦虑等情绪状态下需要抑制冲动完成任务的情境。",
+      "缺乏对'已承诺给他人的任务'的测量——现有题目全部是对自己的承诺（学习/工作/家务/节食），没有'答应了别人但自己不想做'的情境。"
+    ],
+    "core_items": 21,
+    "provisional_items": 1,
+    "rejected_items": 0
+  },
+  "mapping_convention": {
+    "supporting_item_ids": "?? evidence family ???????????????????",
+    "item_evidence_mapping": "??????????????????????????????????"
+  }
+}

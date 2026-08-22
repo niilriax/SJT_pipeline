@@ -1,0 +1,243 @@
+=== openness_to_ideas (22 items) ===
+
+--- openness_to_ideas_01 ---
+situation_surface: 熟人发送了一个创新比赛的参赛邀请，征集促进德国可持续发展的创意想法。
+trait_relevant_cue: 存在一个非强制性的、需要主动投入认知资源的创新比赛邀请，且主题（可持续发展）具有抽象性和开放性。
+evidence_proposition: 在存在非强制性创新比赛邀请的情况下，是否主动投入认知资源（如头脑风暴、考虑参与）并表现出对智力探索的兴趣。
+behavioral_mechanism: 面对非强制性的智力探索机会时，主动接近并投入认知资源 vs 回避或拒绝参与。
+high_behaviors: ['进行简短的头脑风暴并考虑是否参加', '对信息感到高兴，喜欢思考新想法和创新，但因时间优先决定不参加']
+low_behaviors: ['回复邮件感谢但表示通常缺乏动力', '不太关注建议，兴趣不大，告知对方比赛不适合自己']
+alternative_explanation: 选项B中的时间优先可能反映尽责性（C4）或实际时间约束，而非低开放性；选项C和D中的缺乏动力/兴趣也可能受对可持续发展主题的兴趣或对比赛形式的偏好影响。
+competing_facets: ['C4']
+situation_cost: 选择高开放性行为（如头脑风暴、考虑参加）需要投入时间和认知精力，可能干扰其他优先事项。
+
+--- openness_to_ideas_02 ---
+situation_surface: 收到知名研究机构寄来的无报酬智力题和脑筋急转弯，要求匿名解答并寄回，信封已贴邮票。
+trait_relevant_cue: 存在一个非强制性、无外在报酬的智力挑战任务，且匿名作答无社会评价压力。
+evidence_proposition: 在存在非强制性、无外在报酬的智力挑战任务且匿名作答的情况下，是否主动投入认知资源去解决这些智力题。
+behavioral_mechanism: 面对无外在报酬的智力挑战时，出于内在兴趣主动接近并投入认知资源 vs 因缺乏兴趣或认为不值得而回避。
+high_behaviors: ['主动接受智力挑战并尝试解决脑筋急转弯', '投入大量精力思考并尝试解决所有任务，必要时使用辅助工具']
+low_behaviors: ['以有更重要事情为由拒绝解决任务', '以任务太复杂、不想占用休闲时间为由拒绝解决任务']
+alternative_explanation: 选项C（有更重要事情）可能反映时间管理或尽责性（C4），而非低观念开放；选项D（太复杂）可能反映低认知能力或低自我效能感。
+competing_facets: ['C4']
+situation_cost: 选择高行为（A/B）需要投入时间和认知精力，且无任何外在报酬，可能占用其他活动时间。
+
+--- openness_to_ideas_03 ---
+situation_surface: 在候诊室等待时，发现一个数字谜题（数独），决定是否解决它。
+trait_relevant_cue: 存在一个非必须解决、无外部奖励的数字谜题（数独），且环境允许自由选择是否投入认知资源。
+evidence_proposition: 在存在非必须解决、无外部奖励的数字谜题的情况下，是否主动投入认知资源去解决它并希望有更多类似挑战。
+behavioral_mechanism: 面对非强制性、无外部奖励的智力挑战时，主动接近并投入认知资源 vs 回避或缺乏兴趣。
+high_behaviors: ['主动开始解决谜题，并尽力完成', '主动开始解决谜题，并希望杂志里有更多谜题']
+low_behaviors: ['因认为谜题太复杂而放弃，继续翻阅杂志', '因对数字谜题不感兴趣而继续翻阅杂志']
+alternative_explanation: 选项C可能反映低自我效能感或数学焦虑，而非低观念开放；选项D可能反映对数字领域的特定兴趣缺乏，而非一般性智力好奇心不足。
+competing_facets: ['C4', 'N3']
+situation_cost: 解决谜题需要花费时间和注意力，可能减少翻阅其他杂志内容或休息的时间。
+
+--- openness_to_ideas_04 ---
+situation_surface: 业余时间阅读娱乐书籍时，遇到一个对情节不重要的复杂科学理论。
+trait_relevant_cue: 存在一个对当前主要目标（娱乐阅读）非必需的、但具有认知挑战性的科学理论解释。
+evidence_proposition: 在遇到非必需的认知挑战内容时，是否主动投入认知资源去理解和探索。
+behavioral_mechanism: 面对非强制性认知挑战时，主动接近并投入认知努力 vs 回避或忽略认知挑战。
+high_behaviors: ['阅读科学理论部分并主动接受智力挑战', '尝试详细理解该科学理论']
+low_behaviors: ['阅读科学理论部分但不试图理解', '跳过书中关于科学理论的部分']
+alternative_explanation: 可能由阅读兴趣（对科学主题的兴趣）或时间压力（业余时间有限）解释，而非纯粹的观念开放。
+competing_facets: ['O2']
+situation_cost: 选择高 trait 行为（详细理解）需要额外的时间和认知努力，可能打断阅读流畅性。
+
+--- openness_to_ideas_05 ---
+situation_surface: 在谈话中遇到一个不认识的拉丁词，但句子大意已理解。
+trait_relevant_cue: 存在一个不熟悉但非必需的词汇，其含义不影响当前理解，但主动获取其含义需要额外认知投入。
+evidence_proposition: 在遇到不熟悉但非必需的词汇时，是否主动寻求其确切含义（而非满足于已有理解）。
+behavioral_mechanism: 面对非必需的认知缺口时，主动投入资源以填补 vs 满足于已有理解或仅做最小努力推测。
+high_behaviors: ['稍后在外语词典中查找该词', '当场询问谈话伙伴该词的含义']
+low_behaviors: ['不再为这个外来词烦恼', '尝试用已有知识推测该词的含义']
+alternative_explanation: 选项D（用已有知识推测）可能被高智力或高成就追求者选择，但本质仍是回避主动求知；选项A/B的差异（事后查 vs 当场问）可能受社交焦虑（N1）影响，但两者均代表高观念开放。
+competing_facets: ['C4', 'N1']
+situation_cost: 当场询问可能打断对话或显得无知（社交成本）；事后查词需要额外时间精力。
+
+--- openness_to_ideas_06 ---
+situation_surface: 偶然看到电视上关于气候变化的节目，其中一位嘉宾为可再生能源的缓慢扩张提出新的、非传统的论据，另一位持相反观点。
+trait_relevant_cue: 存在一个关于可再生能源的辩论节目，其中包含新的、非传统的论据，且观看与否是个人选择。
+evidence_proposition: 在存在包含新/非传统论据的辩论节目且观看是个人选择的情况下，是否主动投入认知资源去观看、权衡或保持开放心态，而非回避或基于已有意见不感兴趣。
+behavioral_mechanism: 面对包含新/非传统论据的智力性辩论时，主动接近并开放地处理新信息 vs 基于已有意见或兴趣缺乏而回避
+high_behaviors: ['观看节目并权衡支持和反对扩大可再生能源的所有论据，然后形成意见', '观看节目并对关于可再生能源主题的新论据持开放心态']
+low_behaviors: ['因已有明确意见而对节目不太感兴趣', '关掉电视或换频道，因这类主题和节目不让自己感兴趣']
+alternative_explanation: 已有明确意见可能反映的是强烈的个人信念或价值观（如环保立场），而非低观念开放；关掉电视也可能是因为时间有限或对节目形式不感兴趣，而非回避新观念。
+competing_facets: ['O2', 'C4']
+situation_cost: 观看并权衡论据需要投入时间和认知精力，而关掉电视或换频道则节省时间。
+
+--- openness_to_ideas_07 ---
+situation_surface: 经过艰难的一天后，回到家面对电视节目选择，包括纪录片和娱乐电影。
+trait_relevant_cue: 在经历消耗性的一天后，存在一个非强制性的、可选的智力性节目（纪录片）与纯娱乐节目（电影）之间的选择。
+evidence_proposition: 在经历消耗性的一天后，是否主动选择观看教育性/智力性节目（纪录片）而非纯娱乐节目（电影），即使没有外部要求。
+behavioral_mechanism: 在疲劳状态下，面对非必需的智力刺激时，主动追求智力内容 vs 优先选择放松或仅在自己已有兴趣范围内接触智力内容。
+high_behaviors: ['主动选择观看纪录片，认为教育永远不嫌多', '通常几乎只用电视观看教育节目']
+low_behaviors: ['选择娱乐电影以放松', '只有当纪录片主题是自己感兴趣并喜欢处理时才观看']
+alternative_explanation: 选项D（仅看感兴趣主题的纪录片）可能反映的是兴趣狭窄或低开放性，但也可能反映的是高选择性或时间管理偏好。此外，疲劳程度可能影响选择，高疲劳者更可能选C。
+competing_facets: ['C4', 'O2']
+situation_cost: 选择高开放性行为（看纪录片）需要付出额外的认知努力，牺牲放松和恢复的时间，可能增加疲劳感。
+
+--- openness_to_ideas_08 ---
+situation_surface: 在自己精通的知识领域出现新的理论化且抽象的科学发现，自己偶然注意到这些消息。
+trait_relevant_cue: 存在与自己精通领域相关但非常理论化、抽象的新科学发现，且接触是偶然、非强制性的。
+evidence_proposition: 在存在与自己精通领域相关但非常理论化、抽象的新科学发现且接触是偶然、非强制性的情况下，是否主动投入认知资源去全面理解和整合这些新发现。
+behavioral_mechanism: 面对非强制性的、与自己精通领域相关但抽象的理论新知识时，主动接近、深入探索并尝试整合 vs 回避、满足于已有知识或转向实用事物。
+high_behaviors: ['全面了解新发现，尝试理解每一个细节', '研究新发现，尝试将它们整合到自己的先前知识中']
+low_behaviors: ['更感兴趣的是实际事物，几乎不处理新发现', '认为自己的先前知识已经足够广泛，所以不必进一步处理新发现']
+alternative_explanation: 可能由认知能力（理解抽象理论的能力不足）或时间精力成本（全面理解需要大量投入）解释，而非纯粹的兴趣差异。
+competing_facets: ['C4']
+situation_cost: 全面理解和整合新发现需要投入大量时间和认知精力，可能影响其他任务或休息。
+
+--- openness_to_ideas_09 ---
+situation_surface: 购买新笔记本电脑后，首次使用已知软件程序，但该版本包含一些新功能。
+trait_relevant_cue: 软件程序包含非必需的新功能，且用户已熟悉旧版本，没有外部压力要求必须学习新功能。
+evidence_proposition: 在软件包含非必需新功能且无外部强制要求的情况下，是否主动探索和学习这些新功能。
+behavioral_mechanism: 面对非强制性的认知新颖性时，主动接近和探索 vs 回避和维持现状
+high_behaviors: ['主动查看各种资源来了解新功能', '通过试用软件来自学新功能']
+low_behaviors: ['使用软件时几乎不使用新功能', '对软件更新感到烦恼，并尝试继续使用旧软件']
+alternative_explanation: 可能由对软件更新的普遍厌恶（如对变化的不适）或对特定软件功能的实际需求不足解释，而非对观念本身的开放度。
+competing_facets: ['O2', 'N4']
+situation_cost: 选择高 trait 行为（探索新功能）需要额外的时间和精力投入，可能暂时降低工作效率。
+
+--- openness_to_ideas_10 ---
+situation_surface: 几天后将有月食可以观赏，询问被试会做什么。
+trait_relevant_cue: 存在一个非必须参与但具有认知理解深度的自然现象（月食）可供选择性地关注或探索。
+evidence_proposition: 在存在非必须参与但具有认知理解深度的自然现象的情况下，是否主动寻求并投入于理解其背后的科学原理。
+behavioral_mechanism: 面对可选的认知探索机会时，主动寻求理解（即使不直接观看） vs 满足于表面体验或完全回避。
+high_behaviors: ['观看月食并尝试理解天文背景', '不观看月食但觉得了解原因令人兴奋']
+low_behaviors: ['观看月食但仅此而已', '什么都不做，因为不感兴趣']
+alternative_explanation: 选项B（不观看但觉得了解原因令人兴奋）可能被高智力或高成就追求者选择，而非纯粹出于观念开放；选项C（观看但仅此而已）可能反映审美敏感性（O2）而非低观念开放。
+competing_facets: ['O2', 'C4']
+situation_cost: 选择高行为（如观看并理解或仅了解原因）需要投入额外的时间和认知精力，但无显著人际或机会成本。
+
+--- openness_to_ideas_11 ---
+situation_surface: 在步行区遇到一个关于人性善恶的公开演讲，没有时间压力，演讲者看起来可爱。
+trait_relevant_cue: 存在一个非强制性的、抽象哲学主题的公开演讲，且没有时间压力
+evidence_proposition: 在存在非强制性抽象哲学演讲且无时间压力的情况下，是否主动投入认知资源去了解演讲内容
+behavioral_mechanism: 面对非强制性的抽象智力刺激时，主动接近并投入认知资源 vs 因缺乏兴趣或认为过于抽象而回避
+high_behaviors: ['尝试确切了解演讲内容并听完整场演讲', '先听几分钟再决定是否进一步关注']
+low_behaviors: ['因觉得讨论太抽象和理论化而不听', '因对哲学问题不感兴趣而继续走开']
+alternative_explanation: 对哲学主题的具体兴趣（而非一般性观念开放）可能驱动选择；另外，演讲者的可爱程度可能影响社交吸引力而非智力好奇心
+competing_facets: ['O2']
+situation_cost: 选择高行为（听演讲）需要花费时间，但无其他明显成本
+
+--- openness_to_ideas_12 ---
+situation_surface: 浏览电视节目时发现一个哲学主题的脱口秀。
+trait_relevant_cue: 存在一个非必须观看、涉及抽象哲学观念的电视节目。
+evidence_proposition: 在存在一个非必须观看、涉及抽象哲学观念的电视节目时，是否主动选择观看并投入注意力。
+behavioral_mechanism: 面对非强制性的抽象智力内容时，主动接近并投入认知资源 vs 回避或仅在无其他选择时才被动接触。
+high_behaviors: ['主动选择观看整个节目', '先观看开头，再根据主题和嘉宾决定是否继续观看']
+low_behaviors: ['只有在没有更好的事情可做时才观看', '根本不观看节目']
+alternative_explanation: 可能由对哲学主题的具体兴趣（而非一般性的观念开放）或时间充裕程度解释。
+competing_facets: ['O2']
+situation_cost: 观看节目需要花费时间，可能挤占其他活动。
+
+--- openness_to_ideas_13 ---
+situation_surface: 熟人邀请去自然科学博物馆，并说明取消不会引起不快。
+trait_relevant_cue: 存在一个非强制性的、以知识探索和观念接触为主要内容的社会活动（自然科学博物馆），且取消无社交代价。
+evidence_proposition: 在存在非强制性、以知识探索和观念接触为主要内容的社会活动且取消无社交代价的情况下，是否主动接受并投入该活动（包括扩展参与） vs 回避或限制参与。
+behavioral_mechanism: 面对非强制性的知识探索机会时，主动接近并寻求扩展认知体验 vs 回避或限制认知投入。
+high_behaviors: ['高兴地接受邀请，期待了解新事物并整天思考不同主题', '同意并提议带其他人一起去，以进行交流讨论']
+low_behaviors: ['同意但限制自己只接触已有知识的主题，不愿在博物馆待一整天', '取消，因为对这类主题不感兴趣']
+alternative_explanation: 选项A和B可能被社交性（E1：热情）或成就追求（C4：追求知识成就）驱动，而非纯粹的观念好奇。选项C可能反映时间压力或精力有限，选项D可能反映对自然科学的具体兴趣缺乏而非一般性的观念封闭。
+competing_facets: ['E1', 'C4']
+situation_cost: 选择高行为（A/B）需要投入一整天时间，并可能承担社交协调成本（如带其他人）。
+
+--- openness_to_ideas_14 ---
+situation_surface: 朋友询问你对一个未完全关注的新科学发现的意见。
+trait_relevant_cue: 存在一个自己尚未完全了解、但朋友主动提出的新科学发现，且讨论是非强制性的。
+evidence_proposition: 在存在一个自己尚未完全了解、但朋友主动提出的新科学发现且讨论非强制的情况下，是否主动寻求更多信息并愿意参与讨论。
+behavioral_mechanism: 面对非强制性的新知识探索机会时，主动接近并投入认知资源 vs 回避或拒绝智力性讨论。
+high_behaviors: ['要求一天时间详细处理该主题以便后续讨论', '请朋友更详细解释该主题并表示高兴得知新发现']
+low_behaviors: ['以了解不多为由表示不感兴趣', '因朋友总谈论高智力主题而感到烦恼']
+alternative_explanation: 选项D可能反映人际偏好（不喜欢朋友的话题选择）而非低观念开放；选项C可能反映时间压力或当前兴趣焦点。
+competing_facets: ['E3（热情）', 'A2（坦率）']
+situation_cost: 选择高行为（A或B）需要投入时间（一天准备或即时倾听解释），可能打断当前活动。
+
+--- openness_to_ideas_15 ---
+situation_surface: 夏令时开始，时钟向前拨一小时，询问被试如何行动。
+trait_relevant_cue: 存在一个关于夏令时规定的背景、优缺点讨论等非强制性智力探索机会。
+evidence_proposition: 在存在关于夏令时规定的非强制性智力探索机会的情况下，是否主动投入认知资源去了解背景或关注讨论。
+behavioral_mechanism: 面对一个日常但可深入探讨的智力话题时，主动接近并投入认知探索 vs 回避或仅做必要操作。
+high_behaviors: ['主动了解夏令时规定的背景信息', '饶有兴趣地关注关于夏令时优缺点的当前讨论']
+low_behaviors: ['表达对时钟改变的厌烦并希望废除它', '仅调整时钟，不做进一步思考']
+alternative_explanation: 可能由对时间变化的个人偏好（如早起困难）或对规则改变的普遍反感（保守性）解释，而非纯粹的智力好奇心。
+competing_facets: ['O2', 'C4']
+situation_cost: 选择高 trait 行为（了解背景、关注讨论）需要额外的时间和注意力投入，但无显著人际或机会成本。
+
+--- openness_to_ideas_16 ---
+situation_surface: 收到一张免费博物馆参观券，需要决定是否使用以及如何使用。
+trait_relevant_cue: 存在一个非强制性的、可选的智力文化体验机会（免费博物馆参观），且没有外部压力要求必须参与。
+evidence_proposition: 在存在非强制性智力文化体验机会的情况下，是否主动投入认知资源去探索和利用该机会。
+behavioral_mechanism: 面对非强制性的智力文化体验机会时，主动接近并投入认知探索 vs 回避或放弃该机会。
+high_behaviors: ['接受免费券并计划参观博物馆', '主动了解不同博物馆的展览内容，选择最有趣的展览参观']
+low_behaviors: ['以没有时间为由放弃使用免费券', '以不感兴趣为由将免费券转送给他人']
+alternative_explanation: 时间压力（选项C）或对特定博物馆主题的兴趣偏好（选项D）可能影响选择，而非普遍的观念开放性。
+competing_facets: ['O2']
+situation_cost: 选择高开放性行为（参观博物馆）需要投入时间（可能数小时）和精力（了解展览、实际参观），但无金钱成本。
+
+--- openness_to_ideas_17 ---
+situation_surface: 收到辩论俱乐部信息活动的邀请，需要决定是否参与。
+trait_relevant_cue: 存在一个非强制性的、以智力讨论和观点交锋为特征的活动邀请
+evidence_proposition: 在存在非强制性智力讨论活动邀请的情况下，是否主动接受并参与其中
+behavioral_mechanism: 面对非强制性的智力辩论机会时，主动接近并参与 vs 回避并表达缺乏兴趣
+high_behaviors: ['接受辩论俱乐部的邀请', '愿意与朋友辩论世界政治问题']
+low_behaviors: ['认为讨论内容很少让自己感兴趣', '表示这种俱乐部不让自己感兴趣']
+alternative_explanation: 选项B（与朋友辩论）可能反映的是社交偏好而非观念开放；选项A和B的差异可能受社交焦虑或时间安排影响。
+competing_facets: ['E1', 'E2']
+situation_cost: 接受邀请需要投入时间，可能涉及面对陌生人或公开表达观点，存在社交风险。
+
+--- openness_to_ideas_18 ---
+situation_surface: 在游戏之夜，参与者匿名投票选择游戏，有多个游戏可选。
+trait_relevant_cue: 存在多个游戏选项，其中包含被试未知的、需要认知投入的游戏，且选择是匿名的（无社交压力）。
+evidence_proposition: 在存在未知且需要认知投入的游戏选项且选择匿名的情况下，是否主动选择未知的、高认知要求的游戏而非已知的、低认知要求的游戏。
+behavioral_mechanism: 面对非强制性的认知探索机会时，主动寻求新异和智力挑战 vs 偏好熟悉和低认知负荷
+high_behaviors: ['选择未知且需要高度心理要求的游戏', '选择未知但规则简单的游戏']
+low_behaviors: ['选择已知且易于理解的游戏', '选择已知但相当难以理解的游戏']
+alternative_explanation: 可能由认知能力（高能力者更可能选高要求游戏）或成就追求（C4，想赢所以选已知游戏）解释。
+competing_facets: ['C4']
+situation_cost: 选择高认知要求的未知游戏可能增加学习成本和失败风险，但匿名投票降低了社交成本。
+
+--- openness_to_ideas_19 ---
+situation_surface: 阿姨给了一个需要高度集中注意力的几何图形组合游戏，朋友拒绝一起玩。
+trait_relevant_cue: 存在一个需要高度集中注意力的、非强制性的抽象智力游戏，且他人已表现出拒绝态度。
+evidence_proposition: 在他人拒绝参与一个需要高度集中注意力的抽象智力游戏的情况下，是否主动说服他人参与并表达对该游戏的积极兴趣。
+behavioral_mechanism: 面对他人对抽象智力游戏的拒绝时，主动维护和推广该游戏的价值 vs 认同并强化对该游戏的负面评价
+high_behaviors: ['尽一切努力说服朋友这是一个很棒的游戏，只需练习就能掌握', '因朋友不喜欢该游戏而感到难过，但接受其决定']
+low_behaviors: ['因朋友也不喜欢该游戏而感到欣慰，认为游戏太累人', '与朋友讨论都更喜欢其他活动，并认为有人觉得该游戏有趣是不可思议的']
+alternative_explanation: 选项B（难过但接受）可能反映高宜人性或低果断性，而非低观念开放；选项D（讨论其他活动）可能反映高社交性而非低观念开放。
+competing_facets: ['A2', 'E3']
+situation_cost: 说服朋友需要额外的时间和精力，且可能面临社交拒绝的风险。
+
+--- openness_to_ideas_20 ---
+situation_surface: 熟人推荐了一个大学讲座系列，主题是自己已有扎实知识的领域，且无需考试。
+trait_relevant_cue: 存在一个非强制性的、主题熟悉的智力活动机会（讲座系列），无需外部考核压力。
+evidence_proposition: 在存在一个非强制性的、主题熟悉的智力活动机会时，是否主动选择参与（即使已具备相关知识） vs 回避参与。
+behavioral_mechanism: 面对熟悉的智力刺激时，出于求知兴趣主动接近 vs 因实用偏好或已有知识而回避。
+high_behaviors: ['参加整个讲座系列', '先观看第一次讲座，再决定是否继续']
+low_behaviors: ['因偏好做实际事情而不参加讲座系列', '因已了解很多而不参加讲座系列']
+alternative_explanation: 选项C可能反映实用主义或低开放性（而非低观念开放），选项D可能反映对重复信息的厌倦或时间管理偏好，而非缺乏求知欲。
+competing_facets: ['C4', 'O2']
+situation_cost: 参加讲座需要投入时间，可能牺牲其他活动。
+
+--- openness_to_ideas_21 ---
+situation_surface: 在度假岛上，除了海滩和棕榈树外，还有其他活动可选，但自己带了新书/有声书。
+trait_relevant_cue: 存在非强制性的、与原有智力计划（阅读/听书）相竞争的其他休闲活动
+evidence_proposition: 在存在非强制性的、与原有智力计划相竞争的其他休闲活动的情况下，是否坚持投入预先计划的智力活动（阅读/听书）而非转向其他消遣
+behavioral_mechanism: 面对非强制性的智力活动与其他休闲活动的竞争时，主动坚持智力探索 vs 回避或放弃智力投入
+high_behaviors: ['按计划阅读或收听所有带来的内容', '优先选择阅读/听书，认为其他活动只是消遣']
+low_behaviors: ['放弃阅读/听书，选择其他活动消磨时间', '感到矛盾但最终无法让自己投入阅读/听书']
+alternative_explanation: 选项C和D可能反映对特定书籍/主题的兴趣不足，而非普遍的低观念开放；选项A和B也可能反映成就追求（C4）或尽责性（坚持计划），而非纯粹的好奇心。
+competing_facets: ['C4']
+situation_cost: 选择高行为（坚持阅读/听书）可能牺牲参与其他有趣活动的机会，即机会成本（休闲体验的损失）。
+
+--- openness_to_ideas_22 ---
+situation_surface: 作为忠诚奖励，从一家公司收到免费杂志订阅，需要选择一种杂志类别。
+trait_relevant_cue: 存在一个无外部强制、纯个人兴趣驱动的杂志类别选择机会，且选项在认知深度和观念新颖性上存在差异。
+evidence_proposition: 在无外部强制、纯个人兴趣驱动的杂志类别选择机会下，是否选择认知深度更高、更可能涉及新观念或抽象内容的杂志类别（如科学/文化）而非更娱乐化或实用导向的类别。
+behavioral_mechanism: 面对非强制性的智力内容选择时，主动偏好认知挑战和观念探索 vs 偏好娱乐放松或实用信息。
+high_behaviors: ['选择科学/文化杂志', '选择新闻/商业杂志']
+low_behaviors: ['选择时尚/娱乐杂志', '选择体育/自然/计算机杂志']
+alternative_explanation: 选项可能受个人已有兴趣领域（如对体育或计算机的既有热情）驱动，而非对智力探索的普遍态度；此外，社会赞许性可能使被试选择看起来更'有文化'的选项。
+competing_facets: ['O2', 'C4']
+situation_cost: 选择高认知选项（如科学/文化）可能牺牲娱乐或实用价值，但无显著时间或人际成本。

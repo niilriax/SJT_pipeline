@@ -1,0 +1,313 @@
+{
+  "facet": "gregariousness",
+  "facet_id": "extraversion_gregariousness",
+  "neo_code": "E2",
+  "definition": "喜欢与他人相处，主动寻求社交接触和群体活动。核心是 preference for and active seeking of social contact，不等同于果断性 (E3)、热情性 (E1) 或积极情感 (E6)。",
+  "high_pole": "主动寻求社交机会，喜欢身处人群之中，偏好多人活动",
+  "low_pole": "偏好独处或小范围社交，不主动寻求大量社交接触",
+  "curation_notes": {
+    "curated_from": "LLM Stage 2 output (6 families: EF01-EF06)",
+    "curated_to": "3 families (2 stable + 1 provisional)",
+    "key_issue": "LLM clustering mixed surface domains (travel, learning, fatigue) with underlying evidence mechanisms. EF03/EF04/EF05/EF06 describe situation conditions, not distinct psychological mechanisms.",
+    "compression_logic": "Evidence Families should describe cross-situationally stable psychological-behavioral differences. Situation conditions (free time, fatigue, non-mandatory setting) are trait-activating cues, not separate evidence. An item about 'choosing group training over solo training' and an item about 'joining a funeral gathering' share the same underlying mechanism (preferring social contact when both options are viable) but differ in the surface condition that activates it.",
+    "rejected_families": {
+      "EF06_旅行社交方式偏好": "Only 1 item, construct purity low. The mechanism ('joining a tour group vs exploring alone') is already covered by CEF01 (扩大接触范围) and the situation condition is merely the travel domain.",
+      "EF03/EF04/EF05_as_separate_families": "These describe situation conditions (learning context, fatigue state, spontaneous opportunity) that moderate trait expression, not distinct psychological mechanisms. The evidence propositions underlying them are subsumed by CEF01 and CEF02."
+    },
+    "situation_conditions_extracted": [
+      "非强制性（可自由选择社交或独处）— EF05, EF03, EF02 items",
+      "存在陌生人或半陌生人 — EF01 items",
+      "身体疲劳或不适 — EF04 items",
+      "存在轻微成本（时间/精力/金钱）— EF04, EF05 items",
+      "学习或工作环境中嵌入社交机会 — EF03 items"
+    ]
+  },
+  "evidence_library": [
+    {
+      "family_id": "GEF01",
+      "family_name": "主动扩大社会接触范围与规模",
+      "definition": "在可自由选择社交规模的情境中，倾向于选择包含更多人、更多陌生人或更大群体的社交安排，而非维持小范围熟人圈或独处。",
+      "high_trait_evidence": "主动选择更大规模、包含更多陌生人的社交环境，主动欢迎他人加入自己的社交圈。",
+      "low_trait_evidence": "偏好维持小范围熟人圈或独处，对扩大社交圈不感兴趣或感到不适。",
+      "supporting_item_ids": [
+        "gregariousness_02",
+        "gregariousness_03",
+        "gregariousness_04",
+        "gregariousness_05",
+        "gregariousness_13",
+        "gregariousness_14",
+        "gregariousness_16",
+        "gregariousness_20",
+        "gregariousness_22",
+        "gregariousness_10",
+        "gregariousness_18"
+      ],
+      "support_count": 11,
+      "status": "stable",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "E1: 热情性",
+        "E3: 果断性",
+        "N4: 自我意识/社交焦虑"
+      ],
+      "boundary_condition": "仅适用于非强制性的社交规模选择。不适用于：被分配的工作团队规模、家庭聚会等有社会义务的情境、涉及安全风险的陌生人接触（如深夜单独场合）。高乐群不能写成'毫无选择性地接近任何人'——必须是'在合理范围内偏好更大的社交圈'。低乐群不能写成'社交恐惧或厌恶他人'——必须是'满足于小圈子'。",
+      "alternative_explanations": [
+        "社交焦虑 (N4) 可能导致回避大规模社交，而非低乐群",
+        "对特定活动的兴趣（如喜欢足球才去公共观看）可能驱动选择",
+        "果断性 (E3) 可能驱动主动邀请他人加入的行为"
+      ],
+      "typical_high_manifestations": [
+        "选择去人多的大型公共活动而非在家观看",
+        "主动与聚会中的陌生人交谈",
+        "欢迎朋友带更多人来参加活动",
+        "在自由时间选择外出结识新朋友",
+        "主动加入非正式的群体聚会"
+      ],
+      "typical_low_manifestations": [
+        "选择与少数熟人一起或独自在家",
+        "在聚会中主要与认识的人交谈",
+        "对方带陌生人来时礼貌但不热衷",
+        "在自由时间选择独处活动",
+        "回避或婉拒非正式社交机会"
+      ],
+      "common_trait_activating_cues": [
+        "可自由选择的社交规模",
+        "存在陌生人或半陌生人",
+        "非强制性的社交机会",
+        "自由支配的时间"
+      ],
+      "coverage_note": "此 family 覆盖了原 LLM 输出中的 EF01（9题）、EF05（2题）、EF03 部分、EF06 部分。合并依据：这些题目共享同一心理机制——'在可选范围内偏好更大的社交接触面'——表面情境（庆祝活动/自由时间/学习/旅行）只是激活条件的不同。"
+    },
+    {
+      "family_id": "GEF02",
+      "family_name": "偏好高社会接触密度的物理环境",
+      "definition": "在可自由选择物理环境的情境中，倾向于选择人多、热闹、社交密集的场所，而非安静、人少、低社交密度的环境。",
+      "high_trait_evidence": "偏好热闹、繁忙、有多人同时在场的高密度环境，即使独处效率可能更高或更安静。",
+      "low_trait_evidence": "偏好安静、人少的环境，对拥挤或嘈杂感到烦躁或不适。",
+      "supporting_item_ids": [
+        "gregariousness_07",
+        "gregariousness_08",
+        "gregariousness_12",
+        "gregariousness_15",
+        "gregariousness_17",
+        "gregariousness_21"
+      ],
+      "support_count": 6,
+      "status": "stable",
+      "construct_purity": "medium",
+      "competing_facets": [
+        "N4: 自我意识/社交焦虑",
+        "E1: 热情性"
+      ],
+      "boundary_condition": "仅适用于同等功能/成本下的环境选择。不适用于：工作必需的办公环境、经济能力限制的居住选择、安全考虑决定的环境。高乐群不能写成'完全无法独处或安静工作'。低乐群不能写成'社恐或恐旷症'。区分 GEF01 与 GEF02：GEF01 关心'和谁在一起'（人际规模），GEF02 关心'在什么样的环境中'（物理密度）。两者相关但不完全相同——一个人可能喜欢很多人但偏好安静环境，或反之。",
+      "alternative_explanations": [
+        "对噪音/拥挤的生理敏感度",
+        "经济因素（租金差异）",
+        "对工作效率或隐私的实际需求"
+      ],
+      "typical_high_manifestations": [
+        "选择住在市中心因为喜欢人多",
+        "偏好开放式办公室或多人共享空间",
+        "选择热闹的度假目的地或餐厅",
+        "在火车上选择靠近他人的座位"
+      ],
+      "typical_low_manifestations": [
+        "选择安静社区的独立公寓",
+        "偏好独立办公空间",
+        "选择僻静的度假公寓或安静餐厅",
+        "寻找不受干扰的座位或空间"
+      ],
+      "common_trait_activating_cues": [
+        "可自由选择的物理环境",
+        "环境社交密度差异明显",
+        "同等功能或成本"
+      ],
+      "coverage_note": "此 family 对应原 LLM 输出中的 EF02（6题）。与 GEF01 区分：GEF01 是关于人际接触范围的选择（跟多少人互动），GEF02 是关于环境密度的偏好（在多热闹的地方待着）。"
+    },
+    {
+      "family_id": "GEF03",
+      "family_name": "在存在轻微成本时仍维持社会接触倾向",
+      "definition": "当寻求社交接触需要克服轻微成本（如身体疲劳、需要额外行动、打破原有计划）时，仍倾向于选择社交而非回避。",
+      "high_trait_evidence": "即使存在轻微障碍（疲惫、不便、需要主动行动），仍保持社交寻求倾向。",
+      "low_trait_evidence": "存在轻微成本时优先舒适或便利，放弃社交机会。",
+      "supporting_item_ids": [
+        "gregariousness_09",
+        "gregariousness_11",
+        "gregariousness_01",
+        "gregariousness_06"
+      ],
+      "support_count": 4,
+      "status": "provisional",
+      "construct_purity": "low",
+      "competing_facets": [
+        "E4: 活动性",
+        "E6: 积极情感",
+        "N4: 自我意识"
+      ],
+      "boundary_condition": "关键约束：成本必须是轻微的、个人可控的。不适用于：严重疾病、重大财务成本、安全风险。此 family 的 construct purity 标记为 low，因为'在疲劳时仍社交'可能更反映活动性 (E4) 或积极情感 (E6) 而非纯粹的乐群偏好。需更多证据才能确认为稳定的乐群 evidence。高乐群不能写成'不顾身体健康强迫社交'。低乐群不能写成'懒惰或缺乏活力'。",
+      "alternative_explanations": [
+        "活动性和精力水平 (E4) 可能完全解释疲劳时的社交选择",
+        "积极情感 (E6) 高的人可能在各种状态下都更想社交",
+        "社交焦虑 (N4) 可能表现为'生病时不想见人'",
+        "对具体关系质量的评估（如'生病时只想见亲近的人'是正常的，不反映乐群水平）"
+      ],
+      "typical_high_manifestations": [
+        "疲惫时仍主动联系朋友见面",
+        "身体不适但无传染性时邀请他人来访",
+        "在培训/学习中选择群体方式而非独自方式"
+      ],
+      "typical_low_manifestations": [
+        "疲惫时选择与伴侣或家人安静相处",
+        "身体不适时选择独处",
+        "在培训/学习中选择独自方式"
+      ],
+      "common_trait_activating_cues": [
+        "身体或精神疲惫但非严重疾病",
+        "社交需要额外行动或打破舒适状态",
+        "存在独处/小圈的合理替代"
+      ],
+      "coverage_note": "此 family 合并了原 LLM 输出中的 EF04（2题）和 EF03（2题）。标记为 provisional + low purity 的原因：1) '疲惫时社交'和'选择团体培训'可能不是同一心理机制；2) 活动性 (E4) 是强有力的替代解释；3) 仅4题支持且部分有污染风险。建议在后续生成中限制此 family 的配额，不与其他两个 stable family 等权重使用。"
+    }
+  ],
+  "item_evidence_mapping": {
+    "gregariousness_01": {
+      "primary_family": "GEF03",
+      "secondary_family": null,
+      "status": "provisional",
+      "note": "EF03 — 学习情境只是条件，核心是'在同等功能下偏好社交方式'"
+    },
+    "gregariousness_02": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_03": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_04": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_05": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_06": {
+      "primary_family": "GEF03",
+      "secondary_family": null,
+      "status": "provisional",
+      "note": "EF03 — 同上"
+    },
+    "gregariousness_07": {
+      "primary_family": "GEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_08": {
+      "primary_family": "GEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_09": {
+      "primary_family": "GEF03",
+      "secondary_family": null,
+      "status": "provisional",
+      "note": "EF04 — 疲劳是成本条件，核心仍是'是否仍寻求社交'"
+    },
+    "gregariousness_10": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "EF05 — 葬礼后聚会只是表面情境，核心是'非强制社交机会中是否主动融入'"
+    },
+    "gregariousness_11": {
+      "primary_family": "GEF03",
+      "secondary_family": null,
+      "status": "provisional",
+      "note": "EF04 — 同上"
+    },
+    "gregariousness_12": {
+      "primary_family": "GEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_13": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_14": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_15": {
+      "primary_family": "GEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_16": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_17": {
+      "primary_family": "GEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_18": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core",
+      "note": "EF05 — 火车上交谈只是表面情境"
+    },
+    "gregariousness_19": {
+      "primary_family": null,
+      "secondary_family": null,
+      "status": "rejected",
+      "reason": "LLM EF06 — 仅1题、construct purity low。'加入旅游团 vs 独自探索'的核心机制已被 GEF01 覆盖。旅行只是表面 domain。"
+    },
+    "gregariousness_20": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_21": {
+      "primary_family": "GEF02",
+      "secondary_family": null,
+      "status": "core"
+    },
+    "gregariousness_22": {
+      "primary_family": "GEF01",
+      "secondary_family": null,
+      "status": "core"
+    }
+  },
+  "coverage_summary": {
+    "total_items": 22,
+    "core_items": 17,
+    "provisional_items": 4,
+    "rejected_items": 1,
+    "stable_families": 2,
+    "provisional_families": 1,
+    "overrepresented": "GEF01 (11题) — 超过半数题目集中在'扩大社交规模'这一机制上",
+    "underrepresented": "GEF03 (4题, provisional, low purity) — 成本条件下的社交维持证据不足且不够纯",
+    "llm_output_problem_diagnosed": "LLM 的 EF03/EF04/EF05/EF06 将情境条件（学习、旅行、疲劳、非正式机会）误识别为独立的 evidence mechanism。实际上它们共享 GEF01 或 GEF03 的心理机制，只是 trait-activating cue 不同。",
+    "hypothesized_construct_gaps": [
+      "可能存在覆盖不足：Mussel 22题中缺乏对'主动发起社交活动'（而非在已有活动中选择社交规模）的测量。GEF01 的11题全部涉及'面对已有选项时选择更大的社交规模'，没有一题涉及'主动组织聚会'或'主动联系他人发起社交'。",
+      "可能存在覆盖不足：缺乏对'社交频率偏好'（如每天 vs 每周社交）的测量，多数题目聚焦于单次选择。",
+      "可能存在覆盖不足：缺乏对低乐群者的'满足于独处'（contentment with solitude）的正面测量——多数题目的低选项是'回避大规模社交'而非'享受独处'。"
+    ],
+    "hypothesized_gaps_disclaimer": "以上 hypothesized gaps 不能直接进入 Evidence Library。它们仅标记原题的覆盖盲区，用于后续判断是否需要从其他同 facet 量表（如 IPIP-NEO E2、BFI-2 Sociability）补充 evidence。",
+    "items_with_dual_assignment": 0
+  },
+  "mapping_convention": {
+    "supporting_item_ids": "?? evidence family ???????????????????",
+    "item_evidence_mapping": "??????????????????????????????????"
+  }
+}

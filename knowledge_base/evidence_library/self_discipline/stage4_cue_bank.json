@@ -1,0 +1,151 @@
+{
+  "facet": "self_discipline",
+  "cues": [
+    {
+      "cue_id": "C01",
+      "description": "存在即时、有吸引力的替代活动（如娱乐、社交、休息）与已承诺或必要的任务之间的冲突",
+      "linked_evidence_families": [
+        "EF01",
+        "EF02",
+        "EF03",
+        "EF04",
+        "EF05",
+        "EF06",
+        "EF07"
+      ],
+      "source_item_ids": [
+        "self_discipline_01",
+        "self_discipline_02",
+        "self_discipline_04",
+        "self_discipline_06",
+        "self_discipline_07",
+        "self_discipline_08",
+        "self_discipline_13",
+        "self_discipline_15",
+        "self_discipline_18",
+        "self_discipline_19",
+        "self_discipline_20",
+        "self_discipline_21",
+        "self_discipline_03",
+        "self_discipline_14",
+        "self_discipline_16",
+        "self_discipline_09",
+        "self_discipline_12",
+        "self_discipline_22",
+        "self_discipline_10",
+        "self_discipline_11",
+        "self_discipline_05",
+        "self_discipline_17"
+      ],
+      "cue_category": "已有投入与诱惑冲突"
+    },
+    {
+      "cue_id": "C02",
+      "description": "疲劳或舒适状态（如饱腹、疲倦、已休息）",
+      "linked_evidence_families": [
+        "EF01",
+        "EF02",
+        "EF07"
+      ],
+      "source_item_ids": [
+        "self_discipline_01",
+        "self_discipline_07",
+        "self_discipline_03",
+        "self_discipline_17"
+      ],
+      "cue_category": "已有投入与诱惑冲突"
+    },
+    {
+      "cue_id": "C03",
+      "description": "任务非紧急但重要，或没有外部强制截止日期或监督",
+      "linked_evidence_families": [
+        "EF01",
+        "EF02",
+        "EF05",
+        "EF07"
+      ],
+      "source_item_ids": [
+        "self_discipline_08",
+        "self_discipline_03",
+        "self_discipline_14",
+        "self_discipline_11",
+        "self_discipline_17"
+      ],
+      "cue_category": "存在未知信息"
+    },
+    {
+      "cue_id": "C04",
+      "description": "存在社交情境中的即时诱惑（如朋友邀请、社交活动）",
+      "linked_evidence_families": [
+        "EF01",
+        "EF03"
+      ],
+      "source_item_ids": [
+        "self_discipline_02",
+        "self_discipline_06",
+        "self_discipline_13",
+        "self_discipline_19",
+        "self_discipline_20",
+        "self_discipline_09"
+      ],
+      "cue_category": "存在社交接触机会"
+    },
+    {
+      "cue_id": "C05",
+      "description": "已承诺的自我约束目标（如节食、戒甜食）与即时诱惑冲突",
+      "linked_evidence_families": [
+        "EF03"
+      ],
+      "source_item_ids": [
+        "self_discipline_09",
+        "self_discipline_12",
+        "self_discipline_22"
+      ],
+      "cue_category": "已有投入与诱惑冲突"
+    },
+    {
+      "cue_id": "C06",
+      "description": "需要牺牲即时愉悦（如休闲、舒适）以换取长期目标",
+      "linked_evidence_families": [
+        "EF04"
+      ],
+      "source_item_ids": [
+        "self_discipline_10"
+      ],
+      "cue_category": "已有投入与诱惑冲突"
+    },
+    {
+      "cue_id": "C07",
+      "description": "出现非必须立即解决的分心事件（如手机故障）且任务紧迫性降低",
+      "linked_evidence_families": [
+        "EF05"
+      ],
+      "source_item_ids": [
+        "self_discipline_11"
+      ],
+      "cue_category": "存在未知信息"
+    },
+    {
+      "cue_id": "C08",
+      "description": "一系列不愉快但必要的任务，且已安排固定时间块",
+      "linked_evidence_families": [
+        "EF06"
+      ],
+      "source_item_ids": [
+        "self_discipline_05"
+      ],
+      "cue_category": "已有投入与诱惑冲突"
+    },
+    {
+      "cue_id": "C09",
+      "description": "已投入部分时间但发现任务本身令人不愉快且缺乏内在吸引力",
+      "linked_evidence_families": [
+        "EF02"
+      ],
+      "source_item_ids": [
+        "self_discipline_16"
+      ],
+      "cue_category": "已有投入与诱惑冲突"
+    }
+  ]
+}
