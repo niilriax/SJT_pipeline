@@ -15,6 +15,7 @@ RouteType = Literal[
     "analyze_psychometrics",         # 计算项目和测验统计指标
     "select_items",                  # 筛选题目并检查筛选后的蓝图覆盖度
     "confirm_psychometric_repair",   # 用户确认当前单题诊断后再执行返修
+    "plateau_gap_decision",          # 平台期收卷存在蓝图缺口时用户处置缺口单元
     "psychometric_repair_batch",     # 并发执行整批单题修改—复测闭环
     "assemble_test",                 # 根据筛选结果组卷
     "review_test",                   # 对组卷后的完整测验进行综合审核

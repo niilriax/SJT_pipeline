@@ -10,6 +10,7 @@ from sjt_system.workflow.interaction_nodes import (
     automatic_approval_node,
     commit_node,
     item_development_mode_selection_node,
+    plateau_gap_decision_node,
     prepare_regeneration_node,
     stop_node,
     post_virtual_response_decision_node,
@@ -28,6 +29,7 @@ from sjt_system.workflow.routes import (
     route_after_commit,
     route_after_execute,
     route_after_item_resolution,
+    route_after_plateau_gap_decision,
     route_after_prepare_item_review,
     route_after_router,
     route_after_post_simulation_review,
@@ -57,6 +59,10 @@ def build_sjt_graph(checkpointer=None):
         "psychometric_repair_confirmation",
         psychometric_repair_confirmation_node,
     )
+    builder.add_node(
+        "plateau_gap_decision",
+        plateau_gap_decision_node,
+    )
     builder.add_node("approval", approval_node)
     builder.add_node("automatic_approval", automatic_approval_node)
     builder.add_node("commit", commit_node)
@@ -76,6 +82,7 @@ def build_sjt_graph(checkpointer=None):
             ),
             "select_virtual_sample": "virtual_sample_selection",
             "confirm_psychometric_repair": "psychometric_repair_confirmation",
+            "plateau_gap_decision": "plateau_gap_decision",
             "execute": "execute",
             "end": END,
         },
@@ -125,6 +132,11 @@ def build_sjt_graph(checkpointer=None):
     builder.add_conditional_edges(
         "psychometric_repair_confirmation",
         route_after_psychometric_repair_confirmation,
+        {"router": "router", "end": END},
+    )
+    builder.add_conditional_edges(
+        "plateau_gap_decision",
+        route_after_plateau_gap_decision,
         {"router": "router", "end": END},
     )
     builder.add_conditional_edges(

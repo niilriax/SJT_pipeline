@@ -19,6 +19,11 @@ def route_after_router(state: PSJTState) -> str:
         return "end"
     if (
         state.get("route")
+        and state["route"]["next_action"] == "plateau_gap_decision"
+    ):
+        return "plateau_gap_decision"
+    if (
+        state.get("route")
         and state["route"]["next_action"] == "confirm_psychometric_repair"
     ):
         return "confirm_psychometric_repair"
@@ -126,6 +131,10 @@ def route_after_post_simulation_review(state: PSJTState) -> str:
 
 
 def route_after_psychometric_repair_confirmation(state: PSJTState) -> str:
+    return "end" if state.get("status") == "stopped" else "router"
+
+
+def route_after_plateau_gap_decision(state: PSJTState) -> str:
     return "end" if state.get("status") == "stopped" else "router"
 
 

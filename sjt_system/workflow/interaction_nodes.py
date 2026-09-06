@@ -928,6 +928,173 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
     return update
 
 
+def plateau_gap_decision_node(state: PSJTState) -> dict:
+    """Plateau close-out reached a blueprint gap: ask the user how to fill it.
+
+    Eligible candidates are content-reviewed items that are not pending SME or
+    eliminated. The user may pick a candidate as-is (provisional fill) or
+    manually rewrite one, then the next selection pass consumes the fill and
+    proceeds to assembly as a developmental version.
+    """
+
+    pending = state.get("plateau_gap_decision")
+    if not isinstance(pending, Mapping) or pending.get("status") != "pending":
+        raise ValueError("当前没有待处置的平台期蓝图缺口清单")
+    gap_cells = [
+        dict(cell)
+        for cell in pending.get("gap_cells") or []
+        if isinstance(cell, Mapping)
+    ]
+    dispositions = state.get("item_final_dispositions") or {}
+
+    def _eligible(item_id: str) -> bool:
+        dis = dispositions.get(item_id)
+        return not (
+            isinstance(dis, Mapping)
+            and dis.get("status") in {"pending_sme_review", "eliminated"}
+        )
+
+    frozen_index = {
+        str(item.get("item_id")): item
+        for item in state.get("frozen_item_bank") or []
+        if isinstance(item, Mapping) and item.get("item_id")
+    }
+    payload: dict[str, Any] = {
+        "type": "plateau_gap_decision",
+        "summary": (
+            "整卷质量已到平台期，但仍有蓝图单元没有可正式入卷的题目。"
+            "请对每个缺口单元处理：直接点选一道候选（开发版补位），"
+            "或手动修改一道候选后再收卷。待SME/已淘汰的候选不可选。"
+        ),
+        "gap_cells": gap_cells,
+        "available_modes": ["pick", "manual", "stop"],
+    }
+    while True:
+        raw = interrupt(payload)
+        if not isinstance(raw, Mapping) or raw.get("decision") not in {
+            "resolve",
+            "stop",
+        }:
+            payload = {
+                **payload,
+                "validation_error": "请提交 resolve 或 stop",
+            }
+            continue
+        if raw.get("decision") == "stop":
+            break
+        resolutions = raw.get("resolutions")
+        if not isinstance(resolutions, list) or not resolutions:
+            payload = {
+                **payload,
+                "validation_error": "请为每个缺口单元选择候选，或选择停止",
+            }
+            continue
+        fills: dict[str, Any] = {}
+        errors: list[str] = []
+        for res in resolutions:
+            if not isinstance(res, Mapping):
+                errors.append("决议格式无效")
+                break
+            cell_id = str(res.get("cell_id") or "")
+            cell = next(
+                (
+                    row
+                    for row in gap_cells
+                    if str(row.get("blueprint_cell_id")) == cell_id
+                ),
+                None,
+            )
+            if cell is None:
+                errors.append(f"未知缺口单元 {cell_id}")
+                break
+            if cell_id in fills:
+                errors.append(f"单元 {cell_id} 重复处置")
+                break
+            item_id = str(res.get("item_id") or "")
+            candidate = next(
+                (
+                    row
+                    for row in cell.get("candidates") or []
+                    if str(row.get("item_id")) == item_id
+                ),
+                None,
+            )
+            if candidate is None or not candidate.get("eligible"):
+                errors.append(f"单元 {cell_id} 的候选 {item_id} 不可选")
+                break
+            base_item = frozen_index.get(item_id)
+            if base_item is None:
+                errors.append(f"找不到候选题目 {item_id}")
+                break
+            mode = str(res.get("mode") or "pick")
+            if mode == "manual":
+                try:
+                    edited_item = _manual_psychometric_item(
+                        base_item,
+                        res.get("manual_item"),
+                    )
+                except ValueError as exc:
+                    errors.append(str(exc))
+                    break
+                fills[cell_id] = {
+                    "item_id": item_id,
+                    "mode": "manual",
+                    "edited_item": edited_item,
+                }
+            elif mode == "pick":
+                fills[cell_id] = {"item_id": item_id, "mode": "pick"}
+            else:
+                errors.append(f"单元 {cell_id} 的模式无效")
+                break
+        if not errors:
+            unresolved = [
+                str(cell.get("blueprint_cell_id"))
+                for cell in gap_cells
+                if str(cell.get("blueprint_cell_id")) not in fills
+            ]
+            if unresolved:
+                errors.append("以下单元尚未处置：" + "、".join(unresolved))
+        if errors:
+            payload = {
+                **payload,
+                "validation_error": "；".join(errors),
+            }
+            continue
+        break
+
+    history = [
+        *state.get("execution_history", []),
+        {
+            "event_id": (
+                f'{state.get("run_id", "unknown")}:'
+                f'{state.get("step_count", 0)}:plateau_gap_decision:completed'
+            ),
+            "run_id": state.get("run_id"),
+            "step": state.get("step_count", 0),
+            "node": "plateau_gap_decision",
+            "action": (
+                "stop" if raw.get("decision") == "stop" else "resolve_gap"
+            ),
+            "event_type": "completed",
+            "recorded_at": utc_timestamp(),
+            "reason": (
+                "用户选择暂停保存"
+                if raw.get("decision") == "stop"
+                else "用户已处置全部平台期缺口单元"
+            ),
+            "approval_source": "user",
+        },
+    ]
+    if raw.get("decision") == "stop":
+        return {"status": "stopped", "execution_history": history}
+    return {
+        "plateau_gap_fills": fills,
+        "plateau_gap_decision": None,
+        "selection_results": None,
+        "execution_history": history,
+    }
+
+
 def automatic_approval_node(state: PSJTState) -> dict:
     """为自动模式下已通过执行校验的题目动作生成系统批准决策。"""
 

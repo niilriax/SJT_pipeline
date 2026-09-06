@@ -633,6 +633,210 @@ async def execute_virtual_simulation(state: PSJTState) -> dict[str, Any]:
     }
 
 
+def _frozen_item_index(state: Mapping[str, Any]) -> dict[str, dict[str, Any]]:
+    """Index the current frozen bank by item_id."""
+
+    return {
+        str(item.get("item_id")): item
+        for item in (state.get("frozen_item_bank") or [])
+        if isinstance(item, Mapping) and item.get("item_id")
+    }
+
+
+def _is_plateau_gap_eligible(disposition: Mapping[str, Any]) -> bool:
+    """A candidate may be offered for A/B fill only after content review.
+
+    Items still awaiting SME review or already eliminated stay outside the
+    two-choice resolution and keep requiring a separate human decision.
+    """
+
+    return (
+        not isinstance(disposition, Mapping)
+        or disposition.get("status") not in {"pending_sme_review", "eliminated"}
+    )
+
+
+def build_plateau_gap_decision_payload(
+    state: Mapping[str, Any],
+    blueprint_coverage: Mapping[str, Any],
+) -> dict[str, Any] | None:
+    """List, for every uncovered blueprint cell, its resolvable candidates."""
+
+    gap_cells = [
+        row
+        for row in blueprint_coverage.get("cells") or []
+        if isinstance(row, Mapping) and not row.get("passed")
+    ]
+    if not gap_cells:
+        return None
+    items = _frozen_item_index(state)
+    statistics = state.get("item_statistics") or {}
+    dispositions = state.get("item_final_dispositions") or {}
+    output_cells: list[dict[str, Any]] = []
+    for cell in gap_cells:
+        cell_id = str(cell.get("blueprint_cell_id") or "")
+        candidates: list[dict[str, Any]] = []
+        for item in items.values():
+            if str(item.get("blueprint_cell_id") or "") != cell_id:
+                continue
+            item_id = str(item.get("item_id") or "")
+            dis = dispositions.get(item_id) or {}
+            quality = (statistics.get(item_id) or {}).get("quality_evaluation") or {}
+            candidates.append(
+                {
+                    "item_id": item_id,
+                    "version": item.get("version"),
+                    "disposition_status": str(dis.get("status") or ""),
+                    "eligible": _is_plateau_gap_eligible(dis),
+                    "failed_gates": quality.get("failed_gates") or [],
+                    "recommendation": quality.get("recommendation"),
+                    "facet_citc": quality.get("facet_citc"),
+                    "difficulty": (statistics.get(item_id) or {}).get(
+                        "difficulty"
+                    ),
+                    "scenario": item.get("scenario"),
+                    "response_options": [
+                        {
+                            "option_id": option.get("option_id"),
+                            "text": option.get("text"),
+                        }
+                        for option in (item.get("response_options") or [])
+                        if isinstance(option, Mapping)
+                        and option.get("option_id")
+                    ],
+                }
+            )
+        output_cells.append(
+            {
+                "blueprint_cell_id": cell_id,
+                "planned_retention_count": cell.get("planned_retention_count"),
+                "missing_count": cell.get("missing_count"),
+                "candidates": candidates,
+            }
+        )
+    return {"status": "pending", "gap_cells": output_cells}
+
+
+def apply_plateau_gap_fills(
+    state: Mapping[str, Any],
+    fills: Mapping[str, Any],
+    retained: list[dict[str, Any]],
+    selected_items: list[dict[str, Any]],
+    blueprint_coverage: Mapping[str, Any],
+    dispositions: Mapping[str, Any],
+    reasons: Mapping[str, Any],
+    provisional_flags: Mapping[str, Any],
+) -> tuple[
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    dict[str, Any],
+    dict[str, Any],
+    dict[str, Any],
+    dict[str, Any],
+]:
+    """Promote user-selected plateau-gap candidates as provisional fills.
+
+    Only content-reviewed candidates (not SME/eliminated) are accepted. A
+    manually edited payload replaces the frozen text; a plain pick reuses the
+    frozen candidate. Every promoted item is flagged provisional so the final
+    report is produced as a developmental version.
+    """
+
+    retained_out = [deepcopy(dict(item)) for item in retained]
+    selected_out = [deepcopy(dict(item)) for item in selected_items]
+    selected_ids = {
+        str(item.get("item_id")) for item in selected_out if item.get("item_id")
+    }
+    retained_ids = {
+        str(item.get("item_id")) for item in retained_out if item.get("item_id")
+    }
+    items = _frozen_item_index(state)
+    dispositions_out = {
+        str(key): deepcopy(dict(value))
+        for key, value in dispositions.items()
+        if isinstance(value, Mapping)
+    }
+    reasons_out = {
+        str(key): deepcopy(value) for key, value in reasons.items()
+    }
+    flags_out = {
+        str(key): deepcopy(dict(value))
+        for key, value in provisional_flags.items()
+        if isinstance(value, Mapping)
+    }
+    coverage_cells = [
+        deepcopy(dict(cell))
+        for cell in blueprint_coverage.get("cells") or []
+        if isinstance(cell, Mapping)
+    ]
+    by_cell = {str(cell["blueprint_cell_id"]): cell for cell in coverage_cells}
+    for cell_id, fill in fills.items():
+        if not isinstance(fill, Mapping):
+            continue
+        cell = by_cell.get(str(cell_id))
+        if cell is None or cell.get("passed"):
+            continue
+        item_id = str(fill.get("item_id") or "")
+        if item_id not in items or item_id in selected_ids:
+            continue
+        if not _is_plateau_gap_eligible(
+            dispositions_out.get(item_id) or {}
+        ):
+            continue
+        mode = str(fill.get("mode") or "pick")
+        if mode == "manual" and isinstance(fill.get("edited_item"), Mapping):
+            chosen = deepcopy(dict(fill["edited_item"]))
+        else:
+            chosen = deepcopy(dict(items[item_id]))
+        selected_out.append(chosen)
+        selected_ids.add(item_id)
+        if item_id not in retained_ids:
+            retained_out.append(deepcopy(dict(chosen)))
+            retained_ids.add(item_id)
+        dispositions_out[item_id] = {
+            "status": "provisional_plateau_fill",
+            "item_version": chosen.get("version"),
+            "mode": mode,
+            "reason": "user_resolved_plateau_gap",
+        }
+        reasons_out[item_id] = (
+            "平台期补位：用户选定该题并以开发版证据进入正式卷。"
+            if mode == "pick"
+            else "平台期补位：用户手动修改后以开发版证据进入正式卷。"
+        )
+        flags_out[item_id] = {
+            "reason": "plateau_gap_provisional_fill",
+            "mode": mode,
+            "item_version": chosen.get("version"),
+        }
+    for cell in coverage_cells:
+        cell_id = str(cell["blueprint_cell_id"])
+        cell["selected_count"] = sum(
+            1
+            for item in selected_out
+            if str(item.get("blueprint_cell_id") or "") == cell_id
+        )
+        planned = int(cell.get("planned_retention_count") or 0)
+        cell["passed"] = bool(
+            cell["selected_count"] >= planned
+        )
+    coverage_out = {
+        **dict(blueprint_coverage),
+        "cells": coverage_cells,
+        "passed": all(bool(cell.get("passed")) for cell in coverage_cells),
+        "selected_total": len(selected_out),
+        "available_total": len(retained_out),
+    }
+    return (
+        retained_out,
+        selected_out,
+        coverage_out,
+        dispositions_out,
+        reasons_out,
+        flags_out,
+    )
+
+
 async def execute_item_selection_with_diagnosis(
     state: PSJTState,
 ) -> dict[str, Any]:
@@ -1493,6 +1697,40 @@ async def execute_item_selection_with_diagnosis(
         )
         blueprint_coverage["selected_total"] = len(selected_items)
         blueprint_coverage["available_total"] = len(retained)
+    # Plateau auto-close must not silently proceed to assembly when a
+    # blueprint cell still has no usable formal item (e.g. every candidate is
+    # pending SME or eliminated).  When the user already provided resolutions
+    # (plateau_gap_fills), consume them as provisional developmental fills;
+    # otherwise pause and carry the resolvable candidate list so 2b can offer
+    # the manual-edit / pick interaction instead of run_test_assembly raising.
+    plateau_flags_update: dict[str, Any] | None = None
+    plateau_gap_decision: dict[str, Any] | None = None
+    if plateau_finalized and not blueprint_coverage.get("passed"):
+        fills = state.get("plateau_gap_fills") or {}
+        if fills:
+            (
+                retained,
+                selected_items,
+                blueprint_coverage,
+                dispositions,
+                reasons,
+                plateau_flags_update,
+            ) = apply_plateau_gap_fills(
+                state,
+                fills,
+                retained,
+                selected_items,
+                blueprint_coverage,
+                dispositions,
+                reasons,
+                state.get("provisional_item_flags") or {},
+            )
+        if not blueprint_coverage.get("passed"):
+            status = "awaiting_plateau_gap"
+            plateau_gap_decision = build_plateau_gap_decision_payload(
+                state,
+                blueprint_coverage,
+            )
     if provisional_iteration is not None:
         iteration_history = _upsert_iteration_record(
             iteration_history,
@@ -1531,6 +1769,13 @@ async def execute_item_selection_with_diagnosis(
                 "form_optimizer": form_optimizer,
             },
             "blueprint_coverage": blueprint_coverage,
+            "plateau_gap_decision": plateau_gap_decision,
+            "plateau_gap_fills": None,
+            "provisional_item_flags": (
+                plateau_flags_update
+                if plateau_flags_update is not None
+                else state.get("provisional_item_flags") or {}
+            ),
             "selection_reasons": reasons,
             "item_final_dispositions": dispositions,
             "locked_retained_item_versions": locked_versions,

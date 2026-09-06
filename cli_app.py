@@ -1313,6 +1313,110 @@ def prompt_user_decision(payload: dict) -> dict:
                 return {"decision": "stop"}
             print("请输入 1 或 2")
 
+    if payload.get("type") == "plateau_gap_decision":
+        print("\n===== 平台期收卷：蓝图缺口处置 =====")
+        print(payload.get("summary") or "")
+        gap_cells = payload.get("gap_cells") or []
+        resolutions: list[dict] = []
+        stopped = False
+        for index, cell in enumerate(gap_cells, start=1):
+            cell_id = cell.get("blueprint_cell_id")
+            candidates = cell.get("candidates") or []
+            eligible = [row for row in candidates if row.get("eligible")]
+            print(
+                f"\n[{index}/{len(gap_cells)}] 缺口单元 {cell_id}"
+                f"（需保留 {cell.get('planned_retention_count')} 题）"
+            )
+            for row in candidates:
+                tag = "" if row.get("eligible") else "（不可选：待SME/已淘汰）"
+                gates = "、".join(row.get("failed_gates") or []) or "无"
+                print(
+                    f"  - {row.get('item_id')} v{row.get('version')} "
+                    f"状态={row.get('disposition_status') or 'none'}{tag} "
+                    f"失败门槛={gates}"
+                )
+            if not eligible:
+                print("  该单元没有可选的 A/B 候选（都在等 SME/已淘汰）。")
+                print("  请选择停止，先人工处置待 SME 题后再恢复。")
+                stopped = True
+                break
+            while True:
+                cmd = input(
+                    f"  单元 {cell_id} 处理：输入候选 ID 直接补位；"
+                    "改:<ID> 手动修改；stop 停止："
+                ).strip()
+                if cmd.lower() == "stop":
+                    stopped = True
+                    break
+                manual = False
+                item_id = cmd
+                for prefix in ("改:", "改："):
+                    if cmd.startswith(prefix):
+                        manual = True
+                        item_id = cmd[len(prefix):].strip()
+                        break
+                if not manual:
+                    for prefix in ("pick:", "pick："):
+                        if cmd.startswith(prefix):
+                            item_id = cmd[len(prefix):].strip()
+                            break
+                candidate = next(
+                    (row for row in eligible if str(row.get("item_id")) == item_id),
+                    None,
+                )
+                if candidate is None:
+                    print("  请输入上面列出的、可选的候选 ID")
+                    continue
+                if manual:
+                    options = candidate.get("response_options") or []
+                    print(
+                        "  当前情境："
+                        + str(candidate.get("scenario") or "")
+                    )
+                    scenario = input("  新的情境文本：").strip()
+                    option_texts = {}
+                    for option in options:
+                        print(
+                            f"  当前选项 {option.get('option_id')}："
+                            f"{option.get('text')}"
+                        )
+                        option_texts[str(option.get("option_id"))] = input(
+                            f"  选项 {option.get('option_id')} 新文本："
+                        ).strip()
+                    resolutions.append(
+                        {
+                            "cell_id": cell_id,
+                            "item_id": item_id,
+                            "mode": "manual",
+                            "manual_item": {
+                                "scenario": scenario,
+                                "response_options": [
+                                    {
+                                        "option_id": option.get("option_id"),
+                                        "text": option_texts.get(
+                                            str(option.get("option_id")), ""
+                                        ),
+                                    }
+                                    for option in options
+                                ],
+                            },
+                        }
+                    )
+                else:
+                    resolutions.append(
+                        {
+                            "cell_id": cell_id,
+                            "item_id": item_id,
+                            "mode": "pick",
+                        }
+                    )
+                break
+            if stopped:
+                break
+        if stopped:
+            return {"decision": "stop"}
+        return {"decision": "resolve", "resolutions": resolutions}
+
     if payload.get("type") == "psychometric_repair_confirmation":
         print("\n===== 心理测量返修确认 =====")
         print(f"题目编号：{payload.get('item_id', '?')}")

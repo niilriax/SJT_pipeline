@@ -1652,6 +1652,128 @@ def _render_generic_approval(payload: Mapping[str, Any]) -> None:
         )
 
 
+def _render_plateau_gap_decision(payload: Mapping[str, Any]) -> None:
+    gap_cells = [
+        dict(row)
+        for row in payload.get("gap_cells") or []
+        if isinstance(row, Mapping)
+    ]
+    st.markdown(str(payload.get("summary") or ""))
+    unresolved_sme = False
+    for cell in gap_cells:
+        candidates = [
+            dict(row)
+            for row in cell.get("candidates") or []
+            if isinstance(row, Mapping)
+        ]
+        eligible = [row for row in candidates if row.get("eligible")]
+        if not eligible:
+            unresolved_sme = True
+    if unresolved_sme:
+        st.warning(
+            "存在没有 A/B 候选的缺口单元（候选都在待 SME/已淘汰）："
+            "请先人工处置这些单元，或选择暂停保存。"
+        )
+        if st.button(
+            "暂停保存",
+            type="secondary",
+            use_container_width=True,
+        ):
+            _submit_decision({"decision": "stop"})
+        return
+    with st.form("plateau_gap_decision"):
+        resolutions: list[dict] = []
+        choices = []
+        for index, cell in enumerate(gap_cells):
+            cell_id = str(cell.get("blueprint_cell_id") or f"cell{index}")
+            candidates = [
+                dict(row)
+                for row in cell.get("candidates") or []
+                if isinstance(row, Mapping)
+            ]
+            eligible = [row for row in candidates if row.get("eligible")]
+            st.markdown(
+                f"**缺口单元 {cell_id}**"
+                f"（需保留 {cell.get('planned_retention_count')} 题）"
+            )
+            if not eligible:
+                st.warning("无 A/B 候选")
+                continue
+            labels = {}
+            for row in eligible:
+                gates = "、".join(row.get("failed_gates") or []) or "无"
+                labels[
+                    f"{row.get('item_id')} v{row.get('version')}"
+                    f"（未过：{gates}）"
+                ] = row
+            default_label = next(iter(labels))
+            chosen = st.selectbox(
+                f"{cell_id} 候选",
+                list(labels),
+                key=f"pg_cand_{index}",
+            )
+            row = labels[chosen]
+            mode = st.radio(
+                f"{cell_id} 处理方式",
+                ["直接补位", "手动修改"],
+                key=f"pg_mode_{index}",
+                horizontal=True,
+            )
+            manual_item = None
+            if mode == "手动修改":
+                scenario = st.text_area(
+                    f"{cell_id} 新情境",
+                    value=str(row.get("scenario") or ""),
+                    key=f"pg_scenario_{index}",
+                )
+                option_texts = {}
+                for opt in row.get("response_options") or []:
+                    if not isinstance(opt, Mapping):
+                        continue
+                    option_id = str(opt.get("option_id") or "")
+                    option_texts[option_id] = st.text_area(
+                        f"选项 {option_id}",
+                        value=str(opt.get("text") or ""),
+                        key=f"pg_opt_{index}_{option_id}",
+                    )
+                manual_item = {
+                    "scenario": scenario,
+                    "response_options": [
+                        {
+                            "option_id": option_id,
+                            "text": text,
+                        }
+                        for option_id, text in option_texts.items()
+                    ],
+                }
+            choices.append(
+                {
+                    "cell_id": cell_id,
+                    "row": row,
+                    "mode": "pick" if mode == "直接补位" else "manual",
+                    "manual_item": manual_item,
+                }
+            )
+        submitted = st.form_submit_button(
+            "确认处置并收卷",
+            type="primary",
+            use_container_width=True,
+        )
+    if submitted:
+        for choice in choices:
+            resolutions.append(
+                {
+                    "cell_id": choice["cell_id"],
+                    "item_id": str(choice["row"]["item_id"]),
+                    "mode": choice["mode"],
+                    **({"manual_item": choice["manual_item"]}
+                      if choice["manual_item"] is not None
+                      else {}),
+                }
+            )
+        _submit_decision({"decision": "resolve", "resolutions": resolutions})
+
+
 def _render_interrupt() -> None:
     payload = st.session_state.sjt_interrupt
     if not isinstance(payload, Mapping):
@@ -1669,6 +1791,8 @@ def _render_interrupt() -> None:
             _render_post_virtual_response_decision(payload)
         elif interaction_type == "psychometric_repair_confirmation":
             _render_psychometric_repair_confirmation(payload)
+        elif interaction_type == "plateau_gap_decision":
+            _render_plateau_gap_decision(payload)
         else:
             _render_generic_approval(payload)
 

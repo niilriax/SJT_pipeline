@@ -488,6 +488,49 @@ async def router_node(state: PSJTState) -> dict:
                 },
             ],
         }
+    elif selection_status == "awaiting_plateau_gap":
+        pending = state.get("plateau_gap_decision")
+        if (
+            isinstance(pending, Mapping)
+            and pending.get("status") == "pending"
+        ):
+            raw_decision = {
+                "next_action": "plateau_gap_decision",
+                "reason": (
+                    "平台期收卷存在蓝图缺口，等待用户处置缺口单元"
+                    "（点选补位或手动修改）"
+                ),
+                "target_item_id": None,
+                "target_blueprint_cell_id": None,
+            }
+        else:
+            return {
+                "status": "stopped",
+                "route": {
+                    "next_action": "finish",
+                    "reason": "平台期收卷存在蓝图缺口，等待人工处置",
+                    "target_item_id": None,
+                    "target_blueprint_cell_id": None,
+                },
+                "execution_history": [
+                    *state.get("execution_history", []),
+                    {
+                        "event_id": (
+                            f'{state.get("run_id", "unknown")}:'
+                            f'{state.get("step_count", 0)}:awaiting_plateau_gap'
+                        ),
+                        "run_id": state.get("run_id"),
+                        "step": state.get("step_count", 0),
+                        "node": "router",
+                        "action": "awaiting_plateau_gap",
+                        "event_type": "paused",
+                        "recorded_at": utc_timestamp(),
+                        "reason": (
+                            "平台期收卷完成，但蓝图仍有缺口，等待人工处置"
+                        ),
+                    },
+                ],
+            }
     elif (
         selection_status == "fixed_blueprint_gap"
         and bool(retention_gaps)

@@ -262,15 +262,23 @@ def _validate_quality(
     source_recommendations: dict[str, str] = {}
     effective: dict[str, str] = {}
     warning_item_ids: list[str] = []
+    provisional_fill_item_ids: list[str] = []
     for item in items:
         item_id = str(item.get("item_id") or "")
         disposition = final_dispositions.get(item_id)
-        if (
-            not isinstance(disposition, Mapping)
-            or disposition.get("status") != "qualified_locked"
-        ):
+        disposition_status = (
+            disposition.get("status")
+            if isinstance(disposition, Mapping)
+            else None
+        )
+        if disposition_status not in {
+            "qualified_locked",
+            "provisional_plateau_fill",
+        }:
             raise ValueError(f"题目 {item_id} 缺少可入卷的最终状态")
-        status = str(disposition["status"])
+        if disposition_status == "provisional_plateau_fill":
+            provisional_fill_item_ids.append(item_id)
+        status = str(disposition_status)
         disposition_version = disposition.get("item_version")
         if (
             disposition_version is not None
@@ -285,12 +293,24 @@ def _validate_quality(
         )
         if disposition.get("monitoring_pass") is False:
             warning_item_ids.append(item_id)
+    state_flags = state.get("provisional_item_flags") or {}
+    fill_flags = {
+        item_id: state_flags.get(item_id)
+        for item_id in provisional_fill_item_ids
+        if isinstance(state_flags.get(item_id), Mapping)
+    }
     return {
-        "mode": "final_disposition",
-        "provisional": bool(warning_item_ids),
+        "mode": (
+            "developmental_override"
+            if provisional_fill_item_ids
+            else "final_disposition"
+        ),
+        "provisional": bool(
+            provisional_fill_item_ids or warning_item_ids
+        ),
         "non_retained_item_ids": [],
         "warning_item_ids": warning_item_ids,
-        "provisional_item_flags": {},
+        "provisional_item_flags": fill_flags,
         "recommendations": effective,
         "source_recommendations": source_recommendations,
         "final_dispositions": deepcopy(dict(final_dispositions)),
