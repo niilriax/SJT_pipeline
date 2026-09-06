@@ -13,6 +13,7 @@ from sjt_system.authoring.bank import (
 )
 from sjt_system.authoring.blueprint import select_next_blueprint_cell
 from sjt_system.authoring.context import select_item_specification
+from sjt_system.authoring.generation_plan import GENERATION_BLUEPRINT_VERSION
 from sjt_system.delivery.lifecycle import (
     evaluate_completion,
     psychometric_results_are_current,
@@ -97,6 +98,25 @@ def _psychometric_confirmation_is_approved(state: Mapping[str, Any]) -> bool:
         isinstance(confirmation, Mapping)
         and confirmation.get("decision") == "approve"
     )
+
+
+def _has_batchable_psychometric_repairs(state: Mapping[str, Any]) -> bool:
+    """Whether the diagnosed queue can be handed to parallel item workers."""
+
+    for entry in [
+        *(state.get("items_to_regenerate") or []),
+        *(state.get("items_to_revise") or []),
+    ]:
+        if not isinstance(entry, Mapping):
+            continue
+        advice = entry.get("atomic_repair_advice")
+        if (
+            isinstance(advice, Mapping)
+            and advice.get("decision") == "repair"
+            and advice.get("repair_tasks")
+        ):
+            return True
+    return False
 
 
 def _stage_psychometric_repair(
@@ -206,7 +226,10 @@ def _stage_psychometric_repair(
 
 def _blueprint_review_allows_item_generation(state: Mapping[str, Any]) -> bool:
     blueprint = state.get("blueprint")
-    return isinstance(blueprint, Mapping) and blueprint.get("version") == 7
+    return (
+        isinstance(blueprint, Mapping)
+        and blueprint.get("version") == GENERATION_BLUEPRINT_VERSION
+    )
 
 
 async def router_node(state: PSJTState) -> dict:
@@ -370,8 +393,16 @@ async def router_node(state: PSJTState) -> dict:
             # Psychometric repairs are always atomic patches. Even legacy
             # queue entries marked regenerate_item must use the scoped repair
             # agent so the fixed slot and diagnosis scope are preserved.
-            "next_action": "revise_item",
-            "reason": "用户已确认当前单题诊断，进入原子修改",
+            "next_action": (
+                "psychometric_repair_batch"
+                if _has_batchable_psychometric_repairs(state)
+                else "revise_item"
+            ),
+            "reason": (
+                "当前批次诊断已确认，启动并发单题修改—复测闭环"
+                if _has_batchable_psychometric_repairs(state)
+                else "用户已确认当前单题诊断，进入原子修改"
+            ),
             "target_item_id": pending_psychometric_repair["item_id"],
             "target_blueprint_cell_id": pending_psychometric_repair.get(
                 "blueprint_cell_id"

@@ -15,7 +15,7 @@ Curated Behavior Evidence
   ↓
 Behavior Expansion（按目标人群缓存）
   ↓
-Blueprint / 双向细目表
+Blueprint / 双向细目表（每个测量单元先生成2个候选）
   ↓
 Skeleton + Item Writer
   ↓
@@ -27,7 +27,7 @@ Skeleton + Item Writer
   ↓
 异常诊断与逐题原子返修（可选）
   ↓
-冻结题库、组卷与报告
+冻结候选题库、组卷与报告
 ```
 
 正式运行由程序负责状态迁移、JSON 校验、ID/引用、题量、版本和统计计算；模型负责构念内容的生成、题目语言实现、内容审查和异常诊断。当前版本不包含 UI 重构和真实被试数据导入分析。
@@ -195,6 +195,7 @@ outputs/
 ├─ virtual_responses/             # 虚拟被试逐题作答记录
 ├─ assembled_tests/               # 组卷中间结果
 ├─ final_reports/                 # 正式测验、题库和技术报告
+├─ run_telemetry/                 # 每轮模型 Token、调用次数和耗时记录
 └─ behavior_evidence_candidates/  # 离线行为证据候选
 ```
 
@@ -204,6 +205,14 @@ outputs/
 - `item_database.json`：带来源链、版本和评分信息的题库；
 - `technical_report.md`：流程、版本和统计结果；
 - `virtual_respondent_report.json`：开发期虚拟施测报告。
+
+技术报告和运行界面还会记录每轮临时组卷的目标恢复R²、构念选择性、
+本轮候选整卷质量、历史最优整卷质量、题目数量、累计Token和累计模型耗时。
+候选质量是目标恢复R²与构念选择性的几何平均；历史最优质量只会上升或持平。
+这些指标属于虚拟开发期筛查证据。
+稳定性指标需要 target 组额外完成一次整卷重测，因此每轮会增加约
+`target组人数 × 候选题数` 次模型调用；虚拟重测ICC只作为稳定性门槛，
+这些调用计入同一轮Token与耗时。
 
 ## 恢复中断运行
 

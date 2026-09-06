@@ -8,6 +8,7 @@ import math
 from collections.abc import Mapping, Sequence
 from typing import Any
 
+import pandas as pd
 import streamlit as st
 from langgraph.types import Command
 
@@ -34,6 +35,7 @@ from sjt_system.ui.presenters import (
 )
 from sjt_system.ui.workflow_runner import WorkflowRunError, run_until_pause
 from sjt_system.workflow.graph import build_sjt_graph
+from sjt_system.evaluation.form_metrics import form_quality_summary
 from sjt_system.evaluation.round_results import metric_scalar
 
 
@@ -60,6 +62,7 @@ CONTENT_LABELS = {
     "test_statistics": "测验统计",
     "item_statistics": "题目统计",
     "psychometric_round_result": "本轮虚拟筛查结果",
+    "psychometric_iteration_history": "整卷迭代曲线",
     "factor_results": "因素分析",
     "irt_results": "IRT 分析",
     "dif_results": "DIF 分析",
@@ -949,6 +952,103 @@ def _render_virtual_test_statistics(value: object) -> bool:
     return True
 
 
+def _render_iteration_history(value: object) -> bool:
+    """Render whole-test quality and cost curves across development rounds."""
+
+    if not isinstance(value, list) or not value:
+        return False
+    rows: list[dict[str, Any]] = []
+    for entry in value:
+        if not isinstance(entry, Mapping):
+            continue
+        form_metrics = entry.get("form_metrics") or {}
+        reliability = form_metrics.get("reliability") or {}
+        validity = form_metrics.get("validity") or {}
+        recovery = validity.get("target_recovery") or {}
+        selectivity = validity.get("construct_selectivity") or {}
+        quality = form_quality_summary(form_metrics)
+        plateau = entry.get("plateau_status") or {}
+        usage = entry.get("token_usage") or {}
+        rows.append(
+            {
+                "轮次": int(entry.get("analysis_round") or 0),
+                "题目数": entry.get("item_count"),
+                "候选题数": entry.get("candidate_count"),
+                "虚拟重测ICC": reliability.get(
+                    "virtual_test_retest_icc"
+                ),
+                "ICC门槛通过": (quality.get("stability_gate") or {}).get(
+                    "passed"
+                ),
+                "目标恢复R²": recovery.get("cross_validated_r2"),
+                "构念选择性": (
+                    selectivity.get("value")
+                    if selectivity.get("value") is not None
+                    else quality.get("construct_selectivity")
+                ),
+                "本轮候选质量": (
+                    entry.get("candidate_form_quality")
+                    if entry.get("candidate_form_quality") is not None
+                    else quality.get("candidate_form_quality")
+                ),
+                "历史最优质量": (
+                    entry.get("best_so_far_form_quality")
+                    if entry.get("best_so_far_form_quality") is not None
+                    else plateau.get("best_form_quality")
+                ),
+                "本轮Token": usage.get("total_tokens"),
+                "本轮模型耗时(ms)": usage.get("duration_ms"),
+                "模型调用次数": usage.get("calls"),
+                "整卷状态": entry.get("form_status"),
+                "平台期状态": plateau.get("status", "未开始"),
+            }
+        )
+    if not rows:
+        return False
+    frame = pd.DataFrame(rows).sort_values("轮次").set_index("轮次")
+    frame["累计Token"] = pd.to_numeric(
+        frame["本轮Token"], errors="coerce"
+    ).fillna(0).cumsum()
+    frame["累计模型耗时(ms)"] = pd.to_numeric(
+        frame["本轮模型耗时(ms)"], errors="coerce"
+    ).fillna(0).cumsum()
+    st.markdown("**整卷虚拟开发指标迭代曲线**")
+    st.caption(
+        "每轮先用候选题组成临时测验，再计算整卷指标；这些是虚拟开发期筛查结果，"
+        "不能替代真人样本的正式信效度。本轮候选质量由目标恢复R²和构念选择性的"
+        "几何平均得到；历史最优质量只会上升或持平。虚拟重测ICC只作为稳定性门槛。"
+    )
+    primary_columns = [
+        column
+        for column in ("历史最优质量", "本轮候选质量")
+        if column in frame.columns and frame[column].notna().any()
+    ]
+    if primary_columns:
+        st.line_chart(frame[primary_columns], use_container_width=True)
+    else:
+        st.info("当前轮次尚无可计算的虚拟整卷传导指标。")
+    diagnostic_columns = [
+        column
+        for column in ("目标恢复R²", "构念选择性")
+        if column in frame.columns and frame[column].notna().any()
+    ]
+    if diagnostic_columns:
+        st.markdown("**原始诊断指标（允许波动）**")
+        st.line_chart(frame[diagnostic_columns], use_container_width=True)
+    st.markdown("**迭代成本曲线**")
+    cost_columns = [
+        column
+        for column in ("累计Token", "累计模型耗时(ms)")
+        if column in frame.columns and frame[column].notna().any()
+    ]
+    if cost_columns:
+        st.line_chart(frame[cost_columns], use_container_width=True)
+    else:
+        st.info("当前尚无可归属到迭代轮次的 Token 或耗时记录。")
+    st.dataframe(frame.reset_index(), hide_index=True, use_container_width=True)
+    return True
+
+
 def _render_virtual_item_statistics(value: object) -> bool:
     if not isinstance(value, Mapping) or not value:
         return False
@@ -1012,6 +1112,8 @@ def _render_content(content: Mapping[str, Any]) -> None:
             continue
         elif field == "psychometric_round_result" and isinstance(value, Mapping):
             _render_psychometric_round_result(value)
+            continue
+        elif field == "psychometric_iteration_history" and _render_iteration_history(value):
             continue
         elif field in {
             "blueprint_review",
@@ -1343,6 +1445,10 @@ def _render_post_virtual_response_decision(payload: Mapping[str, Any]) -> None:
         _render_psychometric_round_result(round_result)
     else:
         st.warning("本轮缺少统一结果结构，请重新运行心理测量分析。")
+    iteration_history = payload.get("psychometric_iteration_history") or []
+    if iteration_history:
+        st.markdown("**本轮临时组卷（单题返修前基线）**")
+        _render_iteration_history(iteration_history)
     st.caption("正式题资格一经锁定不撤销，监测警告不会触发返修。")
     diagnostics = payload.get("condition_score_diagnostics") or {}
     correlation_rows = []
@@ -1449,10 +1555,6 @@ def _render_psychometric_repair_confirmation(payload: Mapping[str, Any]) -> None
         st.json(tasks, expanded=False)
 
     is_repair = isinstance(diagnosis, Mapping) and diagnosis.get("decision") == "repair"
-    if payload.get("defer_batch_mode"):
-        st.info("批量 defer 模式已开启：后续 defer 题目将自动淘汰并在同一蓝图槽位补题。")
-    if payload.get("defer_batch_mode_blocked"):
-        st.warning("批量 defer 模式因补题次数上限暂时阻塞，请选择保留待 SME 审核或暂停保存。")
     form_key = f"psychometric_repair_confirmation_{payload.get('item_id')}_{payload.get('revision_round')}"
     with st.form(form_key):
         available = set(payload.get("available_decisions") or [])
@@ -1472,10 +1574,6 @@ def _render_psychometric_repair_confirmation(payload: Mapping[str, Any]) -> None
                     ("人工修改", "manual_edit"),
                     ("保留待 SME 审核", "pending_sme"),
                     ("淘汰补题", "eliminate_replenish"),
-                    (
-                        "淘汰本题，并将此后所有 defer 题目按第3项处理",
-                        "eliminate_replenish_future_defer",
-                    ),
                     ("暂停并保存", "stop"),
                 )
                 if not available or decision in available

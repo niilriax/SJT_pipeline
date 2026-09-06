@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from copy import deepcopy
 from hashlib import sha256
 import json
@@ -16,6 +16,7 @@ from sjt_system.evaluation.round_results import (
     metric_scalar,
 )
 from sjt_system.evaluation.respondents import MATCHED_CONDITION_SCHEMA_VERSION
+from sjt_system.evaluation.form_metrics import form_quality_summary
 from sjt_system.runtime.io import (
     write_json_atomic as _write_json_atomic,
     write_text_atomic as _write_text_atomic,
@@ -74,6 +75,14 @@ def _score_protocol_artifacts(
             str(response_path.parent / "sjt_responses.jsonl"),
             label="匹配条件组单次SJT作答",
         ),
+        "target_form_retest_responses": _artifact_reference(
+            (
+                (response_manifest.get("target_form_retest") or {}).get(
+                    "path"
+                )
+            ),
+            label="target整卷重测作答",
+        ),
         "option_orders": _artifact_reference(
             response_manifest.get("option_order_path"),
             label="选项排列记录",
@@ -81,6 +90,10 @@ def _score_protocol_artifacts(
         "analysis_manifest": _artifact_reference(
             output_files.get("analysis_manifest"),
             label="心理测量分析manifest",
+        ),
+        "scored_target_form_retest_responses": _artifact_reference(
+            output_files.get("scored_target_form_retest_sjt_responses"),
+            label="计分后的target整卷重测作答",
         ),
         "virtual_screening_metrics": _artifact_reference(
             output_files.get("virtual_screening_metrics"),
@@ -308,6 +321,75 @@ def _repair_evidence(event: Mapping[str, Any]) -> str:
     return f"分面内CITC={_display_value(corrected.get('r'))}"
 
 
+def _iteration_history_markdown(
+    history: Sequence[Mapping[str, Any]],
+) -> list[str]:
+    lines = [
+        "## 整卷迭代曲线数据",
+        "",
+        "每轮先组成临时测验，再计算整卷虚拟开发期指标；Token和耗时为模型调用记录。",
+        "",
+        "| 轮次 | 临时题数 | 候选题数 | 目标恢复R² | 构念选择性 | 本轮候选质量 | 历史最优质量 | ICC门槛 | 平台期 | 累计Token | 累计模型耗时(ms) |",
+        "|---:|---:|---:|---:|---:|---:|---:|:---:|:---:|---:|---:|",
+    ]
+    cumulative_tokens = 0
+    cumulative_duration = 0
+    data_rows = 0
+    for entry in history:
+        if not isinstance(entry, Mapping):
+            continue
+        data_rows += 1
+        metrics = entry.get("form_metrics") or {}
+        validity = metrics.get("validity") or {}
+        recovery = validity.get("target_recovery") or {}
+        selectivity = validity.get("construct_selectivity") or {}
+        quality = form_quality_summary(metrics)
+        usage = entry.get("token_usage") or {}
+        cumulative_tokens += int(usage.get("total_tokens") or 0)
+        cumulative_duration += int(usage.get("duration_ms") or 0)
+        plateau = entry.get("plateau_status") or {}
+        selectivity_value = selectivity.get("value")
+        if selectivity_value is None:
+            selectivity_value = quality.get("construct_selectivity")
+        candidate_quality = entry.get("candidate_form_quality")
+        if candidate_quality is None:
+            candidate_quality = quality.get("candidate_form_quality")
+        best_quality = entry.get("best_so_far_form_quality")
+        if best_quality is None:
+            best_quality = plateau.get("best_form_quality")
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    str(entry.get("analysis_round") or "未记录"),
+                    str(entry.get("item_count") or 0),
+                    str(entry.get("candidate_count") or 0),
+                    _display_value(recovery.get("cross_validated_r2")),
+                    _display_value(selectivity_value),
+                    _display_value(candidate_quality),
+                    _display_value(best_quality),
+                    "通过" if (quality.get("stability_gate") or {}).get("passed") else "未通过",
+                    str(plateau.get("status", "未开始")),
+                    str(cumulative_tokens),
+                    str(cumulative_duration),
+                ]
+            )
+            + " |"
+        )
+    if data_rows == 0:
+        lines.append("| 无 | - | - | - | - | - | - | - | - | - | - |")
+    lines.extend(
+        [
+            "",
+            "> 本轮候选质量是目标恢复R²与构念选择性的几何平均；历史最优质量只会上升或持平。虚拟重测ICC仅作为稳定性门槛。",
+            "> 连续2轮候选卷未使历史最优质量提高至少0.01后，系统自动进入平台期并停止继续返修。",
+            "> 这些是虚拟作答系统内部的开发期传导指标，不能替代真人样本的正式信效度验证。",
+            "",
+        ]
+    )
+    return lines
+
+
 def _technical_report_markdown(
     technical_report: Mapping[str, Any],
 ) -> str:
@@ -333,6 +415,7 @@ def _technical_report_markdown(
     facet_statistics = test_statistics.get("dimensions") or {}
     item_statistics = technical_report.get("item_statistics") or {}
     round_result = technical_report.get("psychometric_round_result") or {}
+    iteration_history = technical_report.get("psychometric_iteration_history") or []
     item_pools = technical_report.get("item_pools") or {}
     item_lineage = technical_report.get("item_lineage") or {}
     condition_diagnostics = technical_report.get("condition_score_diagnostics") or {}
@@ -494,6 +577,7 @@ def _technical_report_markdown(
         ),
         "",
         *_round_result_markdown(round_result),
+        *_iteration_history_markdown(iteration_history),
         "## 补充：匹配条件组分数分布",
         "",
         *condition_diagnostic_lines,
@@ -900,6 +984,9 @@ def run_report_generation(
         "item_statistics": deepcopy(state.get("item_statistics") or {}),
         "psychometric_analysis_round": state.get("psychometric_analysis_round", 0),
         "psychometric_round_result": round_result,
+        "psychometric_iteration_history": deepcopy(
+            state.get("psychometric_iteration_history") or []
+        ),
         "test_quality": deepcopy(measurement_evaluation),
         "selection_results": deepcopy(state.get("selection_results")),
         "item_final_dispositions": deepcopy(
@@ -946,6 +1033,9 @@ def run_report_generation(
             )
         ),
         "psychometric_round_result": round_result,
+        "psychometric_iteration_history": deepcopy(
+            state.get("psychometric_iteration_history") or []
+        ),
         "artifacts": deepcopy(score_protocol_artifacts),
         "response_manifest": state.get("virtual_response_data_ref"),
         "item_bank_id": state.get("virtual_response_item_bank_id"),
@@ -959,7 +1049,7 @@ def run_report_generation(
                 "受到共同方法、提示响应和语义重叠影响。"
             ),
             "主迭代未调用人格总结或Neo-FFI；固定三个顶层臂下每个facet group分别匹配，每名被试对每题各作答一次。",
-            "本报告不包含真实被试、重测信度或人口学DIF证据。",
+            "本报告不包含真实被试信度、真人效度或人口学DIF证据；虚拟重测ICC只描述模型作答稳定性。",
         ],
         "generated_at": generated_at,
     }
@@ -972,6 +1062,21 @@ def run_report_generation(
         _technical_report_markdown(technical_report),
     )
     _write_json_atomic(virtual_report_path, virtual_report)
+
+    # 生成被试视角的正式测验表单（HTML，可打印为 PDF）；失败不阻塞主流程
+    try:
+        from sjt_system.delivery.test_pdf import build_test_form_html
+
+        build_test_form_html(
+            {
+                **state,
+                "final_test": final_test,
+                "item_database": item_database,
+            },
+            output_dir / "test_form.html",
+        )
+    except Exception:
+        pass
 
     proposed_state = {
         **state,

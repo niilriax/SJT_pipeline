@@ -176,6 +176,12 @@ def _validate_quality_legacy(
         isinstance(selection, Mapping)
         and selection.get("developmental_override") is True
     )
+    # 平台期收卷：接受 revise 题直接入卷（plateau = 停止返修、按现状收卷），
+    # 不标开发版标记，蓝图覆盖按需求凑满。
+    plateau_finalized = bool(
+        isinstance(selection, Mapping)
+        and selection.get("plateau_finalized") is True
+    )
     recommendations: dict[str, str] = {}
     source_recommendations: dict[str, str] = {}
     effective_recommendations = (
@@ -203,7 +209,9 @@ def _validate_quality_legacy(
         if recommendation != "retain":
             non_retained_item_ids.append(item_id)
         if recommendation != "retain" and not (
-            exploratory_override or developmental_override
+            exploratory_override
+            or developmental_override
+            or plateau_finalized
         ):
             raise ValueError(
                 f"题目 {item_id} 的最终建议不是 retain，不能入卷"

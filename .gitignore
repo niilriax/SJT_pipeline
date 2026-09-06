@@ -10,13 +10,6 @@ coverage.xml
 htmlcov/
 .ipynb_checkpoints/
 
-# Tests and test-only helpers
-tests/
-test_*.py
-*_test.py
-conftest.py
-tests_support.py
-
 # Virtual environments
 env/
 venv/
@@ -51,7 +44,20 @@ temp/
 *.bak
 *.jsonl
 
+# Rendered QA previews and generated local reports
+docs/qa_top_q1/
+
+# Local tests (kept local, not uploaded)
+tests/
+pytest.ini
+
+# Local docs (removed from version control; kept on disk)
+docs/
+
 # Local research exports and binary data
+# 本地研究/实验目录整体不入库；如需入库个别文件请用 ! 白名单
+blind_classification/
+experiments/
 docs/*.xlsx
 docs/*.xls
 experiments/**/*.xlsx

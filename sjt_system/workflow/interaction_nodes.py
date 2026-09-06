@@ -31,7 +31,6 @@ from sjt_system.evaluation.respondents import (
     generate_matched_condition_respondent_refs,
     normalize_matched_conditions,
     MATCHED_CONDITION_IDS,
-    score_virtual_sample_is_current,
     matched_condition_sample_is_current,
 )
 from sjt_system.evaluation.round_results import (
@@ -312,7 +311,8 @@ def virtual_sample_selection_node(state: PSJTState) -> dict:
             )
             + "固定三个顶层臂：target、same_domain、cross_domain；每个非目标臂可配置多个facet group。"
             "每个facet group独立生成一组匹配条件并共享同一正态分数向量，只在提示中提供当前group facet。"
-            "每组人数相同，每名被试对每题只回答一次；VTS在同域/跨域臂内取最大带符号rho，主迭代不再调用Neo-FFI。"
+            "每组人数相同，主施测中每名被试对每题只回答一次；target组额外完成一次整卷重测以估计虚拟作答稳定性。"
+            "VTS在同域/跨域臂内取最大带符号rho；target被试同步完成Neo-FFI与Mussel参照问卷。"
         ),
     }
 
@@ -437,12 +437,16 @@ def post_virtual_response_decision_node(state: PSJTState) -> dict:
     payload = {
         "type": "post_virtual_response_decision",
         "summary": (
-            "本轮虚拟作答与条件VTS分析已完成。请先核对未通过题目和正式题监测警告。"
+            "本轮虚拟作答、条件VTS分析与临时组卷基线已完成。"
+            "请先核对整卷指标、未通过题目和正式题监测警告。"
         ),
         "virtual_response_summary": summary,
         "round_result": round_result,
         "failing_items": failing_items,
         "monitoring_warnings": monitoring_warnings,
+        "psychometric_iteration_history": deepcopy(
+            state.get("psychometric_iteration_history") or []
+        ),
         "condition_score_diagnostics": deepcopy(
             round_result["condition_score_diagnostics"]
         ),
@@ -593,7 +597,6 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
             },
             "execution_history": history,
         }
-    batch_defer_mode = bool(state.get("psychometric_defer_batch_eliminate"))
     payload = {
         "type": "psychometric_repair_confirmation",
         "item_id": pending.get("item_id"),
@@ -650,7 +653,6 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
         "forced_vts_gradient_repairs": build_psychometric_agent_input(evidence).get(
             "forced_vts_gradient_repairs"
         ) or [],
-        "defer_batch_mode": batch_defer_mode,
         "default_defer_decision": "eliminate_replenish",
         "available_decisions": (
             ["approve", "stop"]
@@ -659,13 +661,12 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
                 "manual_edit",
                 "pending_sme",
                 "eliminate_replenish",
-                "eliminate_replenish_future_defer",
                 "stop",
             ]
         ),
         "instruction": (
             "repair：确认后按原子任务自动返修；defer：人工修改、保留待SME审核、"
-            "淘汰补题，或开启批量模式将本题及此后defer题目按淘汰补题处理。"
+            "淘汰补题或暂停保存。每道 defer 题必须单独处置。"
         ),
     }
     def _has_replacement_capacity() -> bool:
@@ -686,47 +687,31 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
         )
 
     edited_item = None
-    batch_mode_requested = False
-    automatic_batch_decision = False
-    if batch_defer_mode and _has_replacement_capacity():
-        decision = "eliminate_replenish"
-        automatic_batch_decision = True
-    else:
-        if batch_defer_mode:
+    while True:
+        raw = interrupt(payload)
+        decision = raw.get("decision") if isinstance(raw, Mapping) else None
+        available = set(payload["available_decisions"])
+        if decision not in available:
             payload = {
                 **payload,
-                "defer_batch_mode_blocked": True,
-                "available_decisions": ["pending_sme", "stop"],
+                "validation_error": "请选择当前诊断允许的处置方式",
+            }
+            continue
+        if decision == "manual_edit":
+            try:
+                edited_item = _manual_psychometric_item(item, raw.get("manual_item"))
+            except ValueError as exc:
+                payload = {**payload, "validation_error": str(exc)}
+                continue
+        if decision == "eliminate_replenish" and not _has_replacement_capacity():
+            payload = {
+                **payload,
                 "validation_error": (
-                    "批量 defer 模式遇到蓝图槽位补题次数上限；"
-                    "请保留待 SME 审核或暂停保存。"
+                    "该蓝图槽位已达到补题次数上限，请选择人工修改或待SME审核"
                 ),
             }
-        while True:
-            raw = interrupt(payload)
-            decision = raw.get("decision") if isinstance(raw, Mapping) else None
-            available = set(payload["available_decisions"])
-            if decision not in available:
-                payload = {**payload, "validation_error": "请选择当前诊断允许的处置方式"}
-                continue
-            if decision == "manual_edit":
-                try:
-                    edited_item = _manual_psychometric_item(item, raw.get("manual_item"))
-                except ValueError as exc:
-                    payload = {**payload, "validation_error": str(exc)}
-                    continue
-            if decision == "eliminate_replenish_future_defer":
-                batch_mode_requested = True
-                decision = "eliminate_replenish"
-            if decision == "eliminate_replenish" and not _has_replacement_capacity():
-                payload = {
-                    **payload,
-                    "validation_error": (
-                        "该蓝图槽位已达到补题次数上限，请选择人工修改或待SME审核"
-                    ),
-                }
-                continue
-            break
+            continue
+        break
     if decision == "stop":
         return {"status": "stopped"}
 
@@ -743,16 +728,8 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
             "action": decision,
             "event_type": "completed",
             "recorded_at": utc_timestamp(),
-            "reason": (
-                "批量 defer 模式自动按淘汰补题处理当前题目"
-                if automatic_batch_decision
-                else (
-                    "用户确认当前题并开启后续 defer 自动淘汰补题"
-                    if batch_mode_requested
-                    else "用户确认当前单题心理测量返修建议"
-                )
-            ),
-            "approval_source": "system_default" if automatic_batch_decision else "user",
+            "reason": "用户确认当前单题心理测量返修建议",
+            "approval_source": "user",
         },
     ]
     if decision == "approve":
@@ -777,10 +754,7 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
             "item_id": item_id,
             "revision_round": pending.get("revision_round"),
             "diagnosis_fingerprint": pending.get("diagnosis_fingerprint"),
-            "defer_batch_mode_enabled": bool(
-                batch_defer_mode or batch_mode_requested
-            ),
-            "approval_source": "system_default" if automatic_batch_decision else "user",
+            "approval_source": "user",
         },
     ]
     if decision == "manual_edit":
@@ -846,16 +820,29 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
 
     lineage = deepcopy(state.get("item_lineage") or {})
     root_id = str((lineage.get(item_id) or {}).get("root_item_id") or item_id)
-    replacement_number = 1 + sum(
+    lineage_number = 1 + sum(
         1 for value in lineage.values()
         if isinstance(value, Mapping)
         and value.get("root_item_id") == root_id
         and isinstance(value.get("replacement_number"), int)
     )
-    replacement_id = f"{root_id}-R{replacement_number}"
     existing_ids = {
         str(row.get("item_id")) for row in state.get("item_pool") or [] if isinstance(row, Mapping)
     } | {str(row.get("specification_id")) for row in state.get("item_specifications") or [] if isinstance(row, Mapping)}
+    # 补题号同时考虑已存在的 R-n 补题 ID（checkpoint 恢复后 item_pool/规格
+    # 可能已含上次生成的补题而 lineage 未同步），取更大值 +1，避免重复。
+    prefix = f"{root_id}-R"
+    existing_number = max(
+        (
+            int(repl_id[len(prefix):])
+            for repl_id in existing_ids
+            if repl_id.startswith(prefix)
+            and repl_id[len(prefix):].isdigit()
+        ),
+        default=0,
+    )
+    replacement_number = max(lineage_number, existing_number + 1)
+    replacement_id = f"{root_id}-R{replacement_number}"
     if replacement_id in existing_ids:
         raise ValueError(f"补题ID已存在：{replacement_id}")
     cell_id = str(item.get("blueprint_cell_id") or "")
@@ -868,15 +855,24 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
             break
     else:
         raise ValueError("淘汰补题找不到原蓝图单元")
-    blueprint.setdefault("slots", []).append(
-        {"specification_id": replacement_id, "blueprint_cell_id": cell_id}
-    )
     source_spec = next(
         (deepcopy(dict(row)) for row in state.get("item_specifications") or [] if isinstance(row, Mapping) and row.get("specification_id") == item_id),
         None,
     )
     if source_spec is None:
         raise ValueError("淘汰补题找不到原题目规格")
+    blueprint.setdefault("slots", []).append(
+        {
+            "specification_id": replacement_id,
+            "blueprint_cell_id": cell_id,
+            "candidate_reference": {
+                "mechanism_id": source_spec.get("mechanism_id")
+                or replacement_cell.get("mechanism_id"),
+                "situation_id": source_spec.get("situation_id")
+                or replacement_cell.get("situation_id"),
+            },
+        }
+    )
     source_skeleton = (state.get("item_skeletons") or {}).get(item_id)
     source_skeleton_review = (state.get("skeleton_reviews") or {}).get(item_id)
     if not isinstance(source_skeleton, Mapping):
@@ -912,9 +908,6 @@ def psychometric_repair_confirmation_node(state: PSJTState) -> dict:
         "selection_results": None,
         "selected_items": [],
         "psychometric_repair_history": common_history,
-        "psychometric_defer_batch_eliminate": bool(
-            batch_defer_mode or batch_mode_requested
-        ),
         "execution_history": history,
     }
     if not batch_has_remaining:
